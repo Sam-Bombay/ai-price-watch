@@ -35,6 +35,19 @@
   input { width:100%; background:var(--panel); border:1px solid var(--line); color:var(--txt);
           border-radius:10px; padding:11px 14px; font-size:14px; margin-bottom:14px; }
   input:focus { outline:none; border-color:#3b4654; }
+  .calc { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .calc-in, .calc-out { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; }
+  .calc label { display:block; color:var(--dim); font-size:12.5px; text-transform:uppercase;
+                letter-spacing:.06em; margin:0 0 6px; }
+  .calc input { margin-bottom:16px; }
+  .calc-out .row { display:flex; justify-content:space-between; align-items:baseline;
+                   padding:9px 0; border-bottom:1px solid var(--line); }
+  .calc-out .row span { color:var(--dim); }
+  .calc-out .row b { font-size:20px; letter-spacing:-.01em; }
+  .cta { display:block; text-align:center; margin-top:18px; padding:12px; border-radius:10px;
+         background:#e8eaed; color:#0b0c0e; font-weight:600; text-decoration:none; }
+  .cta:hover { background:#fff; }
+  @media (max-width:720px){ .calc{grid-template-columns:1fr;} }
   .foot { margin-top:56px; padding:22px 24px; border:1px solid var(--line); border-radius:12px;
           background:var(--panel); }
   .foot p { margin:0 0 8px; }
@@ -71,6 +84,24 @@
     <thead><tr><th>Model</th><th class="num">Input / 1M</th><th class="num">Output / 1M</th><th class="num">Context</th></tr></thead>
     <tbody id="models"><tr><td colspan="4" class="muted">Loading…</td></tr></tbody>
   </table></div>
+
+  <h2>What could you save?</h2>
+  <div class="calc">
+    <div class="calc-in">
+      <label for="spend">Your AI spend, per month (USD)</label>
+      <input id="spend" type="number" min="0" step="50" value="2000" inputmode="numeric">
+      <label for="seats">People who use it</label>
+      <input id="seats" type="number" min="0" step="1" value="10" inputmode="numeric">
+      <p class="muted" style="margin:10px 0 0">Rough rule, not a promise: most teams run 30 to 60% below what they pay once the same work is moved to cheaper or self-hosted models. Chat-first teams sit at the low end, heavy API pipelines at the high end.</p>
+    </div>
+    <div class="calc-out">
+      <div class="row"><span>Typical cut</span><b id="c-cut">—</b></div>
+      <div class="row"><span>Saved per year</span><b id="c-year">—</b></div>
+      <div class="row"><span>My share (30% of savings)</span><b id="c-mine">—</b></div>
+      <p class="muted" style="margin:14px 0 0">You keep 70% of what I cut. If I find nothing, you pay nothing.</p>
+      <a id="c-cta" class="cta" href="mailto:sambombayoffice@gmail.com?subject=AI%20cost%20audit">Email me these numbers</a>
+    </div>
+  </div>
 
   <div class="foot">
     <p><strong>I watch this market for a living.</strong></p>
@@ -151,6 +182,50 @@ const kfmt = v => v === null || v === undefined ? "—" : v >= 1000 ? (v/1000).t
              `<td class="num">${money(c.from)}</td><td class="num">${money(c.to)}</td><td class="num">${pct}</td></tr>`;
     }).join("");
   });
+  // Savings calculator — this is what turns a visitor into a lead.
+  (function(){
+    const spendEl = document.getElementById("spend");
+    const seatsEl = document.getElementById("seats");
+    const cta = document.getElementById("c-cta");
+
+    function usd(n){
+      return "$" + Math.round(n).toLocaleString("en-US");
+    }
+
+    // Conservative from the table: seats drive subscription sprawl, so more seats,
+    // more room to cut. Capped at 60% so we never promise the impossible.
+    function rate(spend, seats){
+      const r = 0.30 + Math.min(seats, 15) * 0.02;
+      return Math.min(r, spend >= 5000 ? 0.60 : 0.55);
+    }
+
+    function update(){
+      const spend = Math.max(0, Number(spendEl.value) || 0);
+      const seats = Math.max(0, Number(seatsEl.value) || 0);
+      if (!spend) {
+        document.getElementById("c-cut").textContent = "—";
+        document.getElementById("c-year").textContent = "—";
+        document.getElementById("c-mine").textContent = "—";
+        return;
+      }
+      const r = rate(spend, seats);
+      const year = spend * 12 * r;
+      const mine = year * 0.30;
+      document.getElementById("c-cut").textContent = Math.round(r * 100) + "%";
+      document.getElementById("c-year").textContent = usd(year);
+      document.getElementById("c-mine").textContent = usd(mine);
+      cta.href = "mailto:sambombayoffice@gmail.com" +
+        "?subject=" + encodeURIComponent("AI cost audit — " + usd(spend) + "/mo") +
+        "&body=" + encodeURIComponent(
+          "We spend about " + usd(spend) + " a month on AI, " + seats + " people using it.\n" +
+          "The calculator says roughly " + Math.round(r*100) + "% is cuttable — about " + usd(year) + " a year.\n\n" +
+          "Worth a look?\n");
+    }
+
+    spendEl.addEventListener("input", update);
+    seatsEl.addEventListener("input", update);
+    update();
+  })();
 })();
 </script>
 </body>
