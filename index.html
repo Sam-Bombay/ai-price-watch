@@ -85,8 +85,10 @@
 const RAW = "https://raw.githubusercontent.com/Sam-Bombay/ai-price-watch/main/data/";
 const LOC = "./data/";
 
+// Raw repo first: the daily job commits fresh data there, so the live page updates
+// without a redeploy. The deployed copy is only the offline fallback.
 async function grab(file){
-  for (const base of [LOC, RAW]) {
+  for (const base of [RAW, LOC]) {
     try {
       const r = await fetch(base + file, {cache:"no-store"});
       if (r.ok) return await r.json();
@@ -136,7 +138,7 @@ const kfmt = v => v === null || v === undefined ? "—" : v >= 1000 ? (v/1000).t
     document.getElementById("s-cuts").textContent = cuts.length;
     const t = document.getElementById("changes");
     if (!recent.length) {
-      t.innerHTML = `<tr><td colspan="6" class="muted">No changes logged in the last 30 days.</td></tr>`;
+      t.innerHTML = `<tr><td colspan="6" class="muted">Tracking is live. The log fills the moment a provider changes a price — nothing has moved yet today.</td></tr>`;
       return;
     }
     t.innerHTML = recent.slice(0, 120).map(c => {
