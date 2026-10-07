@@ -24,7 +24,7 @@ git push -q origin main >/dev/null 2>&1 || echo "push failed (page may lag)"
 BIG=$("$PY" - <<'PY'
 import json, datetime
 d = json.load(open('/Users/sambombay/money-ideas/tracker/data/changes.json'))
-today = datetime.datetime.utcnow().strftime('%Y-%m-%d')
+today = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
 big = [c for c in d if c['date'] == today and c.get('field') == 'output' and (c.get('pct') or 0) <= -10]
 for c in big[:5]:
     print(f"{c['name']} {c['field']} {c['from']} -> {c['to']} ({c['pct']}%)")
