@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-07",
+"updated": "2026-10-08",
 "models": [
 {
 "id": "mistralai/mistral-nemo",
@@ -226,13 +226,6 @@
 "ctx": 163840
 },
 {
-"id": "qwen/qwen3-30b-a3b-instruct-2507",
-"name": "Qwen: Qwen3 30B A3B Instruct 2507",
-"in": 0.0481,
-"out": 0.193,
-"ctx": 262144
-},
-{
 "id": "upstage/solar-mini4",
 "name": "Upstage: Solar Mini 4",
 "in": 0.05,
@@ -266,13 +259,6 @@
 "in": 0.2,
 "out": 0.2,
 "ctx": 131072
-},
-{
-"id": "nvidia/nemotron-3-nano-30b-a3b",
-"name": "NVIDIA: Nemotron 3 Nano 30B A3B",
-"in": 0.05,
-"out": 0.2,
-"ctx": 262144
 },
 {
 "id": "mistralai/ministral-14b-2512",
@@ -338,6 +324,13 @@
 "ctx": 128000
 },
 {
+"id": "nvidia/nemotron-3-nano-30b-a3b",
+"name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+"in": 0.06,
+"out": 0.24,
+"ctx": 262144
+},
+{
 "id": "qwen/qwen3-14b",
 "name": "Qwen: Qwen3 14B",
 "in": 0.12,
@@ -394,13 +387,6 @@
 "ctx": 256000
 },
 {
-"id": "google/gemma-4-26b-a4b-it",
-"name": "Google: Gemma 4 26B A4B ",
-"in": 0.0765,
-"out": 0.255,
-"ctx": 262144
-},
-{
 "id": "qwen/qwen3.5-flash-02-23",
 "name": "Qwen: Qwen3.5-Flash",
 "in": 0.065,
@@ -450,6 +436,13 @@
 "ctx": 8192
 },
 {
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"in": 0.09,
+"out": 0.3,
+"ctx": 262144
+},
+{
 "id": "mistralai/mistral-small-2603:batch",
 "name": "Mistral: Mistral Small 4 (batch)",
 "in": 0.075,
@@ -485,6 +478,13 @@
 "ctx": 131072
 },
 {
+"id": "qwen/qwen3-30b-a3b-instruct-2507",
+"name": "Qwen: Qwen3 30B A3B Instruct 2507",
+"in": 0.1,
+"out": 0.3,
+"ctx": 262144
+},
+{
 "id": "meta-llama/llama-4-scout",
 "name": "Meta: Llama 4 Scout",
 "in": 0.1,
@@ -499,11 +499,11 @@
 "ctx": 128000
 },
 {
-"id": "tencent/hy3",
-"name": "Tencent: Hy3",
-"in": 0.0825,
-"out": 0.33,
-"ctx": 262144
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"in": 0.1,
+"out": 0.32,
+"ctx": 131072
 },
 {
 "id": "meta-llama/llama-3.2-3b-instruct",
@@ -532,6 +532,13 @@
 "in": 0.09,
 "out": 0.36,
 "ctx": 524288
+},
+{
+"id": "nvidia/nemotron-3-super-120b-a12b",
+"name": "NVIDIA: Nemotron 3 Super",
+"in": 0.085,
+"out": 0.4,
+"ctx": 262144
 },
 {
 "id": "bytedance-seed/seed-2.0-mini",
@@ -604,32 +611,11 @@
 "ctx": 131072
 },
 {
-"id": "deepseek/deepseek-v4-pro",
-"name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.2088,
-"out": 0.4176,
-"ctx": 1048576
-},
-{
 "id": "deepseek/deepseek-v3.2",
 "name": "DeepSeek: DeepSeek V3.2",
 "in": 0.259,
 "out": 0.42,
 "ctx": 163840
-},
-{
-"id": "~deepseek/deepseek-flash-latest",
-"name": "DeepSeek: DeepSeek Flash Latest",
-"in": 0.019,
-"out": 0.424,
-"ctx": 1048576
-},
-{
-"id": "nvidia/nemotron-3-super-120b-a12b",
-"name": "NVIDIA: Nemotron 3 Super",
-"in": 0.08,
-"out": 0.45,
-"ctx": 262144
 },
 {
 "id": "mistralai/codestral-2508:batch",
@@ -709,13 +695,6 @@
 "ctx": 1050000
 },
 {
-"id": "~z-ai/glm-flash-latest",
-"name": "Z.ai: GLM Flash Latest",
-"in": 0.04,
-"out": 0.5,
-"ctx": 1048576
-},
-{
 "id": "z-ai/glm-5.3-flash",
 "name": "Z.ai: GLM 5.3 Flash",
 "in": 0.15,
@@ -744,11 +723,11 @@
 "ctx": 131072
 },
 {
-"id": "meta-llama/llama-3.3-70b-instruct",
-"name": "Meta: Llama 3.3 70B Instruct",
-"in": 0.22,
-"out": 0.5,
-"ctx": 131072
+"id": "tencent/hy3",
+"name": "Tencent: Hy3",
+"in": 0.132,
+"out": 0.528,
+"ctx": 262144
 },
 {
 "id": "qwen/qwen3-235b-a22b-2507",
@@ -770,6 +749,13 @@
 "in": 0.14,
 "out": 0.57,
 "ctx": 131072
+},
+{
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"in": 0.2923,
+"out": 0.5846,
+"ctx": 1048576
 },
 {
 "id": "openai/gpt-5.6-luna-pro:batch",
@@ -1045,6 +1031,13 @@
 "ctx": 1000000
 },
 {
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"in": 0.0283,
+"out": 1.0,
+"ctx": 1048576
+},
+{
 "id": "qwen/qwen3.6-35b-a3b",
 "name": "Qwen: Qwen3.6 35B A3B",
 "in": 0.15,
@@ -1127,13 +1120,6 @@
 "in": 0.27,
 "out": 1.08,
 "ctx": 204800
-},
-{
-"id": "qwen/qwen3-next-80b-a3b-instruct",
-"name": "Qwen: Qwen3 Next 80B A3B Instruct",
-"in": 0.1,
-"out": 1.1,
-"ctx": 262144
 },
 {
 "id": "minimax/minimax-01",
@@ -1292,14 +1278,14 @@
 {
 "id": "~deepseek/deepseek-v4-flash-latest",
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.018,
+"in": 0.006,
 "out": 1.28,
 "ctx": 1048576
 },
 {
 "id": "deepseek/deepseek-v4-flash-0731",
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
-"in": 0.018,
+"in": 0.006,
 "out": 1.28,
 "ctx": 1048576
 },
@@ -1313,7 +1299,7 @@
 {
 "id": "deepseek/deepseek-v4-flash",
 "name": "DeepSeek: DeepSeek V4 Flash 0423",
-"in": 0.03,
+"in": 0.0099,
 "out": 1.28,
 "ctx": 1048576
 },
@@ -1388,18 +1374,18 @@
 "ctx": 262144
 },
 {
+"id": "qwen/qwen3-next-80b-a3b-instruct",
+"name": "Qwen: Qwen3 Next 80B A3B Instruct",
+"in": 0.15,
+"out": 1.5,
+"ctx": 262144
+},
+{
 "id": "openai/gpt-3.5-turbo",
 "name": "OpenAI: GPT-3.5 Turbo",
 "in": 0.5,
 "out": 1.5,
 "ctx": 16385
-},
-{
-"id": "qwen/qwen3.5-27b",
-"name": "Qwen: Qwen3.5-27B",
-"in": 0.195,
-"out": 1.56,
-"ctx": 262144
 },
 {
 "id": "qwen/qwen3.5-plus-02-15",
@@ -1535,13 +1521,6 @@
 "ctx": 1000000
 },
 {
-"id": "qwen/qwen3.6-27b",
-"name": "Qwen: Qwen3.6 27B",
-"in": 0.3,
-"out": 2.0,
-"ctx": 262144
-},
-{
 "id": "bytedance-seed/seed-2.0-lite",
 "name": "ByteDance Seed: Seed-2.0-Lite",
 "in": 0.25,
@@ -1623,7 +1602,7 @@
 "name": "Mistral: Mistral Large 4",
 "in": 0.68,
 "out": 2.09,
-"ctx": 524288
+"ctx": 1048576
 },
 {
 "id": "qwen/qwen3-vl-8b-thinking",
@@ -1696,13 +1675,6 @@
 "ctx": 262144
 },
 {
-"id": "tencent/hy4-preview",
-"name": "Tencent: Hy4 preview",
-"in": 0.7506,
-"out": 2.2509,
-"ctx": 1048576
-},
-{
 "id": "qwen/qwen3-235b-a22b-thinking-2507",
 "name": "Qwen: Qwen3 235B A22B Thinking 2507",
 "in": 0.23,
@@ -1740,7 +1712,7 @@
 {
 "id": "moonshotai/kimi-k2.6",
 "name": "MoonshotAI: Kimi K2.6",
-"in": 0.465,
+"in": 0.4375,
 "out": 2.45,
 "ctx": 262144
 },
@@ -1829,11 +1801,39 @@
 "ctx": 64000
 },
 {
+"id": "tencent/hy4-preview",
+"name": "Tencent: Hy4 preview",
+"in": 0.834,
+"out": 2.501,
+"ctx": 1048576
+},
+{
 "id": "qwen/qwen3.8-27b",
 "name": "Qwen: Qwen3.8 27B",
 "in": 0.425,
 "out": 2.55,
 "ctx": 1000000
+},
+{
+"id": "qwen/qwen3.5-27b",
+"name": "Qwen: Qwen3.5-27B",
+"in": 0.26,
+"out": 2.6,
+"ctx": 262144
+},
+{
+"id": "stepfun/step-5-preview",
+"name": "StepFun: Step 5 Preview",
+"in": 1.0,
+"out": 2.7,
+"ctx": 1000000
+},
+{
+"id": "qwen/qwen3.6-27b",
+"name": "Qwen: Qwen3.6 27B",
+"in": 0.45,
+"out": 2.7,
+"ctx": 262144
 },
 {
 "id": "bytedance-seed/seed-2.0-code",
@@ -1920,16 +1920,9 @@
 "ctx": 262144
 },
 {
-"id": "~z-ai/glm-latest",
-"name": "Z.ai: GLM Latest",
-"in": 0.062,
-"out": 3.39,
-"ctx": 1048576
-},
-{
 "id": "z-ai/glm-5.3",
 "name": "Z.ai: GLM 5.3",
-"in": 0.062,
+"in": 0.059,
 "out": 3.39,
 "ctx": 1048576
 },
@@ -2039,13 +2032,6 @@
 "ctx": 524288
 },
 {
-"id": "~deepseek/deepseek-pro-latest",
-"name": "DeepSeek: DeepSeek Pro Latest",
-"in": 0.2856,
-"out": 4.2,
-"ctx": 1048576
-},
-{
 "id": "meta/muse-spark-1.3",
 "name": "Meta: Muse Spark 1.3",
 "in": 1.25,
@@ -2100,6 +2086,13 @@
 "in": 1.475,
 "out": 4.425,
 "ctx": 1000000
+},
+{
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"in": 0.032,
+"out": 4.4401,
+"ctx": 1048576
 },
 {
 "id": "google/gemini-3.5-flash:batch",
@@ -2333,13 +2326,6 @@
 "ctx": 400000
 },
 {
-"id": "z-ai/glm-5.2",
-"name": "Z.ai: GLM 5.2",
-"in": 0.171,
-"out": 7.2,
-"ctx": 1048576
-},
-{
 "id": "google/gemini-nano-banana-2.1",
 "name": "Google: Nano Banana 2.1",
 "in": 1.5,
@@ -2380,6 +2366,13 @@
 "in": 1.5,
 "out": 7.5,
 "ctx": 1000000
+},
+{
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"in": 0.108,
+"out": 8.0,
+"ctx": 1048576
 },
 {
 "id": "openai/o3",
@@ -2501,6 +2494,13 @@
 "ctx": 1000000
 },
 {
+"id": "z-ai/glm-5.2",
+"name": "Z.ai: GLM 5.2",
+"in": 0.03,
+"out": 10.0,
+"ctx": 1048576
+},
+{
 "id": "~anthropic/claude-sonnet-latest",
 "name": "Anthropic: Claude Sonnet Latest",
 "in": 2.0,
@@ -2620,6 +2620,13 @@
 "ctx": 1050000
 },
 {
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"in": 0.0472,
+"out": 12.0,
+"ctx": 1048576
+},
+{
 "id": "openai/gpt-5.6-terra-pro",
 "name": "OpenAI: GPT-5.6 Terra Pro",
 "in": 2.0,
@@ -2669,6 +2676,13 @@
 "ctx": 65536
 },
 {
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"in": 0.62,
+"out": 12.3,
+"ctx": 1048576
+},
+{
 "id": "anthropic/claude-opus-5:batch",
 "name": "Anthropic: Claude Opus 5 (batch)",
 "in": 2.5,
@@ -2713,7 +2727,7 @@
 {
 "id": "~moonshotai/kimi-latest",
 "name": "MoonshotAI: Kimi Latest",
-"in": 0.49,
+"in": 0.45,
 "out": 13.0,
 "ctx": 1048576
 },
@@ -2749,13 +2763,6 @@
 "id": "fireworks/ember-1",
 "name": "Fireworks: Ember-1",
 "in": 3.0,
-"out": 15.0,
-"ctx": 1048576
-},
-{
-"id": "moonshotai/kimi-k3",
-"name": "MoonshotAI: Kimi K3",
-"in": 0.5,
 "out": 15.0,
 "ctx": 1048576
 },

@@ -53,6 +53,13 @@
   .foot p { margin:0 0 8px; }
   .foot a { color:var(--accent); }
   .muted { color:var(--dim); font-size:13px; }
+  .brief { background:linear-gradient(180deg,#14161a,#101216); border:1px solid var(--line);
+           border-left:3px solid var(--accent); border-radius:12px; padding:20px 24px; margin:0 0 6px; }
+  .brief-k { color:var(--accent); font-size:12px; text-transform:uppercase; letter-spacing:.08em;
+             margin:0 0 10px; font-weight:600; }
+  .brief p { margin:0 0 10px; }
+  .brief p:last-child { margin-bottom:0; }
+  .brief a { color:var(--accent); }
   .scroll { max-height:560px; overflow:auto; border:1px solid var(--line); border-radius:12px; }
   .scroll table { margin:0; }
   .scroll th { position:sticky; top:0; background:var(--bg); }
@@ -72,6 +79,21 @@
     <div class="stat"><b id="s-cheap">—</b><span>cheapest output / 1M tokens</span></div>
   </div>
 
+  <div class="brief">
+    <p class="brief-k">Price war — 8 Oct 2026</p>
+    <p><strong>The frontier tier just repriced.</strong> Anthropic shipped
+      <a href="https://www.anthropic.com/claude-haiku-5-5">Claude Haiku 5.5</a> and OpenAI shipped
+      <a href="https://openai.com/index/gpt-6-for-everyone/">GPT-6</a>. On the market this page reads,
+      Haiku 5.5 lists at <b>$0.10 in / $0.50 out</b> per million tokens — an order of magnitude under
+      Haiku 4.5 at $1.00 / $5.00 — with a 1M-token context. OpenAI's new GPT-6 "luna" tier lands at
+      the same $0.10 / $0.50.</p>
+    <p class="muted">Open-weight prices slid again in the same window: DeepSeek V4 Flash input down
+      66.7%, GLM 5.2 input down 82.5%, DeepSeek Pro input down 62.2% — logged in the table below.
+      If your AI bill was costed on last year's prices, it is now priced against a market that has
+      moved underneath it.</p>
+    <p class="muted">That gap is the whole job: <a href="#calc">run your number</a>, and I'll find the cut.</p>
+  </div>
+
   <h2>Latest changes</h2>
   <div class="scroll"><table>
     <thead><tr><th>Date</th><th>Model</th><th>What</th><th class="num">Was</th><th class="num">Now</th><th class="num">Change</th></tr></thead>
@@ -85,7 +107,7 @@
     <tbody id="models"><tr><td colspan="4" class="muted">Loading…</td></tr></tbody>
   </table></div>
 
-  <h2>What could you save?</h2>
+  <h2 id="calc">What could you save?</h2>
   <div class="calc">
     <div class="calc-in">
       <label for="spend">Your AI spend, per month (USD)</label>
