@@ -393,5 +393,360 @@
 "from": 0.0099,
 "to": 0.0075,
 "pct": -24.2
+},
+{
+"date": "2026-10-09",
+"id": "openai/gpt-6.1-sol-pro:batch",
+"name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+"field": "added",
+"from": null,
+"to": 5.0
+},
+{
+"date": "2026-10-09",
+"id": "openai/gpt-6.1-sol:batch",
+"name": "OpenAI: GPT-6.1 Sol (batch)",
+"field": "added",
+"from": null,
+"to": 5.0
+},
+{
+"date": "2026-10-09",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.108,
+"to": 0.1282,
+"pct": 18.7
+},
+{
+"date": "2026-10-09",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.0283,
+"to": 0.016,
+"pct": -43.5
+},
+{
+"date": "2026-10-09",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 1.0,
+"to": 1.2,
+"pct": 20.0
+},
+{
+"date": "2026-10-09",
+"id": "inclusionai/ling-3.0-flash-sante",
+"name": "inclusionAI: Ling 3.0 Flash Sante",
+"field": "added",
+"from": null,
+"to": 0.1232
+},
+{
+"date": "2026-10-09",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 4.4401,
+"to": 0.3268,
+"pct": -92.6
+},
+{
+"date": "2026-10-09",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "input",
+"from": 0.0472,
+"to": 0.0312,
+"pct": -33.9
+},
+{
+"date": "2026-10-09",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "output",
+"from": 12.0,
+"to": 4.4,
+"pct": -63.3
+},
+{
+"date": "2026-10-09",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "input",
+"from": 0.059,
+"to": 0.04,
+"pct": -32.2
+},
+{
+"date": "2026-10-09",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "output",
+"from": 3.39,
+"to": 3.6,
+"pct": 6.2
+},
+{
+"date": "2026-10-09",
+"id": "nvidia/nemotron-3.5-lightning",
+"name": "NVIDIA: Nemotron 3.5 Lightning",
+"field": "input",
+"from": 0.049,
+"to": 0.0469,
+"pct": -4.3
+},
+{
+"date": "2026-10-09",
+"id": "nvidia/nemotron-3.5-lightning",
+"name": "NVIDIA: Nemotron 3.5 Lightning",
+"field": "output",
+"from": 0.14,
+"to": 0.134,
+"pct": -4.3
+},
+{
+"date": "2026-10-09",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.0046,
+"to": 0.0144,
+"pct": 213.0
+},
+{
+"date": "2026-10-09",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 1.28,
+"to": 0.0341,
+"pct": -97.3
+},
+{
+"date": "2026-10-09",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.0046,
+"to": 0.018,
+"pct": 291.3
+},
+{
+"date": "2026-10-09",
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"field": "input",
+"from": 0.62,
+"to": 0.5,
+"pct": -19.4
+},
+{
+"date": "2026-10-09",
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"field": "output",
+"from": 12.3,
+"to": 12.0,
+"pct": -2.4
+},
+{
+"date": "2026-10-09",
+"id": "z-ai/glm-5.2",
+"name": "Z.ai: GLM 5.2",
+"field": "input",
+"from": 0.03,
+"to": 0.06,
+"pct": 100.0
+},
+{
+"date": "2026-10-09",
+"id": "z-ai/glm-5.2",
+"name": "Z.ai: GLM 5.2",
+"field": "output",
+"from": 10.0,
+"to": 6.0,
+"pct": -40.0
+},
+{
+"date": "2026-10-09",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.45,
+"to": 0.49,
+"pct": 8.9
+},
+{
+"date": "2026-10-09",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.2923,
+"to": 0.2871,
+"pct": -1.8
+},
+{
+"date": "2026-10-09",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 0.5846,
+"to": 0.5742,
+"pct": -1.8
+},
+{
+"date": "2026-10-09",
+"id": "deepseek/deepseek-v4-flash",
+"name": "DeepSeek: DeepSeek V4 Flash 0423",
+"field": "input",
+"from": 0.0075,
+"to": 0.0099,
+"pct": 32.0
+},
+{
+"date": "2026-10-09",
+"id": "moonshotai/kimi-k2.6",
+"name": "MoonshotAI: Kimi K2.6",
+"field": "input",
+"from": 0.4375,
+"to": 0.4357,
+"pct": -0.4
+},
+{
+"date": "2026-10-09",
+"id": "nvidia/nemotron-3-super-120b-a12b",
+"name": "NVIDIA: Nemotron 3 Super",
+"field": "input",
+"from": 0.085,
+"to": 0.08,
+"pct": -5.9
+},
+{
+"date": "2026-10-09",
+"id": "nvidia/nemotron-3-super-120b-a12b",
+"name": "NVIDIA: Nemotron 3 Super",
+"field": "output",
+"from": 0.4,
+"to": 0.45,
+"pct": 12.5
+},
+{
+"date": "2026-10-09",
+"id": "qwen/qwen3.5-35b-a3b",
+"name": "Qwen: Qwen3.5-35B-A3B",
+"field": "input",
+"from": 0.15,
+"to": 0.08,
+"pct": -46.7
+},
+{
+"date": "2026-10-09",
+"id": "qwen/qwen3.5-35b-a3b",
+"name": "Qwen: Qwen3.5-35B-A3B",
+"field": "output",
+"from": 1.0,
+"to": 0.75,
+"pct": -25.0
+},
+{
+"date": "2026-10-09",
+"id": "qwen/qwen3.5-397b-a17b",
+"name": "Qwen: Qwen3.5 397B A17B",
+"field": "input",
+"from": 0.45,
+"to": 0.55,
+"pct": 22.2
+},
+{
+"date": "2026-10-09",
+"id": "qwen/qwen3.5-397b-a17b",
+"name": "Qwen: Qwen3.5 397B A17B",
+"field": "output",
+"from": 3.0,
+"to": 3.5,
+"pct": 16.7
+},
+{
+"date": "2026-10-09",
+"id": "qwen/qwen3-next-80b-a3b-instruct",
+"name": "Qwen: Qwen3 Next 80B A3B Instruct",
+"field": "input",
+"from": 0.15,
+"to": 0.1,
+"pct": -33.3
+},
+{
+"date": "2026-10-09",
+"id": "qwen/qwen3-next-80b-a3b-instruct",
+"name": "Qwen: Qwen3 Next 80B A3B Instruct",
+"field": "output",
+"from": 1.5,
+"to": 1.1,
+"pct": -26.7
+},
+{
+"date": "2026-10-09",
+"id": "deepseek/deepseek-chat",
+"name": "DeepSeek: DeepSeek V3",
+"field": "input",
+"from": 0.2574,
+"to": 0.32,
+"pct": 24.3
+},
+{
+"date": "2026-10-09",
+"id": "deepseek/deepseek-chat",
+"name": "DeepSeek: DeepSeek V3",
+"field": "output",
+"from": 1.0287,
+"to": 0.89,
+"pct": -13.5
+},
+{
+"date": "2026-10-09",
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"field": "input",
+"from": 0.1,
+"to": 0.22,
+"pct": 120.0
+},
+{
+"date": "2026-10-09",
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"field": "output",
+"from": 0.32,
+"to": 0.5,
+"pct": 56.2
+},
+{
+"date": "2026-10-09",
+"id": "mistralai/mistral-nemo",
+"name": "Mistral: Mistral Nemo",
+"field": "input",
+"from": 0.019,
+"to": 0.029,
+"pct": 52.6
+},
+{
+"date": "2026-10-09",
+"id": "baidu/ernie-4.5-vl-424b-a47b",
+"name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+"field": "retired",
+"from": 1.25,
+"to": null
+},
+{
+"date": "2026-10-09",
+"id": "inclusionai/ling-3.0-flash-sante:free",
+"name": "inclusionAI: Ling 3.0 Flash Sante (free)",
+"field": "retired",
+"from": null,
+"to": null
 }
 ]
