@@ -748,5 +748,41 @@
 "field": "retired",
 "from": null,
 "to": null
+},
+{
+"date": "2026-10-09",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.0144,
+"to": 0.011,
+"pct": -23.6
+},
+{
+"date": "2026-10-09",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 0.0341,
+"to": 0.0307,
+"pct": -10.0
+},
+{
+"date": "2026-10-09",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.018,
+"to": 0.0137,
+"pct": -23.9
+},
+{
+"date": "2026-10-09",
+"id": "deepseek/deepseek-v4-flash",
+"name": "DeepSeek: DeepSeek V4 Flash 0423",
+"field": "input",
+"from": 0.0099,
+"to": 0.0075,
+"pct": -24.2
 }
 ]

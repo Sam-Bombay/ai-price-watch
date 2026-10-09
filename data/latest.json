@@ -11,8 +11,8 @@
 {
 "id": "~deepseek/deepseek-v4-flash-latest",
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.0144,
-"out": 0.0341,
+"in": 0.011,
+"out": 0.0307,
 "ctx": 1048576
 },
 {
@@ -1299,7 +1299,7 @@
 {
 "id": "deepseek/deepseek-v4-flash-0731",
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
-"in": 0.018,
+"in": 0.0137,
 "out": 1.28,
 "ctx": 1048576
 },
@@ -1313,7 +1313,7 @@
 {
 "id": "deepseek/deepseek-v4-flash",
 "name": "DeepSeek: DeepSeek V4 Flash 0423",
-"in": 0.0099,
+"in": 0.0075,
 "out": 1.28,
 "ctx": 1048576
 },
