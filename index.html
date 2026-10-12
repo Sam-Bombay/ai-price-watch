@@ -184,6 +184,28 @@
     </div>
   </div>
 
+  <h2 id="scanner">Or scan the exact model you pay for</h2>
+  <div class="calc">
+    <div class="calc-in">
+      <label for="mymodel">The model you currently pay for</label>
+      <input id="mymodel" list="modellist" placeholder="Type a model — e.g. gpt-6, haiku, glm, deepseek" autocomplete="off">
+      <datalist id="modellist"></datalist>
+      <label for="tin">Input tokens a month (millions)</label>
+      <input id="tin" type="number" min="0" step="1" value="200" inputmode="numeric">
+      <label for="tout">Output tokens a month (millions)</label>
+      <input id="tout" type="number" min="0" step="1" value="40" inputmode="numeric">
+      <p class="muted" style="margin:10px 0 0">Straight off today's live price list: your monthly tokens re-costed on the cheapest route that keeps at least your context window. No benchmarks, no guessing — just the arithmetic on prices that moved today.</p>
+    </div>
+    <div class="calc-out">
+      <div class="row"><span>You pay now</span><b id="s-now">—</b></div>
+      <div class="row"><span>Cheapest same-context route</span><b id="s-best">—</b></div>
+      <div class="row"><span>Saved per year</span><b id="s-year">—</b></div>
+      <div class="row"><span>My share (30% of that)</span><b id="s-mine">—</b></div>
+      <p class="muted" style="margin:14px 0 0" id="s-note">Pick the model you pay for and I'll show the gap.</p>
+      <a id="s-cta" class="cta" href="mailto:sambombayoffice@gmail.com?subject=AI%20cost%20audit">Send me this scan</a>
+    </div>
+  </div>
+
   <div class="foot">
     <p><strong>I watch this market for a living.</strong></p>
     <p class="muted">Prices move almost every week, and most teams never notice their bill drifting. If your AI or cloud spend is climbing, I audit it, cut what can be cut with cheaper or self-hosted models, and take a share of what I save you.</p>
@@ -239,6 +261,7 @@ const kfmt = v => v === null || v === undefined ? "—" : v >= 1000 ? (v/1000).t
     document.getElementById("s-cheap").textContent = money(cheapest);
     render("");
     qEl.addEventListener("input", e => render(e.target.value));
+    initScanner(d.models || []);
   });
 
   grab("changes.json").then(list => {
@@ -307,6 +330,97 @@ const kfmt = v => v === null || v === undefined ? "—" : v >= 1000 ? (v/1000).t
     seatsEl.addEventListener("input", update);
     update();
   })();
+
+  // Model-level scanner — takes the model a visitor actually pays for and re-costs their
+  // real monthly token volume on the cheapest route that keeps the same context window.
+  // Pure arithmetic on the live price list; that is why it is credible.
+  function initScanner(models){
+    const mineEl = document.getElementById("mymodel");
+    const tinEl  = document.getElementById("tin");
+    const toutEl = document.getElementById("tout");
+    const dl     = document.getElementById("modellist");
+    const note   = document.getElementById("s-note");
+    const cta    = document.getElementById("s-cta");
+    if (!mineEl || !tinEl || !toutEl) return;
+
+    const usable = models.filter(m => m.out !== null && m.in !== null);
+    dl.innerHTML = usable.map(m => `<option value="${String(m.name).replace(/"/g,'')}">`).join("");
+
+    const usd = n => "$" + Math.round(n).toLocaleString("en-US");
+
+    function cost(m, tin, tout){ return m.in * tin + m.out * tout; }
+
+    function findModel(text){
+      const t = String(text || "").trim().toLowerCase();
+      if (!t) return null;
+      return usable.find(m => m.name.toLowerCase() === t)
+          || usable.find(m => m.id.toLowerCase() === t)
+          || usable.find(m => m.name.toLowerCase().startsWith(t))
+          || usable.find(m => m.name.toLowerCase().includes(t))
+          || null;
+    }
+
+    function clear(){
+      ["s-now","s-best","s-year","s-mine"].forEach(id => document.getElementById(id).textContent = "—");
+    }
+
+    function update(){
+      const cur = findModel(mineEl.value);
+      const tin  = Math.max(0, Number(tinEl.value) || 0);
+      const tout = Math.max(0, Number(toutEl.value) || 0);
+      if (!cur || (!tin && !tout)){
+        clear();
+        note.textContent = "Pick the model you pay for and I'll show the gap.";
+        return;
+      }
+      const now = cost(cur, tin, tout);
+      document.getElementById("s-now").textContent = usd(now) + "/mo";
+
+      const others = usable.filter(m => m.id !== cur.id);
+      if (!others.length){ note.textContent = "Nothing else on the market to compare against."; return; }
+      const sameCtx = cur.ctx ? others.filter(m => (m.ctx || 0) >= cur.ctx) : others.slice();
+      const cheapest = list => list.reduce((a, b) => cost(b, tin, tout) < cost(a, tin, tout) ? b : a);
+
+      let best, sameWindow = true;
+      if (sameCtx.length && cost(cheapest(sameCtx), tin, tout) < now){
+        best = cheapest(sameCtx);
+      } else {
+        best = cheapest(others);
+        sameWindow = false;
+      }
+      const bestCost = cost(best, tin, tout);
+      const cut = now - bestCost;
+
+      document.getElementById("s-best").textContent = usd(bestCost) + "/mo";
+      document.getElementById("s-year").textContent = usd(cut * 12);
+      document.getElementById("s-mine").textContent = usd(cut * 12 * 0.30);
+
+      if (cut <= 0){
+        note.textContent = "You are already on the cheapest route for that workload. Genuinely — nothing to cut here.";
+      } else {
+        note.innerHTML = `<b>${esc(best.name)}</b> does the same volume at <b>${Math.round(cut / now * 100)}% less</b>, ` +
+          `at ${money(best.in)} in / ${money(best.out)} out per million.` +
+          (sameWindow ? ` It keeps your ${kfmt(cur.ctx)}-token context window.`
+                      : ` Caveat: its context window is ${kfmt(best.ctx)} vs your ${kfmt(cur.ctx)} — a real trade-off, not a free lunch.`) +
+          ` This is arithmetic on today's prices, not a benchmark; an audit checks quality and latency before moving anything.`;
+      }
+      cta.href = cut > 0
+        ? "mailto:sambombayoffice@gmail.com" +
+            "?subject=" + encodeURIComponent("AI cost audit — scan says " + usd(cut * 12) + "/yr on " + cur.name) +
+            "&body=" + encodeURIComponent(
+              "We run " + cur.name + " at about " + usd(now) + "/month (" + tin + "M in, " + tout + "M out).\n" +
+              "Your scanner says " + best.name + " is " + usd(cut * 12) + "/yr cheaper on the same volume.\n" +
+              "Your share would be " + usd(cut * 12 * 0.30) + " if you find it.\n\nWorth a look?\n")
+        : "mailto:sambombayoffice@gmail.com?subject=" + encodeURIComponent("AI cost audit");
+    }
+
+    ["input","change"].forEach(ev => {
+      mineEl.addEventListener(ev, update);
+      tinEl.addEventListener(ev, update);
+      toutEl.addEventListener(ev, update);
+    });
+    update();
+  }
 })();
 </script>
 </body>
