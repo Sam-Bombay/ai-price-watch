@@ -492,9 +492,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.436,
+"in": 0.4343,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 0.8721
+"out": 0.8686
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,

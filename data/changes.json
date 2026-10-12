@@ -1664,5 +1664,23 @@
 "from": 0.3,
 "to": 0.59,
 "pct": 96.7
+},
+{
+"date": "2026-10-12",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.436,
+"to": 0.4343,
+"pct": -0.4
+},
+{
+"date": "2026-10-12",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 0.8721,
+"to": 0.8686,
+"pct": -0.4
 }
 ]

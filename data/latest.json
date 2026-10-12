@@ -996,6 +996,13 @@
 "ctx": 131072
 },
 {
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"in": 0.4343,
+"out": 0.8686,
+"ctx": 1048576
+},
+{
 "id": "xiaomi/mimo-v2.6-pro",
 "name": "Xiaomi: MiMo-V2.6-Pro",
 "in": 0.435,
@@ -1008,13 +1015,6 @@
 "in": 0.435,
 "out": 0.87,
 "ctx": 1050000
-},
-{
-"id": "deepseek/deepseek-v4-pro",
-"name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.436,
-"out": 0.8721,
-"ctx": 1048576
 },
 {
 "id": "deepseek/deepseek-chat",
