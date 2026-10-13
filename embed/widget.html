@@ -65,14 +65,14 @@
     var upd = latest && latest.updated ? new Date(latest.updated) : null;
     when.textContent = upd && !isNaN(upd) ? "updated " + upd.toISOString().slice(5, 10) : todays[0].date.slice(5);
   }
-  var base = "https://ai-price-watch-beta.vercel.app";
+  var base = "";
   Promise.all([
     fetch(base + "/data/changes.json").then(function (r) { return r.json(); }),
     fetch(base + "/data/latest.json").then(function (r) { return r.json(); }).catch(function () { return null; })
   ]).then(function (res) { render(res[0], res[1]); })
     .catch(function () {
       document.getElementById("rows").innerHTML =
-        '<tr><td colspan="3" style="color:#8b929c">Live data unavailable — <a href="' + base + '" style="color:#7dd3fc">see the log</a>.</td></tr>';
+        '<tr><td colspan="3" style="color:#8b929c">Live data unavailable — <a href="https://ai-price-watch-beta.vercel.app" style="color:#7dd3fc">see the log</a>.</td></tr>';
     });
 })();
 </script>
