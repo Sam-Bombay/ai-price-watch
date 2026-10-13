@@ -21,6 +21,12 @@ git -c user.email=sambombayoffice@gmail.com -c user.name="Sam Bombay" \
     commit -q -m "prices: $(date +%Y-%m-%d)" >/dev/null 2>&1
 git push -q origin main >/dev/null 2>&1 || echo "push failed (page may lag)"
 
+# git push alone does NOT deploy this project — it needs an explicit prod deploy.
+# Verified 13 Oct 2026: pushes sat unbuilt and the live page was a day stale until this ran.
+if command -v vercel >/dev/null 2>&1; then
+  vercel --prod --yes >/dev/null 2>&1 && echo "deployed" || echo "deploy failed (page may lag)"
+fi
+
 BIG=$("$PY" - <<'PY'
 import json, datetime
 d = json.load(open('/Users/sambombay/money-ideas/tracker/data/changes.json'))
