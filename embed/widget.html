@@ -41,15 +41,20 @@
     if (v == null) return "—";
     return "$" + (v < 0.01 ? v.toFixed(4) : v < 1 ? v.toFixed(3) : v.toFixed(2));
   };
+  function movers(list, day) {
+    // only real price moves: a model added with no price is not a "move"
+    return list.filter(function (c) {
+      return c.date === day && c.field && c.from != null && c.to != null;
+    }).sort(function (a, b) { return Math.abs(b.pct || 0) - Math.abs(a.pct || 0); });
+  }
   function render(changes, latest) {
     var rows = document.getElementById("rows");
     var today = new Date().toISOString().slice(0, 10);
-    var todays = changes.filter(function (c) { return c.date === today && c.field; });
+    var todays = movers(changes, today);
     if (!todays.length) {
       // fall back to the most recent day with data so the widget is never empty
-      var days = changes.filter(function (c) { return c.field; }).map(function (c) { return c.date; }).sort();
-      var last = days[days.length - 1];
-      todays = changes.filter(function (c) { return c.date === last && c.field; });
+      var days = changes.map(function (c) { return c.date; }).sort();
+      todays = movers(changes, days[days.length - 1]);
     }
     todays = todays.slice(0, 6);
     if (!todays.length) { rows.innerHTML = '<tr><td colspan="3" style="color:#8b929c">No changes logged yet.</td></tr>'; return; }
