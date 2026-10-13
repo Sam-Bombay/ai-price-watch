@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI Price Watch — every AI API price change, tracked daily</title>
 <meta name="description" content="A daily-updated log of price changes across the AI model market, and what every model costs per million tokens right now.">
+<link rel="alternate" type="application/rss+xml" title="AI Price Watch — daily price moves" href="/feed.xml">
 <style>
   :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c; --up:#ff6b6b; --down:#4ade80; --accent:#7dd3fc; }
   * { box-sizing:border-box; }
@@ -77,6 +78,28 @@
     <div class="stat"><b id="s-changes">—</b><span>changes logged (30d)</span></div>
     <div class="stat"><b id="s-cuts">—</b><span>price cuts (30d)</span></div>
     <div class="stat"><b id="s-cheap">—</b><span>cheapest output / 1M tokens</span></div>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The cheap tier tripled overnight — 15 rises, 4 cuts — 13 Oct 2026</p>
+    <p><strong>The models built for cost got 3x more expensive in one night.</strong> gpt-oss-120b —
+      the open workhorse a lot of self-hosted and agent stacks default to — moved from
+      <b>$0.037 in / $0.17 out</b> to <b>$0.15 in / $0.60 out</b>: <b>+305%</b> on input and
+      <b>+253%</b> on output. Meta's Llama 3.3 70B input rose <b>168%</b> ($0.22 → $0.59).
+      MiniMax M2.7 rose <b>43%</b> on both sides. DeepSeek Flash Latest output jumped <b>373%</b>
+      ($0.1332 → $0.63). Of <b>22</b> changes logged today, <b>15 were increases</b> — the second
+      straight day risers beat cuts, and this time it hit the cheap end hardest.</p>
+    <p><strong>The floor still exists, just elsewhere.</strong> DeepSeek V4.1 Flash cut input
+      <b>70.6%</b> ($0.15 → <b>$0.0441</b>) and keeps <b>$0.63</b> output. GLM 5.3 Flash output fell
+      <b>25%</b> ($1.20 → $0.90, with its input up 12.5%). Meta also listed <b>Muse Wonder</b> at
+      <b>$20.00</b> output — a premium tier landing on the same page as four-cent input.</p>
+    <p class="muted">Concretely: a workload of 200M input / 40M output that cost <b>$14.20/month</b>
+      on gpt-oss-120b yesterday costs <b>$54.00</b> today. The same volume on DeepSeek V4.1 Flash
+      costs <b>$34.02</b>. Nothing about the workload changed. Only the default did.</p>
+    <p class="muted">That is the whole reason a monthly re-cost matters: the models priced for
+      "cheap" are the ones that moved most, and a default set last month is now either bleeding or
+      wrongly routed. <a href="#scanner">Scan your exact model and volume</a>, or
+      <a href="#calc">run your spend</a>.</p>
   </div>
 
   <div class="brief">
@@ -183,6 +206,9 @@
       <a id="c-cta" class="cta" href="mailto:sambombayoffice@gmail.com?subject=AI%20cost%20audit">Email me these numbers</a>
     </div>
   </div>
+  <p class="muted" style="margin:14px 0 0">Run a chamber, newsletter or site of your own?
+    <a href="/embed">Put these live price moves on it</a> — one line of HTML, free, updates itself
+    every morning. Or subscribe to the <a href="/feed.xml">daily RSS feed</a>.</p>
 
   <h2 id="scanner">Or scan the exact model you pay for</h2>
   <div class="calc">

@@ -35,6 +35,9 @@ COUNT=$(echo "$BIG" | tail -1)
 LINES=$(echo "$BIG" | sed '$d')
 echo "logged changes: $(echo "$OUT" | head -1)"
 
+# refresh the RSS feed from the briefs, so the feed is never staler than the page
+"$PY" ./gen_feed.py >/dev/null 2>&1 || echo "feed generation failed"
+
 if [ "${COUNT:-0}" -gt 0 ]; then
   /Users/sambombay/money-ideas/send_tg.py "AI Price Watch — big move today
 

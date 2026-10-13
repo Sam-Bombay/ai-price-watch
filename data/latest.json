@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-12",
+"updated": "2026-10-13",
 "models": [
 {
 "id": "mistralai/mistral-nemo",
@@ -135,13 +135,6 @@
 "ctx": 1000000
 },
 {
-"id": "~deepseek/deepseek-flash-latest",
-"name": "DeepSeek: DeepSeek Flash Latest",
-"in": 0.0333,
-"out": 0.1332,
-"ctx": 1048576
-},
-{
 "id": "openai/gpt-oss-120b:batch",
 "name": "OpenAI: gpt-oss-120b (batch)",
 "in": 0.0296,
@@ -203,13 +196,6 @@
 "in": 0.0375,
 "out": 0.15,
 "ctx": 128000
-},
-{
-"id": "openai/gpt-oss-120b",
-"name": "OpenAI: gpt-oss-120b",
-"in": 0.037,
-"out": 0.17,
-"ctx": 131072
 },
 {
 "id": "tencent/hy-mt2-1.8b",
@@ -688,13 +674,6 @@
 "ctx": 40960
 },
 {
-"id": "meta-llama/llama-3.3-70b-instruct",
-"name": "Meta: Llama 3.3 70B Instruct",
-"in": 0.22,
-"out": 0.5,
-"ctx": 131072
-},
-{
 "id": "tencent/hy3",
 "name": "Tencent: Hy3",
 "in": 0.132,
@@ -723,18 +702,18 @@
 "ctx": 131072
 },
 {
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"in": 0.0144,
+"out": 0.576,
+"ctx": 1048576
+},
+{
 "id": "meta-llama/llama-4-scout",
 "name": "Meta: Llama 4 Scout",
 "in": 0.18,
 "out": 0.59,
 "ctx": 1310720
-},
-{
-"id": "deepseek/deepseek-v4.1-flash",
-"name": "DeepSeek: DeepSeek V4.1 Flash",
-"in": 0.15,
-"out": 0.6,
-"ctx": 1048576
 },
 {
 "id": "openai/gpt-5.6-luna-pro:batch",
@@ -779,6 +758,13 @@
 "ctx": 262144
 },
 {
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"in": 0.15,
+"out": 0.6,
+"ctx": 131072
+},
+{
 "id": "mistralai/mistral-saba",
 "name": "Mistral: Saba",
 "in": 0.2,
@@ -819,6 +805,20 @@
 "in": 0.1,
 "out": 0.625,
 "ctx": 400000
+},
+{
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"in": 0.0441,
+"out": 0.63,
+"ctx": 1048576
+},
+{
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"in": 0.0441,
+"out": 0.63,
+"ctx": 1048576
 },
 {
 "id": "deepseek/deepseek-v4-flash-0731",
@@ -926,18 +926,18 @@
 "ctx": 16385
 },
 {
-"id": "~deepseek/deepseek-v4-flash-latest",
-"name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.0128,
-"out": 0.768,
-"ctx": 1048576
-},
-{
 "id": "qwen/qwen-plus",
 "name": "Qwen: Qwen-Plus",
 "in": 0.26,
 "out": 0.78,
 "ctx": 1000000
+},
+{
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"in": 0.59,
+"out": 0.79,
+"ctx": 131072
 },
 {
 "id": "arcee-ai/trinity-large-thinking",
@@ -975,13 +975,6 @@
 "ctx": 32768
 },
 {
-"id": "minimax/minimax-m2.7",
-"name": "MiniMax: MiniMax M2.7",
-"in": 0.21,
-"out": 0.84,
-"ctx": 204800
-},
-{
 "id": "z-ai/glm-4.5-air",
 "name": "Z.ai: GLM 4.5 Air",
 "in": 0.13,
@@ -994,13 +987,6 @@
 "in": 0.85,
 "out": 0.85,
 "ctx": 131072
-},
-{
-"id": "deepseek/deepseek-v4-pro",
-"name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.4343,
-"out": 0.8686,
-"ctx": 1048576
 },
 {
 "id": "xiaomi/mimo-v2.6-pro",
@@ -1017,11 +1003,32 @@
 "ctx": 1050000
 },
 {
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"in": 0.436,
+"out": 0.8721,
+"ctx": 1048576
+},
+{
 "id": "deepseek/deepseek-chat",
 "name": "DeepSeek: DeepSeek V3",
 "in": 0.32,
 "out": 0.89,
 "ctx": 163840
+},
+{
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"in": 0.0261,
+"out": 0.9,
+"ctx": 1048576
+},
+{
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"in": 0.0261,
+"out": 0.9,
+"ctx": 1048576
 },
 {
 "id": "z-ai/glm-4.6v",
@@ -1171,20 +1178,6 @@
 "ctx": 262144
 },
 {
-"id": "~z-ai/glm-flash-latest",
-"name": "Z.ai: GLM Flash Latest",
-"in": 0.0232,
-"out": 1.2,
-"ctx": 1048576
-},
-{
-"id": "z-ai/glm-5.3-flash",
-"name": "Z.ai: GLM 5.3 Flash",
-"in": 0.0232,
-"out": 1.2,
-"ctx": 1048576
-},
-{
 "id": "meta/muse-glimmer-30b",
 "name": "Meta: Muse Glimmer 30B",
 "in": 0.3,
@@ -1225,6 +1218,13 @@
 "in": 0.3,
 "out": 1.2,
 "ctx": 1048576
+},
+{
+"id": "minimax/minimax-m2.7",
+"name": "MiniMax: MiniMax M2.7",
+"in": 0.3,
+"out": 1.2,
+"ctx": 204800
 },
 {
 "id": "minimax/minimax-m2-her",
@@ -1306,7 +1306,7 @@
 {
 "id": "deepseek/deepseek-v4-flash",
 "name": "DeepSeek: DeepSeek V4 Flash 0423",
-"in": 0.03,
+"in": 0.05,
 "out": 1.28,
 "ctx": 1048576
 },
@@ -2774,6 +2774,13 @@
 "ctx": 128000
 },
 {
+"id": "meta/muse-wonder",
+"name": "Meta: Muse Wonder",
+"in": 4.0,
+"out": 20.0,
+"ctx": 1048576
+},
+{
 "id": "anthropic/claude-opus-5.5",
 "name": "Anthropic: Claude Opus 5.5",
 "in": 4.0,
@@ -3024,6 +3031,20 @@
 "in": 150.0,
 "out": 600.0,
 "ctx": 200000
+},
+{
+"id": "scaledown/summarize",
+"name": "ScaleDown: Summarize",
+"in": 0.04,
+"out": null,
+"ctx": 1000000
+},
+{
+"id": "scaledown/extract",
+"name": "ScaleDown: Extract",
+"in": 0.04,
+"out": null,
+"ctx": 1000000
 },
 {
 "id": "inclusionai/ling-3.1-flash",

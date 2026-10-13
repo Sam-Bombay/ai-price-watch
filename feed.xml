@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI Price Watch — daily AI model price moves</title>
+    <link>https://ai-price-watch-beta.vercel.app</link>
+    <description>What every AI model costs per million tokens, and what moved today. Feeds an AI cost audit: I track the prices, you keep 70% of what I cut.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Oct 2026 07:30:00 +0000</lastBuildDate>
+    <atom:link href="https://ai-price-watch-beta.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The cheap tier tripled overnight — 15 rises, 4 cuts</title>
+      <link>https://ai-price-watch-beta.vercel.app/#brief-2026-10-13</link>
+      <guid isPermaLink="false">ai-price-watch-2026-10-13</guid>
+      <pubDate>Tue, 13 Oct 2026 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>The models built for cost got 3x more expensive in one night.</strong> gpt-oss-120b —
+      the open workhorse a lot of self-hosted and agent stacks default to — moved from
+      <b>$0.037 in / $0.17 out</b> to <b>$0.15 in / $0.60 out</b>: <b>+305%</b> on input and
+      <b>+253%</b> on output. Meta's Llama 3.3 70B input rose <b>168%</b> ($0.22 → $0.59).
+      MiniMax M2.7 rose <b>43%</b> on both sides. DeepSeek Flash Latest output jumped <b>373%</b>
+      ($0.1332 → $0.63). Of <b>22</b> changes logged today, <b>15 were increases</b> — the second
+      straight day risers beat cuts, and this time it hit the cheap end hardest.</p>
+    <p><strong>The floor still exists, just elsewhere.</strong> DeepSeek V4.1 Flash cut input
+      <b>70.6%</b> ($0.15 → <b>$0.0441</b>) and keeps <b>$0.63</b> output. GLM 5.3 Flash output fell
+      <b>25%</b> ($1.20 → $0.90, with its input up 12.5%). Meta also listed <b>Muse Wonder</b> at
+      <b>$20.00</b> output — a premium tier landing on the same page as four-cent input.</p>
+    <p class="muted">Concretely: a workload of 200M input / 40M output that cost <b>$14.20/month</b>
+      on gpt-oss-120b yesterday costs <b>$54.00</b> today. The same volume on DeepSeek V4.1 Flash
+      costs <b>$34.02</b>. Nothing about the workload changed. Only the default did.</p>
+    <p class="muted">That is the whole reason a monthly re-cost matters: the models priced for
+      "cheap" are the ones that moved most, and a default set last month is now either bleeding or
+      wrongly routed. <a href="https://ai-price-watch-beta.vercel.app/#scanner">Scan your exact model and volume</a>, or
+      <a href="https://ai-price-watch-beta.vercel.app/#calc">run your spend</a>.</p>]]></description>
+    </item>
+    <item>
+      <title>The floor stopped falling — 12 cuts, 13 rises</title>
+      <link>https://ai-price-watch-beta.vercel.app/#brief-2026-10-12</link>
+      <guid isPermaLink="false">ai-price-watch-2026-10-12</guid>
+      <pubDate>Mon, 12 Oct 2026 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>Half the market went up overnight.</strong> Of <b>25</b> price changes logged in the
+      last day, <b>13 were increases</b>. Z.ai's GLM 5.3 Flash output jumped <b>140%</b>
+      ($0.50 → $1.20) while its input fell <b>84.5%</b> ($0.15 → $0.0232) in the same move.
+      DeepSeek V4 Pro 0423 more than doubled input and output (<b>+108.8%</b>). Meta's Llama 4
+      Scout output rose <b>96.7%</b> ($0.30 → $0.59). The floor is still dropping on other routes —
+      DeepSeek V4.1 Flash cut <b>50%</b> to $0.15 in / $0.60 out — but not on everything.</p>
+    <p class="muted">That is the whole reason a fixed default is dangerous: two models from the same
+      lab moved in opposite directions on the same night. Whatever your AI bill was costed on is now
+      wrong in one direction or the other — and nobody re-checks it.</p>
+    <p class="muted">The cheap routes still exist: the cheapest input tracked here is now
+      <b>$0.0128</b>/1M tokens (DeepSeek V4 Flash Latest), the cheapest output <b>$0.03</b>
+      (Mistral Nemo). <a href="https://ai-price-watch-beta.vercel.app/#calc">Run your number</a>, and I'll find which of your lines moved.</p>]]></description>
+    </item>
+    <item>
+      <title>The input floor just fell 90%</title>
+      <link>https://ai-price-watch-beta.vercel.app/#brief-2026-10-11</link>
+      <guid isPermaLink="false">ai-price-watch-2026-10-11</guid>
+      <pubDate>Sun, 11 Oct 2026 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>Ten cuts in one day, and the cheapest input on this page now costs four cents.</strong>
+      Qwen3.8 27B input fell <b>90.6%</b> ($0.425 → $0.04 per million tokens) and DeepSeek Flash
+      output fell <b>76.8%</b> ($0.60 → $0.14) overnight — logged live in the table below. DeepSeek
+      V4 Flash output halved again (−50%), Kimi K3 output fell 25.9%. Whatever your AI bill was
+      costed on, the market moved underneath it while you slept.</p>
+    <p class="muted">The money side stayed blunt the same week: OpenAI's annualised revenue landed
+      roughly <b>$20B below</b> plan (TechCrunch / FT, 8 Oct) and analysts now say AI revenue has to
+      reach <b>$400–600B by 2027</b> to avoid a spending cliff (Barron's, 9 Oct). Cheaper models,
+      louder ROI questions.</p>
+    <p class="muted">Both halves sit side by side on this page: the invoice is under scrutiny, and the
+      cheaper price already exists. <a href="https://ai-price-watch-beta.vercel.app/#calc">Run your number</a>, and I'll find the cut.</p>]]></description>
+    </item>
+    <item>
+      <title>The floor drops again</title>
+      <link>https://ai-price-watch-beta.vercel.app/#brief-2026-10-10</link>
+      <guid isPermaLink="false">ai-price-watch-2026-10-10</guid>
+      <pubDate>Sat, 10 Oct 2026 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>DeepSeek just collapsed the floor under the whole market.</strong> Overnight, its
+      flagship output price fell <b>91.8%</b> ($8.00 → $0.66 per million tokens) and DeepSeek Flash
+      input fell <b>99.4%</b> — logged live in the table below. A frontier-class model now costs
+      roughly what a coffee costs, and it moved while most companies were asleep.</p>
+    <p class="muted">The same week the money side got blunt: analysts now say AI revenue has to reach
+      <b>$400–600B by 2027</b> to avoid a spending cliff (Barron's, 9 Oct), and the big labs are
+      answering by shipping cheaper tiers (Microsoft's new low-cost decision model landed on
+      Hacker News today, 192pts). Cheaper models, louder ROI questions.</p>
+    <p class="muted">Both halves sit side by side on this page: the invoice is under scrutiny, and the
+      cheaper price already exists. <a href="https://ai-price-watch-beta.vercel.app/#calc">Run your number</a>, and I'll find the cut.</p>]]></description>
+    </item>
+    <item>
+      <title>Spend scrutiny</title>
+      <link>https://ai-price-watch-beta.vercel.app/#brief-2026-10-09</link>
+      <guid isPermaLink="false">ai-price-watch-2026-10-09</guid>
+      <pubDate>Fri, 09 Oct 2026 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>The AI trade just got repriced — and so did the excuse to overspend.</strong>
+      OpenAI's annualised revenue landed roughly <b>$20B below</b> what investors had been told
+      (<a href="https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html">CNBC</a>,
+      8 Oct), and AI stocks sold off on the report. Translation for anyone signing the AI invoice:
+      "budget by vibes" is over, and CFOs are auditing the line right now.</p>
+    <p class="muted">The model market cut again overnight on the same page: DeepSeek V4 Flash output
+      down <b>97.3%</b>, Z.ai GLM Flash output down <b>92.6%</b>, Qwen3.5-35B input down <b>46.7%</b>
+      — logged in the table below.</p>
+    <p class="muted">Both halves of the argument now sit side by side: the spend is under scrutiny,
+      and the cheaper price already exists. <a href="https://ai-price-watch-beta.vercel.app/#calc">Run your number</a>, and I'll find the cut.</p>]]></description>
+    </item>
+    <item>
+      <title>Price war</title>
+      <link>https://ai-price-watch-beta.vercel.app/#brief-2026-10-08</link>
+      <guid isPermaLink="false">ai-price-watch-2026-10-08</guid>
+      <pubDate>Thu, 08 Oct 2026 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>The frontier tier just repriced.</strong> Anthropic shipped
+      <a href="https://www.anthropic.com/claude-haiku-5-5">Claude Haiku 5.5</a> and OpenAI shipped
+      <a href="https://openai.com/index/gpt-6-for-everyone/">GPT-6</a>. On the market this page reads,
+      Haiku 5.5 lists at <b>$0.10 in / $0.50 out</b> per million tokens — an order of magnitude under
+      Haiku 4.5 at $1.00 / $5.00 — with a 1M-token context. OpenAI's new GPT-6 "luna" tier lands at
+      the same $0.10 / $0.50.</p>
+    <p class="muted">Open-weight prices slid again in the same window: DeepSeek V4 Flash input down
+      66.7%, GLM 5.2 input down 82.5%, DeepSeek Pro input down 62.2% — logged in the table below.
+      If your AI bill was costed on last year's prices, it is now priced against a market that has
+      moved underneath it.</p>
+    <p class="muted">That gap is the whole job: <a href="https://ai-price-watch-beta.vercel.app/#calc">run your number</a>, and I'll find the cut.</p>]]></description>
+    </item>
+  </channel>
+</rss>
