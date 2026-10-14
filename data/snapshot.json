@@ -300,13 +300,6 @@
 "name": "Anthropic: Claude Sonnet 5 (batch)",
 "out": 5.0
 },
-"apodex/apodex-1.1-mini:free": {
-"ctx": 262144,
-"id": "apodex/apodex-1.1-mini:free",
-"in": null,
-"name": "Apodex: Apodex 1.1 Mini (free)",
-"out": null
-},
 "arcee-ai/trinity-large-thinking": {
 "ctx": 262144,
 "id": "arcee-ai/trinity-large-thinking",
@@ -471,9 +464,9 @@
 "deepseek/deepseek-v4-flash": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash",
-"in": 0.05,
+"in": 0.091,
 "name": "DeepSeek: DeepSeek V4 Flash 0423",
-"out": 1.28
+"out": 0.182
 },
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
@@ -492,9 +485,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.436,
+"in": 0.4343,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 0.8721
+"out": 0.8686
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -506,9 +499,9 @@
 "deepseek/deepseek-v4.1-flash": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash",
-"in": 0.0441,
+"in": 0.0202,
 "name": "DeepSeek: DeepSeek V4.1 Flash",
-"out": 0.63
+"out": 0.891
 },
 "deepseek/deepseek-v4.1-flash:batch": {
 "ctx": 1048576,
@@ -748,6 +741,20 @@
 "name": "Google: Gemini 3.8 Flash (batch)",
 "out": 1.875
 },
+"google/gemini-4-argon": {
+"ctx": 1048576,
+"id": "google/gemini-4-argon",
+"in": 2.0,
+"name": "Google: Gemini 4 Argon",
+"out": 10.0
+},
+"google/gemini-4-argon:batch": {
+"ctx": 1048576,
+"id": "google/gemini-4-argon:batch",
+"in": 1.0,
+"name": "Google: Gemini 4 Argon (batch)",
+"out": 5.0
+},
 "google/gemini-nano-banana-2.1": {
 "ctx": 65536,
 "id": "google/gemini-nano-banana-2.1",
@@ -867,33 +874,19 @@
 "name": "inclusionAI: Ling 3.0 Flash",
 "out": 0.063
 },
-"inclusionai/ling-3.0-flash-fin": {
-"ctx": 262144,
-"id": "inclusionai/ling-3.0-flash-fin",
-"in": 0.042,
-"name": "inclusionAI: Ling 3.0 Flash Fin",
-"out": 0.1232
-},
-"inclusionai/ling-3.0-flash-sante": {
-"ctx": 262144,
-"id": "inclusionai/ling-3.0-flash-sante",
-"in": 0.042,
-"name": "inclusionAI: Ling 3.0 Flash Sante",
-"out": 0.1232
-},
 "inclusionai/ling-3.0-flash-vl": {
-"ctx": 262144,
+"ctx": 131072,
 "id": "inclusionai/ling-3.0-flash-vl",
-"in": 0.021,
+"in": 0.06,
 "name": "inclusionAI: Ling 3.0 Flash VL",
-"out": 0.0616
+"out": 0.18
 },
 "inclusionai/ling-3.1-flash": {
 "ctx": 262144,
 "id": "inclusionai/ling-3.1-flash",
-"in": null,
+"in": 0.075,
 "name": "inclusionAI: Ling 3.1 Flash",
-"out": null
+"out": 0.225
 },
 "inference-net/schematron-v2-small": {
 "ctx": 128000,
@@ -915,6 +908,13 @@
 "in": null,
 "name": "LiquidAI: LFM2.5-2.6B (free)",
 "out": null
+},
+"liquid/lfm-2.5-24b-a2b": {
+"ctx": 128000,
+"id": "liquid/lfm-2.5-24b-a2b",
+"in": 0.05,
+"name": "LiquidAI: LFM2.5-24B-A2B",
+"out": 0.7
 },
 "mancer/weaver": {
 "ctx": 8000,
@@ -1066,9 +1066,9 @@
 "minimax/minimax-m2": {
 "ctx": 204800,
 "id": "minimax/minimax-m2",
-"in": 0.3,
+"in": 0.255,
 "name": "MiniMax: MiniMax M2",
-"out": 1.2
+"out": 1.02
 },
 "minimax/minimax-m2-her": {
 "ctx": 65536,
@@ -1332,9 +1332,9 @@
 "moonshotai/kimi-k3": {
 "ctx": 1048576,
 "id": "moonshotai/kimi-k3",
-"in": 0.73,
+"in": 0.7,
 "name": "MoonshotAI: Kimi K3",
-"out": 10.0
+"out": 15.0
 },
 "moonshotai/kimi-k3:batch": {
 "ctx": 1048576,
@@ -2088,9 +2088,9 @@
 "openai/gpt-oss-120b": {
 "ctx": 131072,
 "id": "openai/gpt-oss-120b",
-"in": 0.15,
+"in": 0.037,
 "name": "OpenAI: gpt-oss-120b",
-"out": 0.6
+"out": 0.17
 },
 "openai/gpt-oss-120b:batch": {
 "ctx": 131072,
@@ -2487,16 +2487,16 @@
 "qwen/qwen3.5-35b-a3b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-35b-a3b",
-"in": 0.08,
+"in": 0.15,
 "name": "Qwen: Qwen3.5-35B-A3B",
-"out": 0.75
+"out": 1.0
 },
 "qwen/qwen3.5-397b-a17b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-397b-a17b",
-"in": 0.55,
+"in": 0.5,
 "name": "Qwen: Qwen3.5 397B A17B",
-"out": 3.5
+"out": 3.6
 },
 "qwen/qwen3.5-9b": {
 "ctx": 262144,
@@ -2834,19 +2834,19 @@
 "name": "TypeSafe: Jev Router",
 "out": null
 },
-"unbiased/pareto": {
-"ctx": 262144,
-"id": "unbiased/pareto",
-"in": 2.5,
-"name": "Pareto",
-"out": 7.5
-},
 "unbiased/pareto-26.10-preview": {
 "ctx": 1048576,
 "id": "unbiased/pareto-26.10-preview",
 "in": 0.8,
 "name": "Pareto 26.10 Preview",
 "out": 3.2
+},
+"unbiased/pareto-26.9": {
+"ctx": 262144,
+"id": "unbiased/pareto-26.9",
+"in": 2.5,
+"name": "Pareto 26.9",
+"out": 7.5
 },
 "undi95/remm-slerp-l2-13b": {
 "ctx": 6144,
@@ -3040,14 +3040,14 @@
 "z-ai/glm-5.1": {
 "ctx": 204800,
 "id": "z-ai/glm-5.1",
-"in": 0.966,
+"in": 1.33,
 "name": "Z.ai: GLM 5.1",
-"out": 3.036
+"out": 4.18
 },
 "z-ai/glm-5.2": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.2",
-"in": 0.06,
+"in": 0.05,
 "name": "Z.ai: GLM 5.2",
 "out": 7.0
 },
@@ -3061,7 +3061,7 @@
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.0261,
+"in": 0.036,
 "name": "Z.ai: GLM 5.3 Flash",
 "out": 0.9
 },
@@ -3131,16 +3131,16 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.0441,
+"in": 0.0202,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.63
+"out": 0.891
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-pro-latest",
-"in": 0.2495,
+"in": 0.1461,
 "name": "DeepSeek: DeepSeek Pro Latest",
-"out": 0.7484
+"out": 8.0
 },
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
@@ -3166,9 +3166,9 @@
 "~moonshotai/kimi-latest": {
 "ctx": 1048576,
 "id": "~moonshotai/kimi-latest",
-"in": 0.73,
+"in": 0.536,
 "name": "MoonshotAI: Kimi Latest",
-"out": 10.0
+"out": 14.0
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
@@ -3205,6 +3205,13 @@
 "name": "OpenAI: GPT Terra Latest",
 "out": 12.0
 },
+"~unbiased/pareto-latest": {
+"ctx": 262144,
+"id": "~unbiased/pareto-latest",
+"in": 2.5,
+"name": "Pareto Latest",
+"out": 7.5
+},
 "~x-ai/grok-latest": {
 "ctx": 500000,
 "id": "~x-ai/grok-latest",
@@ -3215,15 +3222,15 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.0261,
+"in": 0.036,
 "name": "Z.ai: GLM Flash Latest",
 "out": 0.9
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-latest",
-"in": 0.055,
+"in": 0.0576,
 "name": "Z.ai: GLM Latest",
-"out": 5.0
+"out": 4.4
 }
 }

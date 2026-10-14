@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-13",
+"updated": "2026-10-14",
 "models": [
 {
 "id": "mistralai/mistral-nemo",
@@ -14,13 +14,6 @@
 "in": 0.04,
 "out": 0.05,
 "ctx": 8192
-},
-{
-"id": "inclusionai/ling-3.0-flash-vl",
-"name": "inclusionAI: Ling 3.0 Flash VL",
-"in": 0.021,
-"out": 0.0616,
-"ctx": 262144
 },
 {
 "id": "inclusionai/ling-3.0-flash",
@@ -114,20 +107,6 @@
 "ctx": 262144
 },
 {
-"id": "inclusionai/ling-3.0-flash-sante",
-"name": "inclusionAI: Ling 3.0 Flash Sante",
-"in": 0.042,
-"out": 0.1232,
-"ctx": 262144
-},
-{
-"id": "inclusionai/ling-3.0-flash-fin",
-"name": "inclusionAI: Ling 3.0 Flash Fin",
-"in": 0.042,
-"out": 0.1232,
-"ctx": 262144
-},
-{
 "id": "qwen/qwen3.7-flash",
 "name": "Qwen: Qwen3.7 Flash",
 "in": 0.03,
@@ -198,11 +177,25 @@
 "ctx": 128000
 },
 {
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"in": 0.037,
+"out": 0.17,
+"ctx": 131072
+},
+{
 "id": "tencent/hy-mt2-1.8b",
 "name": "Tencent: Hy-MT2-1.8B",
 "in": 0.044,
 "out": 0.177,
 "ctx": 8192
+},
+{
+"id": "inclusionai/ling-3.0-flash-vl",
+"name": "inclusionAI: Ling 3.0 Flash VL",
+"in": 0.06,
+"out": 0.18,
+"ctx": 131072
 },
 {
 "id": "poolside/laguna-s-2.1",
@@ -217,6 +210,13 @@
 "in": 0.18,
 "out": 0.18,
 "ctx": 163840
+},
+{
+"id": "deepseek/deepseek-v4-flash",
+"name": "DeepSeek: DeepSeek V4 Flash 0423",
+"in": 0.091,
+"out": 0.182,
+"ctx": 1048576
 },
 {
 "id": "upstage/solar-mini4",
@@ -315,6 +315,13 @@
 "in": 0.027,
 "out": 0.201,
 "ctx": 60000
+},
+{
+"id": "inclusionai/ling-3.1-flash",
+"name": "inclusionAI: Ling 3.1 Flash",
+"in": 0.075,
+"out": 0.225,
+"ctx": 262144
 },
 {
 "id": "inference-net/schematron-v2-small",
@@ -758,13 +765,6 @@
 "ctx": 262144
 },
 {
-"id": "openai/gpt-oss-120b",
-"name": "OpenAI: gpt-oss-120b",
-"in": 0.15,
-"out": 0.6,
-"ctx": 131072
-},
-{
 "id": "mistralai/mistral-saba",
 "name": "Mistral: Saba",
 "in": 0.2,
@@ -807,20 +807,6 @@
 "ctx": 400000
 },
 {
-"id": "~deepseek/deepseek-flash-latest",
-"name": "DeepSeek: DeepSeek Flash Latest",
-"in": 0.0441,
-"out": 0.63,
-"ctx": 1048576
-},
-{
-"id": "deepseek/deepseek-v4.1-flash",
-"name": "DeepSeek: DeepSeek V4.1 Flash",
-"in": 0.0441,
-"out": 0.63,
-"ctx": 1048576
-},
-{
 "id": "deepseek/deepseek-v4-flash-0731",
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
 "in": 0.016,
@@ -856,18 +842,18 @@
 "ctx": 1048576
 },
 {
+"id": "liquid/lfm-2.5-24b-a2b",
+"name": "LiquidAI: LFM2.5-24B-A2B",
+"in": 0.05,
+"out": 0.7,
+"ctx": 128000
+},
+{
 "id": "nousresearch/hermes-3-llama-3.1-70b",
 "name": "Nous: Hermes 3 70B Instruct",
 "in": 0.7,
 "out": 0.7,
 "ctx": 131072
-},
-{
-"id": "~deepseek/deepseek-pro-latest",
-"name": "DeepSeek: DeepSeek Pro Latest",
-"in": 0.2495,
-"out": 0.7484,
-"ctx": 1048576
 },
 {
 "id": "google/gemini-3.1-flash-lite:batch",
@@ -882,13 +868,6 @@
 "in": 0.25,
 "out": 0.75,
 "ctx": 128000
-},
-{
-"id": "qwen/qwen3.5-35b-a3b",
-"name": "Qwen: Qwen3.5-35B-A3B",
-"in": 0.08,
-"out": 0.75,
-"ctx": 262144
 },
 {
 "id": "mistralai/mistral-large-2512:batch",
@@ -989,6 +968,13 @@
 "ctx": 131072
 },
 {
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"in": 0.4343,
+"out": 0.8686,
+"ctx": 1048576
+},
+{
 "id": "xiaomi/mimo-v2.6-pro",
 "name": "Xiaomi: MiMo-V2.6-Pro",
 "in": 0.435,
@@ -1003,13 +989,6 @@
 "ctx": 1050000
 },
 {
-"id": "deepseek/deepseek-v4-pro",
-"name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.436,
-"out": 0.8721,
-"ctx": 1048576
-},
-{
 "id": "deepseek/deepseek-chat",
 "name": "DeepSeek: DeepSeek V3",
 "in": 0.32,
@@ -1017,16 +996,30 @@
 "ctx": 163840
 },
 {
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"in": 0.0202,
+"out": 0.891,
+"ctx": 1048576
+},
+{
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"in": 0.0202,
+"out": 0.891,
+"ctx": 1048576
+},
+{
 "id": "~z-ai/glm-flash-latest",
 "name": "Z.ai: GLM Flash Latest",
-"in": 0.0261,
+"in": 0.036,
 "out": 0.9,
 "ctx": 1048576
 },
 {
 "id": "z-ai/glm-5.3-flash",
 "name": "Z.ai: GLM 5.3 Flash",
-"in": 0.0261,
+"in": 0.036,
 "out": 0.9,
 "ctx": 1048576
 },
@@ -1071,6 +1064,13 @@
 "in": 0.195,
 "out": 0.975,
 "ctx": 1000000
+},
+{
+"id": "qwen/qwen3.5-35b-a3b",
+"name": "Qwen: Qwen3.5-35B-A3B",
+"in": 0.15,
+"out": 1.0,
+"ctx": 262144
 },
 {
 "id": "qwen/qwen3-vl-30b-a3b-thinking",
@@ -1134,6 +1134,13 @@
 "in": 1.0,
 "out": 1.0,
 "ctx": 131072
+},
+{
+"id": "minimax/minimax-m2",
+"name": "MiniMax: MiniMax M2",
+"in": 0.255,
+"out": 1.02,
+"ctx": 204800
 },
 {
 "id": "minimax/minimax-m2.5",
@@ -1241,13 +1248,6 @@
 "ctx": 204800
 },
 {
-"id": "minimax/minimax-m2",
-"name": "MiniMax: MiniMax M2",
-"in": 0.3,
-"out": 1.2,
-"ctx": 204800
-},
-{
 "id": "qwen/qwen3-next-80b-a3b-thinking",
 "name": "Qwen: Qwen3 Next 80B A3B Thinking",
 "in": 0.15,
@@ -1302,13 +1302,6 @@
 "in": 0.32,
 "out": 1.28,
 "ctx": 1000000
-},
-{
-"id": "deepseek/deepseek-v4-flash",
-"name": "DeepSeek: DeepSeek V4 Flash 0423",
-"in": 0.05,
-"out": 1.28,
-"ctx": 1048576
 },
 {
 "id": "aion-labs/aion-3.5-mini",
@@ -1829,13 +1822,6 @@
 "ctx": 131072
 },
 {
-"id": "z-ai/glm-5.1",
-"name": "Z.ai: GLM 5.1",
-"in": 0.966,
-"out": 3.036,
-"ctx": 204800
-},
-{
 "id": "unbiased/pareto-26.10-preview",
 "name": "Pareto 26.10 Preview",
 "in": 0.8,
@@ -1871,18 +1857,18 @@
 "ctx": 262144
 },
 {
-"id": "qwen/qwen3.5-397b-a17b",
-"name": "Qwen: Qwen3.5 397B A17B",
-"in": 0.55,
-"out": 3.5,
-"ctx": 262144
-},
-{
 "id": "qwen/qwen3-235b-a22b-thinking-2507",
 "name": "Qwen: Qwen3 235B A22B Thinking 2507",
 "in": 0.45,
 "out": 3.5,
 "ctx": 128000
+},
+{
+"id": "qwen/qwen3.5-397b-a17b",
+"name": "Qwen: Qwen3.5 397B A17B",
+"in": 0.5,
+"out": 3.6,
+"ctx": 262144
 },
 {
 "id": "google/gemini-3.8-flash",
@@ -1969,6 +1955,13 @@
 "ctx": 524288
 },
 {
+"id": "z-ai/glm-5.1",
+"name": "Z.ai: GLM 5.1",
+"in": 1.33,
+"out": 4.18,
+"ctx": 204800
+},
+{
 "id": "meta/muse-spark-1.3",
 "name": "Meta: Muse Spark 1.3",
 "in": 1.25,
@@ -1987,6 +1980,13 @@
 "name": "Meta: Muse Spark 1.1",
 "in": 1.25,
 "out": 4.25,
+"ctx": 1048576
+},
+{
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"in": 0.0576,
+"out": 4.4,
 "ctx": 1048576
 },
 {
@@ -2053,6 +2053,13 @@
 "ctx": 1048576
 },
 {
+"id": "google/gemini-4-argon:batch",
+"name": "Google: Gemini 4 Argon (batch)",
+"in": 1.0,
+"out": 5.0,
+"ctx": 1048576
+},
+{
 "id": "openai/gpt-6.1-sol-pro:batch",
 "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
 "in": 1.0,
@@ -2086,13 +2093,6 @@
 "in": 1.0,
 "out": 5.0,
 "ctx": 1050000
-},
-{
-"id": "~z-ai/glm-latest",
-"name": "Z.ai: GLM Latest",
-"in": 0.055,
-"out": 5.0,
-"ctx": 1048576
 },
 {
 "id": "openai/gpt-5.6-sol-pro:batch",
@@ -2272,7 +2272,7 @@
 {
 "id": "z-ai/glm-5.2",
 "name": "Z.ai: GLM 5.2",
-"in": 0.06,
+"in": 0.05,
 "out": 7.0,
 "ctx": 1048576
 },
@@ -2284,18 +2284,25 @@
 "ctx": 400000
 },
 {
+"id": "~unbiased/pareto-latest",
+"name": "Pareto Latest",
+"in": 2.5,
+"out": 7.5,
+"ctx": 262144
+},
+{
+"id": "unbiased/pareto-26.9",
+"name": "Pareto 26.9",
+"in": 2.5,
+"out": 7.5,
+"ctx": 262144
+},
+{
 "id": "google/gemini-nano-banana-2.1",
 "name": "Google: Nano Banana 2.1",
 "in": 1.5,
 "out": 7.5,
 "ctx": 65536
-},
-{
-"id": "unbiased/pareto",
-"name": "Pareto",
-"in": 2.5,
-"out": 7.5,
-"ctx": 262144
 },
 {
 "id": "mistralai/mistral-medium-3-5",
@@ -2324,6 +2331,13 @@
 "in": 1.5,
 "out": 7.5,
 "ctx": 1000000
+},
+{
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"in": 0.1461,
+"out": 8.0,
+"ctx": 1048576
 },
 {
 "id": "openai/o3",
@@ -2372,6 +2386,13 @@
 "name": "Google: Gemini 3.5 Flash",
 "in": 1.5,
 "out": 9.0,
+"ctx": 1048576
+},
+{
+"id": "google/gemini-4-argon",
+"name": "Google: Gemini 4 Argon",
+"in": 2.0,
+"out": 10.0,
 "ctx": 1048576
 },
 {
@@ -2424,13 +2445,6 @@
 "ctx": 1050000
 },
 {
-"id": "moonshotai/kimi-k3",
-"name": "MoonshotAI: Kimi K3",
-"in": 0.73,
-"out": 10.0,
-"ctx": 1048576
-},
-{
 "id": "openai/gpt-5.6-sol-pro",
 "name": "OpenAI: GPT-5.6 Sol Pro",
 "in": 2.0,
@@ -2450,13 +2464,6 @@
 "in": 2.0,
 "out": 10.0,
 "ctx": 1000000
-},
-{
-"id": "~moonshotai/kimi-latest",
-"name": "MoonshotAI: Kimi Latest",
-"in": 0.73,
-"out": 10.0,
-"ctx": 1048576
 },
 {
 "id": "~anthropic/claude-sonnet-latest",
@@ -2669,6 +2676,13 @@
 "ctx": 1000000
 },
 {
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"in": 0.536,
+"out": 14.0,
+"ctx": 1048576
+},
+{
 "id": "openai/gpt-5.3-codex",
 "name": "OpenAI: GPT-5.3-Codex",
 "in": 1.75,
@@ -2700,6 +2714,13 @@
 "id": "fireworks/ember-1",
 "name": "Fireworks: Ember-1",
 "in": 3.0,
+"out": 15.0,
+"ctx": 1048576
+},
+{
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"in": 0.7,
 "out": 15.0,
 "ctx": 1048576
 },
@@ -3045,20 +3066,6 @@
 "in": 0.04,
 "out": null,
 "ctx": 1000000
-},
-{
-"id": "inclusionai/ling-3.1-flash",
-"name": "inclusionAI: Ling 3.1 Flash",
-"in": null,
-"out": null,
-"ctx": 262144
-},
-{
-"id": "apodex/apodex-1.1-mini:free",
-"name": "Apodex: Apodex 1.1 Mini (free)",
-"in": null,
-"out": null,
-"ctx": 262144
 },
 {
 "id": "typesafe/jev-router",
