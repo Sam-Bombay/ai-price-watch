@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The AI Bill Checklist — 9 questions to ask before you renew</title>
+<meta name="description" content="Nine questions to ask your AI and software vendor before you renew. Free, sourced, and built from a live daily log of what AI actually costs.">
+<link rel="alternate" type="application/rss+xml" title="AI Price Watch — daily price briefs" href="/feed.xml">
+<style>
+  :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c;
+          --down:#4ade80; --up:#f87171; --accent:#7dd3fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:16px/1.65 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:64px 22px 90px; }
+  h1 { font-size:34px; letter-spacing:-.02em; margin:0 0 10px; }
+  h2 { font-size:14px; text-transform:uppercase; letter-spacing:.12em; color:var(--dim);
+       margin:44px 0 14px; font-weight:600; }
+  .lede { color:var(--dim); font-size:18px; margin:0 0 8px; }
+  .stamp { color:var(--dim); font-size:13px; margin:18px 0 0; }
+  ol { padding-left:0; list-style:none; counter-reset:q; }
+  ol li { counter-increment:q; position:relative; padding:16px 0 16px 46px;
+          border-top:1px solid var(--line); }
+  ol li:last-child { border-bottom:1px solid var(--line); }
+  ol li::before { content:counter(q); position:absolute; left:0; top:16px;
+        width:28px; height:28px; border:1px solid var(--line); border-radius:50%;
+        display:flex; align-items:center; justify-content:center;
+        font-size:13px; color:var(--accent); }
+  ol li b { display:block; margin-bottom:4px; }
+  ol li span { color:var(--dim); font-size:15px; }
+  .src { color:var(--dim); font-size:13px; }
+  .cta { margin-top:44px; background:var(--panel); border:1px solid var(--line);
+         border-radius:12px; padding:26px; }
+  .cta p { margin:0 0 14px; }
+  a.big { display:inline-block; background:var(--accent); color:#06131b; text-decoration:none;
+          font-weight:700; padding:12px 20px; border-radius:9px; }
+  a { color:var(--accent); }
+  .foot { color:var(--dim); font-size:13px; margin-top:34px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>The AI bill checklist</h1>
+  <p class="lede">Nine questions to ask before you renew anything. Every one of them has cost a
+  real company real money this month.</p>
+  <p class="stamp">Maintained from a live daily log of open-model pricing. Last checked
+  <span id="today">today</span> against the <a href="/">live board</a>.</p>
+
+  <h2>The questions</h2>
+  <ol>
+    <li><b>What are you paying per million tokens — input and output, separately?</b>
+      <span>They are not the same number and the gap is 5x to 25x. A vendor quoting a single
+      "AI cost" is quoting the cheaper half.</span></li>
+
+    <li><b>Is your bill set on list price, or on the price you actually signed?</b>
+      <span>Open-model prices move most days. On 14 Oct alone we logged 40 changes across 462
+      models — 16 rises and 15 cuts. If your bill is set on last quarter's numbers, it is wrong
+      in both directions and nobody is checking.</span></li>
+
+    <li><b>Which models are you on, and are they still the cheap ones for your job?</b>
+      <span>On 13 Oct openai/gpt-oss-120b — a default for a lot of agent stacks — tripled from
+      $0.037 to $0.15 per million input tokens. On 14 Oct it fully reverted to $0.037. A 305%
+      hike undone inside 24 hours.</span>
+      <span class="src">Source: our own change log, ai-price-watch, 13–14 Oct 2026.</span></li>
+
+    <li><b>Where are your output tokens going?</b>
+      <span>Output is where the invoice actually lives. On 14 Oct DeepSeek Pro Latest output went
+      $0.7484 to $8.00 per million — a 969% move. On the same day DeepSeek V4 Flash 0423 output
+      fell 86%. Same market, opposite directions.</span>
+      <span class="src">Source: our change log, 14 Oct 2026.</span></li>
+
+    <li><b>Do you have a batch or off-peak path switched on?</b>
+      <span>Many vendors sell the same model far cheaper in batch. gpt-oss-120b batch is
+      $0.0296/$0.136 per million against $0.037/$0.17 standard. If your workload is not latency
+      sensitive, you are paying a premium for nothing.</span>
+      <span class="src">Source: OpenRouter catalogue, 14 Oct 2026.</span></li>
+
+    <li><b>Who inside the company can actually see the AI bill?</b>
+      <span>57% of finance leaders say they are not confident they are paying a fair price for
+      AI. Most of them cannot see the line item.</span>
+      <span class="src">Source: Business Wire, 28 Sep 2026.</span></li>
+
+    <li><b>If your agents spend money on their own, who approves each call?</b>
+      <span>Agent spend is now a funded problem: Fragment raised $12M this month specifically to
+      stop AI agents going rogue with company money. If yours can call a paid API unattended,
+      that is an unbudgeted line.</span>
+      <span class="src">Source: Fortune, 14 Oct 2026.</span></li>
+
+    <li><b>Can you run the sensitive half on your own hardware?</b>
+      <span>The Dutch tax authority cancelled its Microsoft 365 cloud rollout and moved to open
+      source instead. Cloud sovereignty is now a procurement question, not an ideology.</span>
+      <span class="src">Source: ZDNet, reported 14 Oct 2026.</span></li>
+
+    <li><b>What is the renewal date, and what has changed since you signed?</b>
+      <span>This is the whole checklist in one question. Prices, models and your own usage have
+      all moved since the contract was written.</span></li>
+  </ol>
+
+  <div class="cta">
+    <p><b>Want the numbers run for your own bill?</b> I audit a company's AI and software spend,
+    cut what can be cut, and take 30% of what I save. You keep 70%. If I find nothing, you pay
+    nothing.</p>
+    <p><a class="big" href="mailto:sambombayoffice@gmail.com?subject=AI%20bill%20check&amp;body=Company%3A%0AMonthly%20AI%2Fsoftware%20spend%3A%0AMain%20models%20used%3A%0ARenewal%20date%3A%0A">Send me your bill — free read</a></p>
+    <p class="foot">Or run your own numbers on the <a href="/clinic">clinic page</a>, or watch the
+    live board move at <a href="/">ai-price-watch</a>. Chamber and association organisers: the
+    30-minute version of this is free for your members — <a href="/clinic">details here</a>.</p>
+  </div>
+
+  <p class="foot">Free to share. No signup, no tracking, no vendor money behind this page.</p>
+
+</div>
+<script>
+  document.getElementById('today').textContent = new Date().toISOString().slice(0,10);
+</script>
+</body>
+</html>
