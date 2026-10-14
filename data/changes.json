@@ -2228,5 +2228,23 @@
 "field": "retired",
 "from": 7.5,
 "to": null
+},
+{
+"date": "2026-10-14",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.4343,
+"to": 0.4275,
+"pct": -1.6
+},
+{
+"date": "2026-10-14",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 0.8686,
+"to": 0.855,
+"pct": -1.6
 }
 ]
