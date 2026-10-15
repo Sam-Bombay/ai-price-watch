@@ -1005,8 +1005,8 @@
 {
 "id": "deepseek/deepseek-v4-pro",
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.4393,
-"out": 0.8787,
+"in": 0.436,
+"out": 0.8721,
 "ctx": 1048576
 },
 {
