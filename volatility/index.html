@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Price Watch — price volatility: the floor whipsawed</title>
+<meta name="description" content="The cheapest AI input prices are not stable. Live, from the daily log: models that moved down and straight back up inside a week — with dates and prices.">
+<link rel="alternate" type="application/rss+xml" title="AI Price Watch — daily price moves" href="/feed.xml">
+<style>
+  :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c; --up:#ff6b6b; --down:#4ade80; --accent:#7dd3fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:56px 20px 80px; }
+  h1 { font-size:30px; letter-spacing:-.02em; margin:0 0 8px; }
+  .sub { color:var(--dim); margin:0 0 10px; max-width:70ch; }
+  .kicker { color:var(--accent); font-size:12px; text-transform:uppercase; letter-spacing:.09em;
+            font-weight:600; margin:0 0 14px; }
+  .stats { display:flex; gap:14px; flex-wrap:wrap; margin:34px 0 8px; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:12px;
+          padding:16px 20px; min-width:170px; flex:1; }
+  .stat b { display:block; font-size:26px; letter-spacing:-.02em; margin-bottom:2px; }
+  .stat span { color:var(--dim); font-size:12.5px; text-transform:uppercase; letter-spacing:.06em; }
+  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim);
+       margin:44px 0 14px; font-weight:600; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th,td { text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); }
+  th { color:var(--dim); font-size:12px; text-transform:uppercase; letter-spacing:.06em; font-weight:600; }
+  td.num,th.num { text-align:right; }
+  tr:hover td { background:var(--panel); }
+  .model { max-width:330px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .cut { color:var(--down); font-weight:600; }
+  .rise { color:var(--up); font-weight:600; }
+  .muted { color:var(--dim); font-size:13px; }
+  .foot { margin-top:52px; padding:22px 24px; border:1px solid var(--line); border-radius:12px;
+          background:var(--panel); }
+  .foot p { margin:0 0 8px; }
+  .foot a { color:var(--accent); }
+  .cta { display:block; text-align:center; margin-top:18px; padding:12px; border-radius:10px;
+         background:#e8eaed; color:#0b0c0e; font-weight:600; text-decoration:none; }
+  .cta:hover { background:#fff; }
+  .back { color:var(--accent); text-decoration:none; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">AI Price Watch</p>
+  <h1>The floor is not stable</h1>
+  <p class="sub">Every AI budget assumes the cheap tier stays cheap. This page recomputes, live
+  from the daily log, every model whose price fell and then climbed straight back inside a week —
+  the swings that make a bill set on last month's numbers wrong in both directions.</p>
+  <p class="muted" id="when">loading…</p>
+
+  <div class="stats">
+    <div class="stat"><b id="s-round">—</b><span>round trips logged</span></div>
+    <div class="stat"><b id="s-big">—</b><span>biggest swing</span></div>
+    <div class="stat"><b id="s-floor">—</b><span>cheapest input now</span></div>
+  </div>
+
+  <h2>Round trips — fell, then climbed back</h2>
+  <table>
+    <thead><tr><th>Model</th><th>Field</th><th class="num">Low</th><th class="num">Back up to</th><th class="num">Swing</th><th>Dates</th></tr></thead>
+    <tbody id="rounds"><tr><td colspan="6" class="muted">Loading the log…</td></tr></tbody>
+  </table>
+
+  <h2>Floor watch — the cheapest input prices today</h2>
+  <table>
+    <thead><tr><th>Model</th><th class="num">Input $/M now</th><th class="num">Move since 8 Oct</th></tr></thead>
+    <tbody id="floor"><tr><td colspan="3" class="muted">Loading…</td></tr></tbody>
+  </table>
+
+  <div class="foot">
+    <p><b>Why this matters to a bill.</b> A model sold as the cheap option re-priced up 305%
+    and back down 75% inside 24 hours, twice in three days. Anything budgeted on a monthly
+    snapshot is now a guess.</p>
+    <p class="muted">Free 30-minute AI bill clinic for chambers and firms:
+      <a href="/clinic">ai-price-watch-beta.vercel.app/clinic</a> · nine questions to ask a
+      vendor before renewing: <a href="/clinic/checklist">/clinic/checklist</a></p>
+    <a class="cta" href="/clinic">Run my AI bill through the free clinic</a>
+  </div>
+  <p style="margin-top:26px"><a class="back" href="/">← Full log and calculator</a></p>
+</div>
+<script>
+(function () {
+  var esc = function (s) { return String(s).replace(/[&<>]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]; }); };
+  var money = function (v) {
+    if (v == null) return "—";
+    return "$" + (v < 0.01 ? v.toFixed(4) : v < 1 ? v.toFixed(3) : v.toFixed(2));
+  };
+  var short = function (n) { return esc(String(n).replace(/^[^:]+:\s*/, "")); };
+
+  function render(changes) {
+    // Group logged moves by model+field, in date order.
+    var series = {};
+    changes.forEach(function (c) {
+      if (!c.field || c.from == null || c.to == null) return;
+      var k = c.name + "|" + c.field;
+      (series[k] = series[k] || []).push(c);
+    });
+
+    var rounds = [];
+    Object.keys(series).forEach(function (k) {
+      var s = series[k].slice().sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+      for (var i = 0; i < s.length - 1; i++) {
+        var down = s[i], up = s[i + 1];
+        if ((down.pct || 0) < -20 && (up.pct || 0) > 20 && up.date !== down.date && down.to >= 0.005) {
+          var low = down.to, back = up.to;
+          rounds.push({
+            name: down.name, field: down.field,
+            low: low, back: back,
+            swing: low > 0 ? ((back - low) / low) * 100 : null,
+            from: down.date.slice(5), to: up.date.slice(5),
+            sortKey: Math.abs(((back - low) / (low || 1)) * 100)
+          });
+        }
+      }
+    });
+    rounds.sort(function (a, b) { return (b.sortKey || 0) - (a.sortKey || 0); });
+
+    var rt = document.getElementById("rounds");
+    if (!rounds.length) {
+      rt.innerHTML = '<tr><td colspan="6" class="muted">No round trips in the current log window.</td></tr>';
+    } else {
+      rt.innerHTML = rounds.slice(0, 12).map(function (r) {
+        return '<tr><td class="model" title="' + esc(r.name) + '">' + short(r.name) + '</td>' +
+          '<td class="muted">' + esc(r.field) + '</td>' +
+          '<td class="num cut">' + money(r.low) + '</td>' +
+          '<td class="num rise">' + money(r.back) + '</td>' +
+          '<td class="num rise">' + (r.swing == null ? "—" : "+" + r.swing.toFixed(0) + "%") + '</td>' +
+          '<td class="muted">' + esc(r.from) + " → " + esc(r.to) + '</td></tr>';
+      }).join("");
+    }
+    document.getElementById("s-round").textContent = rounds.length;
+
+    var biggest = rounds[0];
+    document.getElementById("s-big").textContent = biggest ? "+" + biggest.swing.toFixed(0) + "%" : "—";
+
+    // Floor watch: cheapest current input prices.
+    var seen = {};
+    changes.forEach(function (c) {
+      if (c.field !== "input" || c.to == null) return;
+      seen[c.name] = c.to;
+    });
+    var floor = Object.keys(seen).map(function (n) { return { name: n, price: seen[n] }; })
+      .sort(function (a, b) { return a.price - b.price; }).slice(0, 8);
+
+    // 7-day move per floor model, from the log.
+    var first = {};
+    var byName = {};
+    changes.forEach(function (c) {
+      if (c.field !== "input" || c.from == null) return;
+      byName[c.name] = c; // last entry seen wins (log is append-ordered)
+      if (!(c.name in first)) first[c.name] = c.from;
+    });
+
+    var ft = document.getElementById("floor");
+    ft.innerHTML = floor.map(function (f) {
+      var f0 = first[f.name];
+      var move = (f0 && f0 > 0) ? ((f.price - f0) / f0) * 100 : null;
+      var cls = move == null ? "" : (move > 0 ? "rise" : "cut");
+      var txt = move == null ? "—" : (move > 0 ? "+" : "") + move.toFixed(0) + "%";
+      return '<tr><td class="model" title="' + esc(f.name) + '">' + short(f.name) + '</td>' +
+        '<td class="num">' + money(f.price) + '</td>' +
+        '<td class="num ' + cls + '">' + txt + '</td></tr>';
+    }).join("");
+    if (floor.length) document.getElementById("s-floor").textContent = money(floor[0].price);
+
+    var days = changes.map(function (c) { return c.date; }).sort();
+    document.getElementById("when").textContent =
+      "live · " + changes.length + " logged moves · latest " + (days[days.length - 1] || "—");
+  }
+
+  fetch("/data/changes.json").then(function (r) { return r.json(); }).then(render)
+    .catch(function () {
+      document.getElementById("rounds").innerHTML =
+        '<tr><td colspan="6" class="muted">Live data unavailable — <a href="/" style="color:#7dd3fc">see the log</a>.</td></tr>';
+      document.getElementById("when").textContent = "live data unavailable";
+    });
+})();
+</script>
+</body>
+</html>
