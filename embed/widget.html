@@ -47,6 +47,39 @@
       return c.date === day && c.field && c.from != null && c.to != null;
     }).sort(function (a, b) { return Math.abs(b.pct || 0) - Math.abs(a.pct || 0); });
   }
+  // Round trips: a model that fell >20% then climbed straight back. The churn proof.
+  function roundTrips(list) {
+    var series = {};
+    list.forEach(function (c) {
+      if (!c.field || c.from == null || c.to == null) return;
+      var k = c.name + "|" + c.field;
+      (series[k] = series[k] || []).push(c);
+    });
+    var out = [];
+    Object.keys(series).forEach(function (k) {
+      var s = series[k].slice().sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+      for (var i = 0; i < s.length - 1; i++) {
+        var d = s[i], u = s[i + 1];
+        if ((d.pct || 0) < -20 && (u.pct || 0) > 20 && u.date !== d.date && d.to >= 0.005) {
+          out.push({ name: d.name, field: d.field, low: d.to, back: u.to,
+                     swing: ((u.to - d.to) / d.to) * 100, from: d.date.slice(5), to: u.date.slice(5) });
+        }
+      }
+    });
+    return out.sort(function (a, b) { return b.swing - a.swing; });
+  }
+  function renderVolatility(changes) {
+    var rows = document.getElementById("rows");
+    var rt = roundTrips(changes).slice(0, 6);
+    if (!rt.length) { rows.innerHTML = '<tr><td colspan="3" style="color:#8b929c">No round trips in the current window.</td></tr>'; return; }
+    rows.innerHTML = rt.map(function (r) {
+      return '<tr><td class="n" title="' + esc(r.name) + '">' + esc(r.name.replace(/^[^:]+:\s*/, "")) +
+        '</td><td style="color:#8b929c;font-size:12px">' + esc(r.field) + " " + esc(r.from) + "→" + esc(r.to) + '</td>' +
+        '<td class="v">' + money(r.low) + " → " + money(r.back) +
+        ' <span class="up">+' + r.swing.toFixed(0) + "%</span></td></tr>";
+    }).join("");
+    document.getElementById("when").textContent = "fell, then climbed back";
+  }
   function render(changes, latest) {
     var rows = document.getElementById("rows");
     var today = new Date().toISOString().slice(0, 10);
@@ -71,10 +104,15 @@
     when.textContent = upd && !isNaN(upd) ? "updated " + upd.toISOString().slice(5, 10) : todays[0].date.slice(5);
   }
   var base = "";
+  var volatility = /(\?|&)view=volatility\b/.test(location.search);
+  if (volatility) {
+    document.querySelector(".hd b").textContent = "AI prices — the floor whipsawed";
+    document.querySelector(".cta").innerHTML = 'Is your AI bill on these prices? <a href="https://ai-price-watch-beta.vercel.app/clinic" target="_blank" rel="noopener">Free clinic</a>';
+  }
   Promise.all([
     fetch(base + "/data/changes.json").then(function (r) { return r.json(); }),
     fetch(base + "/data/latest.json").then(function (r) { return r.json(); }).catch(function () { return null; })
-  ]).then(function (res) { render(res[0], res[1]); })
+  ]).then(function (res) { volatility ? renderVolatility(res[0]) : render(res[0], res[1]); })
     .catch(function () {
       document.getElementById("rows").innerHTML =
         '<tr><td colspan="3" style="color:#8b929c">Live data unavailable — <a href="https://ai-price-watch-beta.vercel.app" style="color:#7dd3fc">see the log</a>.</td></tr>';
