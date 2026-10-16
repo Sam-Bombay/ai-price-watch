@@ -464,7 +464,7 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.0058,
+"in": 0.0049,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
 "out": 1.28
 },
@@ -478,9 +478,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.4173,
+"in": 0.4087,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 0.8345
+"out": 0.8175
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -3166,7 +3166,7 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.0052,
+"in": 0.0044,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
 "out": 1.152
 },
