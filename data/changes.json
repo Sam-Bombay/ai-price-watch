@@ -3031,5 +3031,297 @@
 "from": 0.8345,
 "to": 0.8175,
 "pct": -2.0
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v4.1-flash-1017",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+"field": "added",
+"from": null,
+"to": 0.6
+},
+{
+"date": "2026-10-17",
+"id": "elorian/glimpse",
+"name": "Elorian: Glimpse",
+"field": "added",
+"from": null,
+"to": 3.0
+},
+{
+"date": "2026-10-17",
+"id": "xingchen-agi/xing4.0-29b-a4b:free",
+"name": "XingChen: Xing4.0 29B A4B (free)",
+"field": "added",
+"from": null,
+"to": null
+},
+{
+"date": "2026-10-17",
+"id": "reflection/beam-1.0-501b-a23b",
+"name": "Reflection: Beam 1.0 501B A23B",
+"field": "added",
+"from": null,
+"to": 3.0
+},
+{
+"date": "2026-10-17",
+"id": "nvidia/nemotron-3.5-super-vl",
+"name": "NVIDIA: Nemotron 3.5 Super VL",
+"field": "input",
+"from": 0.15,
+"to": 0.1,
+"pct": -33.3
+},
+{
+"date": "2026-10-17",
+"id": "nvidia/nemotron-3.5-super-vl",
+"name": "NVIDIA: Nemotron 3.5 Super VL",
+"field": "output",
+"from": 0.5,
+"to": 0.4,
+"pct": -20.0
+},
+{
+"date": "2026-10-17",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.2495,
+"to": 0.12,
+"pct": -51.9
+},
+{
+"date": "2026-10-17",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "output",
+"from": 0.7484,
+"to": 8.0,
+"pct": 968.9
+},
+{
+"date": "2026-10-17",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.0357,
+"to": 0.1,
+"pct": 180.1
+},
+{
+"date": "2026-10-17",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 0.1428,
+"to": 0.5,
+"pct": 250.1
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v4.1-flash:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+"field": "input",
+"from": 0.112,
+"to": 0.05,
+"pct": -55.4
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v4.1-flash:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+"field": "output",
+"from": 0.336,
+"to": 0.15,
+"pct": -55.4
+},
+{
+"date": "2026-10-17",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "input",
+"from": 0.0113,
+"to": 0.06,
+"pct": 431.0
+},
+{
+"date": "2026-10-17",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 0.9,
+"to": 1.6,
+"pct": 77.8
+},
+{
+"date": "2026-10-17",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "input",
+"from": 0.0113,
+"to": 0.15,
+"pct": 1227.4
+},
+{
+"date": "2026-10-17",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "output",
+"from": 0.9,
+"to": 0.5,
+"pct": -44.4
+},
+{
+"date": "2026-10-17",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "input",
+"from": 0.0608,
+"to": 0.0632,
+"pct": 3.9
+},
+{
+"date": "2026-10-17",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.0044,
+"to": 0.018,
+"pct": 309.1
+},
+{
+"date": "2026-10-17",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 1.152,
+"to": 1.28,
+"pct": 11.1
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.0049,
+"to": 0.018,
+"pct": 267.3
+},
+{
+"date": "2026-10-17",
+"id": "qwen/qwen3.7-plus:batch",
+"name": "Qwen: Qwen3.7 Plus (batch)",
+"field": "added",
+"from": null,
+"to": 0.92
+},
+{
+"date": "2026-10-17",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.294,
+"to": 0.27,
+"pct": -8.2
+},
+{
+"date": "2026-10-17",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 24.0,
+"to": 14.0,
+"pct": -41.7
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.4087,
+"to": 0.2088,
+"pct": -48.9
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 0.8175,
+"to": 0.4176,
+"pct": -48.9
+},
+{
+"date": "2026-10-17",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.09,
+"to": 0.0675,
+"pct": -25.0
+},
+{
+"date": "2026-10-17",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.3,
+"to": 0.225,
+"pct": -25.0
+},
+{
+"date": "2026-10-17",
+"id": "z-ai/glm-4.7",
+"name": "Z.ai: GLM 4.7",
+"field": "input",
+"from": 0.6,
+"to": 0.54,
+"pct": -10.0
+},
+{
+"date": "2026-10-17",
+"id": "z-ai/glm-4.7",
+"name": "Z.ai: GLM 4.7",
+"field": "output",
+"from": 2.2,
+"to": 1.98,
+"pct": -10.0
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v3.2",
+"name": "DeepSeek: DeepSeek V3.2",
+"field": "input",
+"from": 0.259,
+"to": 0.28,
+"pct": 8.1
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v3.2",
+"name": "DeepSeek: DeepSeek V3.2",
+"field": "output",
+"from": 0.8,
+"to": 0.42,
+"pct": -47.5
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-chat",
+"name": "DeepSeek: DeepSeek V3",
+"field": "input",
+"from": 0.2574,
+"to": 0.32,
+"pct": 24.3
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-chat",
+"name": "DeepSeek: DeepSeek V3",
+"field": "output",
+"from": 1.0287,
+"to": 0.89,
+"pct": -13.5
 }
 ]
