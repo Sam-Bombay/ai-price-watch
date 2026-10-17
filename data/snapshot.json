@@ -464,7 +464,7 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.018,
+"in": 0.0171,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
 "out": 1.28
 },
@@ -3110,7 +3110,7 @@
 "z-ai/glm-5.3": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3",
-"in": 0.079,
+"in": 0.0622,
 "name": "Z.ai: GLM 5.3",
 "out": 4.8
 },
@@ -3201,7 +3201,7 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.018,
+"in": 0.0171,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
 "out": 1.28
 },
@@ -3285,8 +3285,8 @@
 "~z-ai/glm-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-latest",
-"in": 0.0632,
+"in": 0.0622,
 "name": "Z.ai: GLM Latest",
-"out": 4.4
+"out": 4.8
 }
 }

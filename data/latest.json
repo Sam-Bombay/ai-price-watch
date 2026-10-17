@@ -1299,14 +1299,14 @@
 {
 "id": "~deepseek/deepseek-v4-flash-latest",
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.018,
+"in": 0.0171,
 "out": 1.28,
 "ctx": 1048576
 },
 {
 "id": "deepseek/deepseek-v4-flash-0731",
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
-"in": 0.018,
+"in": 0.0171,
 "out": 1.28,
 "ctx": 1048576
 },
@@ -2039,13 +2039,6 @@
 "ctx": 1048576
 },
 {
-"id": "~z-ai/glm-latest",
-"name": "Z.ai: GLM Latest",
-"in": 0.0632,
-"out": 4.4,
-"ctx": 1048576
-},
-{
 "id": "openai/o4-mini-high",
 "name": "OpenAI: o4 Mini High",
 "in": 1.1,
@@ -2102,9 +2095,16 @@
 "ctx": 400000
 },
 {
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"in": 0.0622,
+"out": 4.8,
+"ctx": 1048576
+},
+{
 "id": "z-ai/glm-5.3",
 "name": "Z.ai: GLM 5.3",
-"in": 0.079,
+"in": 0.0622,
 "out": 4.8,
 "ctx": 1048576
 },

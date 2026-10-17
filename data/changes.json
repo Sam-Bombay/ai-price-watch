@@ -3323,5 +3323,50 @@
 "from": 1.0287,
 "to": 0.89,
 "pct": -13.5
+},
+{
+"date": "2026-10-17",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "input",
+"from": 0.0632,
+"to": 0.0622,
+"pct": -1.6
+},
+{
+"date": "2026-10-17",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "output",
+"from": 4.4,
+"to": 4.8,
+"pct": 9.1
+},
+{
+"date": "2026-10-17",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "input",
+"from": 0.079,
+"to": 0.0622,
+"pct": -21.3
+},
+{
+"date": "2026-10-17",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.018,
+"to": 0.0171,
+"pct": -5.0
+},
+{
+"date": "2026-10-17",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.018,
+"to": 0.0171,
+"pct": -5.0
 }
 ]
