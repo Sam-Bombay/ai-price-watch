@@ -1,0 +1,5 @@
+lead_id,last_contact,consent,status
+DEMO-001,2026-10-01,yes,open
+DEMO-002,2026-10-01,no,open
+DEMO-003,2026-10-17,yes,open
+DEMO-004,2026-10-01,yes,closed

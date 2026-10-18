@@ -3368,5 +3368,211 @@
 "from": 0.018,
 "to": 0.0171,
 "pct": -5.0
+},
+{
+"date": "2026-10-18",
+"id": "unbiased/pareto-26.10",
+"name": "Pareto 26.10",
+"field": "added",
+"from": null,
+"to": 3.2
+},
+{
+"date": "2026-10-18",
+"id": "~unbiased/pareto-latest",
+"name": "Pareto Latest",
+"field": "input",
+"from": 2.5,
+"to": 0.8,
+"pct": -68.0
+},
+{
+"date": "2026-10-18",
+"id": "~unbiased/pareto-latest",
+"name": "Pareto Latest",
+"field": "output",
+"from": 7.5,
+"to": 3.2,
+"pct": -57.3
+},
+{
+"date": "2026-10-18",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.1,
+"to": 0.05,
+"pct": -50.0
+},
+{
+"date": "2026-10-18",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 0.5,
+"to": 0.6,
+"pct": 20.0
+},
+{
+"date": "2026-10-18",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "input",
+"from": 0.15,
+"to": 0.04,
+"pct": -73.3
+},
+{
+"date": "2026-10-18",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "output",
+"from": 0.6,
+"to": 0.144,
+"pct": -76.0
+},
+{
+"date": "2026-10-18",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "input",
+"from": 0.06,
+"to": 0.048,
+"pct": -20.0
+},
+{
+"date": "2026-10-18",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 1.6,
+"to": 0.2,
+"pct": -87.5
+},
+{
+"date": "2026-10-18",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "input",
+"from": 0.15,
+"to": 0.048,
+"pct": -68.0
+},
+{
+"date": "2026-10-18",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "output",
+"from": 0.5,
+"to": 0.2,
+"pct": -60.0
+},
+{
+"date": "2026-10-18",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "input",
+"from": 0.0622,
+"to": 0.075,
+"pct": 20.6
+},
+{
+"date": "2026-10-18",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "output",
+"from": 4.8,
+"to": 2.2,
+"pct": -54.2
+},
+{
+"date": "2026-10-18",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "input",
+"from": 0.0622,
+"to": 0.079,
+"pct": 27.0
+},
+{
+"date": "2026-10-18",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "output",
+"from": 4.8,
+"to": 1.8,
+"pct": -62.5
+},
+{
+"date": "2026-10-18",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.0171,
+"to": 0.0049,
+"pct": -71.3
+},
+{
+"date": "2026-10-18",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 1.28,
+"to": 0.45,
+"pct": -64.8
+},
+{
+"date": "2026-10-18",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.0171,
+"to": 0.0049,
+"pct": -71.3
+},
+{
+"date": "2026-10-18",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "output",
+"from": 1.28,
+"to": 0.45,
+"pct": -64.8
+},
+{
+"date": "2026-10-18",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.27,
+"to": 0.25,
+"pct": -7.4
+},
+{
+"date": "2026-10-18",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 14.0,
+"to": 8.0,
+"pct": -42.9
+},
+{
+"date": "2026-10-18",
+"id": "qwen/qwen3-30b-a3b-instruct-2507",
+"name": "Qwen: Qwen3 30B A3B Instruct 2507",
+"field": "input",
+"from": 0.1,
+"to": 0.09,
+"pct": -10.0
+},
+{
+"date": "2026-10-18",
+"id": "google/gemma-3-27b-it",
+"name": "Google: Gemma 3 27B",
+"field": "output",
+"from": 0.45,
+"to": 0.35,
+"pct": -22.2
 }
 ]

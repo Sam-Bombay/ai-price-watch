@@ -464,9 +464,9 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.0171,
+"in": 0.0049,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
-"out": 1.28
+"out": 0.45
 },
 "deepseek/deepseek-v4-flash-vision-exp": {
 "ctx": 1048576,
@@ -492,9 +492,9 @@
 "deepseek/deepseek-v4.1-flash": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash",
-"in": 0.15,
+"in": 0.04,
 "name": "DeepSeek: DeepSeek V4.1 Flash",
-"out": 0.6
+"out": 0.144
 },
 "deepseek/deepseek-v4.1-flash-1017": {
 "ctx": 1048576,
@@ -788,7 +788,7 @@
 "id": "google/gemma-3-27b-it",
 "in": 0.08,
 "name": "Google: Gemma 3 27B",
-"out": 0.45
+"out": 0.35
 },
 "google/gemma-3-4b-it": {
 "ctx": 131072,
@@ -2431,7 +2431,7 @@
 "qwen/qwen3-30b-a3b-instruct-2507": {
 "ctx": 262144,
 "id": "qwen/qwen3-30b-a3b-instruct-2507",
-"in": 0.1,
+"in": 0.09,
 "name": "Qwen: Qwen3 30B A3B Instruct 2507",
 "out": 0.3
 },
@@ -2890,6 +2890,13 @@
 "name": "TypeSafe: Jev Router",
 "out": null
 },
+"unbiased/pareto-26.10": {
+"ctx": 1048576,
+"id": "unbiased/pareto-26.10",
+"in": 0.8,
+"name": "Pareto 26.10",
+"out": 3.2
+},
 "unbiased/pareto-26.9": {
 "ctx": 262144,
 "id": "unbiased/pareto-26.9",
@@ -3110,16 +3117,16 @@
 "z-ai/glm-5.3": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3",
-"in": 0.0622,
+"in": 0.079,
 "name": "Z.ai: GLM 5.3",
-"out": 4.8
+"out": 1.8
 },
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.15,
+"in": 0.048,
 "name": "Z.ai: GLM 5.3 Flash",
-"out": 0.5
+"out": 0.2
 },
 "z-ai/glm-5.3-flash:batch": {
 "ctx": 1048576,
@@ -3187,9 +3194,9 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.1,
+"in": 0.05,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.5
+"out": 0.6
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
@@ -3201,9 +3208,9 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.0171,
+"in": 0.0049,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 1.28
+"out": 0.45
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,
@@ -3222,9 +3229,9 @@
 "~moonshotai/kimi-latest": {
 "ctx": 1048576,
 "id": "~moonshotai/kimi-latest",
-"in": 0.27,
+"in": 0.25,
 "name": "MoonshotAI: Kimi Latest",
-"out": 14.0
+"out": 8.0
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
@@ -3262,11 +3269,11 @@
 "out": 12.0
 },
 "~unbiased/pareto-latest": {
-"ctx": 262144,
+"ctx": 1048576,
 "id": "~unbiased/pareto-latest",
-"in": 2.5,
+"in": 0.8,
 "name": "Pareto Latest",
-"out": 7.5
+"out": 3.2
 },
 "~x-ai/grok-latest": {
 "ctx": 500000,
@@ -3278,15 +3285,15 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.06,
+"in": 0.048,
 "name": "Z.ai: GLM Flash Latest",
-"out": 1.6
+"out": 0.2
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-latest",
-"in": 0.0622,
+"in": 0.075,
 "name": "Z.ai: GLM Latest",
-"out": 4.8
+"out": 2.2
 }
 }
