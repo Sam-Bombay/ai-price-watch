@@ -135,6 +135,13 @@
 "ctx": 128000
 },
 {
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"in": 0.0039,
+"out": 0.1436,
+"ctx": 1048576
+},
+{
 "id": "deepseek/deepseek-v4.1-flash",
 "name": "DeepSeek: DeepSeek V4.1 Flash",
 "in": 0.04,
@@ -644,13 +651,6 @@
 "in": 0.28,
 "out": 0.42,
 "ctx": 163840
-},
-{
-"id": "~deepseek/deepseek-v4-flash-latest",
-"name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.0049,
-"out": 0.45,
-"ctx": 1048576
 },
 {
 "id": "deepseek/deepseek-v4-flash-0731",

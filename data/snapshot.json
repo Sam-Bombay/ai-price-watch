@@ -3208,9 +3208,9 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.0049,
+"in": 0.0039,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 0.45
+"out": 0.1436
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,
