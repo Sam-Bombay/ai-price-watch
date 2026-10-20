@@ -401,9 +401,9 @@
 "deepseek/deepseek-chat": {
 "ctx": 163840,
 "id": "deepseek/deepseek-chat",
-"in": 0.32,
+"in": 0.2574,
 "name": "DeepSeek: DeepSeek V3",
-"out": 0.89
+"out": 1.0287
 },
 "deepseek/deepseek-chat-v3-0324": {
 "ctx": 163840,
@@ -457,9 +457,9 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.15,
+"in": 0.44,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
-"out": 0.15
+"out": 1.32
 },
 "deepseek/deepseek-v4-flash-vision-exp": {
 "ctx": 1048576,
@@ -471,9 +471,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.4343,
+"in": 0.4242,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 0.8686
+"out": 0.8484
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -485,9 +485,9 @@
 "deepseek/deepseek-v4.1-flash": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash",
-"in": 0.0344,
+"in": 0.0355,
 "name": "DeepSeek: DeepSeek V4.1 Flash",
-"out": 0.08
+"out": 0.12
 },
 "deepseek/deepseek-v4.1-flash-1017": {
 "ctx": 1048576,
@@ -552,13 +552,6 @@
 "name": "Google: Gemini 2.5 Flash Lite (batch)",
 "out": 0.2
 },
-"google/gemini-2.5-flash:batch": {
-"ctx": 1048576,
-"id": "google/gemini-2.5-flash:batch",
-"in": 0.15,
-"name": "Google: Gemini 2.5 Flash (batch)",
-"out": 1.25
-},
 "google/gemini-2.5-pro": {
 "ctx": 1048576,
 "id": "google/gemini-2.5-pro",
@@ -572,13 +565,6 @@
 "in": 1.25,
 "name": "Google: Gemini 2.5 Pro Preview 06-05",
 "out": 10.0
-},
-"google/gemini-2.5-pro:batch": {
-"ctx": 1048576,
-"id": "google/gemini-2.5-pro:batch",
-"in": 0.625,
-"name": "Google: Gemini 2.5 Pro (batch)",
-"out": 5.0
 },
 "google/gemini-3-flash-preview": {
 "ctx": 1048576,
@@ -786,9 +772,9 @@
 "google/gemma-3-4b-it": {
 "ctx": 131072,
 "id": "google/gemma-3-4b-it",
-"in": 0.05,
+"in": 0.04,
 "name": "Google: Gemma 3 4B",
-"out": 0.1
+"out": 0.05
 },
 "google/gemma-4-26b-a4b-it": {
 "ctx": 262144,
@@ -866,6 +852,13 @@
 "in": 0.04,
 "name": "Inception: Mercury 2.5",
 "out": 0.15
+},
+"inception/mercury-3": {
+"ctx": 1000000,
+"id": "inception/mercury-3",
+"in": 0.1,
+"name": "Inception: Mercury 3",
+"out": 0.35
 },
 "inclusionai/ling-3.0-flash": {
 "ctx": 262144,
@@ -1486,9 +1479,9 @@
 "nvidia/nemotron-3.5-super-vl": {
 "ctx": 1048576,
 "id": "nvidia/nemotron-3.5-super-vl",
-"in": 0.1,
+"in": 0.15,
 "name": "NVIDIA: Nemotron 3.5 Super VL",
-"out": 0.4
+"out": 0.5
 },
 "nvidia/nemotron-3.5-super-vl:free": {
 "ctx": 1000000,
@@ -2529,9 +2522,9 @@
 "qwen/qwen3.5-397b-a17b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-397b-a17b",
-"in": 0.5,
+"in": 0.39,
 "name": "Qwen: Qwen3.5 397B A17B",
-"out": 3.6
+"out": 2.34
 },
 "qwen/qwen3.5-9b": {
 "ctx": 262144,
@@ -2571,9 +2564,9 @@
 "qwen/qwen3.6-35b-a3b": {
 "ctx": 262144,
 "id": "qwen/qwen3.6-35b-a3b",
-"in": 0.15,
+"in": 0.1,
 "name": "Qwen: Qwen3.6 35B A3B",
-"out": 1.0
+"out": 0.95
 },
 "qwen/qwen3.6-flash": {
 "ctx": 1000000,
@@ -2627,9 +2620,9 @@
 "qwen/qwen3.8-27b": {
 "ctx": 1000000,
 "id": "qwen/qwen3.8-27b",
-"in": 0.24,
+"in": 0.04,
 "name": "Qwen: Qwen3.8 27B",
-"out": 2.2
+"out": 1.35
 },
 "qwen/qwen3.8-flash": {
 "ctx": 1000000,
@@ -2662,9 +2655,9 @@
 "reflection/beam-1.0-501b-a23b": {
 "ctx": 1048576,
 "id": "reflection/beam-1.0-501b-a23b",
-"in": 1.0,
+"in": 0.3,
 "name": "Reflection: Beam 1.0 501B A23B",
-"out": 3.0
+"out": 1.0
 },
 "rekaai/reka-edge": {
 "ctx": 16384,
@@ -2914,9 +2907,9 @@
 "upstage/solar-pro4": {
 "ctx": 524288,
 "id": "upstage/solar-pro4",
-"in": 0.09,
+"in": 0.15,
 "name": "Upstage: Solar Pro 4",
-"out": 0.36
+"out": 0.6
 },
 "writer/palmyra-x5": {
 "ctx": 1040000,
@@ -3180,9 +3173,9 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.043,
+"in": 0.07,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.6
+"out": 0.5
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
@@ -3194,9 +3187,9 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.0069,
+"in": 0.0065,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 0.12
+"out": 0.45
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,
@@ -3217,7 +3210,7 @@
 "id": "~moonshotai/kimi-latest",
 "in": 0.238,
 "name": "MoonshotAI: Kimi Latest",
-"out": 13.0
+"out": 16.0
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
@@ -3278,8 +3271,8 @@
 "~z-ai/glm-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-latest",
-"in": 0.053,
+"in": 0.079,
 "name": "Z.ai: GLM Latest",
-"out": 6.0
+"out": 1.4
 }
 }
