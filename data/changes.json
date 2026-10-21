@@ -4449,5 +4449,14 @@
 "from": 0.15,
 "to": 0.14,
 "pct": -6.7
+},
+{
+"date": "2026-10-21",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 16.0,
+"to": 24.0,
+"pct": 50.0
 }
 ]

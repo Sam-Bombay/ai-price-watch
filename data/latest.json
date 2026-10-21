@@ -2795,13 +2795,6 @@
 "ctx": 128000
 },
 {
-"id": "~moonshotai/kimi-latest",
-"name": "MoonshotAI: Kimi Latest",
-"in": 0.238,
-"out": 16.0,
-"ctx": 1048576
-},
-{
 "id": "meta/muse-wonder",
 "name": "Meta: Muse Wonder",
 "in": 4.0,
@@ -2835,6 +2828,13 @@
 "in": 4.0,
 "out": 20.0,
 "ctx": 1000000
+},
+{
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"in": 0.238,
+"out": 24.0,
+"ctx": 1048576
 },
 {
 "id": "openai/gpt-6-astra:batch",

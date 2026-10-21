@@ -3210,7 +3210,7 @@
 "id": "~moonshotai/kimi-latest",
 "in": 0.238,
 "name": "MoonshotAI: Kimi Latest",
-"out": 16.0
+"out": 24.0
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
