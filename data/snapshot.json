@@ -457,9 +457,9 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.44,
+"in": 0.0444,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
-"out": 1.32
+"out": 0.1333
 },
 "deepseek/deepseek-v4-flash-vision-exp": {
 "ctx": 1048576,
@@ -471,9 +471,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.4242,
+"in": 0.436,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 0.8484
+"out": 0.8721
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -485,9 +485,9 @@
 "deepseek/deepseek-v4.1-flash": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash",
-"in": 0.0355,
+"in": 0.0239,
 "name": "DeepSeek: DeepSeek V4.1 Flash",
-"out": 0.12
+"out": 0.375
 },
 "deepseek/deepseek-v4.1-flash-1017": {
 "ctx": 1048576,
@@ -1185,9 +1185,9 @@
 "mistralai/mistral-large-4-0": {
 "ctx": 1048576,
 "id": "mistralai/mistral-large-4-0",
-"in": 0.68,
+"in": 1.36,
 "name": "Mistral: Mistral Large 4",
-"out": 2.09
+"out": 4.18
 },
 "mistralai/mistral-medium-3": {
 "ctx": 131072,
@@ -2515,7 +2515,7 @@
 "qwen/qwen3.5-35b-a3b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-35b-a3b",
-"in": 0.15,
+"in": 0.14,
 "name": "Qwen: Qwen3.5-35B-A3B",
 "out": 1.0
 },
@@ -2529,9 +2529,9 @@
 "qwen/qwen3.5-9b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-9b",
-"in": 0.1,
+"in": 0.08,
 "name": "Qwen: Qwen3.5-9B",
-"out": 0.15
+"out": 0.13
 },
 "qwen/qwen3.5-flash-02-23": {
 "ctx": 1000000,
@@ -2977,16 +2977,16 @@
 "xiaomi/mimo-v2.5": {
 "ctx": 1050000,
 "id": "xiaomi/mimo-v2.5",
-"in": 0.14,
+"in": 0.119,
 "name": "Xiaomi: MiMo-V2.5",
-"out": 0.28
+"out": 0.238
 },
 "xiaomi/mimo-v2.5-pro": {
 "ctx": 1050000,
 "id": "xiaomi/mimo-v2.5-pro",
-"in": 0.435,
+"in": 0.3045,
 "name": "Xiaomi: MiMo-V2.5-Pro",
-"out": 0.87
+"out": 0.609
 },
 "xiaomi/mimo-v2.6-flash": {
 "ctx": 1050000,
@@ -3082,16 +3082,16 @@
 "z-ai/glm-5.1": {
 "ctx": 204800,
 "id": "z-ai/glm-5.1",
-"in": 0.966,
+"in": 1.4,
 "name": "Z.ai: GLM 5.1",
-"out": 3.036
+"out": 4.4
 },
 "z-ai/glm-5.2": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.2",
-"in": 0.62,
+"in": 0.0341,
 "name": "Z.ai: GLM 5.2",
-"out": 2.42
+"out": 7.0
 },
 "z-ai/glm-5.3": {
 "ctx": 1048576,
@@ -3103,9 +3103,9 @@
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.048,
+"in": 0.0412,
 "name": "Z.ai: GLM 5.3 Flash",
-"out": 0.16
+"out": 0.12
 },
 "z-ai/glm-5.3-flash:batch": {
 "ctx": 1048576,
@@ -3173,23 +3173,23 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.07,
+"in": 0.049,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.5
+"out": 0.375
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-pro-latest",
-"in": 0.1307,
+"in": 0.1461,
 "name": "DeepSeek: DeepSeek Pro Latest",
 "out": 8.0
 },
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.0065,
+"in": 0.0422,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 0.45
+"out": 0.1637
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,
@@ -3264,9 +3264,9 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.048,
+"in": 0.0412,
 "name": "Z.ai: GLM Flash Latest",
-"out": 0.16
+"out": 0.12
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,
