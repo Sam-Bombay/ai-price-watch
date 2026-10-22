@@ -471,9 +471,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.436,
+"in": 0.4427,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 0.8721
+"out": 0.8853
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -485,9 +485,9 @@
 "deepseek/deepseek-v4.1-flash": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash",
-"in": 0.0239,
+"in": 0.3,
 "name": "DeepSeek: DeepSeek V4.1 Flash",
-"out": 0.375
+"out": 1.2
 },
 "deepseek/deepseek-v4.1-flash-1017": {
 "ctx": 1048576,
@@ -544,13 +544,6 @@
 "in": 0.1,
 "name": "Google: Gemini 2.5 Flash Lite",
 "out": 0.4
-},
-"google/gemini-2.5-flash-lite:batch": {
-"ctx": 1048576,
-"id": "google/gemini-2.5-flash-lite:batch",
-"in": 0.05,
-"name": "Google: Gemini 2.5 Flash Lite (batch)",
-"out": 0.2
 },
 "google/gemini-2.5-pro": {
 "ctx": 1048576,
@@ -1098,12 +1091,12 @@
 "name": "MiniMax: MiniMax M3",
 "out": 1.2
 },
-"minimax/minimax-m3.1-flash:free": {
+"minimax/minimax-m3.1-flash": {
 "ctx": 1000000,
-"id": "minimax/minimax-m3.1-flash:free",
-"in": null,
-"name": "MiniMax: MiniMax M3.1 Flash (free)",
-"out": null
+"id": "minimax/minimax-m3.1-flash",
+"in": 0.15,
+"name": "MiniMax: MiniMax M3.1 Flash",
+"out": 0.6
 },
 "mistralai/codestral-2508": {
 "ctx": 256000,
@@ -1423,9 +1416,9 @@
 "nvidia/nemotron-3-super-120b-a12b": {
 "ctx": 262144,
 "id": "nvidia/nemotron-3-super-120b-a12b",
-"in": 0.08,
+"in": 0.3,
 "name": "NVIDIA: Nemotron 3 Super",
-"out": 0.45
+"out": 2.4
 },
 "nvidia/nemotron-3-super-120b-a12b:free": {
 "ctx": 262144,
@@ -2501,9 +2494,9 @@
 "qwen/qwen3.5-122b-a10b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-122b-a10b",
-"in": 0.26,
+"in": 0.4,
 "name": "Qwen: Qwen3.5-122B-A10B",
-"out": 2.08
+"out": 3.2
 },
 "qwen/qwen3.5-27b": {
 "ctx": 262144,
@@ -2522,9 +2515,9 @@
 "qwen/qwen3.5-397b-a17b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-397b-a17b",
-"in": 0.39,
+"in": 0.5,
 "name": "Qwen: Qwen3.5 397B A17B",
-"out": 2.34
+"out": 3.6
 },
 "qwen/qwen3.5-9b": {
 "ctx": 262144,
@@ -2652,10 +2645,17 @@
 "name": "Qwen: Qwen3.8 Omni Flash",
 "out": 0.47
 },
+"recursive/flint-v1.0:free": {
+"ctx": 262144,
+"id": "recursive/flint-v1.0:free",
+"in": null,
+"name": "Recursive: Flint (free)",
+"out": null
+},
 "reflection/beam-1.0-501b-a23b": {
 "ctx": 1048576,
 "id": "reflection/beam-1.0-501b-a23b",
-"in": 0.3,
+"in": 0.25,
 "name": "Reflection: Beam 1.0 501B A23B",
 "out": 1.0
 },
@@ -3103,9 +3103,9 @@
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.0412,
+"in": 0.0052,
 "name": "Z.ai: GLM 5.3 Flash",
-"out": 0.12
+"out": 0.1985
 },
 "z-ai/glm-5.3-flash:batch": {
 "ctx": 1048576,
@@ -3173,14 +3173,14 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.049,
+"in": 0.07,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.375
+"out": 0.5
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-pro-latest",
-"in": 0.1461,
+"in": 0.1627,
 "name": "DeepSeek: DeepSeek Pro Latest",
 "out": 8.0
 },
@@ -3264,9 +3264,9 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.0412,
+"in": 0.0052,
 "name": "Z.ai: GLM Flash Latest",
-"out": 0.12
+"out": 0.1985
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,
