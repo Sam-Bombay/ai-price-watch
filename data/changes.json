@@ -4652,5 +4652,68 @@
 "field": "retired",
 "from": null,
 "to": null
+},
+{
+"date": "2026-10-22",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.1627,
+"to": 0.1461,
+"pct": -10.2
+},
+{
+"date": "2026-10-22",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "input",
+"from": 0.079,
+"to": 0.7,
+"pct": 786.1
+},
+{
+"date": "2026-10-22",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "output",
+"from": 1.4,
+"to": 2.2,
+"pct": 57.1
+},
+{
+"date": "2026-10-22",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 0.1637,
+"to": 0.1729,
+"pct": 5.6
+},
+{
+"date": "2026-10-22",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 24.0,
+"to": 16.0,
+"pct": -33.3
+},
+{
+"date": "2026-10-22",
+"id": "deepseek/deepseek-v3.2",
+"name": "DeepSeek: DeepSeek V3.2",
+"field": "input",
+"from": 0.28,
+"to": 0.07,
+"pct": -75.0
+},
+{
+"date": "2026-10-22",
+"id": "deepseek/deepseek-v3.2",
+"name": "DeepSeek: DeepSeek V3.2",
+"field": "output",
+"from": 0.42,
+"to": 0.105,
+"pct": -75.0
 }
 ]

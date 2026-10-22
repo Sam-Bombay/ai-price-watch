@@ -436,9 +436,9 @@
 "deepseek/deepseek-v3.2": {
 "ctx": 163840,
 "id": "deepseek/deepseek-v3.2",
-"in": 0.28,
+"in": 0.07,
 "name": "DeepSeek: DeepSeek V3.2",
-"out": 0.42
+"out": 0.105
 },
 "deepseek/deepseek-v3.2-exp": {
 "ctx": 163840,
@@ -3096,9 +3096,9 @@
 "z-ai/glm-5.3": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3",
-"in": 0.079,
+"in": 0.7,
 "name": "Z.ai: GLM 5.3",
-"out": 1.4
+"out": 2.2
 },
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
@@ -3180,7 +3180,7 @@
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-pro-latest",
-"in": 0.1627,
+"in": 0.1461,
 "name": "DeepSeek: DeepSeek Pro Latest",
 "out": 8.0
 },
@@ -3189,7 +3189,7 @@
 "id": "~deepseek/deepseek-v4-flash-latest",
 "in": 0.0422,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 0.1637
+"out": 0.1729
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,
@@ -3210,7 +3210,7 @@
 "id": "~moonshotai/kimi-latest",
 "in": 0.238,
 "name": "MoonshotAI: Kimi Latest",
-"out": 24.0
+"out": 16.0
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
