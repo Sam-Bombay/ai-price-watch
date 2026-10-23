@@ -1,5 +1,5 @@
 {
-"updated": "2026-10-22",
+"updated": "2026-10-23",
 "models": [
 {
 "id": "mistralai/mistral-nemo",
@@ -79,13 +79,6 @@
 "ctx": 131072
 },
 {
-"id": "deepseek/deepseek-v3.2",
-"name": "DeepSeek: DeepSeek V3.2",
-"in": 0.07,
-"out": 0.105,
-"ctx": 163840
-},
-{
 "id": "gryphe/mythomax-l2-13b",
 "name": "MythoMax 13B",
 "in": 0.08,
@@ -119,13 +112,6 @@
 "in": 0.03,
 "out": 0.13,
 "ctx": 1000000
-},
-{
-"id": "qwen/qwen3.5-9b",
-"name": "Qwen: Qwen3.5-9B",
-"in": 0.08,
-"out": 0.13,
-"ctx": 262144
 },
 {
 "id": "deepseek/deepseek-v4-flash-0731",
@@ -254,13 +240,6 @@
 "ctx": 1048576
 },
 {
-"id": "z-ai/glm-5.3-flash",
-"name": "Z.ai: GLM 5.3 Flash",
-"in": 0.0052,
-"out": 0.1985,
-"ctx": 1048576
-},
-{
 "id": "upstage/solar-mini4",
 "name": "Upstage: Solar Mini 4",
 "in": 0.05,
@@ -315,6 +294,13 @@
 "in": 0.1,
 "out": 0.2,
 "ctx": 128000
+},
+{
+"id": "mistralai/mistral-small-3.2-24b-instruct",
+"name": "Mistral: Mistral Small 3.2 24B",
+"in": 0.075,
+"out": 0.2,
+"ctx": 256000
 },
 {
 "id": "openai/gpt-4.1-nano:batch",
@@ -422,11 +408,11 @@
 "ctx": 131072
 },
 {
-"id": "mistralai/mistral-small-3.2-24b-instruct",
-"name": "Mistral: Mistral Small 3.2 24B",
-"in": 0.0938,
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"in": 0.17,
 "out": 0.25,
-"ctx": 256000
+"ctx": 262144
 },
 {
 "id": "qwen/qwen3.5-flash-02-23",
@@ -632,6 +618,20 @@
 "ctx": 163840
 },
 {
+"id": "deepseek/deepseek-v3.2",
+"name": "DeepSeek: DeepSeek V3.2",
+"in": 0.28,
+"out": 0.42,
+"ctx": 163840
+},
+{
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"in": 0.1478,
+"out": 0.4435,
+"ctx": 1048576
+},
+{
 "id": "mistralai/codestral-2508:batch",
 "name": "Mistral: Codestral 2508 (batch)",
 "in": 0.15,
@@ -688,18 +688,18 @@
 "ctx": 262144
 },
 {
-"id": "~deepseek/deepseek-flash-latest",
-"name": "DeepSeek: DeepSeek Flash Latest",
-"in": 0.07,
-"out": 0.5,
-"ctx": 1048576
-},
-{
 "id": "~openai/gpt-luna-latest",
 "name": "OpenAI: GPT Luna Latest",
 "in": 0.1,
 "out": 0.5,
 "ctx": 1050000
+},
+{
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"in": 0.15,
+"out": 0.5,
+"ctx": 1048576
 },
 {
 "id": "~anthropic/claude-haiku-latest",
@@ -755,12 +755,19 @@
 "name": "MiniMax: MiniMax M3.1 Flash",
 "in": 0.15,
 "out": 0.6,
-"ctx": 1000000
+"ctx": 1048576
 },
 {
 "id": "deepseek/deepseek-v4.1-flash-1017",
 "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
 "in": 0.15,
+"out": 0.6,
+"ctx": 1048576
+},
+{
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"in": 0.026,
 "out": 0.6,
 "ctx": 1048576
 },
@@ -1001,13 +1008,6 @@
 "in": 0.435,
 "out": 0.87,
 "ctx": 1050000
-},
-{
-"id": "deepseek/deepseek-v4-pro",
-"name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.4427,
-"out": 0.8853,
-"ctx": 1048576
 },
 {
 "id": "z-ai/glm-4.6v",
@@ -1311,13 +1311,6 @@
 "ctx": 1000000
 },
 {
-"id": "qwen/qwen3.8-27b",
-"name": "Qwen: Qwen3.8 27B",
-"in": 0.04,
-"out": 1.35,
-"ctx": 1000000
-},
-{
 "id": "aion-labs/aion-3.5-mini",
 "name": "AionLabs: Aion 3.5 Mini",
 "in": 0.7,
@@ -1327,6 +1320,13 @@
 {
 "id": "~z-ai/glm-latest",
 "name": "Z.ai: GLM Latest",
+"in": 0.079,
+"out": 1.4,
+"ctx": 1048576
+},
+{
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
 "in": 0.079,
 "out": 1.4,
 "ctx": 1048576
@@ -1428,6 +1428,13 @@
 "in": 0.8,
 "out": 1.6,
 "ctx": 32768
+},
+{
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"in": 0.8853,
+"out": 1.7706,
+"ctx": 1048576
 },
 {
 "id": "qwen/qwen3.5-plus-20260420",
@@ -1612,13 +1619,6 @@
 "ctx": 262144
 },
 {
-"id": "z-ai/glm-5.3",
-"name": "Z.ai: GLM 5.3",
-"in": 0.7,
-"out": 2.2,
-"ctx": 1048576
-},
-{
 "id": "z-ai/glm-4.6",
 "name": "Z.ai: GLM 4.6",
 "in": 0.55,
@@ -1701,6 +1701,13 @@
 "in": 0.3,
 "out": 2.5,
 "ctx": 32000
+},
+{
+"id": "qwen/qwen3.8-27b",
+"name": "Qwen: Qwen3.8 27B",
+"in": 0.2,
+"out": 2.5,
+"ctx": 1000000
 },
 {
 "id": "bytedance-seed/seed-2-1-turbo",
@@ -2345,13 +2352,6 @@
 "in": 1.5,
 "out": 7.5,
 "ctx": 1000000
-},
-{
-"id": "~deepseek/deepseek-pro-latest",
-"name": "DeepSeek: DeepSeek Pro Latest",
-"in": 0.1461,
-"out": 8.0,
-"ctx": 1048576
 },
 {
 "id": "openai/o3",

@@ -436,9 +436,9 @@
 "deepseek/deepseek-v3.2": {
 "ctx": 163840,
 "id": "deepseek/deepseek-v3.2",
-"in": 0.07,
+"in": 0.28,
 "name": "DeepSeek: DeepSeek V3.2",
-"out": 0.105
+"out": 0.42
 },
 "deepseek/deepseek-v3.2-exp": {
 "ctx": 163840,
@@ -471,9 +471,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.4427,
+"in": 0.8853,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 0.8853
+"out": 1.7706
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -1092,7 +1092,7 @@
 "out": 1.2
 },
 "minimax/minimax-m3.1-flash": {
-"ctx": 1000000,
+"ctx": 1048576,
 "id": "minimax/minimax-m3.1-flash",
 "in": 0.15,
 "name": "MiniMax: MiniMax M3.1 Flash",
@@ -1262,9 +1262,9 @@
 "mistralai/mistral-small-3.2-24b-instruct": {
 "ctx": 256000,
 "id": "mistralai/mistral-small-3.2-24b-instruct",
-"in": 0.0938,
+"in": 0.075,
 "name": "Mistral: Mistral Small 3.2 24B",
-"out": 0.25
+"out": 0.2
 },
 "mistralai/mixtral-8x22b-instruct": {
 "ctx": 65536,
@@ -2522,9 +2522,9 @@
 "qwen/qwen3.5-9b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-9b",
-"in": 0.08,
+"in": 0.17,
 "name": "Qwen: Qwen3.5-9B",
-"out": 0.13
+"out": 0.25
 },
 "qwen/qwen3.5-flash-02-23": {
 "ctx": 1000000,
@@ -2613,9 +2613,9 @@
 "qwen/qwen3.8-27b": {
 "ctx": 1000000,
 "id": "qwen/qwen3.8-27b",
-"in": 0.04,
+"in": 0.2,
 "name": "Qwen: Qwen3.8 27B",
-"out": 1.35
+"out": 2.5
 },
 "qwen/qwen3.8-flash": {
 "ctx": 1000000,
@@ -3096,16 +3096,16 @@
 "z-ai/glm-5.3": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3",
-"in": 0.7,
+"in": 0.079,
 "name": "Z.ai: GLM 5.3",
-"out": 2.2
+"out": 1.4
 },
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.0052,
+"in": 0.15,
 "name": "Z.ai: GLM 5.3 Flash",
-"out": 0.1985
+"out": 0.5
 },
 "z-ai/glm-5.3-flash:batch": {
 "ctx": 1048576,
@@ -3173,16 +3173,16 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.07,
+"in": 0.026,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.5
+"out": 0.6
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-pro-latest",
-"in": 0.1461,
+"in": 0.1478,
 "name": "DeepSeek: DeepSeek Pro Latest",
-"out": 8.0
+"out": 0.4435
 },
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
