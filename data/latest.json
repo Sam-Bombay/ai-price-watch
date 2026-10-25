@@ -2578,13 +2578,6 @@
 "ctx": 128000
 },
 {
-"id": "~moonshotai/kimi-latest",
-"name": "MoonshotAI: Kimi Latest",
-"in": 0.1529,
-"out": 10.1551,
-"ctx": 1048576
-},
-{
 "id": "moonshotai/kimi-k3",
 "name": "MoonshotAI: Kimi K3",
 "in": 0.239,
@@ -2793,6 +2786,13 @@
 "in": 5.0,
 "out": 15.0,
 "ctx": 128000
+},
+{
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"in": 0.152,
+"out": 16.0,
+"ctx": 1048576
 },
 {
 "id": "meta/muse-wonder",

@@ -3201,9 +3201,9 @@
 "~moonshotai/kimi-latest": {
 "ctx": 1048576,
 "id": "~moonshotai/kimi-latest",
-"in": 0.1529,
+"in": 0.152,
 "name": "MoonshotAI: Kimi Latest",
-"out": 10.1551
+"out": 16.0
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,

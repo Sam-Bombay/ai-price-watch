@@ -5187,5 +5187,23 @@
 "field": "retired",
 "from": 0.75,
 "to": null
+},
+{
+"date": "2026-10-25",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.1529,
+"to": 0.152,
+"pct": -0.6
+},
+{
+"date": "2026-10-25",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 10.1551,
+"to": 16.0,
+"pct": 57.6
 }
 ]
