@@ -11,6 +11,7 @@ OUT=$("$PY" ./fetch_prices.py) || { echo "price fetch failed: $OUT"; exit 1; }
 AFTER=$(cat data/changes.json | wc -c | tr -d ' ')
 
 if [ "$BEFORE" = "$AFTER" ]; then
+  ./publish_gh_pages.sh >/dev/null 2>&1 || echo "pages mirror failed"
   echo "no price changes logged today"
   exit 0
 fi
@@ -26,6 +27,9 @@ git push -q origin main >/dev/null 2>&1 || echo "push failed (page may lag)"
 if command -v vercel >/dev/null 2>&1; then
   vercel --prod --yes >/dev/null 2>&1 && echo "deployed" || echo "deploy failed (page may lag)"
 fi
+
+# second home: free GitHub Pages mirror, so the funnel survives any Vercel billing lapse
+./publish_gh_pages.sh >/dev/null 2>&1 && echo "pages mirrored" || echo "pages mirror failed"
 
 BIG=$("$PY" - <<'PY'
 import json, datetime
