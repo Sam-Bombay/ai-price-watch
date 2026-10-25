@@ -5065,5 +5065,127 @@
 "from": 0.95,
 "to": 1.2,
 "pct": 26.3
+},
+{
+"date": "2026-10-25",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "input",
+"from": 0.0512,
+"to": 0.0513,
+"pct": 0.2
+},
+{
+"date": "2026-10-25",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 0.0702,
+"to": 0.0701,
+"pct": -0.1
+},
+{
+"date": "2026-10-25",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "input",
+"from": 0.075,
+"to": 0.0703,
+"pct": -6.3
+},
+{
+"date": "2026-10-25",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "output",
+"from": 4.295,
+"to": 4.3843,
+"pct": 2.1
+},
+{
+"date": "2026-10-25",
+"id": "liquid/lfm-2.5-2.6b",
+"name": "LiquidAI: LFM2.5-2.6B",
+"field": "added",
+"from": null,
+"to": 0.5
+},
+{
+"date": "2026-10-25",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.19,
+"to": 0.1529,
+"pct": -19.5
+},
+{
+"date": "2026-10-25",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 8.94,
+"to": 10.1551,
+"pct": 13.6
+},
+{
+"date": "2026-10-25",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.2161,
+"to": 0.2088,
+"pct": -3.4
+},
+{
+"date": "2026-10-25",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 0.4322,
+"to": 0.4176,
+"pct": -3.4
+},
+{
+"date": "2026-10-25",
+"id": "meta-llama/llama-3.2-3b-instruct",
+"name": "Meta: Llama 3.2 3B Instruct",
+"field": "input",
+"from": 0.0509,
+"to": 0.05,
+"pct": -1.8
+},
+{
+"date": "2026-10-25",
+"id": "meta-llama/llama-3.2-3b-instruct",
+"name": "Meta: Llama 3.2 3B Instruct",
+"field": "output",
+"from": 0.335,
+"to": 0.33,
+"pct": -1.5
+},
+{
+"date": "2026-10-25",
+"id": "openai/gpt-3.5-turbo",
+"name": "OpenAI: GPT-3.5 Turbo",
+"field": "retired",
+"from": 1.5,
+"to": null
+},
+{
+"date": "2026-10-25",
+"id": "openai/gpt-3.5-turbo-instruct",
+"name": "OpenAI: GPT-3.5 Turbo Instruct",
+"field": "retired",
+"from": 2.0,
+"to": null
+},
+{
+"date": "2026-10-25",
+"id": "openai/gpt-3.5-turbo:batch",
+"name": "OpenAI: GPT-3.5 Turbo (batch)",
+"field": "retired",
+"from": 0.75,
+"to": null
 }
 ]

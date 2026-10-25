@@ -471,9 +471,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.2161,
+"in": 0.2088,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 0.4322
+"out": 0.4176
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -888,6 +888,13 @@
 "name": "Inference.net: Schematron V2 Turbo",
 "out": 0.15
 },
+"liquid/lfm-2.5-2.6b": {
+"ctx": 128000,
+"id": "liquid/lfm-2.5-2.6b",
+"in": 0.35,
+"name": "LiquidAI: LFM2.5-2.6B",
+"out": 0.5
+},
 "liquid/lfm-2.5-2.6b:free": {
 "ctx": 65536,
 "id": "liquid/lfm-2.5-2.6b:free",
@@ -940,9 +947,9 @@
 "meta-llama/llama-3.2-3b-instruct": {
 "ctx": 131072,
 "id": "meta-llama/llama-3.2-3b-instruct",
-"in": 0.0509,
+"in": 0.05,
 "name": "Meta: Llama 3.2 3B Instruct",
-"out": 0.335
+"out": 0.33
 },
 "meta-llama/llama-3.3-70b-instruct": {
 "ctx": 131072,
@@ -1497,13 +1504,6 @@
 "name": "NVIDIA: Switchyard",
 "out": null
 },
-"openai/gpt-3.5-turbo": {
-"ctx": 16385,
-"id": "openai/gpt-3.5-turbo",
-"in": 0.5,
-"name": "OpenAI: GPT-3.5 Turbo",
-"out": 1.5
-},
 "openai/gpt-3.5-turbo-0613": {
 "ctx": 4095,
 "id": "openai/gpt-3.5-turbo-0613",
@@ -1517,20 +1517,6 @@
 "in": 3.0,
 "name": "OpenAI: GPT-3.5 Turbo 16k",
 "out": 4.0
-},
-"openai/gpt-3.5-turbo-instruct": {
-"ctx": 4095,
-"id": "openai/gpt-3.5-turbo-instruct",
-"in": 1.5,
-"name": "OpenAI: GPT-3.5 Turbo Instruct",
-"out": 2.0
-},
-"openai/gpt-3.5-turbo:batch": {
-"ctx": 16385,
-"id": "openai/gpt-3.5-turbo:batch",
-"in": 0.25,
-"name": "OpenAI: GPT-3.5 Turbo (batch)",
-"out": 0.75
 },
 "openai/gpt-4": {
 "ctx": 8191,
@@ -3215,9 +3201,9 @@
 "~moonshotai/kimi-latest": {
 "ctx": 1048576,
 "id": "~moonshotai/kimi-latest",
-"in": 0.19,
+"in": 0.1529,
 "name": "MoonshotAI: Kimi Latest",
-"out": 8.94
+"out": 10.1551
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
@@ -3271,15 +3257,15 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.0512,
+"in": 0.0513,
 "name": "Z.ai: GLM Flash Latest",
-"out": 0.0702
+"out": 0.0701
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-latest",
-"in": 0.075,
+"in": 0.0703,
 "name": "Z.ai: GLM Latest",
-"out": 4.295
+"out": 4.3843
 }
 }
