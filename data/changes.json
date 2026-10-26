@@ -5205,5 +5205,238 @@
 "from": 10.1551,
 "to": 16.0,
 "pct": 57.6
+},
+{
+"date": "2026-10-26",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.1188,
+"to": 0.133,
+"pct": 12.0
+},
+{
+"date": "2026-10-26",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "input",
+"from": 0.0513,
+"to": 0.0413,
+"pct": -19.5
+},
+{
+"date": "2026-10-26",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 0.0701,
+"to": 0.0758,
+"pct": 8.1
+},
+{
+"date": "2026-10-26",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "input",
+"from": 0.0703,
+"to": 0.0699,
+"pct": -0.6
+},
+{
+"date": "2026-10-26",
+"id": "~z-ai/glm-latest",
+"name": "Z.ai: GLM Latest",
+"field": "output",
+"from": 4.3843,
+"to": 1.4,
+"pct": -68.1
+},
+{
+"date": "2026-10-26",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "input",
+"from": 0.079,
+"to": 0.0699,
+"pct": -11.5
+},
+{
+"date": "2026-10-26",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 0.1763,
+"to": 0.1637,
+"pct": -7.1
+},
+{
+"date": "2026-10-26",
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"field": "input",
+"from": 0.239,
+"to": 0.18,
+"pct": -24.7
+},
+{
+"date": "2026-10-26",
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"field": "output",
+"from": 10.8,
+"to": 20.0,
+"pct": 85.2
+},
+{
+"date": "2026-10-26",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.152,
+"to": 0.18,
+"pct": 18.4
+},
+{
+"date": "2026-10-26",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 16.0,
+"to": 20.0,
+"pct": 25.0
+},
+{
+"date": "2026-10-26",
+"id": "qwen/qwen3.6-27b",
+"name": "Qwen: Qwen3.6 27B",
+"field": "input",
+"from": 0.25,
+"to": 0.32,
+"pct": 28.0
+},
+{
+"date": "2026-10-26",
+"id": "qwen/qwen3.6-27b",
+"name": "Qwen: Qwen3.6 27B",
+"field": "output",
+"from": 2.0,
+"to": 3.2,
+"pct": 60.0
+},
+{
+"date": "2026-10-26",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.2088,
+"to": 0.7875,
+"pct": 277.2
+},
+{
+"date": "2026-10-26",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 0.4176,
+"to": 1.575,
+"pct": 277.2
+},
+{
+"date": "2026-10-26",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.0675,
+"to": 0.09,
+"pct": 33.3
+},
+{
+"date": "2026-10-26",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.225,
+"to": 0.3,
+"pct": 33.3
+},
+{
+"date": "2026-10-26",
+"id": "qwen/qwen3.5-122b-a10b",
+"name": "Qwen: Qwen3.5-122B-A10B",
+"field": "input",
+"from": 0.4,
+"to": 0.26,
+"pct": -35.0
+},
+{
+"date": "2026-10-26",
+"id": "qwen/qwen3.5-122b-a10b",
+"name": "Qwen: Qwen3.5-122B-A10B",
+"field": "output",
+"from": 3.2,
+"to": 2.08,
+"pct": -35.0
+},
+{
+"date": "2026-10-26",
+"id": "qwen/qwen3-30b-a3b-instruct-2507",
+"name": "Qwen: Qwen3 30B A3B Instruct 2507",
+"field": "input",
+"from": 0.09,
+"to": 0.1,
+"pct": 11.1
+},
+{
+"date": "2026-10-26",
+"id": "arcee-ai/trinity-large-thinking",
+"name": "Arcee AI: Trinity Large Thinking",
+"field": "retired",
+"from": 0.8,
+"to": null
+},
+{
+"date": "2026-10-26",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.133,
+"to": 0.132,
+"pct": -0.8
+},
+{
+"date": "2026-10-26",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "output",
+"from": 8.0,
+"to": 0.396,
+"pct": -95.0
+},
+{
+"date": "2026-10-26",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 0.1637,
+"to": 0.1694,
+"pct": 3.5
+},
+{
+"date": "2026-10-26",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.18,
+"to": 0.171,
+"pct": -5.0
+},
+{
+"date": "2026-10-26",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 20.0,
+"to": 9.3421,
+"pct": -53.3
 }
 ]
