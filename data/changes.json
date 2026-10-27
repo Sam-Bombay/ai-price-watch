@@ -5438,5 +5438,372 @@
 "from": 20.0,
 "to": 9.3421,
 "pct": -53.3
+},
+{
+"date": "2026-10-27",
+"id": "openai/gpt-6.1-terra-pro",
+"name": "OpenAI: GPT-6.1 Terra Pro",
+"field": "added",
+"from": null,
+"to": 5.0
+},
+{
+"date": "2026-10-27",
+"id": "openai/gpt-6.1-terra-pro:batch",
+"name": "OpenAI: GPT-6.1 Terra Pro (batch)",
+"field": "added",
+"from": null,
+"to": 2.5
+},
+{
+"date": "2026-10-27",
+"id": "openai/gpt-6.1-terra",
+"name": "OpenAI: GPT-6.1 Terra",
+"field": "added",
+"from": null,
+"to": 5.0
+},
+{
+"date": "2026-10-27",
+"id": "openai/gpt-6.1-terra:batch",
+"name": "OpenAI: GPT-6.1 Terra (batch)",
+"field": "added",
+"from": null,
+"to": 2.5
+},
+{
+"date": "2026-10-27",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.132,
+"to": 0.1259,
+"pct": -4.6
+},
+{
+"date": "2026-10-27",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "output",
+"from": 0.396,
+"to": 8.0,
+"pct": 1920.2
+},
+{
+"date": "2026-10-27",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.02,
+"to": 0.017,
+"pct": -15.0
+},
+{
+"date": "2026-10-27",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 1.0,
+"to": 0.6,
+"pct": -40.0
+},
+{
+"date": "2026-10-27",
+"id": "~openai/gpt-terra-latest",
+"name": "OpenAI: GPT Terra Latest",
+"field": "input",
+"from": 2.0,
+"to": 1.0,
+"pct": -50.0
+},
+{
+"date": "2026-10-27",
+"id": "~openai/gpt-terra-latest",
+"name": "OpenAI: GPT Terra Latest",
+"field": "output",
+"from": 12.0,
+"to": 5.0,
+"pct": -58.3
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "input",
+"from": 0.02,
+"to": 0.14,
+"pct": 600.0
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "output",
+"from": 1.0,
+"to": 0.42,
+"pct": -58.0
+},
+{
+"date": "2026-10-27",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "input",
+"from": 0.0413,
+"to": 0.0313,
+"pct": -24.2
+},
+{
+"date": "2026-10-27",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 0.0758,
+"to": 0.1046,
+"pct": 38.0
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.0444,
+"to": 0.119,
+"pct": 168.0
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "output",
+"from": 0.1333,
+"to": 0.238,
+"pct": 78.5
+},
+{
+"date": "2026-10-27",
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"field": "input",
+"from": 0.18,
+"to": 0.179,
+"pct": -0.6
+},
+{
+"date": "2026-10-27",
+"id": "moonshotai/kimi-k2.7-code",
+"name": "MoonshotAI: Kimi K2.7 Code",
+"field": "input",
+"from": 0.6712,
+"to": 0.56,
+"pct": -16.6
+},
+{
+"date": "2026-10-27",
+"id": "moonshotai/kimi-k2.7-code",
+"name": "MoonshotAI: Kimi K2.7 Code",
+"field": "output",
+"from": 3.35,
+"to": 3.1,
+"pct": -7.5
+},
+{
+"date": "2026-10-27",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.171,
+"to": 0.179,
+"pct": 4.7
+},
+{
+"date": "2026-10-27",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 9.3421,
+"to": 20.0,
+"pct": 114.1
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.7875,
+"to": 0.8872,
+"pct": 12.7
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 1.575,
+"to": 1.7745,
+"pct": 12.7
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4-flash",
+"name": "DeepSeek: DeepSeek V4 Flash 0423",
+"field": "input",
+"from": 0.091,
+"to": 0.0449,
+"pct": -50.7
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4-flash",
+"name": "DeepSeek: DeepSeek V4 Flash 0423",
+"field": "output",
+"from": 0.182,
+"to": 0.45,
+"pct": 147.3
+},
+{
+"date": "2026-10-27",
+"id": "xiaomi/mimo-v2.5-pro",
+"name": "Xiaomi: MiMo-V2.5-Pro",
+"field": "input",
+"from": 0.3045,
+"to": 0.48,
+"pct": 57.6
+},
+{
+"date": "2026-10-27",
+"id": "xiaomi/mimo-v2.5-pro",
+"name": "Xiaomi: MiMo-V2.5-Pro",
+"field": "output",
+"from": 0.609,
+"to": 1.8,
+"pct": 195.6
+},
+{
+"date": "2026-10-27",
+"id": "xiaomi/mimo-v2.5",
+"name": "Xiaomi: MiMo-V2.5",
+"field": "input",
+"from": 0.119,
+"to": 0.4,
+"pct": 236.1
+},
+{
+"date": "2026-10-27",
+"id": "xiaomi/mimo-v2.5",
+"name": "Xiaomi: MiMo-V2.5",
+"field": "output",
+"from": 0.238,
+"to": 2.0,
+"pct": 740.3
+},
+{
+"date": "2026-10-27",
+"id": "z-ai/glm-5.1",
+"name": "Z.ai: GLM 5.1",
+"field": "input",
+"from": 1.4,
+"to": 0.966,
+"pct": -31.0
+},
+{
+"date": "2026-10-27",
+"id": "z-ai/glm-5.1",
+"name": "Z.ai: GLM 5.1",
+"field": "output",
+"from": 4.4,
+"to": 3.036,
+"pct": -31.0
+},
+{
+"date": "2026-10-27",
+"id": "qwen/qwen3.5-27b",
+"name": "Qwen: Qwen3.5-27B",
+"field": "input",
+"from": 0.27,
+"to": 0.26,
+"pct": -3.7
+},
+{
+"date": "2026-10-27",
+"id": "qwen/qwen3.5-27b",
+"name": "Qwen: Qwen3.5-27B",
+"field": "output",
+"from": 2.16,
+"to": 2.6,
+"pct": 20.4
+},
+{
+"date": "2026-10-27",
+"id": "google/gemma-3-4b-it",
+"name": "Google: Gemma 3 4B",
+"field": "input",
+"from": 0.04,
+"to": 0.05,
+"pct": 25.0
+},
+{
+"date": "2026-10-27",
+"id": "google/gemma-3-4b-it",
+"name": "Google: Gemma 3 4B",
+"field": "output",
+"from": 0.05,
+"to": 0.1,
+"pct": 100.0
+},
+{
+"date": "2026-10-27",
+"id": "ibm-granite/granite-4.0-h-micro",
+"name": "IBM: Granite 4.0 Micro",
+"field": "retired",
+"from": 0.112,
+"to": null
+},
+{
+"date": "2026-10-27",
+"id": "mistralai/codestral-2508:batch",
+"name": "Mistral: Codestral 2508 (batch)",
+"field": "retired",
+"from": 0.45,
+"to": null
+},
+{
+"date": "2026-10-27",
+"id": "mistralai/ministral-8b-2512:batch",
+"name": "Mistral: Ministral 3 8B 2512 (batch)",
+"field": "retired",
+"from": 0.075,
+"to": null
+},
+{
+"date": "2026-10-27",
+"id": "mistralai/mistral-large-2512:batch",
+"name": "Mistral: Mistral Large 3 2512 (batch)",
+"field": "retired",
+"from": 0.75,
+"to": null
+},
+{
+"date": "2026-10-27",
+"id": "mistralai/mistral-medium-3.1:batch",
+"name": "Mistral: Mistral Medium 3.1 (batch)",
+"field": "retired",
+"from": 1.0,
+"to": null
+},
+{
+"date": "2026-10-27",
+"id": "mistralai/mistral-small-2603:batch",
+"name": "Mistral: Mistral Small 4 (batch)",
+"field": "retired",
+"from": 0.3,
+"to": null
+},
+{
+"date": "2026-10-27",
+"id": "nvidia/nemotron-3-super-120b-a12b:free",
+"name": "NVIDIA: Nemotron 3 Super (free)",
+"field": "retired",
+"from": null,
+"to": null
 }
 ]
