@@ -5805,5 +5805,59 @@
 "field": "retired",
 "from": null,
 "to": null
+},
+{
+"date": "2026-10-27",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 0.1046,
+"to": 0.0846,
+"pct": -19.1
+},
+{
+"date": "2026-10-27",
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"field": "input",
+"from": 0.179,
+"to": 0.169,
+"pct": -5.6
+},
+{
+"date": "2026-10-27",
+"id": "moonshotai/kimi-k2.7-code",
+"name": "MoonshotAI: Kimi K2.7 Code",
+"field": "input",
+"from": 0.56,
+"to": 0.6725,
+"pct": 20.1
+},
+{
+"date": "2026-10-27",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.179,
+"to": 0.169,
+"pct": -5.6
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.8872,
+"to": 0.8837,
+"pct": -0.4
+},
+{
+"date": "2026-10-27",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 1.7745,
+"to": 1.7675,
+"pct": -0.4
 }
 ]

@@ -37,6 +37,13 @@
 "ctx": 131072
 },
 {
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"in": 0.0313,
+"out": 0.0846,
+"ctx": 1048576
+},
+{
 "id": "openai/gpt-oss-20b",
 "name": "OpenAI: gpt-oss-20b",
 "in": 0.018,
@@ -70,13 +77,6 @@
 "in": 0.05,
 "out": 0.1,
 "ctx": 131072
-},
-{
-"id": "~z-ai/glm-flash-latest",
-"name": "Z.ai: GLM Flash Latest",
-"in": 0.0313,
-"out": 0.1046,
-"ctx": 1048576
 },
 {
 "id": "gryphe/mythomax-l2-13b",
@@ -1355,8 +1355,8 @@
 {
 "id": "deepseek/deepseek-v4-pro",
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.8872,
-"out": 1.7745,
+"in": 0.8837,
+"out": 1.7675,
 "ctx": 1048576
 },
 {
@@ -1810,7 +1810,7 @@
 {
 "id": "moonshotai/kimi-k2.7-code",
 "name": "MoonshotAI: Kimi K2.7 Code",
-"in": 0.56,
+"in": 0.6725,
 "out": 3.1,
 "ctx": 262144
 },
@@ -2776,7 +2776,7 @@
 {
 "id": "moonshotai/kimi-k3",
 "name": "MoonshotAI: Kimi K3",
-"in": 0.179,
+"in": 0.169,
 "out": 20.0,
 "ctx": 1048576
 },
@@ -2797,7 +2797,7 @@
 {
 "id": "~moonshotai/kimi-latest",
 "name": "MoonshotAI: Kimi Latest",
-"in": 0.179,
+"in": 0.169,
 "out": 20.0,
 "ctx": 1048576
 },
