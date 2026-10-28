@@ -135,6 +135,13 @@
 "ctx": 128000
 },
 {
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"in": 0.0471,
+"out": 0.1412,
+"ctx": 1048576
+},
+{
 "id": "inference-net/schematron-v2-turbo",
 "name": "Inference.net: Schematron V2 Turbo",
 "in": 0.03,
@@ -175,13 +182,6 @@
 "in": 0.0375,
 "out": 0.15,
 "ctx": 128000
-},
-{
-"id": "~deepseek/deepseek-v4-flash-latest",
-"name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.0475,
-"out": 0.1568,
-"ctx": 1048576
 },
 {
 "id": "tencent/hy-mt2-1.8b",

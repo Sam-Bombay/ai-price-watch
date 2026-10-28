@@ -6092,5 +6092,23 @@
 "from": 0.08,
 "to": 0.04,
 "pct": -50.0
+},
+{
+"date": "2026-10-28",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.0475,
+"to": 0.0471,
+"pct": -0.8
+},
+{
+"date": "2026-10-28",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 0.1568,
+"to": 0.1412,
+"pct": -9.9
 }
 ]
