@@ -48,6 +48,9 @@ echo "logged changes: $(echo "$OUT" | head -1)"
 # rebuild the CFO benchmark from today's prices, before the mirror copies the tree
 "$PY" ./build_benchmark.py >/dev/null 2>&1 || echo "benchmark build failed"
 
+# the partner-side assessment worksheet, rebuilt from today's prices
+"$PY" ./build_finops.py >/dev/null 2>&1 || echo "finops build failed"
+
 # refresh the RSS feed from the briefs, so the feed is never staler than the page
 "$PY" ./gen_feed.py >/dev/null 2>&1 || echo "feed generation failed"
 

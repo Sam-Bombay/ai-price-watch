@@ -6110,5 +6110,275 @@
 "from": 0.1568,
 "to": 0.1412,
 "pct": -9.9
+},
+{
+"date": "2026-10-29",
+"id": "particle-ai/particle-1",
+"name": "Particle AI: Particle-1",
+"field": "added",
+"from": null,
+"to": 1.0
+},
+{
+"date": "2026-10-29",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.2043,
+"to": 0.1035,
+"pct": -49.3
+},
+{
+"date": "2026-10-29",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.0115,
+"to": 0.0309,
+"pct": 168.7
+},
+{
+"date": "2026-10-29",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "input",
+"from": 0.14,
+"to": 0.045,
+"pct": -67.9
+},
+{
+"date": "2026-10-29",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "output",
+"from": 0.42,
+"to": 0.5,
+"pct": 19.0
+},
+{
+"date": "2026-10-29",
+"id": "ibm-granite/granite-4.2-8b",
+"name": "IBM: Granite 4.2 8B",
+"field": "output",
+"from": 0.25,
+"to": 0.15,
+"pct": -40.0
+},
+{
+"date": "2026-10-29",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "input",
+"from": 0.0237,
+"to": 0.0457,
+"pct": 92.8
+},
+{
+"date": "2026-10-29",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 0.1142,
+"to": 0.0742,
+"pct": -35.0
+},
+{
+"date": "2026-10-29",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "input",
+"from": 0.15,
+"to": 0.0457,
+"pct": -69.5
+},
+{
+"date": "2026-10-29",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "output",
+"from": 0.5,
+"to": 0.0742,
+"pct": -85.2
+},
+{
+"date": "2026-10-29",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.0471,
+"to": 0.0509,
+"pct": 8.1
+},
+{
+"date": "2026-10-29",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 0.1412,
+"to": 0.1487,
+"pct": 5.3
+},
+{
+"date": "2026-10-29",
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"field": "input",
+"from": 0.159,
+"to": 0.239,
+"pct": 50.3
+},
+{
+"date": "2026-10-29",
+"id": "moonshotai/kimi-k3",
+"name": "MoonshotAI: Kimi K3",
+"field": "output",
+"from": 20.0,
+"to": 10.8,
+"pct": -46.0
+},
+{
+"date": "2026-10-29",
+"id": "z-ai/glm-5.2",
+"name": "Z.ai: GLM 5.2",
+"field": "input",
+"from": 0.014,
+"to": 0.006,
+"pct": -57.1
+},
+{
+"date": "2026-10-29",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.1577,
+"to": 0.1824,
+"pct": 15.7
+},
+{
+"date": "2026-10-29",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 9.3421,
+"to": 9.3388,
+"pct": -0.0
+},
+{
+"date": "2026-10-29",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.889,
+"to": 0.8923,
+"pct": 0.4
+},
+{
+"date": "2026-10-29",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 1.7779,
+"to": 1.7845,
+"pct": 0.4
+},
+{
+"date": "2026-10-29",
+"id": "z-ai/glm-4.6",
+"name": "Z.ai: GLM 4.6",
+"field": "input",
+"from": 0.55,
+"to": 0.5,
+"pct": -9.1
+},
+{
+"date": "2026-10-29",
+"id": "z-ai/glm-4.6",
+"name": "Z.ai: GLM 4.6",
+"field": "output",
+"from": 2.2,
+"to": 2.0,
+"pct": -9.1
+},
+{
+"date": "2026-10-29",
+"id": "meta-llama/llama-3.1-8b-instruct",
+"name": "Meta: Llama 3.1 8B Instruct",
+"field": "input",
+"from": 0.02,
+"to": 0.05,
+"pct": 150.0
+},
+{
+"date": "2026-10-29",
+"id": "meta-llama/llama-3.1-8b-instruct",
+"name": "Meta: Llama 3.1 8B Instruct",
+"field": "output",
+"from": 0.04,
+"to": 0.08,
+"pct": 100.0
+},
+{
+"date": "2026-10-29",
+"id": "openai/gpt-4-turbo",
+"name": "OpenAI: GPT-4 Turbo",
+"field": "retired",
+"from": 30.0,
+"to": null
+},
+{
+"date": "2026-10-29",
+"id": "openai/o1",
+"name": "OpenAI: o1",
+"field": "retired",
+"from": 60.0,
+"to": null
+},
+{
+"date": "2026-10-29",
+"id": "openai/o1-pro",
+"name": "OpenAI: o1-pro",
+"field": "retired",
+"from": 600.0,
+"to": null
+},
+{
+"date": "2026-10-29",
+"id": "openai/o3-mini",
+"name": "OpenAI: o3 Mini",
+"field": "retired",
+"from": 4.4,
+"to": null
+},
+{
+"date": "2026-10-29",
+"id": "openai/o3-mini-high",
+"name": "OpenAI: o3 Mini High",
+"field": "retired",
+"from": 4.4,
+"to": null
+},
+{
+"date": "2026-10-29",
+"id": "openai/o4-mini",
+"name": "OpenAI: o4 Mini",
+"field": "retired",
+"from": 4.4,
+"to": null
+},
+{
+"date": "2026-10-29",
+"id": "openai/o4-mini-high",
+"name": "OpenAI: o4 Mini High",
+"field": "retired",
+"from": 4.4,
+"to": null
+},
+{
+"date": "2026-10-29",
+"id": "qwen/qwen3-next-80b-a3b-thinking",
+"name": "Qwen: Qwen3 Next 80B A3B Thinking",
+"field": "retired",
+"from": 1.2,
+"to": null
 }
 ]
