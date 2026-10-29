@@ -1369,7 +1369,7 @@
 {
 "id": "~deepseek/deepseek-flash-latest",
 "name": "DeepSeek: DeepSeek Flash Latest",
-"in": 0.0309,
+"in": 0.0339,
 "out": 1.8,
 "ctx": 1048576
 },

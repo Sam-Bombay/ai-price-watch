@@ -6380,5 +6380,14 @@
 "field": "retired",
 "from": 1.2,
 "to": null
+},
+{
+"date": "2026-10-29",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.0309,
+"to": 0.0339,
+"pct": 9.7
 }
 ]
