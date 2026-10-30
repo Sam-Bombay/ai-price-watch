@@ -429,9 +429,9 @@
 "deepseek/deepseek-v3.2": {
 "ctx": 163840,
 "id": "deepseek/deepseek-v3.2",
-"in": 0.28,
+"in": 0.26,
 "name": "DeepSeek: DeepSeek V3.2",
-"out": 0.42
+"out": 0.38
 },
 "deepseek/deepseek-v3.2-exp": {
 "ctx": 163840,
@@ -464,9 +464,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.8923,
+"in": 0.9483,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 1.7845
+"out": 1.8966
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -1150,9 +1150,9 @@
 "mistralai/mistral-large-4-0": {
 "ctx": 1048576,
 "id": "mistralai/mistral-large-4-0",
-"in": 1.36,
+"in": 0.7,
 "name": "Mistral: Mistral Large 4",
-"out": 4.18
+"out": 2.1
 },
 "mistralai/mistral-medium-3": {
 "ctx": 131072,
@@ -1290,16 +1290,16 @@
 "moonshotai/kimi-k2.7-code": {
 "ctx": 262144,
 "id": "moonshotai/kimi-k2.7-code",
-"in": 0.56,
+"in": 0.6,
 "name": "MoonshotAI: Kimi K2.7 Code",
-"out": 3.1
+"out": 3.5
 },
 "moonshotai/kimi-k3": {
 "ctx": 1048576,
 "id": "moonshotai/kimi-k3",
-"in": 0.239,
+"in": 0.192,
 "name": "MoonshotAI: Kimi K3",
-"out": 10.8
+"out": 15.0
 },
 "moonshotai/kimi-k3.1-pro": {
 "ctx": 1048576,
@@ -2179,7 +2179,7 @@
 "particle-ai/particle-1": {
 "ctx": 1048576,
 "id": "particle-ai/particle-1",
-"in": 0.25,
+"in": 0.1,
 "name": "Particle AI: Particle-1",
 "out": 1.0
 },
@@ -2473,9 +2473,9 @@
 "qwen/qwen3.6-27b": {
 "ctx": 262144,
 "id": "qwen/qwen3.6-27b",
-"in": 0.45,
+"in": 0.32,
 "name": "Qwen: Qwen3.6 27B",
-"out": 2.7
+"out": 3.2
 },
 "qwen/qwen3.6-35b-a3b": {
 "ctx": 262144,
@@ -2536,9 +2536,9 @@
 "qwen/qwen3.8-27b": {
 "ctx": 1000000,
 "id": "qwen/qwen3.8-27b",
-"in": 0.039,
+"in": 0.15,
 "name": "Qwen: Qwen3.8 27B",
-"out": 1.25
+"out": 1.875
 },
 "qwen/qwen3.8-flash": {
 "ctx": 1000000,
@@ -2681,7 +2681,7 @@
 "out": 1.15
 },
 "stepfun/step-5-preview": {
-"ctx": 1000000,
+"ctx": 1048576,
 "id": "stepfun/step-5-preview",
 "in": 1.0,
 "name": "StepFun: Step 5 Preview",
@@ -2819,13 +2819,6 @@
 "in": 0.05,
 "name": "Upstage: Solar Mini 4",
 "out": 0.2
-},
-"upstage/solar-pro-3": {
-"ctx": 131072,
-"id": "upstage/solar-pro-3",
-"in": 0.15,
-"name": "Upstage: Solar Pro 3",
-"out": 0.6
 },
 "upstage/solar-pro4": {
 "ctx": 524288,
@@ -3019,16 +3012,16 @@
 "z-ai/glm-5.3": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3",
-"in": 0.0699,
+"in": 0.08,
 "name": "Z.ai: GLM 5.3",
-"out": 1.4
+"out": 3.6
 },
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.0457,
+"in": 0.018,
 "name": "Z.ai: GLM 5.3 Flash",
-"out": 0.0742
+"out": 0.1402
 },
 "z-ai/glm-5.3-flash:batch": {
 "ctx": 1048576,
@@ -3096,23 +3089,23 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.0339,
+"in": 0.022,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 1.8
+"out": 0.192
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-pro-latest",
 "in": 0.1035,
 "name": "DeepSeek: DeepSeek Pro Latest",
-"out": 8.0
+"out": 4.0
 },
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.0509,
+"in": 0.0522,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 0.1487
+"out": 0.3
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,
@@ -3131,9 +3124,9 @@
 "~moonshotai/kimi-latest": {
 "ctx": 1048576,
 "id": "~moonshotai/kimi-latest",
-"in": 0.1824,
+"in": 0.1615,
 "name": "MoonshotAI: Kimi Latest",
-"out": 9.3388
+"out": 10.1551
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
@@ -3187,9 +3180,9 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.0457,
+"in": 0.018,
 "name": "Z.ai: GLM Flash Latest",
-"out": 0.0742
+"out": 0.1402
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,
