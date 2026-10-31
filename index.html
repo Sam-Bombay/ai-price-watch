@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Price Watch — every AI API price change, tracked daily</title>
+<meta name="description" content="A daily-updated log of price changes across the AI model market, and what every model costs per million tokens right now.">
+<link rel="alternate" type="application/rss+xml" title="AI Price Watch — daily price moves" href="/ai-price-watch/feed.xml">
+<style>
+  :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c; --up:#ff6b6b; --down:#4ade80; --accent:#7dd3fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:1060px; margin:0 auto; padding:56px 20px 80px; }
+  h1 { font-size:30px; letter-spacing:-.02em; margin:0 0 6px; }
+  .sub { color:var(--dim); margin:0 0 34px; }
+  .stats { display:flex; gap:14px; flex-wrap:wrap; margin:0 0 40px; }
+  .stat { background:var(--panel); border:1px solid var(--line); border-radius:12px;
+          padding:16px 20px; min-width:180px; flex:1; }
+  .stat b { display:block; font-size:26px; letter-spacing:-.02em; margin-bottom:2px; }
+  .stat span { color:var(--dim); font-size:12.5px; text-transform:uppercase; letter-spacing:.06em; }
+  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim);
+       margin:44px 0 14px; font-weight:600; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th,td { text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); }
+  th { color:var(--dim); font-size:12px; text-transform:uppercase; letter-spacing:.06em; font-weight:600; }
+  td.num,th.num { text-align:right; }
+  tr:hover td { background:var(--panel); }
+  .model { max-width:430px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .pill { display:inline-block; padding:2px 8px; border-radius:999px; font-size:11.5px;
+          border:1px solid var(--line); color:var(--dim); }
+  .cut { color:var(--down); font-weight:600; }
+  .rise { color:var(--up); font-weight:600; }
+  .new { color:var(--accent); font-weight:600; }
+  .gone { color:var(--dim); font-weight:600; }
+  input { width:100%; background:var(--panel); border:1px solid var(--line); color:var(--txt);
+          border-radius:10px; padding:11px 14px; font-size:14px; margin-bottom:14px; }
+  input:focus { outline:none; border-color:#3b4654; }
+  .calc { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  .calc-in, .calc-out { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px 22px; }
+  .calc label { display:block; color:var(--dim); font-size:12.5px; text-transform:uppercase;
+                letter-spacing:.06em; margin:0 0 6px; }
+  .calc input { margin-bottom:16px; }
+  .calc-out .row { display:flex; justify-content:space-between; align-items:baseline;
+                   padding:9px 0; border-bottom:1px solid var(--line); }
+  .calc-out .row span { color:var(--dim); }
+  .calc-out .row b { font-size:20px; letter-spacing:-.01em; }
+  .cta { display:block; text-align:center; margin-top:18px; padding:12px; border-radius:10px;
+         background:#e8eaed; color:#0b0c0e; font-weight:600; text-decoration:none; }
+  .cta:hover { background:#fff; }
+  @media (max-width:720px){ .calc{grid-template-columns:1fr;} }
+  .foot { margin-top:56px; padding:22px 24px; border:1px solid var(--line); border-radius:12px;
+          background:var(--panel); }
+  .foot p { margin:0 0 8px; }
+  .foot a { color:var(--accent); }
+  .muted { color:var(--dim); font-size:13px; }
+  .brief { background:linear-gradient(180deg,#14161a,#101216); border:1px solid var(--line);
+           border-left:3px solid var(--accent); border-radius:12px; padding:20px 24px; margin:0 0 6px; }
+  .brief-k { color:var(--accent); font-size:12px; text-transform:uppercase; letter-spacing:.08em;
+             margin:0 0 10px; font-weight:600; }
+  .brief p { margin:0 0 10px; }
+  .brief p:last-child { margin-bottom:0; }
+  .brief a { color:var(--accent); }
+  .scroll { max-height:560px; overflow:auto; border:1px solid var(--line); border-radius:12px; }
+  .scroll table { margin:0; }
+  .scroll th { position:sticky; top:0; background:var(--bg); }
+  @media (max-width:620px){ .model{max-width:190px;} h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>AI Price Watch</h1>
+  <p class="sub">Every price change across the AI model market, logged daily. Last updated <span id="updated">—</span>.</p>
+
+  <div class="stats">
+    <div class="stat"><b id="s-models">—</b><span>models tracked</span></div>
+    <div class="stat"><b id="s-changes">—</b><span>changes logged (30d)</span></div>
+    <div class="stat"><b id="s-cuts">—</b><span>price cuts (30d)</span></div>
+    <div class="stat"><b id="s-cheap">—</b><span>cheapest output / 1M tokens</span></div>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The same day, one model halved and another went up 19 times — 27 Oct 2026</p>
+    <p><strong>OpenAI cut the old Terra to the price of the new one, and DeepSeek tripled down on its
+      floor.</strong> <b>42 changes</b> logged today across <b>463</b> models: <b>31 price moves
+      (16 input, 15 output), 4 new models, 7 retirements</b> — <b>14 cuts, 17 rises</b>. OpenAI
+      shipped <b>GPT-6.1 Terra</b> (plus Pro and batch variants) at <b>$1 / $5</b> and cut
+      <b>GPT-5.6 Terra</b> and the <b>GPT Terra Latest</b> alias to the identical rate —
+      input <b>$2.00 → $1.00 (-50.0%)</b>, output <b>$12.00 → $5.00 (-58.3%)</b>. The batch door on
+      the same model is <b>$0.50 / $2.50</b>.</p>
+    <p><strong>In the other direction, the cheap floor went vertical.</strong> <b>DeepSeek Pro Latest
+      output $0.396 → $8.00 (+1,920%)</b> — twenty times, in one day. <b>DeepSeek V4.1 Flash input
+      $0.02 → $0.14 (+600%)</b> on the same afternoon its output fell <b>$1.00 → $0.42
+      (-58.0%)</b>. DeepSeek V4 Flash 0731 input <b>+168.0%</b> and output <b>+78.5%</b>; V4 Flash
+      0423 input <b>-50.7%</b> while its output rose <b>+147.3%</b>. Xiaomi's <b>MiMo-V2.5 output
+      $0.238 → $2.00 (+740%)</b>, Kimi Latest output <b>$9.34 → $20.00 (+114%)</b>. Seven models were
+      retired outright, six of them Mistral batch lines.</p>
+    <p><strong>Why the two directions in one day is the whole story.</strong> A bill is no longer
+      exposed to a market trend, it is exposed to a line. The Terra half is a launch cut that most
+      invoices will not see for a quarter, because it lands on a model ID the customer never
+      checks; the DeepSeek number is a floor being withdrawn from under everyone who moved onto it
+      in writing. Both happened on 27 October, in the same catalogue, and neither vendor emailed
+      anyone.</p>
+    <p><strong>The sector's own numbers say the same thing.</strong> Anthropic's S-1, filed 26 Oct,
+      pairs <b>$16.3bn</b> of half-year revenue with an <b>$80.7bn</b> loss and a
+      <b>ballooning computing bill</b> (<a href="https://www.bloomberg.com">Bloomberg, 26 Oct</a>);
+      the Washington Post's read the same day is that there <a href="https://www.washingtonpost.com">is
+      not enough money in the world to pay for the AI boom</a> (27 Oct). ExtremeTech, this morning:
+      <a href="https://www.extremetech.com">AI has yet to boost profits for most companies</a>.
+      Apollo's chief economist, 24 Oct: no sign of AI payoff outside the tech sector. The cost is
+      landing on the customer's P&amp;L while the benefit is still a slide.</p>
+    <p class="muted">Concretely, same workload, 200M input and 40M output on Terra: at yesterday's
+      rate card (<b>$2 / $12</b>) that is <b>$880/month</b>; at today's (<b>$1 / $5</b>) it is
+      <b>$400</b>; through the batch door (<b>$0.50 / $2.50</b>) it is <b>$200</b>. Nothing about the
+      work changed — only which line of the catalogue the invoice points at.
+      <a href="#scanner">Re-cost your exact model</a>, <a href="/ai-price-watch/repricing">get the re-bid email</a>,
+      <a href="/ai-price-watch/receipts">see my own audit receipts</a>, or <a href="/ai-price-watch/clinic">book the free clinic</a>.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The margin comes due — 12 rises, 8 cuts on the day Anthropic files its S-1 — 26 Oct 2026</p>
+    <p><strong>For four months the retail price of frontier AI went one way: down.</strong> OpenAI cut
+      GPT-5.6 Luna by <b>80%</b> on 30 Jul to <b>$0.20 / $1.20</b>, cut Sol by 20% on 21 Aug, then halved
+      input and output again with GPT-6 Sol on 22 Sep at <b>$2 / $10</b>. Anthropic made Sonnet 5's launch
+      pricing permanent on 10 Aug and shipped Opus 5.5 on 22 Sep at a total cost reduction of
+      <b>40-60%</b> against Opus 5. Max Woolf's timeline of both labs, published yesterday, is the
+      clearest record of it: <a href="https://minimaxir.com/2026/10/cheap-llms/">minimaxir.com</a>.</p>
+    <p><strong>Today the log went the other way: 21 changes, 12 rises, 8 cuts.</strong> The single biggest
+      move is <b>DeepSeek V4 Pro 0423, input $0.2088 → $0.7875 (+277.2%)</b> and output at the same rate.
+      Moonshot's <b>Kimi K3 output $10.80 → $20.00 (+85.2%)</b>. Qwen3.6 27B output
+      <b>$2.00 → $3.20 (+60.0%)</b>. Against that, GLM Latest output fell <b>68.1%</b> and Qwen3.5-122B
+      dropped <b>35%</b> on both fields — so the day is not a wall, it is a squeeze in the mid tier.</p>
+    <p><strong>Why it matters this week rather than next.</strong> Anthropic publicly filed its IPO
+      prospectus today: <b>$16.3bn revenue</b> in the six months to June, up 13.5x, a net loss of
+      <b>$80.7bn</b> (mostly a $72.4bn convertible-note charge), and <b>$430bn locked into cloud compute
+      deals</b>. A company that has to show
+      public investors a margin cannot fund a price war out of a private balance sheet. The 80% cuts were
+      market share bought on someone else's money; the S-1 is the moment that money starts asking for a
+      return. Every earlier brief here found the floor falling. This one finds the mid tier being
+      repriced upward on the same day the receipt for the war got filed.</p>
+    <p><strong>The buying rule that falls out of it:</strong> a bill set on a launch price is a bill on a
+      promotional rate, and a discount adopted to win the market expires when the market is won. Anyone
+      who moved workloads onto the cheap tier in July and never re-read the rate is now on a
+      <b>+277%</b> line. Both directions are live in the same week — which is exactly why the only
+      defensible contract is one with a published-rate clause and a re-bid date.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The one-day reversal — the 92% cut undone in 24 hours — 17 Oct 2026</p>
+    <p><strong>Yesterday's cheapest input became today's most expensive.</strong> On 16 Oct, Z.ai's
+      <b>GLM 5.3 Flash</b> input was logged as a cut to <b>$0.15 → $0.0113 (-92.5%)</b>. Twenty-four
+      hours later it is back at <b>$0.0113 → $0.15 (+1,227%)</b>. DeepSeek Pro Latest output did the
+      identical thing in the identical window: <b>$8.00 → $0.7484 (-90.6%)</b> yesterday,
+      <b>$0.7484 → $8.00 (+968.9%)</b> today. Two of the three biggest cuts in yesterday's brief are
+      gone, and the price is back where it started.</p>
+    <p><strong>The whole cheap tier went with them.</strong> Of <b>33</b> price changes logged today
+      across <b>470</b> models — <b>16 cuts, 12 rises, 5 new</b> — the rises are concentrated exactly
+      where a cost-conscious buyer had just moved. GLM Flash Latest input <b>$0.0113 → $0.06 (+431%)</b>,
+      DeepSeek V4 Flash Latest input <b>$0.0044 → $0.018 (+309%)</b> and output <b>+250%</b>,
+      DeepSeek Flash Latest input <b>+180%</b>, DeepSeek V4 Flash 0731 input <b>+267%</b>.</p>
+    <p><strong>The cuts moved to the batch and committed-volume doors instead.</strong> DeepSeek V4.1
+      Flash (batch) <b>input $0.112 → $0.05 and output $0.336 → $0.15 (-55.4% both sides)</b>,
+      DeepSeek Pro Latest input <b>-51.9%</b>, DeepSeek V4 Pro 0423 <b>-48.9%</b> both sides,
+      DeepSeek V3.2 output <b>-47.5%</b>, Kimi Latest output <b>$24 → $14 (-41.7%)</b>. Cheap capacity
+      still exists — it is sold to committed volume now, not to the retail tier.</p>
+    <p><strong>And a new model landed the same morning.</strong> <b>DeepSeek V4.1 Flash 1017</b> entered
+      the log today at <b>$0.60 output</b>; it was the top story on Hacker News this morning
+      (393 points). The cheapest route to the same work changed three times in seventy-two hours.</p>
+    <p><strong>The industry is now arguing about the same thing.</strong> CTech, 17 Oct: <em>"Is the
+      subscription era over? How AI agents are breaking SaaS monetization"</em> — per-seat pricing is
+      being arbitraged by agents. The FT has Anthropic carrying the <b>highest junk credit rating</b>
+      (16 Oct); Reuters has OpenAI's 2026 revenue estimate <b>cut by $20B</b> (17 Oct). When the sellers
+      get repriced, their buyers' contracts are the loosest they will ever be.</p>
+    <p class="muted">Concretely: a team that moved 200M input tokens onto GLM 5.3 Flash on yesterday's
+      numbers was paying <b>$2.26/month</b> this time yesterday and <b>$30.00/month</b> today, same
+      tokens, same work. One day of not looking, and the "saving" is a 13x cost increase.
+      <a href="#scanner">Re-cost your exact model</a>, <a href="#calc">run your spend</a>,
+      <a href="/ai-price-watch/receipts">see my own audit receipts</a>, or
+      <a href="/ai-price-watch/clinic">book the free clinic</a>.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The professionals arrived — AI spend is now a funded category — 16 Oct 2026</p>
+    <p><strong>Same model, same day, opposite directions.</strong> Of <b>41</b> price changes logged
+      today across <b>465</b> models, <b>24 were cuts</b> and <b>11 were rises</b> — but the biggest
+      riser and the biggest news sit on the same row. Z.ai's <b>GLM 5.2</b> input went
+      <b>$0.171 → $0.62 (+933%)</b> on the same day its output fell <b>$7.00 → $2.42 (-65.4%)</b>.
+      Input up nine times, output down two-thirds, one model, one afternoon. Its input had fallen
+      <b>82.5%</b> on 8 Oct, so today it completed a full round trip in eight days.</p>
+    <p><strong>The floor from Monday got taken back.</strong> DeepSeek V4.1 Flash input went
+      <b>$0.0238 → $0.15 (+530%)</b> — that is the same model the 13 Oct brief called the cheap floor
+      after a 70.6% cut. DeepSeek Pro Latest output rose <b>+90.9%</b>, GLM 5.3 Flash output
+      <b>+80%</b>. The cuts went to other doors: GLM 5.3 Flash input <b>$0.15 → $0.0113 (-92.5%)</b>,
+      DeepSeek Pro Latest output <b>$8.00 → $0.7484 (-90.6%)</b>, Meta's Llama 3.3 70B input
+      <b>-83.1%</b>.</p>
+    <p><strong>The churn is now the headline.</strong> The log holds <b>31 round trips</b> — models
+      that fell more than 20% and climbed straight back — up from <b>20</b> yesterday. GLM 5.2 input
+      is the biggest: down 82.5% on 8 Oct, up 933% today.
+      <a href="/ai-price-watch/volatility">Every round trip, live →</a></p>
+    <p><strong>And the money noticed.</strong> Today alone: North.cloud raised a <b>$60M Series B</b>
+      to keep runaway cloud and AI costs in check, Ramp closed <b>$1.85B at a $60B valuation</b> and
+      expanded into AI spend management, HubSpot added <b>AI credit caps and pay-as-you-go</b> (15 Oct)
+      and Accenture put a <b>monthly cap on employee Claude usage</b>. The category just got funded —
+      for enterprises. An SMB spending $2k/month still has a spreadsheet, a renewal date, and nobody
+      who will re-cost it against prices that moved <b>41 times today</b>.</p>
+    <p class="muted">Concretely: 200M input / 40M output on DeepSeek V4.1 Flash cost <b>$4.76/month</b>
+      of input on 15 Oct and <b>$30.00</b> today — five days after it was called the cheap floor.
+      <a href="#scanner">Re-cost your exact model</a>, <a href="#calc">run your spend</a>, or
+      <a href="/ai-price-watch/clinic">book the free clinic</a>.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The floor snapped back — the same +305% hike, three days later — 15 Oct 2026</p>
+    <p><strong>The cheap tier re-inflated, and it is the second time this week.</strong> Of <b>41</b>
+      price changes logged today across <b>461</b> models, <b>28 were increases</b>. OpenAI's
+      gpt-oss-120b went <b>$0.037 → $0.15</b> input (<b>+305%</b>) and <b>$0.17 → $0.60</b> output
+      (<b>+253%</b>) — the <em>identical</em> move it made on 13 Oct, which was fully reverted on
+      14 Oct and is now back on. Qwen3.8 27B input went <b>$0.04 → $0.24</b> (<b>+500%</b>), giving
+      back the 90% floor-cut of 11 Oct. Z.ai's GLM 5.3 input rose <b>+316%</b> and <b>+406%</b> on two
+      routes; Gemma 4 31B input <b>+122%</b>.</p>
+    <p><strong>The cuts did not stop.</strong> Moonshot's Kimi Latest input fell <b>45.9%</b>
+      ($0.536 → $0.29), GLM 5.3 Flash output <b>44.4%</b>, Kimi K3 input <b>35.7%</b>, GLM 5.1
+      <b>27.4%</b> both sides, DeepSeek Flash output <b>19.2%</b>. Cheap capacity is still there —
+      just not where it was on Monday.</p>
+    <p><strong>The point is not the direction, it is the churn.</strong> The log now holds <b>20
+      round trips</b> — a model that fell more than 20% and climbed straight back inside the
+      window. The biggest is Qwen3.8 27B input: down 90% on 11 Oct, up 500% on 15 Oct. A bill
+      costed on a monthly snapshot is now wrong in both directions.
+      <a href="/ai-price-watch/volatility">See every round trip, live →</a></p>
+    <p class="muted">Concretely: 200M input / 40M output on gpt-oss-120b cost <b>$14.20/month</b> on
+      12 Oct, <b>$54.00</b> on 13 Oct, <b>$14.20</b> on 14 Oct, and <b>$54.00</b> again today.
+      Same workload, same week. <a href="#scanner">Re-cost your exact model</a> or
+      <a href="#calc">run your spend</a>.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The cheap tier tripled overnight — 15 rises, 4 cuts — 13 Oct 2026</p>
+    <p><strong>The models built for cost got 3x more expensive in one night.</strong> gpt-oss-120b —
+      the open workhorse a lot of self-hosted and agent stacks default to — moved from
+      <b>$0.037 in / $0.17 out</b> to <b>$0.15 in / $0.60 out</b>: <b>+305%</b> on input and
+      <b>+253%</b> on output. Meta's Llama 3.3 70B input rose <b>168%</b> ($0.22 → $0.59).
+      MiniMax M2.7 rose <b>43%</b> on both sides. DeepSeek Flash Latest output jumped <b>373%</b>
+      ($0.1332 → $0.63). Of <b>22</b> changes logged today, <b>15 were increases</b> — the second
+      straight day risers beat cuts, and this time it hit the cheap end hardest.</p>
+    <p><strong>The floor still exists, just elsewhere.</strong> DeepSeek V4.1 Flash cut input
+      <b>70.6%</b> ($0.15 → <b>$0.0441</b>) and keeps <b>$0.63</b> output. GLM 5.3 Flash output fell
+      <b>25%</b> ($1.20 → $0.90, with its input up 12.5%). Meta also listed <b>Muse Wonder</b> at
+      <b>$20.00</b> output — a premium tier landing on the same page as four-cent input.</p>
+    <p class="muted">Concretely: a workload of 200M input / 40M output that cost <b>$14.20/month</b>
+      on gpt-oss-120b yesterday costs <b>$54.00</b> today. The same volume on DeepSeek V4.1 Flash
+      costs <b>$34.02</b>. Nothing about the workload changed. Only the default did.</p>
+    <p class="muted">That is the whole reason a monthly re-cost matters: the models priced for
+      "cheap" are the ones that moved most, and a default set last month is now either bleeding or
+      wrongly routed. <a href="#scanner">Scan your exact model and volume</a>, or
+      <a href="#calc">run your spend</a>.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The floor stopped falling — 12 cuts, 13 rises — 12 Oct 2026</p>
+    <p><strong>Half the market went up overnight.</strong> Of <b>25</b> price changes logged in the
+      last day, <b>13 were increases</b>. Z.ai's GLM 5.3 Flash output jumped <b>140%</b>
+      ($0.50 → $1.20) while its input fell <b>84.5%</b> ($0.15 → $0.0232) in the same move.
+      DeepSeek V4 Pro 0423 more than doubled input and output (<b>+108.8%</b>). Meta's Llama 4
+      Scout output rose <b>96.7%</b> ($0.30 → $0.59). The floor is still dropping on other routes —
+      DeepSeek V4.1 Flash cut <b>50%</b> to $0.15 in / $0.60 out — but not on everything.</p>
+    <p class="muted">That is the whole reason a fixed default is dangerous: two models from the same
+      lab moved in opposite directions on the same night. Whatever your AI bill was costed on is now
+      wrong in one direction or the other — and nobody re-checks it.</p>
+    <p class="muted">The cheap routes still exist: the cheapest input tracked here is now
+      <b>$0.0128</b>/1M tokens (DeepSeek V4 Flash Latest), the cheapest output <b>$0.03</b>
+      (Mistral Nemo). <a href="#calc">Run your number</a>, and I'll find which of your lines moved.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The input floor just fell 90% — 11 Oct 2026</p>
+    <p><strong>Ten cuts in one day, and the cheapest input on this page now costs four cents.</strong>
+      Qwen3.8 27B input fell <b>90.6%</b> ($0.425 → $0.04 per million tokens) and DeepSeek Flash
+      output fell <b>76.8%</b> ($0.60 → $0.14) overnight — logged live in the table below. DeepSeek
+      V4 Flash output halved again (−50%), Kimi K3 output fell 25.9%. Whatever your AI bill was
+      costed on, the market moved underneath it while you slept.</p>
+    <p class="muted">The money side stayed blunt the same week: OpenAI's annualised revenue landed
+      roughly <b>$20B below</b> plan (TechCrunch / FT, 8 Oct) and analysts now say AI revenue has to
+      reach <b>$400–600B by 2027</b> to avoid a spending cliff (Barron's, 9 Oct). Cheaper models,
+      louder ROI questions.</p>
+    <p class="muted">Both halves sit side by side on this page: the invoice is under scrutiny, and the
+      cheaper price already exists. <a href="#calc">Run your number</a>, and I'll find the cut.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The floor drops again — 10 Oct 2026</p>
+    <p><strong>DeepSeek just collapsed the floor under the whole market.</strong> Overnight, its
+      flagship output price fell <b>91.8%</b> ($8.00 → $0.66 per million tokens) and DeepSeek Flash
+      input fell <b>99.4%</b> — logged live in the table below. A frontier-class model now costs
+      roughly what a coffee costs, and it moved while most companies were asleep.</p>
+    <p class="muted">The same week the money side got blunt: analysts now say AI revenue has to reach
+      <b>$400–600B by 2027</b> to avoid a spending cliff (Barron's, 9 Oct), and the big labs are
+      answering by shipping cheaper tiers (Microsoft's new low-cost decision model landed on
+      Hacker News today, 192pts). Cheaper models, louder ROI questions.</p>
+    <p class="muted">Both halves sit side by side on this page: the invoice is under scrutiny, and the
+      cheaper price already exists. <a href="#calc">Run your number</a>, and I'll find the cut.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">Spend scrutiny — 9 Oct 2026</p>
+    <p><strong>The AI trade just got repriced — and so did the excuse to overspend.</strong>
+      OpenAI's annualised revenue landed roughly <b>$20B below</b> what investors had been told
+      (<a href="https://www.cnbc.com/2026/10/08/open-ai-revenue-nvidia-oracle-coreweave.html">CNBC</a>,
+      8 Oct), and AI stocks sold off on the report. Translation for anyone signing the AI invoice:
+      "budget by vibes" is over, and CFOs are auditing the line right now.</p>
+    <p class="muted">The model market cut again overnight on the same page: DeepSeek V4 Flash output
+      down <b>97.3%</b>, Z.ai GLM Flash output down <b>92.6%</b>, Qwen3.5-35B input down <b>46.7%</b>
+      — logged in the table below.</p>
+    <p class="muted">Both halves of the argument now sit side by side: the spend is under scrutiny,
+      and the cheaper price already exists. <a href="#calc">Run your number</a>, and I'll find the cut.</p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">Price war — 8 Oct 2026</p>
+    <p><strong>The frontier tier just repriced.</strong> Anthropic shipped
+      <a href="https://www.anthropic.com/claude-haiku-5-5">Claude Haiku 5.5</a> and OpenAI shipped
+      <a href="https://openai.com/index/gpt-6-for-everyone/">GPT-6</a>. On the market this page reads,
+      Haiku 5.5 lists at <b>$0.10 in / $0.50 out</b> per million tokens — an order of magnitude under
+      Haiku 4.5 at $1.00 / $5.00 — with a 1M-token context. OpenAI's new GPT-6 "luna" tier lands at
+      the same $0.10 / $0.50.</p>
+    <p class="muted">Open-weight prices slid again in the same window: DeepSeek V4 Flash input down
+      66.7%, GLM 5.2 input down 82.5%, DeepSeek Pro input down 62.2% — logged in the table below.
+      If your AI bill was costed on last year's prices, it is now priced against a market that has
+      moved underneath it.</p>
+    <p class="muted">That gap is the whole job: <a href="#calc">run your number</a>, and I'll find the cut.</p>
+  </div>
+
+  <h2>Latest changes</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Date</th><th>Model</th><th>What</th><th class="num">Was</th><th class="num">Now</th><th class="num">Change</th></tr></thead>
+    <tbody id="changes"><tr><td colspan="6" class="muted">Loading…</td></tr></tbody>
+  </table></div>
+
+  <h2>What every model costs now</h2>
+  <input id="q" type="search" placeholder="Filter by model or provider… (e.g. haiku, grok, gemini)" autocomplete="off">
+  <div class="scroll"><table>
+    <thead><tr><th>Model</th><th class="num">Input / 1M</th><th class="num">Output / 1M</th><th class="num">Context</th></tr></thead>
+    <tbody id="models"><tr><td colspan="4" class="muted">Loading…</td></tr></tbody>
+  </table></div>
+
+  <h2 id="calc">What could you save?</h2>
+  <div class="calc">
+    <div class="calc-in">
+      <label for="spend">Your AI spend, per month (USD)</label>
+      <input id="spend" type="number" min="0" step="50" value="2000" inputmode="numeric">
+      <label for="seats">People who use it</label>
+      <input id="seats" type="number" min="0" step="1" value="10" inputmode="numeric">
+      <p class="muted" style="margin:10px 0 0">Rough rule, not a promise: most teams run 30 to 60% below what they pay once the same work is moved to cheaper or self-hosted models. Chat-first teams sit at the low end, heavy API pipelines at the high end.</p>
+    </div>
+    <div class="calc-out">
+      <div class="row"><span>Typical cut</span><b id="c-cut">—</b></div>
+      <div class="row"><span>Saved per year</span><b id="c-year">—</b></div>
+      <div class="row"><span>My share (30% of savings)</span><b id="c-mine">—</b></div>
+      <p class="muted" style="margin:14px 0 0">You keep 70% of what I cut. If I find nothing, you pay nothing.</p>
+      <a id="c-cta" class="cta" href="mailto:sambombayoffice@gmail.com?subject=AI%20cost%20audit">Email me these numbers</a>
+    </div>
+  </div>
+  <p class="muted" style="margin:14px 0 0">Run a chamber, newsletter or site of your own?
+    <a href="/ai-price-watch/embed">Put these live price moves on it</a> — one line of HTML, free, updates itself
+    every morning. Or subscribe to the <a href="/ai-price-watch/feed.xml">daily RSS feed</a>.</p>
+
+  <h2 id="scanner">Or scan the exact model you pay for</h2>
+  <div class="calc">
+    <div class="calc-in">
+      <label for="mymodel">The model you currently pay for</label>
+      <input id="mymodel" list="modellist" placeholder="Type a model — e.g. gpt-6, haiku, glm, deepseek" autocomplete="off">
+      <datalist id="modellist"></datalist>
+      <label for="tin">Input tokens a month (millions)</label>
+      <input id="tin" type="number" min="0" step="1" value="200" inputmode="numeric">
+      <label for="tout">Output tokens a month (millions)</label>
+      <input id="tout" type="number" min="0" step="1" value="40" inputmode="numeric">
+      <p class="muted" style="margin:10px 0 0">Straight off today's live price list: your monthly tokens re-costed on the cheapest route that keeps at least your context window. No benchmarks, no guessing — just the arithmetic on prices that moved today.</p>
+    </div>
+    <div class="calc-out">
+      <div class="row"><span>You pay now</span><b id="s-now">—</b></div>
+      <div class="row"><span>Cheapest same-context route</span><b id="s-best">—</b></div>
+      <div class="row"><span>Saved per year</span><b id="s-year">—</b></div>
+      <div class="row"><span>My share (30% of that)</span><b id="s-mine">—</b></div>
+      <p class="muted" style="margin:14px 0 0" id="s-note">Pick the model you pay for and I'll show the gap.</p>
+      <a id="s-cta" class="cta" href="mailto:sambombayoffice@gmail.com?subject=AI%20cost%20audit">Send me this scan</a>
+    </div>
+  </div>
+
+  <div class="foot">
+    <p><strong>I watch this market for a living.</strong></p>
+    <p class="muted">Prices move almost every week, and most teams never notice their bill drifting. If your AI or cloud spend is climbing, I audit it, cut what can be cut with cheaper or self-hosted models, and take a share of what I save you.</p>
+    <p class="muted"><a href="/ai-price-watch/finops">The token spend assessment an MSP hands the client's CFO →</a> &nbsp;·&nbsp; <a href="/ai-price-watch/volatility">Every price round trip, live →</a> &nbsp;·&nbsp; <a href="/ai-price-watch/benchmark">What this should cost a company your size →</a> &nbsp;·&nbsp; <a href="/ai-price-watch/repricing">Has your AI bill been re-bid since the cuts? →</a> &nbsp;·&nbsp; <a href="/ai-price-watch/clinic">Free AI bill clinic for chambers and firms →</a> &nbsp;·&nbsp; <a href="/ai-price-watch/claude-check">Did the Claude Code 2.1.313 backdoor touch your laptops? Free check →</a></p>
+    <p><a href="mailto:sambombayoffice@gmail.com?subject=AI%20cost%20audit">sambombayoffice@gmail.com</a></p>
+  </div>
+
+  <p class="muted" style="margin-top:22px">Prices are USD per million tokens, read from OpenRouter's public model catalogue and diffed once a day. Sources can lag provider list prices; always confirm before you reprice anything.</p>
+</div>
+
+<script>
+const RAW = "https://raw.githubusercontent.com/Sam-Bombay/ai-price-watch/main/data/";
+const LOC = "./data/";
+
+// Raw repo first: the daily job commits fresh data there, so the live page updates
+// without a redeploy. The deployed copy is only the offline fallback.
+async function grab(file){
+  for (const base of [RAW, LOC]) {
+    try {
+      const r = await fetch(base + file, {cache:"no-store"});
+      if (r.ok) return await r.json();
+    } catch (e) {}
+  }
+  return null;
+}
+
+const money = v => v === null || v === undefined ? "—"
+  : "$" + (v < 0.01 ? v.toFixed(4) : v < 1 ? v.toFixed(3) : v.toFixed(2));
+const kfmt = v => v === null || v === undefined ? "—" : v >= 1000 ? (v/1000).toFixed(0) + "k" : v;
+
+(function(){
+  const qEl = document.getElementById("q");
+  let rows = [];
+
+  function render(filter){
+    const t = document.getElementById("models");
+    const f = (filter || "").trim().toLowerCase();
+    const list = rows.filter(m => !f || m.name.toLowerCase().includes(f) || m.id.toLowerCase().includes(f));
+    t.innerHTML = list.slice(0, 300).map(m =>
+      `<tr><td class="model">${esc(m.name)}</td><td class="num">${money(m["in"])}</td>` +
+      `<td class="num">${money(m.out)}</td><td class="num">${kfmt(m.ctx)}</td></tr>`).join("")
+      || `<tr><td colspan="4" class="muted">No model matches that.</td></tr>`;
+  }
+
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  grab("latest.json").then(d => {
+    if (!d) { document.getElementById("models").innerHTML =
+      `<tr><td colspan="4" class="muted">Could not load data.</td></tr>`; return; }
+    rows = (d.models || []).filter(m => m.out !== null);
+    document.getElementById("updated").textContent = d.updated;
+    document.getElementById("s-models").textContent = rows.length;
+    const cheapest = rows.length ? Math.min.apply(null, rows.map(m => m.out)) : null;
+    document.getElementById("s-cheap").textContent = money(cheapest);
+    render("");
+    qEl.addEventListener("input", e => render(e.target.value));
+    initScanner(d.models || []);
+  });
+
+  grab("changes.json").then(list => {
+    list = (list || []).filter(c => c.field !== "added");
+    const monthAgo = new Date(Date.now() - 30*864e5).toISOString().slice(0,10);
+    const recent = list.filter(c => c.date >= monthAgo).reverse();
+    const cuts = recent.filter(c => c.pct !== null && c.pct < 0);
+    document.getElementById("s-changes").textContent = recent.length;
+    document.getElementById("s-cuts").textContent = cuts.length;
+    const t = document.getElementById("changes");
+    if (!recent.length) {
+      t.innerHTML = `<tr><td colspan="6" class="muted">Tracking is live. The log fills the moment a provider changes a price — nothing has moved yet today.</td></tr>`;
+      return;
+    }
+    t.innerHTML = recent.slice(0, 120).map(c => {
+      const kind = c.field === "added" ? '<span class="new">new</span>'
+        : c.field === "retired" ? '<span class="gone">retired</span>'
+        : `<span class="pill">${esc(c.field)}</span>`;
+      const pct = c.pct === null || c.pct === undefined ? "—"
+        : `<span class="${c.pct < 0 ? 'cut' : 'rise'}">${c.pct > 0 ? "+" : ""}${c.pct}%</span>`;
+      return `<tr><td>${esc(c.date)}</td><td class="model">${esc(c.name)}</td><td>${kind}</td>` +
+             `<td class="num">${money(c.from)}</td><td class="num">${money(c.to)}</td><td class="num">${pct}</td></tr>`;
+    }).join("");
+  });
+  // Savings calculator — this is what turns a visitor into a lead.
+  (function(){
+    const spendEl = document.getElementById("spend");
+    const seatsEl = document.getElementById("seats");
+    const cta = document.getElementById("c-cta");
+
+    function usd(n){
+      return "$" + Math.round(n).toLocaleString("en-US");
+    }
+
+    // Conservative from the table: seats drive subscription sprawl, so more seats,
+    // more room to cut. Capped at 60% so we never promise the impossible.
+    function rate(spend, seats){
+      const r = 0.30 + Math.min(seats, 15) * 0.02;
+      return Math.min(r, spend >= 5000 ? 0.60 : 0.55);
+    }
+
+    function update(){
+      const spend = Math.max(0, Number(spendEl.value) || 0);
+      const seats = Math.max(0, Number(seatsEl.value) || 0);
+      if (!spend) {
+        document.getElementById("c-cut").textContent = "—";
+        document.getElementById("c-year").textContent = "—";
+        document.getElementById("c-mine").textContent = "—";
+        return;
+      }
+      const r = rate(spend, seats);
+      const year = spend * 12 * r;
+      const mine = year * 0.30;
+      document.getElementById("c-cut").textContent = Math.round(r * 100) + "%";
+      document.getElementById("c-year").textContent = usd(year);
+      document.getElementById("c-mine").textContent = usd(mine);
+      cta.href = "mailto:sambombayoffice@gmail.com" +
+        "?subject=" + encodeURIComponent("AI cost audit — " + usd(spend) + "/mo") +
+        "&body=" + encodeURIComponent(
+          "We spend about " + usd(spend) + " a month on AI, " + seats + " people using it.\n" +
+          "The calculator says roughly " + Math.round(r*100) + "% is cuttable — about " + usd(year) + " a year.\n\n" +
+          "Worth a look?\n");
+    }
+
+    spendEl.addEventListener("input", update);
+    seatsEl.addEventListener("input", update);
+    update();
+  })();
+
+  // Model-level scanner — takes the model a visitor actually pays for and re-costs their
+  // real monthly token volume on the cheapest route that keeps the same context window.
+  // Pure arithmetic on the live price list; that is why it is credible.
+  function initScanner(models){
+    const mineEl = document.getElementById("mymodel");
+    const tinEl  = document.getElementById("tin");
+    const toutEl = document.getElementById("tout");
+    const dl     = document.getElementById("modellist");
+    const note   = document.getElementById("s-note");
+    const cta    = document.getElementById("s-cta");
+    if (!mineEl || !tinEl || !toutEl) return;
+
+    const usable = models.filter(m => m.out !== null && m.in !== null);
+    dl.innerHTML = usable.map(m => `<option value="${String(m.name).replace(/"/g,'')}">`).join("");
+
+    const usd = n => "$" + Math.round(n).toLocaleString("en-US");
+
+    function cost(m, tin, tout){ return m.in * tin + m.out * tout; }
+
+    function findModel(text){
+      const t = String(text || "").trim().toLowerCase();
+      if (!t) return null;
+      return usable.find(m => m.name.toLowerCase() === t)
+          || usable.find(m => m.id.toLowerCase() === t)
+          || usable.find(m => m.name.toLowerCase().startsWith(t))
+          || usable.find(m => m.name.toLowerCase().includes(t))
+          || null;
+    }
+
+    function clear(){
+      ["s-now","s-best","s-year","s-mine"].forEach(id => document.getElementById(id).textContent = "—");
+    }
+
+    function update(){
+      const cur = findModel(mineEl.value);
+      const tin  = Math.max(0, Number(tinEl.value) || 0);
+      const tout = Math.max(0, Number(toutEl.value) || 0);
+      if (!cur || (!tin && !tout)){
+        clear();
+        note.textContent = "Pick the model you pay for and I'll show the gap.";
+        return;
+      }
+      const now = cost(cur, tin, tout);
+      document.getElementById("s-now").textContent = usd(now) + "/mo";
+
+      const others = usable.filter(m => m.id !== cur.id);
+      if (!others.length){ note.textContent = "Nothing else on the market to compare against."; return; }
+      const sameCtx = cur.ctx ? others.filter(m => (m.ctx || 0) >= cur.ctx) : others.slice();
+      const cheapest = list => list.reduce((a, b) => cost(b, tin, tout) < cost(a, tin, tout) ? b : a);
+
+      let best, sameWindow = true;
+      if (sameCtx.length && cost(cheapest(sameCtx), tin, tout) < now){
+        best = cheapest(sameCtx);
+      } else {
+        best = cheapest(others);
+        sameWindow = false;
+      }
+      const bestCost = cost(best, tin, tout);
+      const cut = now - bestCost;
+
+      document.getElementById("s-best").textContent = usd(bestCost) + "/mo";
+      document.getElementById("s-year").textContent = usd(cut * 12);
+      document.getElementById("s-mine").textContent = usd(cut * 12 * 0.30);
+
+      if (cut <= 0){
+        note.textContent = "You are already on the cheapest route for that workload. Genuinely — nothing to cut here.";
+      } else {
+        note.innerHTML = `<b>${esc(best.name)}</b> does the same volume at <b>${Math.round(cut / now * 100)}% less</b>, ` +
+          `at ${money(best.in)} in / ${money(best.out)} out per million.` +
+          (sameWindow ? ` It keeps your ${kfmt(cur.ctx)}-token context window.`
+                      : ` Caveat: its context window is ${kfmt(best.ctx)} vs your ${kfmt(cur.ctx)} — a real trade-off, not a free lunch.`) +
+          ` This is arithmetic on today's prices, not a benchmark; an audit checks quality and latency before moving anything.`;
+      }
+      cta.href = cut > 0
+        ? "mailto:sambombayoffice@gmail.com" +
+            "?subject=" + encodeURIComponent("AI cost audit — scan says " + usd(cut * 12) + "/yr on " + cur.name) +
+            "&body=" + encodeURIComponent(
+              "We run " + cur.name + " at about " + usd(now) + "/month (" + tin + "M in, " + tout + "M out).\n" +
+              "Your scanner says " + best.name + " is " + usd(cut * 12) + "/yr cheaper on the same volume.\n" +
+              "Your share would be " + usd(cut * 12 * 0.30) + " if you find it.\n\nWorth a look?\n")
+        : "mailto:sambombayoffice@gmail.com?subject=" + encodeURIComponent("AI cost audit");
+    }
+
+    ["input","change"].forEach(ev => {
+      mineEl.addEventListener(ev, update);
+      tinEl.addEventListener(ev, update);
+      toutEl.addEventListener(ev, update);
+    });
+    update();
+  }
+})();
+</script>
+</body>
+</html>

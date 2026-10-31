@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Code 2.1.313 backdoor — the 60-second host check and the evidence report</title>
+<meta name="description" content="On 29-30 Oct 2026 the official Claude Code extension 2.1.313 shipped a persistent SSH backdoor. Free read-only checker, the published indicators, and what a defensible evidence report has to contain.">
+<style>
+:root{--ink:#12100e;--mut:#6b6560;--line:#e2ddd6;--bg:#fbf9f6;--acc:#1a5c3a;--warn:#8a3b12}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:30px;line-height:1.15;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:19px;margin:34px 0 10px;letter-spacing:-.01em}
+p.lede{color:var(--mut);margin:0 0 22px;max-width:64ch}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:600}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+pre{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto}
+code{background:#f1ede7;padding:1px 5px;border-radius:4px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+.note{font-size:13px;color:var(--mut);border-left:2px solid var(--line);padding-left:12px;margin:16px 0}
+.alert{border-color:#e0c9b6;background:#fdf6ef}
+.foot{font-size:12px;color:var(--mut);margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+a{color:var(--acc)}
+.tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--warn);border:1px solid #e0c9b6;border-radius:999px;padding:2px 9px;margin-left:8px;vertical-align:middle}
+@media print{body{background:#fff}}
+</style></head><body><div class="wrap">
+
+<h1>Was Claude Code 2.1.313 on your laptops?</h1>
+<p class="lede">Between roughly 2:27am and 1:35pm PT on 29 October 2026, the official
+<strong>Anthropic.claude-code</strong> extension was replaced in the Cursor marketplace with a
+build that installs a persistent SSH backdoor. It auto-updates, so nobody chose it. The fixed
+version does <em>not</em> remove what the bad one left behind. This page has a free, read-only
+checker and the list of what a defensible evidence report must contain.</p>
+
+<div class="card alert">
+<strong>The one fact most teams have wrong:</strong> uninstalling the extension, or taking the
+2.1.314 update, does not undo the compromise. The payload writes a standalone script plus a
+LaunchAgent that keeps a reverse SSH tunnel alive. You have to remove the key and the
+persistence separately, then rotate credentials.
+</div>
+
+<h2>What happened, with sources</h2>
+<table>
+<thead><tr><th style="width:16%">Date</th><th>Fact</th><th style="width:22%">Source</th></tr></thead>
+<tbody>
+<tr><td>29 Oct 2026</td><td>Malicious <code>Anthropic.claude-code 2.1.313</code> served in the
+Cursor VS Code marketplace from ~02:27 PT to ~13:35 PT. Cursor says at most 5,000 users; the
+extension is one of the most installed in DevOps, so the population exposed to the auto-update
+is far larger.</td><td><a href="https://cursor.com/blog/claude-code-extension-security-notice">Cursor security notice</a></td></tr>
+<tr><td>29-30 Oct 2026</td><td>2.1.313 pulled from registries; 2.1.314 published as "fixed".
+Anthropic had not disclosed the incident at the time of reporting, and the replacement builds do
+not remove prior backdoors or reconnaissance activity.</td><td><a href="https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2">Kevin Beaumont</a>, 30 Oct</td></tr>
+<tr><td>30 Oct 2026</td><td>Technical analysis: injected IIFE runs on module load, appends an
+attacker Ed25519 key to <code>~/.ssh/authorized_keys</code>, drops a tunnel key in the temp dir,
+installs a user LaunchAgent, and beacons host recon to the operator.</td><td><a href="https://phorion.io/blog/offical-claude-code-vsx-compromise/">Phorion advisory</a></td></tr>
+</tbody></table>
+
+<p class="note">The collected reconnaissance is the part boards underestimate: hostname, username,
+home directory path, <strong>configured Git email</strong>, working directory names and
+<strong>environment variable names</strong> were posted out. Env var names alone tell an attacker
+which cloud and API credentials exist on the machine.</p>
+
+<h2>The 60-second check</h2>
+<p>The definitive marker is one line in one file — the planted key carries the comment
+<code>svc-telemetry</code>:</p>
+<pre>grep -qs svc-telemetry ~/.ssh/authorized_keys \
+  &amp;&amp; echo "IMPACTED" || echo "key not present"</pre>
+<p>That single check misses the persistence, the temp-directory key, and the running tunnel. The
+full read-only checker on this page looks at all of them, writes a dated evidence file, and exits
+non-zero if anything is found:</p>
+<pre>curl -fsSLO https://sam-bombay.github.io/ai-price-watch/claude-check/check.sh
+bash check.sh</pre>
+<p>Fleet mode, one line per host, on any Mac or Linux box you can read:</p>
+<pre>bash check.sh /Users/ana /Users/dev1 /home/ci   # add --sudo-free paths you can read</pre>
+<p class="note">The same indicators in machine-readable form, CC-BY, for your SIEM or scanner:
+<a href="https://github.com/Sam-Bombay/claude-code-2.1.313-iocs">github.com/Sam-Bombay/claude-code-2.1.313-iocs</a>
+— hashes, key fingerprints, artifact paths per platform, process strings, removal order.</p>
+<p class="note">Read-only. Nothing is uploaded, nothing is changed, no account, no agent install.
+It checks every editor's extension folder, <code>authorized_keys</code> by comment <em>and</em>
+by published fingerprint, <code>.stk_*</code> temp keys, <code>~/.config/.smt</code>, the
+<code>com.apple.sysmond</code> LaunchAgent, cron persistence, live tunnel processes, and sockets
+to the published C2 address.</p>
+
+<h2>What "we checked" has to mean in writing</h2>
+<p>An email that says "we looked, all clear" is worth nothing to a client, an insurer or a board.
+The record needs, per host: the checker version and run time, the exact indicators tested, the
+result of each, the evidence file, and the disposition — cleaned in place, or rebuilt. Then the
+rotation list, because a host with a backdoor on it means every credential that touched it is
+suspect.</p>
+<table>
+<thead><tr><th style="width:34%">Deliverable</th><th>What is in it</th><th style="width:16%">Price</th></tr></thead>
+<tbody>
+<tr><td>Fleet evidence report<br>(up to 20 hosts)</td><td>Dated SHA-256-stamped report per host, indicator matrix against both published
+advisories, list of every host still carrying the key, persistence or tunnel, and the remediation
+queue in priority order.</td><td><strong>$500</strong></td></tr>
+<tr><td>Report + remediation verification</td><td>The above, then re-run after cleanup: key gone, LaunchAgent
+gone, tunnel key gone, no socket. Plus the credential-rotation record, signed off per host.</td><td><strong>$1,500</strong></td></tr>
+</tbody></table>
+<p><a href="mailto:sambombayoffice@gmail.com?subject=Claude%20Code%202.1.313%20%E2%80%94%20fleet%20check&amp;body=Hosts%20(OS%20and%20count)%3A%0AEditors%20in%20use%20(VS%20Code%20%2F%20Cursor%20%2F%20other)%3A%0ADeadline%3A%0A">Start a fleet check</a>
+— reply with host count, editors in use, and your deadline. Same-day turnaround is possible while
+the window is fresh.</p>
+
+<h2>If a host is positive</h2>
+<p>Do these in this order, and do not skip 4:</p>
+<pre>1. Take the host off the network. Snapshot it before touching anything.
+2. Remove the svc-telemetry key from ~/.ssh/authorized_keys (check fingerprints, not just comments).
+3. Remove ~/.config/.smt, ~/.config/.smtk, $TMPDIR/.stk_*, and
+   ~/Library/LaunchAgents/com.apple.sysmond.plist, then unload the agent.
+4. Rotate every credential reachable from that host — cloud keys, GitHub tokens, npm tokens,
+   .env files, SSH keys, browser sessions. Recon is a foothold, not the whole attack.
+5. Decide rebuild vs clean. Clean is defensible only with the evidence file and a re-check.
+   Cursor publishes the official removal scripts: remediate-macos.sh / remediate-windows.ps1.</pre>
+
+<p class="note">Honest limits: the malicious build contained a macOS bug that usually fails to
+enable Remote Login when started as a normal user, so on many Macs the attacker could reach the
+tunnel endpoint but not log in. That does not make the host clean — the key and the persistence
+were still written, and any machine with Remote Login already on (common on machines with
+remote-SSH extensions) was fully exposed. The attacker server was taken offline on 29-30 Oct,
+so a clean network check today proves nothing about yesterday.</p>
+
+<div class="foot">
+Sources: Cursor security notice, 29 Oct 2026 · Phorion advisory, 30 Oct 2026 · Kevin Beaumont
+reporting, 30 Oct 2026. Checker is read-only and open: <a href="/ai-price-watch/claude-check/check.sh">check.sh</a>.
+Built 30 Oct 2026. Nothing on this page is affiliated with Anthropic or Cursor.
+</div>
+</div></body></html>

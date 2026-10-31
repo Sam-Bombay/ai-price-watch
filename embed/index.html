@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Price Watch — put the live price moves on your site</title>
+<style>
+  :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c; --up:#ff6b6b; --down:#4ade80; --accent:#7dd3fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:56px 20px 80px; }
+  h1 { font-size:28px; letter-spacing:-.02em; margin:0 0 6px; }
+  .sub { color:var(--dim); margin:0 0 30px; }
+  h2 { font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim); margin:34px 0 12px; }
+  pre { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px;
+        overflow:auto; font-size:13px; color:#cfe8ff; }
+  a { color:var(--accent); }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  ul { padding-left:18px; } li { margin:6px 0; color:var(--dim); }
+  iframe { width:100%; border:1px solid var(--line); border-radius:12px; background:#0e1013; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Put the live AI price moves on your site</h1>
+  <p class="sub">Free, no signup, updates itself every morning. Drop one line into your page.</p>
+
+  <h2>Embed it</h2>
+  <div class="card">
+    <pre>&lt;iframe src="https://ai-price-watch-beta.vercel.app/embed/widget.html"
+  style="width:100%;max-width:560px;height:430px;border:0"&gt;&lt;/iframe&gt;</pre>
+    <p class="sub" style="margin:10px 0 0">Or link the daily brief:
+      <a href="https://ai-price-watch-beta.vercel.app/feed.xml">RSS feed</a>.</p>
+  </div>
+
+  <h2>Live preview</h2>
+  <iframe src="/ai-price-watch/embed/widget.html" height="430" title="AI Price Watch widget"></iframe>
+
+  <h2>Second view — the round trips</h2>
+  <div class="card">
+    <pre>&lt;iframe src="https://ai-price-watch-beta.vercel.app/embed/widget.html?view=volatility"
+  style="width:100%;max-width:560px;height:430px;border:0"&gt;&lt;/iframe&gt;</pre>
+    <p class="sub" style="margin:10px 0 0">The same widget, showing only the models that fell and
+      climbed straight back — the churn proof. 20 round trips in the log right now.</p>
+  </div>
+  <iframe src="/ai-price-watch/embed/widget.html?view=volatility" height="430" title="AI Price Watch volatility widget"></iframe>
+
+  <h2>Who this is for</h2>
+  <div class="card">
+    <ul>
+      <li>Chambers and business groups running AI programming for members — your members'
+        AI and software bills are set on prices that moved again this morning.</li>
+      <li>Newsletters and blogs covering AI — a live, sourced number beats another think piece.</li>
+      <li>Anyone who wants the free 30-minute <a href="/ai-price-watch/clinic">AI bill clinic</a> for their members.</li>
+    </ul>
+    <p class="sub" style="margin:14px 0 0">I audit a business's AI spend, cut what can be cut, and
+      take 30% of what I save. No savings, no fee.
+      <a href="mailto:sambombayoffice@gmail.com?subject=AI%20bill%20clinic">Ask for a slot</a>.</p>
+  </div>
+</div>
+</body>
+</html>

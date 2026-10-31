@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI spend benchmark — what this should cost | AI Price Watch</title>
+<meta name="description" content="The same monthly AI workload costs between $3.65 and $840 a month on today's catalogue. A daily-updated benchmark computed from public model prices.">
+<style>
+  :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c;
+          --down:#4ade80; --up:#f87171; --accent:#7dd3fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:16px/1.6 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:880px; margin:0 auto; padding:64px 22px 90px; }
+  h1 { font-size:34px; letter-spacing:-.02em; margin:0 0 10px; }
+  h2 { font-size:14px; text-transform:uppercase; letter-spacing:.09em; color:var(--dim);
+       margin:44px 0 14px; font-weight:600; }
+  .sub { color:var(--dim); font-size:18px; margin:0 0 34px; }
+  .hero { background:linear-gradient(180deg,#14161a,#101216); border:1px solid var(--line);
+          border-left:3px solid var(--down); border-radius:14px; padding:24px 26px; }
+  .hero b { font-size:18px; }
+  .grid { display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:14px; margin-top:18px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 20px; }
+  .big { font-size:26px; font-weight:700; color:var(--down); letter-spacing:-.02em; display:block; }
+  .card span.lbl { color:var(--dim); font-size:13px; }
+  table { width:100%; border-collapse:collapse; font-size:14.5px; margin-top:10px; }
+  th { text-align:left; color:var(--dim); font-weight:600; font-size:12px; text-transform:uppercase;
+       letter-spacing:.07em; border-bottom:1px solid var(--line); padding:8px 6px; }
+  td { padding:11px 6px; border-bottom:1px solid #1a1d22; vertical-align:top; }
+  td.dimc, span.dimc { color:var(--dim); font-size:13px; }
+  td.hi { color:var(--up); font-weight:600; }
+  .num { color:var(--down); font-weight:600; }
+  .note { color:var(--dim); font-size:13.5px; margin-top:10px; }
+  .cta { display:block; text-align:center; margin:22px 0 0; padding:16px; border-radius:12px;
+         background:#e8eaed; color:#0b0c0e; font-weight:700; font-size:17px; text-decoration:none; }
+  .cta.alt { background:transparent; border:1px solid var(--line); color:var(--txt);
+             font-weight:600; font-size:15px; }
+  .foot { margin-top:56px; padding-top:22px; border-top:1px solid var(--line); color:var(--dim); font-size:13.5px; }
+  a { color:var(--accent); }
+  @media (max-width:680px){ .grid{grid-template-columns:1fr 1fr;} h1{font-size:27px;} table{font-size:13px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>The same AI work is billed 7.7x apart</h1>
+  <p class="sub">A monthly benchmark, recomputed every day from published model prices.
+  If your AI bill was set more than a month ago, the number on it is out of date — in both
+  directions.</p>
+
+  <div class="hero">
+    <p><b>A 40-person company running 120M input tokens and 18M output tokens a
+    month bills anywhere from $3.65 (cheapest capable model) to $840 (90th percentile) for the same volume.</b>
+    That is a 7.7x gap on an input nobody negotiates, across 452 models listed
+    publicly today. The median bill for that volume is $110 a month — so a company sitting at
+    the top of the range is overpaying roughly $730 a month — $8,766 a year — against the middle of the market.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card"><span class="big">452</span><span class="lbl">models priced daily</span></div>
+    <div class="card"><span class="big">388</span><span class="lbl">workhorse class (100k+ ctx)</span></div>
+    <div class="card"><span class="big">778</span><span class="lbl">price changes logged</span></div>
+    <div class="card"><span class="big">30</span><span class="lbl">moves today</span></div>
+  </div>
+
+  <h2>What a month of ordinary AI work should cost — 2026-10-31</h2>
+  <table>
+    <tr><th>Company</th><th>Monthly volume</th><th>Cheapest workhorse</th><th>Median of market</th>
+        <th>Premium (90th pct)</th><th>Annualised at premium</th></tr>
+    <tr>
+      <td><b>10-person shop</b><br><span class="dimc">a support bot, some drafting, a little code help</span></td>
+      <td class="dimc">25M in / 3M out</td>
+      <td>$0.71</td>
+      <td>$21.32</td>
+      <td class="hi">$160</td>
+      <td class="num">$1,920<br><span class="dimc">yr</span></td>
+    </tr>
+    <tr>
+      <td><b>40-person company</b><br><span class="dimc">everyone has a seat, one product feature uses a model</span></td>
+      <td class="dimc">120M in / 18M out</td>
+      <td>$3.65</td>
+      <td>$110</td>
+      <td class="hi">$840</td>
+      <td class="num">$10,080<br><span class="dimc">yr</span></td>
+    </tr>
+    <tr>
+      <td><b>150-person company</b><br><span class="dimc">seats plus two production features and a document pipeline</span></td>
+      <td class="dimc">500M in / 90M out</td>
+      <td>$16.17</td>
+      <td>$483</td>
+      <td class="hi">$3,800</td>
+      <td class="num">$45,600<br><span class="dimc">yr</span></td>
+    </tr>
+  </table>
+  <p class="note">Method: every one of the 452 models in OpenRouter's public catalogue with a
+  context window of 100k tokens or more (388 of them), priced at the published rate per million
+  input and output tokens, applied to the stated monthly volume. The ceiling is far higher than the
+  90th percentile — the most expensive workhorse model today would bill a 40-person company
+  $6,840 a month for the same volume. Prices change daily; this page is rebuilt each morning
+  from the same log the briefs come from.</p>
+
+  <h2>The honest caveat</h2>
+  <p class="note">Cheap is not the same as equivalent. The cheapest models in this table are small,
+  fast and fine for classification, extraction, drafting and support replies; they are not what you
+  write a long-context agent on. The point is not "use the cheapest model" — it is that most
+  companies are paying premium rates for the routine share of their traffic, and the routine share
+  is usually most of it. Splitting traffic by task is where the money is.</p>
+
+  <h2>Moves logged today (2026-10-31)</h2>
+  <table>
+    <tr><th>Model</th><th>Field</th><th>Was /M</th><th>Now /M</th><th>Change</th></tr>
+<tr><td>Qwen: Qwen3.8 27B</td><td class="dimc">input</td><td class="dimc">$0.1500</td><td>$0.0400</td><td class="num">-73.3%</td></tr>
+<tr><td>Z.ai: GLM 5.3</td><td class="dimc">output</td><td class="dimc">$3.6000</td><td>$1.4000</td><td class="num">-61.1%</td></tr>
+<tr><td>Particle AI: Particle-1</td><td class="dimc">input</td><td class="dimc">$0.1000</td><td>$0.0500</td><td class="num">-50.0%</td></tr>
+<tr><td>Particle AI: Particle-1</td><td class="dimc">output</td><td class="dimc">$1.0000</td><td>$0.5000</td><td class="num">-50.0%</td></tr>
+<tr><td>DeepSeek: DeepSeek V4 Flash Latest</td><td class="dimc">output</td><td class="dimc">$0.3000</td><td>$0.1729</td><td class="num">-42.4%</td></tr>
+<tr><td>DeepSeek: DeepSeek Flash Latest</td><td class="dimc">input</td><td class="dimc">$0.0220</td><td>$0.0141</td><td class="num">-35.9%</td></tr>
+  </table>
+
+  <a class="cta" href="mailto:sambombayoffice@gmail.com?subject=AI%20cost%20audit%20%E2%80%94%20one%20redacted%20invoice&body=Hi%20Sam%20%E2%80%94%20I%20read%20the%20benchmark.%20Our%20AI%20spend%20is%20about%20%24____%20a%20month.%20Here%20is%20a%20redacted%20invoice.%20What%20is%20honestly%20cuttable%3F">Send one redacted invoice. I return the cut list in 48 hours. No call.</a>
+  <a class="cta alt" href="/ai-price-watch/repricing">Or price your own re-bid first — free, no signup</a>
+
+  <div class="foot">
+    <p><a href="/ai-price-watch/">AI Price Watch</a> &middot; <a href="/ai-price-watch/repricing">re-bid</a> &middot;
+    <a href="/ai-price-watch/receipts">my own audit</a> &middot; <a href="/ai-price-watch/local-stt">local transcription</a> &middot;
+    <a href="/ai-price-watch/clinic">clinic</a> &middot; <a href="/ai-price-watch/feed.xml">feed</a></p>
+    <p>Source: OpenRouter public model catalogue, logged daily. Prices in USD per million tokens.
+    This is a factual index of published list prices, not advice, and not a quote for any vendor's
+    contract. Updated 2026-10-31.</p>
+  </div>
+
+</div>
+</body>
+</html>
