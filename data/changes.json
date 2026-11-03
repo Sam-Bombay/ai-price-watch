@@ -7218,5 +7218,230 @@
 "from": 0.205,
 "to": 0.283,
 "pct": 38.0
+},
+{
+"date": "2026-11-03",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 0.5,
+"to": 0.315,
+"pct": -37.0
+},
+{
+"date": "2026-11-03",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "input",
+"from": 0.0285,
+"to": 0.0313,
+"pct": 9.8
+},
+{
+"date": "2026-11-03",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 0.0923,
+"to": 0.0846,
+"pct": -8.3
+},
+{
+"date": "2026-11-03",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "input",
+"from": 0.0285,
+"to": 0.0313,
+"pct": 9.8
+},
+{
+"date": "2026-11-03",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "output",
+"from": 0.0923,
+"to": 0.0846,
+"pct": -8.3
+},
+{
+"date": "2026-11-03",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.119,
+"to": 0.059,
+"pct": -50.4
+},
+{
+"date": "2026-11-03",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "output",
+"from": 0.238,
+"to": 0.3,
+"pct": 26.1
+},
+{
+"date": "2026-11-03",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.1495,
+"to": 0.1567,
+"pct": 4.8
+},
+{
+"date": "2026-11-03",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 7.15,
+"to": 9.3388,
+"pct": 30.6
+},
+{
+"date": "2026-11-03",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.094,
+"to": 0.079,
+"pct": -16.0
+},
+{
+"date": "2026-11-03",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.283,
+"to": 0.236,
+"pct": -16.6
+},
+{
+"date": "2026-11-03",
+"id": "qwen/qwen3-next-80b-a3b-instruct",
+"name": "Qwen: Qwen3 Next 80B A3B Instruct",
+"field": "input",
+"from": 0.09,
+"to": 0.1,
+"pct": 11.1
+},
+{
+"date": "2026-11-03",
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"field": "input",
+"from": 0.15,
+"to": 0.029,
+"pct": -80.7
+},
+{
+"date": "2026-11-03",
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"field": "output",
+"from": 0.6,
+"to": 0.108,
+"pct": -82.0
+},
+{
+"date": "2026-11-03",
+"id": "qwen/qwen3-coder-30b-a3b-instruct",
+"name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+"field": "input",
+"from": 0.07,
+"to": 0.15,
+"pct": 114.3
+},
+{
+"date": "2026-11-03",
+"id": "qwen/qwen3-coder-30b-a3b-instruct",
+"name": "Qwen: Qwen3 Coder 30B A3B Instruct",
+"field": "output",
+"from": 0.28,
+"to": 0.6,
+"pct": 114.3
+},
+{
+"date": "2026-11-03",
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"field": "input",
+"from": 0.1,
+"to": 0.2,
+"pct": 100.0
+},
+{
+"date": "2026-11-03",
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"field": "output",
+"from": 0.32,
+"to": 0.52,
+"pct": 62.5
+},
+{
+"date": "2026-11-03",
+"id": "meta-llama/llama-3.1-70b-instruct",
+"name": "Meta: Llama 3.1 70B Instruct",
+"field": "input",
+"from": 0.4,
+"to": 0.72,
+"pct": 80.0
+},
+{
+"date": "2026-11-03",
+"id": "meta-llama/llama-3.1-70b-instruct",
+"name": "Meta: Llama 3.1 70B Instruct",
+"field": "output",
+"from": 0.4,
+"to": 0.72,
+"pct": 80.0
+},
+{
+"date": "2026-11-03",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.1567,
+"to": 0.1662,
+"pct": 6.1
+},
+{
+"date": "2026-11-03",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.079,
+"to": 0.098,
+"pct": 24.1
+},
+{
+"date": "2026-11-03",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.236,
+"to": 0.295,
+"pct": 25.0
+},
+{
+"date": "2026-11-03",
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"field": "input",
+"from": 0.029,
+"to": 0.15,
+"pct": 417.2
+},
+{
+"date": "2026-11-03",
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"field": "output",
+"from": 0.108,
+"to": 0.6,
+"pct": 455.6
 }
 ]
