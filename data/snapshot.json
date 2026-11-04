@@ -450,7 +450,7 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.059,
+"in": 0.058,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
 "out": 0.3
 },
@@ -473,7 +473,7 @@
 "id": "deepseek/deepseek-v4-pro-0813",
 "in": 0.115,
 "name": "DeepSeek: DeepSeek V4 Pro 0813",
-"out": 4.0
+"out": 4.6
 },
 "deepseek/deepseek-v4.1-flash": {
 "ctx": 1048576,
@@ -765,9 +765,9 @@
 "google/gemma-4-26b-a4b-it": {
 "ctx": 262144,
 "id": "google/gemma-4-26b-a4b-it",
-"in": 0.098,
+"in": 0.1,
 "name": "Google: Gemma 4 26B A4B ",
-"out": 0.295
+"out": 0.3
 },
 "google/gemma-4-26b-a4b-it:free": {
 "ctx": 262144,
@@ -816,7 +816,7 @@
 "id": "ibm-granite/granite-4.2-8b",
 "in": 0.06,
 "name": "IBM: Granite 4.2 8B",
-"out": 0.15
+"out": 0.25
 },
 "inception/mercury-2": {
 "ctx": 128000,
@@ -940,9 +940,9 @@
 "meta-llama/llama-3.3-70b-instruct": {
 "ctx": 131072,
 "id": "meta-llama/llama-3.3-70b-instruct",
-"in": 0.2,
+"in": 0.1,
 "name": "Meta: Llama 3.3 70B Instruct",
-"out": 0.52
+"out": 0.32
 },
 "meta-llama/llama-4-maverick": {
 "ctx": 524288,
@@ -1299,7 +1299,7 @@
 "id": "moonshotai/kimi-k3",
 "in": 0.192,
 "name": "MoonshotAI: Kimi K3",
-"out": 15.0
+"out": 16.0
 },
 "moonshotai/kimi-k3.1-pro": {
 "ctx": 1048576,
@@ -2277,9 +2277,9 @@
 "qwen/qwen3-235b-a22b-2507": {
 "ctx": 262144,
 "id": "qwen/qwen3-235b-a22b-2507",
-"in": 0.09,
+"in": 0.14,
 "name": "Qwen: Qwen3 235B A22B Instruct 2507",
-"out": 0.55
+"out": 0.8
 },
 "qwen/qwen3-235b-a22b-thinking-2507": {
 "ctx": 128000,
@@ -2624,6 +2624,13 @@
 "name": "ScaleDown: Summarize",
 "out": null
 },
+"stealth/crouton-alpha": {
+"ctx": 1048576,
+"id": "stealth/crouton-alpha",
+"in": null,
+"name": "Crouton Alpha",
+"out": null
+},
 "stepfun/step-3.5-flash": {
 "ctx": 262144,
 "id": "stepfun/step-3.5-flash",
@@ -2687,6 +2694,13 @@
 "name": "Tencent: Hy3 preview",
 "out": 0.6
 },
+"tencent/hy4": {
+"ctx": 1048576,
+"id": "tencent/hy4",
+"in": 0.417,
+"name": "Tencent: Hy4",
+"out": 1.2505
+},
 "tencent/hy4-preview": {
 "ctx": 1048576,
 "id": "tencent/hy4-preview",
@@ -2728,20 +2742,6 @@
 "in": 0.45,
 "name": "Thinking Machines: Inkling Small",
 "out": 1.2
-},
-"thinkingmachines/inkling-small:free": {
-"ctx": 1048576,
-"id": "thinkingmachines/inkling-small:free",
-"in": null,
-"name": "Thinking Machines: Inkling Small (free)",
-"out": null
-},
-"thinkingmachines/inkling:free": {
-"ctx": 1048576,
-"id": "thinkingmachines/inkling:free",
-"in": null,
-"name": "Thinking Machines: Inkling (free)",
-"out": null
 },
 "typesafe/jev-router": {
 "ctx": 1000000,
@@ -2834,12 +2834,26 @@
 "name": "SpaceXAI: Grok 4.6",
 "out": 6.0
 },
+"x-ai/grok-4.6:batch": {
+"ctx": 500000,
+"id": "x-ai/grok-4.6:batch",
+"in": 1.6,
+"name": "SpaceXAI: Grok 4.6 (batch)",
+"out": 4.8
+},
 "x-ai/grok-4.7": {
 "ctx": 500000,
 "id": "x-ai/grok-4.7",
 "in": 2.0,
 "name": "SpaceXAI: Grok 4.7",
 "out": 6.0
+},
+"x-ai/grok-4.7:batch": {
+"ctx": 500000,
+"id": "x-ai/grok-4.7:batch",
+"in": 1.6,
+"name": "SpaceXAI: Grok 4.7 (batch)",
+"out": 4.8
 },
 "x-ai/grok-build-0.1": {
 "ctx": 256000,
@@ -2849,7 +2863,7 @@
 "out": 2.0
 },
 "xiaomi/mimo-v2.5": {
-"ctx": 1050000,
+"ctx": 1000000,
 "id": "xiaomi/mimo-v2.5",
 "in": 0.4,
 "name": "Xiaomi: MiMo-V2.5",
@@ -2977,9 +2991,9 @@
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.0313,
+"in": 0.0269,
 "name": "Z.ai: GLM 5.3 Flash",
-"out": 0.0846
+"out": 0.0996
 },
 "z-ai/glm-5.3-flash:batch": {
 "ctx": 1048576,
@@ -3054,9 +3068,9 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.035,
+"in": 0.022,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.315
+"out": 0.4
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
@@ -3068,7 +3082,7 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.059,
+"in": 0.058,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
 "out": 0.3
 },
@@ -3089,9 +3103,9 @@
 "~moonshotai/kimi-latest": {
 "ctx": 1048576,
 "id": "~moonshotai/kimi-latest",
-"in": 0.1662,
+"in": 0.1824,
 "name": "MoonshotAI: Kimi Latest",
-"out": 9.3388
+"out": 9.7471
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
@@ -3145,9 +3159,9 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.0313,
+"in": 0.0269,
 "name": "Z.ai: GLM Flash Latest",
-"out": 0.0846
+"out": 0.0996
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,
