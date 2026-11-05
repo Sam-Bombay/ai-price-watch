@@ -7662,5 +7662,313 @@
 "field": "retired",
 "from": null,
 "to": null
+},
+{
+"date": "2026-11-05",
+"id": "ricursiveai/ripple-65b-preview",
+"name": "ricursiveAI/Ripple-65B-Preview",
+"field": "added",
+"from": null,
+"to": 0.6
+},
+{
+"date": "2026-11-05",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.1035,
+"to": 0.0927,
+"pct": -10.4
+},
+{
+"date": "2026-11-05",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.022,
+"to": 0.006,
+"pct": -72.7
+},
+{
+"date": "2026-11-05",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 0.4,
+"to": 0.5,
+"pct": 25.0
+},
+{
+"date": "2026-11-05",
+"id": "deepseek/deepseek-v4.1-flash:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+"field": "input",
+"from": 0.05,
+"to": 0.112,
+"pct": 124.0
+},
+{
+"date": "2026-11-05",
+"id": "deepseek/deepseek-v4.1-flash:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+"field": "output",
+"from": 0.15,
+"to": 0.336,
+"pct": 124.0
+},
+{
+"date": "2026-11-05",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "input",
+"from": 0.0269,
+"to": 0.0285,
+"pct": 5.9
+},
+{
+"date": "2026-11-05",
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"field": "output",
+"from": 0.0996,
+"to": 0.0923,
+"pct": -7.3
+},
+{
+"date": "2026-11-05",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "input",
+"from": 0.0269,
+"to": 0.15,
+"pct": 457.6
+},
+{
+"date": "2026-11-05",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "output",
+"from": 0.0996,
+"to": 0.5,
+"pct": 402.0
+},
+{
+"date": "2026-11-05",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "input",
+"from": 0.08,
+"to": 0.0699,
+"pct": -12.6
+},
+{
+"date": "2026-11-05",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "output",
+"from": 3.6,
+"to": 1.4,
+"pct": -61.1
+},
+{
+"date": "2026-11-05",
+"id": "deepseek/deepseek-v4-pro-0813",
+"name": "DeepSeek: DeepSeek V4 Pro 0813",
+"field": "input",
+"from": 0.115,
+"to": 0.103,
+"pct": -10.4
+},
+{
+"date": "2026-11-05",
+"id": "deepseek/deepseek-v4-pro-0813",
+"name": "DeepSeek: DeepSeek V4 Pro 0813",
+"field": "output",
+"from": 4.6,
+"to": 4.11,
+"pct": -10.7
+},
+{
+"date": "2026-11-05",
+"id": "inclusionai/ling-3.0-tiny",
+"name": "inclusionAI: Ling 3.0 Tiny",
+"field": "added",
+"from": null,
+"to": 0.045
+},
+{
+"date": "2026-11-05",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.058,
+"to": 0.05,
+"pct": -13.8
+},
+{
+"date": "2026-11-05",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.058,
+"to": 0.05,
+"pct": -13.8
+},
+{
+"date": "2026-11-05",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.1824,
+"to": 0.1501,
+"pct": -17.7
+},
+{
+"date": "2026-11-05",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 9.7471,
+"to": 10.5387,
+"pct": 8.1
+},
+{
+"date": "2026-11-05",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.1,
+"to": 0.031,
+"pct": -69.0
+},
+{
+"date": "2026-11-05",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.3,
+"to": 0.094,
+"pct": -68.7
+},
+{
+"date": "2026-11-05",
+"id": "minimax/minimax-m2.7",
+"name": "MiniMax: MiniMax M2.7",
+"field": "input",
+"from": 0.3,
+"to": 0.21,
+"pct": -30.0
+},
+{
+"date": "2026-11-05",
+"id": "minimax/minimax-m2.7",
+"name": "MiniMax: MiniMax M2.7",
+"field": "output",
+"from": 1.2,
+"to": 0.84,
+"pct": -30.0
+},
+{
+"date": "2026-11-05",
+"id": "qwen/qwen3-next-80b-a3b-instruct",
+"name": "Qwen: Qwen3 Next 80B A3B Instruct",
+"field": "input",
+"from": 0.1,
+"to": 0.09,
+"pct": -10.0
+},
+{
+"date": "2026-11-05",
+"id": "meta-llama/llama-4-maverick",
+"name": "Meta: Llama 4 Maverick",
+"field": "input",
+"from": 0.1875,
+"to": 0.35,
+"pct": 86.7
+},
+{
+"date": "2026-11-05",
+"id": "meta-llama/llama-4-maverick",
+"name": "Meta: Llama 4 Maverick",
+"field": "output",
+"from": 0.6525,
+"to": 1.0,
+"pct": 53.3
+},
+{
+"date": "2026-11-05",
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"field": "input",
+"from": 0.1,
+"to": 0.2,
+"pct": 100.0
+},
+{
+"date": "2026-11-05",
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"field": "output",
+"from": 0.32,
+"to": 0.52,
+"pct": 62.5
+},
+{
+"date": "2026-11-05",
+"id": "openrouter/auto-code",
+"name": "Auto Code",
+"field": "added",
+"from": null,
+"to": null
+},
+{
+"date": "2026-11-05",
+"id": "minimax/minimax-01",
+"name": "MiniMax: MiniMax-01",
+"field": "retired",
+"from": 1.1,
+"to": null
+},
+{
+"date": "2026-11-05",
+"id": "minimax/minimax-m2",
+"name": "MiniMax: MiniMax M2",
+"field": "retired",
+"from": 1.02,
+"to": null
+},
+{
+"date": "2026-11-05",
+"id": "minimax/minimax-m2-her",
+"name": "MiniMax: MiniMax M2-her",
+"field": "retired",
+"from": 1.2,
+"to": null
+},
+{
+"date": "2026-11-05",
+"id": "minimax/minimax-m2.1",
+"name": "MiniMax: MiniMax M2.1",
+"field": "retired",
+"from": 1.2,
+"to": null
+},
+{
+"date": "2026-11-05",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.031,
+"to": 0.051,
+"pct": 64.5
+},
+{
+"date": "2026-11-05",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.094,
+"to": 0.153,
+"pct": 62.8
 }
 ]

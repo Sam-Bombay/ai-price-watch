@@ -450,7 +450,7 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.058,
+"in": 0.05,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
 "out": 0.3
 },
@@ -471,9 +471,9 @@
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro-0813",
-"in": 0.115,
+"in": 0.103,
 "name": "DeepSeek: DeepSeek V4 Pro 0813",
-"out": 4.6
+"out": 4.11
 },
 "deepseek/deepseek-v4.1-flash": {
 "ctx": 1048576,
@@ -492,9 +492,9 @@
 "deepseek/deepseek-v4.1-flash:batch": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash:batch",
-"in": 0.05,
+"in": 0.112,
 "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
-"out": 0.15
+"out": 0.336
 },
 "dots-studio/dots-3-note-preview:free": {
 "ctx": 512000,
@@ -765,9 +765,9 @@
 "google/gemma-4-26b-a4b-it": {
 "ctx": 262144,
 "id": "google/gemma-4-26b-a4b-it",
-"in": 0.1,
+"in": 0.051,
 "name": "Google: Gemma 4 26B A4B ",
-"out": 0.3
+"out": 0.153
 },
 "google/gemma-4-26b-a4b-it:free": {
 "ctx": 262144,
@@ -852,6 +852,13 @@
 "in": 0.06,
 "name": "inclusionAI: Ling 3.0 Flash VL",
 "out": 0.18
+},
+"inclusionai/ling-3.0-tiny": {
+"ctx": 262144,
+"id": "inclusionai/ling-3.0-tiny",
+"in": 0.015,
+"name": "inclusionAI: Ling 3.0 Tiny",
+"out": 0.045
 },
 "inclusionai/ling-3.1-flash": {
 "ctx": 1000000,
@@ -940,16 +947,16 @@
 "meta-llama/llama-3.3-70b-instruct": {
 "ctx": 131072,
 "id": "meta-llama/llama-3.3-70b-instruct",
-"in": 0.1,
+"in": 0.2,
 "name": "Meta: Llama 3.3 70B Instruct",
-"out": 0.32
+"out": 0.52
 },
 "meta-llama/llama-4-maverick": {
 "ctx": 524288,
 "id": "meta-llama/llama-4-maverick",
-"in": 0.1875,
+"in": 0.35,
 "name": "Meta: Llama 4 Maverick",
-"out": 0.6525
+"out": 1.0
 },
 "meta-llama/llama-4-scout": {
 "ctx": 1310720,
@@ -1028,40 +1035,12 @@
 "name": "Microsoft: Phi 4",
 "out": 0.14
 },
-"minimax/minimax-01": {
-"ctx": 1000192,
-"id": "minimax/minimax-01",
-"in": 0.2,
-"name": "MiniMax: MiniMax-01",
-"out": 1.1
-},
 "minimax/minimax-m1": {
 "ctx": 1000000,
 "id": "minimax/minimax-m1",
 "in": 0.55,
 "name": "MiniMax: MiniMax M1",
 "out": 2.2
-},
-"minimax/minimax-m2": {
-"ctx": 204800,
-"id": "minimax/minimax-m2",
-"in": 0.255,
-"name": "MiniMax: MiniMax M2",
-"out": 1.02
-},
-"minimax/minimax-m2-her": {
-"ctx": 65536,
-"id": "minimax/minimax-m2-her",
-"in": 0.3,
-"name": "MiniMax: MiniMax M2-her",
-"out": 1.2
-},
-"minimax/minimax-m2.1": {
-"ctx": 204800,
-"id": "minimax/minimax-m2.1",
-"in": 0.3,
-"name": "MiniMax: MiniMax M2.1",
-"out": 1.2
 },
 "minimax/minimax-m2.5": {
 "ctx": 204800,
@@ -1073,9 +1052,9 @@
 "minimax/minimax-m2.7": {
 "ctx": 204800,
 "id": "minimax/minimax-m2.7",
-"in": 0.3,
+"in": 0.21,
 "name": "MiniMax: MiniMax M2.7",
-"out": 1.2
+"out": 0.84
 },
 "minimax/minimax-m3": {
 "ctx": 1048576,
@@ -2134,6 +2113,13 @@
 "name": "Auto Router (Beta)",
 "out": null
 },
+"openrouter/auto-code": {
+"ctx": 2000000,
+"id": "openrouter/auto-code",
+"in": null,
+"name": "Auto Code",
+"out": null
+},
 "openrouter/bodybuilder": {
 "ctx": 128000,
 "id": "openrouter/bodybuilder",
@@ -2340,7 +2326,7 @@
 "qwen/qwen3-next-80b-a3b-instruct": {
 "ctx": 262144,
 "id": "qwen/qwen3-next-80b-a3b-instruct",
-"in": 0.1,
+"in": 0.09,
 "name": "Qwen: Qwen3 Next 80B A3B Instruct",
 "out": 1.1
 },
@@ -2567,6 +2553,13 @@
 "in": 1.0,
 "name": "Relace: Relace Search",
 "out": 3.0
+},
+"ricursiveai/ripple-65b-preview": {
+"ctx": 1048576,
+"id": "ricursiveai/ripple-65b-preview",
+"in": 0.2,
+"name": "ricursiveAI/Ripple-65B-Preview",
+"out": 0.6
 },
 "sakana/fugu-max": {
 "ctx": 1000000,
@@ -2984,16 +2977,16 @@
 "z-ai/glm-5.3": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3",
-"in": 0.08,
+"in": 0.0699,
 "name": "Z.ai: GLM 5.3",
-"out": 3.6
+"out": 1.4
 },
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.0269,
+"in": 0.15,
 "name": "Z.ai: GLM 5.3 Flash",
-"out": 0.0996
+"out": 0.5
 },
 "z-ai/glm-5.3-flash:batch": {
 "ctx": 1048576,
@@ -3068,21 +3061,21 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.022,
+"in": 0.006,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.4
+"out": 0.5
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-pro-latest",
-"in": 0.1035,
+"in": 0.0927,
 "name": "DeepSeek: DeepSeek Pro Latest",
 "out": 8.0
 },
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.058,
+"in": 0.05,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
 "out": 0.3
 },
@@ -3103,9 +3096,9 @@
 "~moonshotai/kimi-latest": {
 "ctx": 1048576,
 "id": "~moonshotai/kimi-latest",
-"in": 0.1824,
+"in": 0.1501,
 "name": "MoonshotAI: Kimi Latest",
-"out": 9.7471
+"out": 10.5387
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
@@ -3159,9 +3152,9 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.0269,
+"in": 0.0285,
 "name": "Z.ai: GLM Flash Latest",
-"out": 0.0996
+"out": 0.0923
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,
