@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self-host or pay per token? The break-even, computed | AI Price Watch</title>
+<meta name="description" content="Whether self-hosting an AI model is cheaper than paying per token, computed from today's published model prices and dated GPU rental rates. Batch workloads and 24/7 workloads are not the same answer.">
+<style>
+  :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c; --up:#ff6b6b; --down:#4ade80; --accent:#7dd3fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:900px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font-size:29px; letter-spacing:-.02em; margin:0 0 8px; }
+  .sub { color:var(--dim); margin:0 0 28px; }
+  h2 { font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim);
+       margin:40px 0 12px; font-weight:600; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th,td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); font-size:14px; }
+  th { color:var(--dim); font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; }
+  td.num,th.num { text-align:right; }
+  .verdict { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent);
+             border-radius:12px; padding:18px 22px; margin:14px 0 4px; }
+  .verdict b { font-size:19px; }
+  .calc { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  .g { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  label { display:block; color:var(--dim); font-size:12px; text-transform:uppercase;
+          letter-spacing:.06em; margin-bottom:5px; }
+  input,select { width:100%; background:#0f1114; border:1px solid var(--line); color:var(--txt);
+                 border-radius:9px; padding:10px 12px; font-size:14px; }
+  .out { margin-top:16px; border-top:1px solid var(--line); }
+  .out .row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--line); }
+  .out .row span { color:var(--dim); }
+  .out .row b { font-variant-numeric:tabular-nums; }
+  .good { color:var(--down); } .bad { color:var(--up); }
+  .muted { color:var(--dim); font-size:13px; }
+  .foot { margin-top:46px; padding:18px 20px; border:1px solid var(--line); border-radius:12px; background:var(--panel); }
+  .foot a, p a { color:var(--accent); }
+  code { background:#0f1114; padding:1px 5px; border-radius:4px; font-size:13px; }
+  @media (max-width:700px) { .g { grid-template-columns:1fr; } }
+</style></head><body><div class="wrap">
+
+<h1>Self-host, or keep paying per token?</h1>
+<p class="sub">Computed 2026-11-05 from 389 hosted models with 100k+ context, against published GPU rental
+rates. Two workloads, two different answers.</p>
+
+<div class="verdict">
+  <b>The short answer: it depends on whether your load is batchable.</b>
+  <p class="muted" style="margin:6px 0 0">
+  A 24/7 user-facing product pays for the GPU whether or not anyone is typing, so it only wins above
+  roughly $1,307/month of hosted spend. Batch and overnight work pays for GPU-hours only,
+  and wins almost immediately. Most AI bills are a mix and nobody has separated the two — which is exactly
+  where the money is.</p>
+</div>
+
+<h2>Your workload</h2>
+<div class="calc">
+  <div class="g">
+    <div><label>Input tokens / month (millions)</label><input id="tin" type="number" value="120" step="10"></div>
+    <div><label>Output tokens / month (millions)</label><input id="tout" type="number" value="18" step="1"></div>
+  </div>
+  <div class="g" style="margin-top:12px">
+    <div><label>GPU</label><select id="gpu"></select></div>
+    <div><label>Assumed throughput</label>
+      <select id="tps">
+        <option value="600">Conservative — 600 out tok/s</option>
+        <option value="1200" selected>Typical — 1,200 out tok/s</option>
+        <option value="2400">Batched hard — 2,400 out tok/s</option>
+      </select></div>
+  </div>
+  <div class="out" id="out"></div>
+  <p class="muted" style="margin:12px 0 0">Throughput is an assumption, not a measurement of your hardware or ours.
+  Change it and watch the answer move — that sensitivity is the honest part of this page.</p>
+</div>
+
+<h2>Published GPU rates used</h2>
+<table>
+  <tr><th>GPU</th><th class="num">VRAM</th><th class="num">$/hr</th><th class="num">24/7 per month</th><th class="num">GPU-hours for the example workload</th></tr>
+  <tr><td>RTX 4090</td><td class="num">24 GB</td><td class="num">$0.89</td><td class="num">$650</td><td class="num">11.1 h = $11.12</td></tr><tr><td>A40</td><td class="num">48 GB</td><td class="num">$0.59</td><td class="num">$431</td><td class="num">7.4 h = $7.38</td></tr><tr><td>L40S</td><td class="num">48 GB</td><td class="num">$1.09</td><td class="num">$796</td><td class="num">13.6 h = $13.63</td></tr><tr><td>A100 PCIe</td><td class="num">80 GB</td><td class="num">$1.79</td><td class="num">$1,307</td><td class="num">22.4 h = $22.38</td></tr><tr><td>RTX Pro 6000</td><td class="num">96 GB</td><td class="num">$2.49</td><td class="num">$1,818</td><td class="num">31.1 h = $31.13</td></tr><tr><td>H100 PCIe</td><td class="num">80 GB</td><td class="num">$2.89</td><td class="num">$2,110</td><td class="num">36.1 h = $36.12</td></tr><tr><td>H100 SXM</td><td class="num">80 GB</td><td class="num">$3.99</td><td class="num">$2,913</td><td class="num">49.9 h = $49.88</td></tr><tr><td>H200</td><td class="num">141 GB</td><td class="num">$5.29</td><td class="num">$3,862</td><td class="num">66.1 h = $66.12</td></tr><tr><td>B200</td><td class="num">180 GB</td><td class="num">$7.99</td><td class="num">$5,833</td><td class="num">99.9 h = $99.88</td></tr>
+</table>
+<p class="muted">Rates: Runpod public pricing page, states “Updated October 28, 2026”, read 3 Nov 2026.
+GPU-hours column uses this page's default workload (120M in / 18M out)
+at 1,200 output tok/s and 4,000 input tok/s. Storage, egress, redundancy and an engineer's time are
+not included — all three push the real self-hosted number up.</p>
+
+<h2>The same workload, priced on hosted APIs</h2>
+<table>
+  <tr><th>Route</th><th>Model</th><th class="num">$/month</th><th class="num">× cheapest</th></tr>
+  <tr><td class="good">Cheapest capable</td><td>inclusionAI: Ling 3.0 Tiny</td><td class="num">$2.61</td><td class="num">1.0×</td></tr>
+  <tr><td>Median</td><td class="muted">of 389 models</td><td class="num">$110</td><td class="num">42×</td></tr>
+  <tr><td>90th percentile</td><td class="muted">the “we picked a big name” bill</td><td class="num">$696</td><td class="num">267×</td></tr>
+  <tr><td class="bad">Most expensive</td><td>OpenAI: GPT-5.4 Pro</td><td class="num">$6,840</td><td class="num">2621×</td></tr>
+</table>
+<p class="muted">Same tokens, same day, same market: a 2621× spread between the most and least
+expensive route for identical work. That spread is the entire audit offer, and it is public data.</p>
+
+<div class="foot">
+  <p><b>If the arithmetic says you are overpaying:</b> I audit what a business actually spends on AI and
+  software, cut what can honestly be cut, and take 30% of what is saved — no savings, no fee.
+  Enter a monthly spend and see what a re-bid is worth: <a href="/ai-price-watch/repricing">/repricing</a>.
+  Nine questions to ask before you renew: <a href="/ai-price-watch/clinic/checklist">the checklist</a>.</p>
+  <p class="muted">Every number on this page rebuilds from the daily price pull.
+  Machine-readable source: <a href="/ai-price-watch/data/latest.json">/data/latest.json</a>,
+  the log itself: <a href="https://huggingface.co/datasets/sambombay/ai-model-price-changes">Hugging Face</a>,
+  the index: <a href="/ai-price-watch/cost-index/">AI Cost Index</a>.</p>
+</div>
+</div>
+<script>
+const GPUS = [["RTX 4090", 24, 0.89], ["A40", 48, 0.59], ["L40S", 48, 1.09], ["A100 PCIe", 80, 1.79], ["RTX Pro 6000", 96, 2.49], ["H100 PCIe", 80, 2.89], ["H100 SXM", 80, 3.99], ["H200", 141, 5.29], ["B200", 180, 7.99]];
+const HOURS = 730;
+const IN_TPS = 4000;
+const sel = document.getElementById('gpu');
+GPUS.forEach(([n, v, r]) => {
+  const o = document.createElement('option');
+  o.value = String(r); o.textContent = n + ' — ' + v + ' GB — $' + r.toFixed(2) + '/hr';
+  if (v >= 80 && r === Math.min(...GPUS.filter(g => g[1] >= 80).map(g => g[2]))) o.selected = true;
+  sel.appendChild(o);
+});
+function money(x) {
+  if (x >= 100) return '$' + Math.round(x).toLocaleString();
+  return '$' + x.toFixed(2);
+}
+function calc() {
+  const tin = Math.max(0, parseFloat(document.getElementById('tin').value) || 0) * 1e6;
+  const tout = Math.max(0, parseFloat(document.getElementById('tout').value) || 0) * 1e6;
+  const rate = parseFloat(sel.value);
+  const outTps = parseFloat(document.getElementById('tps').value);
+  const inTps = outTps * (IN_TPS / 1200);
+  const hours = (tin / inTps + tout / outTps) / 3600;
+  const always = rate * HOURS;
+  const burst = rate * Math.max(hours, 0);
+  document.getElementById('out').innerHTML = `
+    <div class="row"><span>Self-hosted, 24/7 (one GPU)</span><b>${money(always)}/mo</b></div>
+    <div class="row"><span>Self-hosted, batch only (${hours.toFixed(1)} GPU-hours)</span><b class="good">${money(burst)}/mo</b></div>
+    <div class="row"><span>Hosted, cheapest capable model</span><b id="hc">…</b></div>
+    <div class="row"><span>Hosted, median model</span><b id="hm">…</b></div>`;
+  // hosted side is recomputed in-page from the same catalogue snapshot
+  const MODELS = [[0.029, 0.03], [0.015, 0.045], [0.021, 0.063], [0.05, 0.08], [0.0285, 0.0923], [0.025, 0.1], [0.1, 0.1], [0.05, 0.1], [0.024, 0.112], [0.08, 0.13], [0.03, 0.13], [0.03, 0.13], [0.0296, 0.136], [0.035, 0.14], [0.03, 0.15], [0.04, 0.15], [0.15, 0.15], [0.05, 0.15], [0.0375, 0.15], [0.051, 0.153], [0.06, 0.18], [0.05, 0.18], [0.18, 0.18], [0.091, 0.182], [0.05, 0.2], [0.1, 0.2], [0.1, 0.2], [0.07, 0.2], [0.2, 0.2], [0.2, 0.2], [0.025, 0.2], [0.1, 0.2], [0.075, 0.2], [0.05, 0.2], [0.075, 0.225], [0.05, 0.23], [0.06, 0.24], [0.06, 0.24], [0.05, 0.25], [0.05, 0.25], [0.05, 0.25], [0.075, 0.25], [0.06, 0.25], [0.17, 0.25], [0.065, 0.26], [0.14, 0.28], [0.08, 0.28], [0.075, 0.3], [0.05, 0.3], [0.05, 0.3], [0.1, 0.3], [0.075, 0.3], [0.075, 0.3], [0.1, 0.3], [0.1, 0.3], [0.075, 0.3], [0.0509, 0.335], [0.112, 0.336], [0.1, 0.35], [0.08, 0.35], [0.26, 0.38], [0.2, 0.4], [0.1, 0.4], [0.0605, 0.4], [0.05, 0.4], [0.1, 0.4], [0.1, 0.4], [0.4, 0.4], [0.27, 0.41], [0.15, 0.47], [0.15, 0.47], [0.05, 0.5], [0.15, 0.5], [0.1, 0.5], [0.1, 0.5], [0.1, 0.5], [0.075, 0.5], [0.006, 0.5], [0.1, 0.5], [0.045, 0.5], [0.15, 0.5], [0.35, 0.5], [0.1, 0.5], [0.3, 0.5], [0.2, 0.52], [0.132, 0.528], [0.351, 0.555], [0.14, 0.57], [0.2, 0.6], [0.15, 0.6], [0.15, 0.6], [0.1, 0.6], [0.1, 0.6], [0.18, 0.6], [0.15, 0.6], [0.15, 0.6], [0.15, 0.6], [0.15, 0.6], [0.15, 0.6], [0.15, 0.6], [0.15, 0.6], [0.1, 0.625], [0.2156, 0.6468], [0.05, 0.7], [0.72, 0.72], [0.125, 0.75], [0.25, 0.75], [0.25, 0.75], [0.26, 0.78], [0.12, 0.8], [0.14, 0.8], [0.2, 0.8], [0.21, 0.84], [0.13, 0.85], [0.85, 0.85], [0.435, 0.87], [0.1, 0.9], [0.3, 0.9], [0.3, 0.9], [0.2, 0.9], [0.23, 0.92], [0.27, 0.95], [0.25, 0.95], [0.195, 0.975], [0.25, 1.0], [0.14, 1.0], [0.29, 1.0], [0.27, 1.0], [0.125, 1.0], [0.3, 1.0], [0.35, 1.0], [0.8, 1.0], [1.0, 1.0], [0.2574, 1.0287], [0.09, 1.1], [0.1875, 1.125], [0.29, 1.14], [0.2, 1.15], [0.3, 1.2], [0.45, 1.2], [0.3, 1.2], [0.2, 1.2], [0.2, 1.2], [0.3, 1.2], [0.8, 1.2], [0.37, 1.25], [0.37, 1.25], [0.15, 1.25], [0.2, 1.25], [0.85, 1.25], [0.417, 1.2505], [0.32, 1.28], [0.7, 1.4], [0.0699, 1.4], [0.0699, 1.4], [0.7, 1.4], [0.3, 1.5], [0.25, 1.5], [0.25, 1.5], [0.25, 1.5], [0.5, 1.5], [0.26, 1.56], [0.8, 1.6], [0.4, 1.6], [0.3, 1.8], [0.48, 1.8], [0.375, 1.875], [0.15, 1.875], [0.375, 1.875], [0.375, 1.875], [0.21, 1.9], [0.9, 1.9], [0.325, 1.95], [0.45, 2.0], [1.0, 2.0], [1.0, 2.0], [0.4, 2.0], [0.25, 2.0], [0.25, 2.0], [0.4, 2.0], [0.25, 2.0], [2.5, 2.0], [0.5, 2.0], [0.4, 2.0], [0.25, 2.0], [0.4, 2.0], [0.26, 2.08], [0.7, 2.1], [0.5, 2.15], [0.6, 2.2], [0.6, 2.2], [0.55, 2.2], [0.55, 2.2], [0.55, 2.2], [0.375, 2.25], [0.57, 2.3], [0.6, 2.4], [0.3, 2.4], [0.6, 2.4], [0.5, 2.5], [0.5, 2.5], [0.5, 2.5], [0.3, 2.5], [1.25, 2.5], [1.25, 2.5], [1.25, 2.5], [0.5, 2.5], [0.3, 2.5], [0.6, 2.5], [0.5, 2.5], [0.6, 2.5], [0.3, 2.5], [0.834, 2.501], [0.26, 2.6], [1.0, 2.7], [0.45, 2.7], [0.6, 3.0], [0.5, 3.0], [0.5, 3.0], [0.5, 3.0], [1.0, 3.0], [1.0, 3.0], [0.8, 3.2], [0.8, 3.2], [1.6, 3.2], [1.0, 3.2], [0.8, 3.2], [0.65, 3.41], [0.6, 3.5], [0.45, 3.5], [0.5, 3.6], [0.75, 3.75], [0.75, 3.75], [0.75, 3.75], [0.75, 3.75], [0.95, 4.0], [1.2, 4.0], [1.2, 4.0], [1.0, 4.0], [1.0, 4.0], [1.0, 4.05], [0.103, 4.11], [0.825, 4.125], [1.25, 4.25], [1.25, 4.25], [1.25, 4.25], [1.25, 4.25], [1.4, 4.4], [1.475, 4.425], [0.75, 4.5], [0.75, 4.5], [0.75, 4.5], [1.6, 4.8], [1.6, 4.8], [1.0, 5.0], [1.0, 5.0], [1.0, 5.0], [1.0, 5.0], [1.0, 5.0], [1.0, 5.0], [1.0, 5.0], [1.0, 5.0], [1.0, 5.0], [1.0, 5.0], [0.625, 5.0], [1.0, 5.0], [0.625, 5.0], [1.25, 5.0], [3.0, 6.0], [2.0, 6.0], [2.0, 6.0], [2.0, 6.0], [2.0, 6.0], [2.0, 6.0], [1.0, 6.0], [1.0, 6.0], [2.0, 6.0], [2.0, 6.0], [3.0, 6.0], [1.0, 6.0], [0.6, 6.0], [2.0, 6.0], [2.0, 6.0], [0.006, 6.8], [0.875, 7.0], [2.5, 7.5], [1.5, 7.5], [1.25, 7.5], [1.5, 7.5], [1.5, 7.5], [0.0927, 8.0], [2.0, 8.0], [2.0, 8.0], [2.0, 8.0], [2.0, 8.0], [4.35, 8.7], [2.8, 8.8], [1.5, 9.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.0, 10.0], [2.5, 10.0], [1.25, 10.0], [1.25, 10.0], [1.25, 10.0], [10.0, 10.0], [1.25, 10.0], [1.25, 10.0], [1.25, 10.0], [2.5, 10.0], [2.5, 10.0], [2.5, 10.0], [2.5, 10.0], [2.5, 10.0], [0.1501, 10.5387], [2.28, 11.4], [4.0, 12.0], [2.0, 12.0], [2.0, 12.0], [2.0, 12.0], [2.0, 12.0], [2.0, 12.0], [2.5, 12.5], [2.5, 12.5], [2.5, 12.5], [2.5, 12.5], [2.5, 12.5], [2.5, 12.5], [1.75, 14.0], [1.75, 14.0], [1.75, 14.0], [1.75, 14.0], [3.0, 15.0], [2.5, 15.0], [8.0, 15.0], [2.5, 15.0], [3.0, 15.0], [3.0, 15.0], [3.0, 15.0], [3.0, 15.0], [5.0, 15.0], [5.0, 15.0], [0.192, 16.0], [4.0, 20.0], [4.0, 20.0], [4.0, 20.0], [4.0, 20.0], [4.0, 20.0], [5.0, 25.0], [5.0, 25.0], [5.0, 25.0], [5.0, 25.0], [5.0, 25.0], [5.0, 25.0], [5.0, 25.0], [5.0, 25.0], [5.0, 25.0], [5.0, 30.0], [5.0, 30.0], [5.0, 30.0], [5.0, 30.0], [7.5, 37.5], [10.0, 50.0], [10.0, 50.0], [10.0, 50.0], [10.0, 50.0], [10.0, 50.0], [10.0, 50.0], [7.5, 60.0], [15.0, 75.0], [20.0, 80.0], [10.5, 84.0], [15.0, 90.0], [15.0, 90.0], [15.0, 120.0], [21.0, 168.0], [30.0, 180.0], [30.0, 180.0]];
+  const costs = MODELS.map(([a, b]) => (tin / 1e6) * a + (tout / 1e6) * b).sort((x, y) => x - y);
+  const q = (p) => costs[Math.min(costs.length - 1, Math.round(p * (costs.length - 1)))];
+  const c = costs[0], m = q(0.5);
+  document.getElementById('hc').textContent = money(c) + '/mo';
+  document.getElementById('hm').textContent = money(m) + '/mo';
+  const rowsEl = document.getElementById('out');
+  const verdict = document.createElement('div');
+  verdict.className = 'row';
+  const winner = burst < c ? 'self-host in batch mode' : (always < c ? 'self-host 24/7' : 'stay hosted');
+  verdict.innerHTML = '<span>Cheaper today</span><b class="' + (winner === 'stay hosted' ? 'bad' : 'good') + '">' + winner + '</b>';
+  rowsEl.appendChild(verdict);
+}
+['tin', 'tout', 'tps'].forEach(id => document.getElementById(id).addEventListener('input', calc));
+sel.addEventListener('change', calc);
+calc();
+</script>
+</body></html>

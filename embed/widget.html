@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Price Watch — latest moves</title>
+<style>
+  :root { --bg:#0e1013; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c; --up:#ff6b6b; --down:#4ade80; --accent:#7dd3fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:14px/1.5 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .w { padding:16px 18px; }
+  .hd { display:flex; justify-content:space-between; align-items:baseline; gap:10px; margin-bottom:12px; }
+  .hd b { font-size:14px; letter-spacing:-.01em; }
+  .hd span { color:var(--dim); font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; }
+  table { width:100%; border-collapse:collapse; }
+  td { padding:6px 0; border-top:1px solid var(--line); vertical-align:top; }
+  td.n { max-width:230px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  td.v { text-align:right; white-space:nowrap; }
+  .up { color:var(--up); } .down { color:var(--down); }
+  .ft { margin-top:12px; display:flex; justify-content:space-between; align-items:center; gap:10px; }
+  .ft a { color:var(--accent); text-decoration:none; font-size:12.5px; }
+  .cta { font-size:12.5px; color:var(--dim); }
+  .cta a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="hd"><b>AI model prices — what moved</b><span id="when">—</span></div>
+  <table><tbody id="rows"><tr><td colspan="3" style="color:#8b929c">Loading today's moves…</td></tr></tbody></table>
+  <div class="ft">
+    <a href="https://ai-price-watch-beta.vercel.app" target="_blank" rel="noopener">Full log →</a>
+    <span class="cta">Is your AI bill on these prices?
+      <a href="https://ai-price-watch-beta.vercel.app/clinic" target="_blank" rel="noopener">Free clinic</a></span>
+  </div>
+</div>
+<script>
+(function () {
+  var esc = function (s) { return String(s).replace(/[&<>]/g, function (c) { return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" })[c]; }); };
+  var money = function (v) {
+    if (v == null) return "—";
+    return "$" + (v < 0.01 ? v.toFixed(4) : v < 1 ? v.toFixed(3) : v.toFixed(2));
+  };
+  function movers(list, day) {
+    // only real price moves: a model added with no price is not a "move"
+    return list.filter(function (c) {
+      return c.date === day && c.field && c.from != null && c.to != null;
+    }).sort(function (a, b) { return Math.abs(b.pct || 0) - Math.abs(a.pct || 0); });
+  }
+  // Round trips: a model that fell >20% then climbed straight back. The churn proof.
+  function roundTrips(list) {
+    var series = {};
+    list.forEach(function (c) {
+      if (!c.field || c.from == null || c.to == null) return;
+      var k = c.name + "|" + c.field;
+      (series[k] = series[k] || []).push(c);
+    });
+    var out = [];
+    Object.keys(series).forEach(function (k) {
+      var s = series[k].slice().sort(function (a, b) { return a.date < b.date ? -1 : a.date > b.date ? 1 : 0; });
+      for (var i = 0; i < s.length - 1; i++) {
+        var d = s[i], u = s[i + 1];
+        if ((d.pct || 0) < -20 && (u.pct || 0) > 20 && u.date !== d.date && d.to >= 0.005) {
+          out.push({ name: d.name, field: d.field, low: d.to, back: u.to,
+                     swing: ((u.to - d.to) / d.to) * 100, from: d.date.slice(5), to: u.date.slice(5) });
+        }
+      }
+    });
+    return out.sort(function (a, b) { return b.swing - a.swing; });
+  }
+  function renderVolatility(changes) {
+    var rows = document.getElementById("rows");
+    var rt = roundTrips(changes).slice(0, 6);
+    if (!rt.length) { rows.innerHTML = '<tr><td colspan="3" style="color:#8b929c">No round trips in the current window.</td></tr>'; return; }
+    rows.innerHTML = rt.map(function (r) {
+      return '<tr><td class="n" title="' + esc(r.name) + '">' + esc(r.name.replace(/^[^:]+:\s*/, "")) +
+        '</td><td style="color:#8b929c;font-size:12px">' + esc(r.field) + " " + esc(r.from) + "→" + esc(r.to) + '</td>' +
+        '<td class="v">' + money(r.low) + " → " + money(r.back) +
+        ' <span class="up">+' + r.swing.toFixed(0) + "%</span></td></tr>";
+    }).join("");
+    document.getElementById("when").textContent = "fell, then climbed back";
+  }
+  function render(changes, latest) {
+    var rows = document.getElementById("rows");
+    var today = new Date().toISOString().slice(0, 10);
+    var todays = movers(changes, today);
+    if (!todays.length) {
+      // fall back to the most recent day with data so the widget is never empty
+      var days = changes.map(function (c) { return c.date; }).sort();
+      todays = movers(changes, days[days.length - 1]);
+    }
+    todays = todays.slice(0, 6);
+    if (!todays.length) { rows.innerHTML = '<tr><td colspan="3" style="color:#8b929c">No changes logged yet.</td></tr>'; return; }
+    rows.innerHTML = todays.map(function (c) {
+      var pct = c.pct == null ? "" : (c.pct > 0 ? "+" : "") + c.pct.toFixed(1) + "%";
+      var cls = (c.pct || 0) > 0 ? "up" : "down";
+      return '<tr><td class="n" title="' + esc(c.name) + '">' + esc(c.name.replace(/^[^:]+:\s*/, "")) +
+        '</td><td style="color:#8b929c;font-size:12px">' + esc(c.field) + '</td>' +
+        '<td class="v">' + money(c.from) + " → " + money(c.to) +
+        (pct ? ' <span class="' + cls + '">' + pct + "</span>" : "") + "</td></tr>";
+    }).join("");
+    var when = document.getElementById("when");
+    var upd = latest && latest.updated ? new Date(latest.updated) : null;
+    when.textContent = upd && !isNaN(upd) ? "updated " + upd.toISOString().slice(5, 10) : todays[0].date.slice(5);
+  }
+  var base = "";
+  var volatility = /(\?|&)view=volatility\b/.test(location.search);
+  if (volatility) {
+    document.querySelector(".hd b").textContent = "AI prices — the floor whipsawed";
+    document.querySelector(".cta").innerHTML = 'Is your AI bill on these prices? <a href="https://ai-price-watch-beta.vercel.app/clinic" target="_blank" rel="noopener">Free clinic</a>';
+  }
+  Promise.all([
+    fetch(base + "/data/changes.json").then(function (r) { return r.json(); }),
+    fetch(base + "/data/latest.json").then(function (r) { return r.json(); }).catch(function () { return null; })
+  ]).then(function (res) { volatility ? renderVolatility(res[0]) : render(res[0], res[1]); })
+    .catch(function () {
+      document.getElementById("rows").innerHTML =
+        '<tr><td colspan="3" style="color:#8b929c">Live data unavailable — <a href="https://ai-price-watch-beta.vercel.app" style="color:#7dd3fc">see the log</a>.</td></tr>';
+    });
+})();
+</script>
+</body>
+</html>
