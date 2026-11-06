@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-05",
+"updated": "2026-11-06",
 "models": [
 {
 "id": "mistralai/mistral-nemo",
@@ -46,7 +46,7 @@
 {
 "id": "~z-ai/glm-flash-latest",
 "name": "Z.ai: GLM Flash Latest",
-"in": 0.0285,
+"in": 0.0284,
 "out": 0.0923,
 "ctx": 1048576
 },
@@ -76,6 +76,13 @@
 "name": "Google: Gemma 3 4B",
 "in": 0.05,
 "out": 0.1,
+"ctx": 131072
+},
+{
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"in": 0.027,
+"out": 0.101,
 "ctx": 131072
 },
 {
@@ -170,11 +177,11 @@
 "ctx": 128000
 },
 {
-"id": "google/gemma-4-26b-a4b-it",
-"name": "Google: Gemma 4 26B A4B ",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
 "in": 0.051,
-"out": 0.153,
-"ctx": 262144
+"out": 0.1531,
+"ctx": 1048576
 },
 {
 "id": "tencent/hy-mt2-1.8b",
@@ -422,18 +429,18 @@
 "ctx": 1048576
 },
 {
-"id": "~deepseek/deepseek-v4-flash-latest",
-"name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.05,
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"in": 0.0514,
 "out": 0.3,
 "ctx": 1048576
 },
 {
-"id": "deepseek/deepseek-v4-flash-0731",
-"name": "DeepSeek: DeepSeek V4 Flash 0731",
-"in": 0.05,
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"in": 0.09,
 "out": 0.3,
-"ctx": 1048576
+"ctx": 262144
 },
 {
 "id": "stepfun/step-3.5-flash",
@@ -525,6 +532,13 @@
 "in": 0.2,
 "out": 0.4,
 "ctx": 262144
+},
+{
+"id": "nvidia/nemotron-3-super-120b-a12b",
+"name": "NVIDIA: Nemotron 3 Super",
+"in": 0.075,
+"out": 0.4,
+"ctx": 1048576
 },
 {
 "id": "bytedance-seed/seed-2.0-mini",
@@ -653,13 +667,6 @@
 "ctx": 1050000
 },
 {
-"id": "deepseek/deepseek-v4.1-flash",
-"name": "DeepSeek: DeepSeek V4.1 Flash",
-"in": 0.045,
-"out": 0.5,
-"ctx": 1048576
-},
-{
 "id": "z-ai/glm-5.3-flash",
 "name": "Z.ai: GLM 5.3 Flash",
 "in": 0.15,
@@ -695,13 +702,6 @@
 "ctx": 40960
 },
 {
-"id": "meta-llama/llama-3.3-70b-instruct",
-"name": "Meta: Llama 3.3 70B Instruct",
-"in": 0.2,
-"out": 0.52,
-"ctx": 131072
-},
-{
 "id": "tencent/hy3",
 "name": "Tencent: Hy3",
 "in": 0.132,
@@ -714,6 +714,13 @@
 "in": 0.351,
 "out": 0.555,
 "ctx": 128000
+},
+{
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"in": 0.051,
+"out": 0.567,
+"ctx": 1048576
 },
 {
 "id": "tencent/hunyuan-a13b-instruct",
@@ -779,13 +786,6 @@
 "ctx": 262144
 },
 {
-"id": "openai/gpt-oss-120b",
-"name": "OpenAI: gpt-oss-120b",
-"in": 0.15,
-"out": 0.6,
-"ctx": 131072
-},
-{
 "id": "qwen/qwen3-coder-30b-a3b-instruct",
 "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
 "in": 0.15,
@@ -826,13 +826,6 @@
 "in": 0.1,
 "out": 0.625,
 "ctx": 400000
-},
-{
-"id": "deepseek/deepseek-v4-flash-vision-exp",
-"name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
-"in": 0.2156,
-"out": 0.6468,
-"ctx": 1048576
 },
 {
 "id": "google/gemma-2-27b-it",
@@ -898,6 +891,13 @@
 "ctx": 1000000
 },
 {
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"in": 0.59,
+"out": 0.79,
+"ctx": 131072
+},
+{
 "id": "qwen/qwen3-coder-next",
 "name": "Qwen: Qwen3 Coder Next",
 "in": 0.12,
@@ -952,6 +952,13 @@
 "in": 0.435,
 "out": 0.87,
 "ctx": 1050000
+},
+{
+"id": "deepseek/deepseek-chat",
+"name": "DeepSeek: DeepSeek V3",
+"in": 0.32,
+"out": 0.89,
+"ctx": 163840
 },
 {
 "id": "qwen/qwen3.6-35b-a3b",
@@ -1012,7 +1019,7 @@
 {
 "id": "reflection/beam-1.0-501b-a23b",
 "name": "Reflection: Beam 1.0 501B A23B",
-"in": 0.25,
+"in": 0.3,
 "out": 1.0,
 "ctx": 1048576
 },
@@ -1078,13 +1085,6 @@
 "in": 0.66,
 "out": 1.0,
 "ctx": 32768
-},
-{
-"id": "deepseek/deepseek-chat",
-"name": "DeepSeek: DeepSeek V3",
-"in": 0.2574,
-"out": 1.0287,
-"ctx": 163840
 },
 {
 "id": "qwen/qwen3-next-80b-a3b-instruct",
@@ -1213,6 +1213,13 @@
 "ctx": 1000000
 },
 {
+"id": "deepseek/deepseek-v4-flash-vision-exp",
+"name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+"in": 0.44,
+"out": 1.32,
+"ctx": 1048576
+},
+{
 "id": "aion-labs/aion-3.5-mini",
 "name": "AionLabs: Aion 3.5 Mini",
 "in": 0.7,
@@ -1323,6 +1330,13 @@
 "in": 0.8,
 "out": 1.6,
 "ctx": 32768
+},
+{
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"in": 0.8616,
+"out": 1.7233,
+"ctx": 1048576
 },
 {
 "id": "qwen/qwen3.5-plus-20260420",
@@ -1570,13 +1584,6 @@
 "ctx": 262144
 },
 {
-"id": "nvidia/nemotron-3-super-120b-a12b",
-"name": "NVIDIA: Nemotron 3 Super",
-"in": 0.3,
-"out": 2.4,
-"ctx": 1048576
-},
-{
 "id": "openai/gpt-audio-mini",
 "name": "OpenAI: GPT Audio Mini",
 "in": 0.6,
@@ -1787,13 +1794,6 @@
 "ctx": 1048576
 },
 {
-"id": "deepseek/deepseek-v4-pro",
-"name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 1.6,
-"out": 3.2,
-"ctx": 1048576
-},
-{
 "id": "z-ai/glm-5",
 "name": "Z.ai: GLM 5",
 "in": 1.0,
@@ -1913,13 +1913,6 @@
 "ctx": 524288
 },
 {
-"id": "deepseek/deepseek-v4-pro-0813",
-"name": "DeepSeek: DeepSeek V4 Pro 0813",
-"in": 0.103,
-"out": 4.11,
-"ctx": 1048576
-},
-{
 "id": "google/gemini-3.8-flash",
 "name": "Google: Gemini 3.8 Flash",
 "in": 0.825,
@@ -1988,6 +1981,13 @@
 "in": 0.75,
 "out": 4.5,
 "ctx": 400000
+},
+{
+"id": "deepseek/deepseek-v4-pro-0813",
+"name": "DeepSeek: DeepSeek V4 Pro 0813",
+"in": 0.1165,
+"out": 4.66,
+"ctx": 1048576
 },
 {
 "id": "x-ai/grok-4.7:batch",
@@ -2279,7 +2279,7 @@
 {
 "id": "~deepseek/deepseek-pro-latest",
 "name": "DeepSeek: DeepSeek Pro Latest",
-"in": 0.0927,
+"in": 0.0999,
 "out": 8.0,
 "ctx": 1048576
 },
@@ -2324,6 +2324,20 @@
 "in": 2.8,
 "out": 8.8,
 "ctx": 1000000
+},
+{
+"id": "google/gemini-omni-1.2-flash",
+"name": "Google: Gemini Omni 1.2 Flash",
+"in": 1.5,
+"out": 9.0,
+"ctx": 131072
+},
+{
+"id": "google/gemini-omni-1.1-flash",
+"name": "Google: Gemini Omni 1.1 Flash",
+"in": 1.5,
+"out": 9.0,
+"ctx": 131072
 },
 {
 "id": "google/gemini-3.5-flash",
@@ -2524,8 +2538,8 @@
 {
 "id": "~moonshotai/kimi-latest",
 "name": "MoonshotAI: Kimi Latest",
-"in": 0.1501,
-"out": 10.5387,
+"in": 0.1529,
+"out": 10.1522,
 "ctx": 1048576
 },
 {
@@ -3052,13 +3066,6 @@
 "in": null,
 "out": null,
 "ctx": 256000
-},
-{
-"id": "nvidia/nemotron-3.5-content-safety:free",
-"name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-"in": null,
-"out": null,
-"ctx": 128000
 },
 {
 "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
