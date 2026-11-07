@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-06",
+"updated": "2026-11-07",
 "models": [
 {
 "id": "mistralai/mistral-nemo",
@@ -14,6 +14,13 @@
 "in": 0.015,
 "out": 0.045,
 "ctx": 262144
+},
+{
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"in": 0.013,
+"out": 0.048,
+"ctx": 131072
 },
 {
 "id": "sao10k/l3-lunaris-8b",
@@ -46,7 +53,7 @@
 {
 "id": "~z-ai/glm-flash-latest",
 "name": "Z.ai: GLM Flash Latest",
-"in": 0.0284,
+"in": 0.0285,
 "out": 0.0923,
 "ctx": 1048576
 },
@@ -76,13 +83,6 @@
 "name": "Google: Gemma 3 4B",
 "in": 0.05,
 "out": 0.1,
-"ctx": 131072
-},
-{
-"id": "openai/gpt-oss-120b",
-"name": "OpenAI: gpt-oss-120b",
-"in": 0.027,
-"out": 0.101,
 "ctx": 131072
 },
 {
@@ -121,6 +121,13 @@
 "ctx": 131072
 },
 {
+"id": "inclusionai/ling-3.1-flash",
+"name": "inclusionAI: Ling 3.1 Flash",
+"in": 0.045,
+"out": 0.135,
+"ctx": 1000000
+},
+{
 "id": "openai/gpt-oss-120b:batch",
 "name": "OpenAI: gpt-oss-120b (batch)",
 "in": 0.0296,
@@ -140,6 +147,13 @@
 "in": 0.035,
 "out": 0.14,
 "ctx": 128000
+},
+{
+"id": "deepseek/deepseek-v4-flash-0731:batch",
+"name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
+"in": 0.048,
+"out": 0.144,
+"ctx": 1048576
 },
 {
 "id": "inference-net/schematron-v2-turbo",
@@ -177,13 +191,6 @@
 "ctx": 128000
 },
 {
-"id": "~deepseek/deepseek-v4-flash-latest",
-"name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.051,
-"out": 0.1531,
-"ctx": 1048576
-},
-{
 "id": "tencent/hy-mt2-1.8b",
 "name": "Tencent: Hy-MT2-1.8B",
 "in": 0.044,
@@ -217,6 +224,13 @@
 "in": 0.091,
 "out": 0.182,
 "ctx": 1048576
+},
+{
+"id": "liquid/lfm-3-1.7b",
+"name": "LiquidAI: LFM3-1.7B",
+"in": 0.08,
+"out": 0.2,
+"ctx": 262144
 },
 {
 "id": "upstage/solar-mini4",
@@ -310,11 +324,11 @@
 "ctx": 60000
 },
 {
-"id": "inclusionai/ling-3.1-flash",
-"name": "inclusionAI: Ling 3.1 Flash",
-"in": 0.075,
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"in": 0.0675,
 "out": 0.225,
-"ctx": 1000000
+"ctx": 262144
 },
 {
 "id": "inference-net/schematron-v2-small",
@@ -429,18 +443,18 @@
 "ctx": 1048576
 },
 {
-"id": "deepseek/deepseek-v4-flash-0731",
-"name": "DeepSeek: DeepSeek V4 Flash 0731",
-"in": 0.0514,
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"in": 0.0448,
 "out": 0.3,
 "ctx": 1048576
 },
 {
-"id": "google/gemma-4-26b-a4b-it",
-"name": "Google: Gemma 4 26B A4B ",
-"in": 0.09,
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"in": 0.0448,
 "out": 0.3,
-"ctx": 262144
+"ctx": 1048576
 },
 {
 "id": "stepfun/step-3.5-flash",
@@ -731,7 +745,7 @@
 },
 {
 "id": "ricursiveai/ripple-65b-preview",
-"name": "ricursiveAI/Ripple-65B-Preview",
+"name": "Ricursive: Ripple 65B Preview",
 "in": 0.2,
 "out": 0.6,
 "ctx": 1048576
@@ -954,6 +968,13 @@
 "ctx": 1050000
 },
 {
+"id": "minimax/minimax-m3:batch",
+"name": "MiniMax: MiniMax M3 (batch)",
+"in": 0.224,
+"out": 0.88,
+"ctx": 524288
+},
+{
 "id": "deepseek/deepseek-chat",
 "name": "DeepSeek: DeepSeek V3",
 "in": 0.32,
@@ -996,18 +1017,25 @@
 "ctx": 262144
 },
 {
-"id": "minimax/minimax-m2.5",
-"name": "MiniMax: MiniMax M2.5",
-"in": 0.27,
-"out": 0.95,
-"ctx": 204800
-},
-{
 "id": "deepseek/deepseek-chat-v3.1",
 "name": "DeepSeek: DeepSeek V3.1",
 "in": 0.25,
 "out": 0.95,
 "ctx": 163840
+},
+{
+"id": "meta/muse-glimmer-30b:batch",
+"name": "Meta: Muse Glimmer 30B (batch)",
+"in": 0.24,
+"out": 0.96,
+"ctx": 131072
+},
+{
+"id": "thinkingmachines/inkling-small:batch",
+"name": "Thinking Machines: Inkling Small (batch)",
+"in": 0.36,
+"out": 0.96,
+"ctx": 524288
 },
 {
 "id": "qwen/qwen3-coder-flash",
@@ -1157,6 +1185,13 @@
 "ctx": 1048576
 },
 {
+"id": "minimax/minimax-m2.5",
+"name": "MiniMax: MiniMax M2.5",
+"in": 0.3,
+"out": 1.2,
+"ctx": 204800
+},
+{
 "id": "morph/morph-v3-fast",
 "name": "Morph: Morph V3 Fast",
 "in": 0.8,
@@ -1211,6 +1246,13 @@
 "in": 0.32,
 "out": 1.28,
 "ctx": 1000000
+},
+{
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"in": 0.6471,
+"out": 1.2942,
+"ctx": 1048576
 },
 {
 "id": "deepseek/deepseek-v4-flash-vision-exp",
@@ -1332,13 +1374,6 @@
 "ctx": 32768
 },
 {
-"id": "deepseek/deepseek-v4-pro",
-"name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.8616,
-"out": 1.7233,
-"ctx": 1048576
-},
-{
 "id": "qwen/qwen3.5-plus-20260420",
 "name": "Qwen: Qwen3.5 Plus 2026-04-20",
 "in": 0.3,
@@ -1414,6 +1449,13 @@
 "in": 0.45,
 "out": 2.0,
 "ctx": 1048576
+},
+{
+"id": "qwen/qwen3.8-27b:batch",
+"name": "Qwen: Qwen3.8 27B (batch)",
+"in": 0.16,
+"out": 2.0,
+"ctx": 262144
 },
 {
 "id": "x-ai/grok-build-0.1",
@@ -2538,8 +2580,8 @@
 {
 "id": "~moonshotai/kimi-latest",
 "name": "MoonshotAI: Kimi Latest",
-"in": 0.1529,
-"out": 10.1522,
+"in": 0.1824,
+"out": 10.5478,
 "ctx": 1048576
 },
 {
@@ -2996,6 +3038,13 @@
 "in": 30.0,
 "out": 180.0,
 "ctx": 1050000
+},
+{
+"id": "liquid/lfm-3-1.7b:free",
+"name": "LiquidAI: LFM3-1.7B (free)",
+"in": null,
+"out": null,
+"ctx": 262144
 },
 {
 "id": "stealth/crouton-alpha",

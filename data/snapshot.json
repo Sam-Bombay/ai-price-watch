@@ -450,9 +450,16 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.0514,
+"in": 0.0448,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
 "out": 0.3
+},
+"deepseek/deepseek-v4-flash-0731:batch": {
+"ctx": 1048576,
+"id": "deepseek/deepseek-v4-flash-0731:batch",
+"in": 0.048,
+"name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
+"out": 0.144
 },
 "deepseek/deepseek-v4-flash-vision-exp": {
 "ctx": 1048576,
@@ -464,9 +471,9 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.8616,
+"in": 0.6471,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 1.7233
+"out": 1.2942
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -779,9 +786,9 @@
 "google/gemma-4-26b-a4b-it": {
 "ctx": 262144,
 "id": "google/gemma-4-26b-a4b-it",
-"in": 0.09,
+"in": 0.0675,
 "name": "Google: Gemma 4 26B A4B ",
-"out": 0.3
+"out": 0.225
 },
 "google/gemma-4-26b-a4b-it:free": {
 "ctx": 262144,
@@ -877,9 +884,9 @@
 "inclusionai/ling-3.1-flash": {
 "ctx": 1000000,
 "id": "inclusionai/ling-3.1-flash",
-"in": 0.075,
+"in": 0.045,
 "name": "inclusionAI: Ling 3.1 Flash",
-"out": 0.225
+"out": 0.135
 },
 "inference-net/schematron-v2-small": {
 "ctx": 128000,
@@ -915,6 +922,20 @@
 "in": 0.05,
 "name": "LiquidAI: LFM2.5-24B-A2B",
 "out": 0.7
+},
+"liquid/lfm-3-1.7b": {
+"ctx": 262144,
+"id": "liquid/lfm-3-1.7b",
+"in": 0.08,
+"name": "LiquidAI: LFM3-1.7B",
+"out": 0.2
+},
+"liquid/lfm-3-1.7b:free": {
+"ctx": 262144,
+"id": "liquid/lfm-3-1.7b:free",
+"in": null,
+"name": "LiquidAI: LFM3-1.7B (free)",
+"out": null
 },
 "mancer/weaver": {
 "ctx": 8000,
@@ -993,6 +1014,13 @@
 "name": "Meta: Muse Glimmer 30B",
 "out": 1.2
 },
+"meta/muse-glimmer-30b:batch": {
+"ctx": 131072,
+"id": "meta/muse-glimmer-30b:batch",
+"in": 0.24,
+"name": "Meta: Muse Glimmer 30B (batch)",
+"out": 0.96
+},
 "meta/muse-spark-1.1": {
 "ctx": 1048576,
 "id": "meta/muse-spark-1.1",
@@ -1059,9 +1087,9 @@
 "minimax/minimax-m2.5": {
 "ctx": 204800,
 "id": "minimax/minimax-m2.5",
-"in": 0.27,
+"in": 0.3,
 "name": "MiniMax: MiniMax M2.5",
-"out": 0.95
+"out": 1.2
 },
 "minimax/minimax-m2.7": {
 "ctx": 204800,
@@ -1083,6 +1111,13 @@
 "in": 0.075,
 "name": "MiniMax: MiniMax M3.1 Flash",
 "out": 0.3
+},
+"minimax/minimax-m3:batch": {
+"ctx": 524288,
+"id": "minimax/minimax-m3:batch",
+"in": 0.224,
+"name": "MiniMax: MiniMax M3 (batch)",
+"out": 0.88
 },
 "mistralai/codestral-2508": {
 "ctx": 256000,
@@ -2039,9 +2074,9 @@
 "openai/gpt-oss-120b": {
 "ctx": 131072,
 "id": "openai/gpt-oss-120b",
-"in": 0.027,
+"in": 0.013,
 "name": "OpenAI: gpt-oss-120b",
-"out": 0.101
+"out": 0.048
 },
 "openai/gpt-oss-120b:batch": {
 "ctx": 131072,
@@ -2491,6 +2526,13 @@
 "name": "Qwen: Qwen3.8 27B",
 "out": 1.875
 },
+"qwen/qwen3.8-27b:batch": {
+"ctx": 262144,
+"id": "qwen/qwen3.8-27b:batch",
+"in": 0.16,
+"name": "Qwen: Qwen3.8 27B (batch)",
+"out": 2.0
+},
 "qwen/qwen3.8-flash": {
 "ctx": 1000000,
 "id": "qwen/qwen3.8-flash",
@@ -2565,7 +2607,7 @@
 "ctx": 1048576,
 "id": "ricursiveai/ripple-65b-preview",
 "in": 0.2,
-"name": "ricursiveAI/Ripple-65B-Preview",
+"name": "Ricursive: Ripple 65B Preview",
 "out": 0.6
 },
 "sakana/fugu-max": {
@@ -2742,6 +2784,13 @@
 "in": 0.45,
 "name": "Thinking Machines: Inkling Small",
 "out": 1.2
+},
+"thinkingmachines/inkling-small:batch": {
+"ctx": 524288,
+"id": "thinkingmachines/inkling-small:batch",
+"in": 0.36,
+"name": "Thinking Machines: Inkling Small (batch)",
+"out": 0.96
 },
 "typesafe/jev-router": {
 "ctx": 1000000,
@@ -3082,9 +3131,9 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.051,
+"in": 0.0448,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 0.1531
+"out": 0.3
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,
@@ -3103,9 +3152,9 @@
 "~moonshotai/kimi-latest": {
 "ctx": 1048576,
 "id": "~moonshotai/kimi-latest",
-"in": 0.1529,
+"in": 0.1824,
 "name": "MoonshotAI: Kimi Latest",
-"out": 10.1522
+"out": 10.5478
 },
 "~openai/gpt-astra-latest": {
 "ctx": 1050000,
@@ -3159,7 +3208,7 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.0284,
+"in": 0.0285,
 "name": "Z.ai: GLM Flash Latest",
 "out": 0.0923
 },
