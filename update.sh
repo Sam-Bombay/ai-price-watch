@@ -51,6 +51,9 @@ echo "logged changes: $(echo "$OUT" | head -1)"
 # the partner-side assessment worksheet, rebuilt from today's prices
 "$PY" ./build_finops.py >/dev/null 2>&1 || echo "finops build failed"
 
+# the self-host vs pay-per-token break-even, recomputed from today's prices
+"$PY" ./build_selfhost.py >/dev/null 2>&1 || echo "selfhost build failed"
+
 # refresh the RSS feed from the briefs, so the feed is never staler than the page
 "$PY" ./gen_feed.py >/dev/null 2>&1 || echo "feed generation failed"
 

@@ -9115,5 +9115,246 @@
 "field": "retired",
 "from": null,
 "to": null
+},
+{
+"date": "2026-11-11",
+"id": "baidu/ernie-5.5-flash-preview:free",
+"name": "Baidu: ERNIE-5.5-Flash-Preview (free)",
+"field": "added",
+"from": null,
+"to": null
+},
+{
+"date": "2026-11-11",
+"id": "baidu/ernie-light-dt-1.0-intl",
+"name": "Baidu: ERNIE-Light-DT-1.0",
+"field": "added",
+"from": null,
+"to": 3.94
+},
+{
+"date": "2026-11-11",
+"id": "google/gemini-4-carbon",
+"name": "Google: Gemini 4 Carbon",
+"field": "added",
+"from": null,
+"to": 10.0
+},
+{
+"date": "2026-11-11",
+"id": "google/gemini-4-carbon:batch",
+"name": "Google: Gemini 4 Carbon (batch)",
+"field": "added",
+"from": null,
+"to": 5.0
+},
+{
+"date": "2026-11-11",
+"id": "kt/midm-k-3.0-pro",
+"name": "KT: Mi:dm K 3.0 Pro",
+"field": "added",
+"from": null,
+"to": 0.8
+},
+{
+"date": "2026-11-11",
+"id": "motif-technologies/motif-3",
+"name": "Motif Technologies: Motif 3",
+"field": "added",
+"from": null,
+"to": 1.2
+},
+{
+"date": "2026-11-11",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "input",
+"from": 0.3,
+"to": 0.051,
+"pct": -83.0
+},
+{
+"date": "2026-11-11",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "output",
+"from": 1.2,
+"to": 0.567,
+"pct": -52.8
+},
+{
+"date": "2026-11-11",
+"id": "z-ai/glm-5.3-flash:batch",
+"name": "Z.ai: GLM 5.3 Flash (batch)",
+"field": "input",
+"from": 0.033,
+"to": 0.047,
+"pct": 42.4
+},
+{
+"date": "2026-11-11",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 9.3388,
+"to": 11.0055,
+"pct": 17.8
+},
+{
+"date": "2026-11-11",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.9553,
+"to": 0.8872,
+"pct": -7.1
+},
+{
+"date": "2026-11-11",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 1.9105,
+"to": 1.7745,
+"pct": -7.1
+},
+{
+"date": "2026-11-11",
+"id": "deepseek/deepseek-v4-flash",
+"name": "DeepSeek: DeepSeek V4 Flash 0423",
+"field": "input",
+"from": 0.091,
+"to": 0.09,
+"pct": -1.1
+},
+{
+"date": "2026-11-11",
+"id": "deepseek/deepseek-v4-flash",
+"name": "DeepSeek: DeepSeek V4 Flash 0423",
+"field": "output",
+"from": 0.182,
+"to": 0.18,
+"pct": -1.1
+},
+{
+"date": "2026-11-11",
+"id": "z-ai/glm-5.1",
+"name": "Z.ai: GLM 5.1",
+"field": "input",
+"from": 1.4,
+"to": 1.33,
+"pct": -5.0
+},
+{
+"date": "2026-11-11",
+"id": "z-ai/glm-5.1",
+"name": "Z.ai: GLM 5.1",
+"field": "output",
+"from": 4.4,
+"to": 4.18,
+"pct": -5.0
+},
+{
+"date": "2026-11-11",
+"id": "minimax/minimax-m2.5",
+"name": "MiniMax: MiniMax M2.5",
+"field": "input",
+"from": 0.3,
+"to": 0.27,
+"pct": -10.0
+},
+{
+"date": "2026-11-11",
+"id": "minimax/minimax-m2.5",
+"name": "MiniMax: MiniMax M2.5",
+"field": "output",
+"from": 1.2,
+"to": 1.08,
+"pct": -10.0
+},
+{
+"date": "2026-11-11",
+"id": "google/gemma-3-27b-it",
+"name": "Google: Gemma 3 27B",
+"field": "output",
+"from": 0.45,
+"to": 0.35,
+"pct": -22.2
+},
+{
+"date": "2026-11-11",
+"id": "mancer/weaver",
+"name": "Mancer: Weaver (alpha)",
+"field": "input",
+"from": 0.4,
+"to": 0.3,
+"pct": -25.0
+},
+{
+"date": "2026-11-11",
+"id": "mancer/weaver",
+"name": "Mancer: Weaver (alpha)",
+"field": "output",
+"from": 0.75,
+"to": 0.5,
+"pct": -33.3
+},
+{
+"date": "2026-11-11",
+"id": "undi95/remm-slerp-l2-13b",
+"name": "ReMM SLERP 13B",
+"field": "input",
+"from": 0.35,
+"to": 0.3,
+"pct": -14.3
+},
+{
+"date": "2026-11-11",
+"id": "undi95/remm-slerp-l2-13b",
+"name": "ReMM SLERP 13B",
+"field": "output",
+"from": 0.65,
+"to": 0.5,
+"pct": -23.1
+},
+{
+"date": "2026-11-11",
+"id": "bytedance-seed/seed-1.6",
+"name": "ByteDance Seed: Seed 1.6",
+"field": "retired",
+"from": 2.0,
+"to": null
+},
+{
+"date": "2026-11-11",
+"id": "bytedance-seed/seed-1.6-flash",
+"name": "ByteDance Seed: Seed 1.6 Flash",
+"field": "retired",
+"from": 0.3,
+"to": null
+},
+{
+"date": "2026-11-11",
+"id": "bytedance-seed/seed-2.0-code",
+"name": "ByteDance Seed: Seed-2.0-Code",
+"field": "retired",
+"from": 3.0,
+"to": null
+},
+{
+"date": "2026-11-11",
+"id": "qwen/qwen-2.5-7b-instruct",
+"name": "Qwen: Qwen2.5 7B Instruct",
+"field": "retired",
+"from": 0.2,
+"to": null
+},
+{
+"date": "2026-11-11",
+"id": "xingchen-agi/xing4.0-29b-a4b:free",
+"name": "XingChen: Xing4.0 29B A4B (free)",
+"field": "retired",
+"from": null,
+"to": null
 }
 ]

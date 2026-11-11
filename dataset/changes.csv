@@ -620,6 +620,8 @@ date,model_id,model_name,field,price_from,price_to,pct_change
 2026-10-27,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,output,0.1333,0.238,78.5
 2026-10-27,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.7875,0.8872,12.7
 2026-10-27,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.575,1.7745,12.7
+2026-10-27,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.8872,0.8837,-0.4
+2026-10-27,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.7745,1.7675,-0.4
 2026-10-27,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,input,0.02,0.14,600.0
 2026-10-27,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,output,1.0,0.42,-58.0
 2026-10-27,google/gemma-3-4b-it,Google: Gemma 3 4B,input,0.04,0.05,25.0
@@ -632,9 +634,12 @@ date,model_id,model_name,field,price_from,price_to,pct_change
 2026-10-27,mistralai/mistral-small-2603:batch,Mistral: Mistral Small 4 (batch),retired,0.3,,
 2026-10-27,moonshotai/kimi-k2.7-code,MoonshotAI: Kimi K2.7 Code,input,0.6712,0.56,-16.6
 2026-10-27,moonshotai/kimi-k2.7-code,MoonshotAI: Kimi K2.7 Code,output,3.35,3.1,-7.5
+2026-10-27,moonshotai/kimi-k2.7-code,MoonshotAI: Kimi K2.7 Code,input,0.56,0.6725,20.1
 2026-10-27,moonshotai/kimi-k3,MoonshotAI: Kimi K3,input,0.18,0.179,-0.6
+2026-10-27,moonshotai/kimi-k3,MoonshotAI: Kimi K3,input,0.179,0.169,-5.6
 2026-10-27,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.171,0.179,4.7
 2026-10-27,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,9.3421,20.0,114.1
+2026-10-27,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.179,0.169,-5.6
 2026-10-27,nvidia/nemotron-3-super-120b-a12b:free,NVIDIA: Nemotron 3 Super (free),retired,,,
 2026-10-27,~openai/gpt-terra-latest,OpenAI: GPT Terra Latest,input,2.0,1.0,-50.0
 2026-10-27,~openai/gpt-terra-latest,OpenAI: GPT Terra Latest,output,12.0,5.0,-58.3
@@ -652,3 +657,372 @@ date,model_id,model_name,field,price_from,price_to,pct_change
 2026-10-27,z-ai/glm-5.1,Z.ai: GLM 5.1,output,4.4,3.036,-31.0
 2026-10-27,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0413,0.0313,-24.2
 2026-10-27,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.0758,0.1046,38.0
+2026-10-27,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.1046,0.0846,-19.1
+2026-10-28,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.017,0.0115,-32.4
+2026-10-28,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,0.6,1.8,200.0
+2026-10-28,~deepseek/deepseek-pro-latest,DeepSeek: DeepSeek Pro Latest,input,0.1259,0.2043,62.3
+2026-10-28,deepseek/deepseek-v4-flash,DeepSeek: DeepSeek V4 Flash 0423,input,0.0449,0.091,102.7
+2026-10-28,deepseek/deepseek-v4-flash,DeepSeek: DeepSeek V4 Flash 0423,output,0.45,0.182,-59.6
+2026-10-28,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0422,0.0475,12.6
+2026-10-28,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.1694,0.1568,-7.4
+2026-10-28,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0475,0.0471,-0.8
+2026-10-28,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.1568,0.1412,-9.9
+2026-10-28,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.8837,0.889,0.6
+2026-10-28,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.7675,1.7779,0.6
+2026-10-28,meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,input,0.05,0.02,-60.0
+2026-10-28,meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,output,0.08,0.04,-50.0
+2026-10-28,moonshotai/kimi-k2.7-code,MoonshotAI: Kimi K2.7 Code,input,0.6725,0.56,-16.7
+2026-10-28,moonshotai/kimi-k3,MoonshotAI: Kimi K3,input,0.169,0.159,-5.9
+2026-10-28,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.169,0.1577,-6.7
+2026-10-28,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,20.0,9.3421,-53.3
+2026-10-28,prism-ml/ternary-bonsai-2-9b,PrismML: Ternary Bonsai 2 9B,added,,0.13,
+2026-10-28,qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,input,0.32,0.45,40.6
+2026-10-28,qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,output,3.2,2.7,-15.6
+2026-10-28,qwen/qwen3.6-35b-a3b,Qwen: Qwen3.6 35B A3B,output,0.95,0.9,-5.3
+2026-10-28,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,input,0.2,0.039,-80.5
+2026-10-28,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,output,2.5,1.25,-50.0
+2026-10-28,z-ai/glm-5.1,Z.ai: GLM 5.1,input,0.966,1.4,44.9
+2026-10-28,z-ai/glm-5.1,Z.ai: GLM 5.1,output,3.036,4.4,44.9
+2026-10-28,z-ai/glm-5.2,Z.ai: GLM 5.2,input,0.0341,0.014,-58.9
+2026-10-28,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0313,0.0237,-24.3
+2026-10-28,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.0846,0.1142,35.0
+2026-10-29,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.0115,0.0309,168.7
+2026-10-29,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.0309,0.0339,9.7
+2026-10-29,~deepseek/deepseek-pro-latest,DeepSeek: DeepSeek Pro Latest,input,0.2043,0.1035,-49.3
+2026-10-29,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0471,0.0509,8.1
+2026-10-29,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.1412,0.1487,5.3
+2026-10-29,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.889,0.8923,0.4
+2026-10-29,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.7779,1.7845,0.4
+2026-10-29,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,input,0.14,0.045,-67.9
+2026-10-29,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,output,0.42,0.5,19.0
+2026-10-29,ibm-granite/granite-4.2-8b,IBM: Granite 4.2 8B,output,0.25,0.15,-40.0
+2026-10-29,meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,input,0.02,0.05,150.0
+2026-10-29,meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,output,0.04,0.08,100.0
+2026-10-29,moonshotai/kimi-k3,MoonshotAI: Kimi K3,input,0.159,0.239,50.3
+2026-10-29,moonshotai/kimi-k3,MoonshotAI: Kimi K3,output,20.0,10.8,-46.0
+2026-10-29,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1577,0.1824,15.7
+2026-10-29,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,9.3421,9.3388,-0.0
+2026-10-29,openai/gpt-4-turbo,OpenAI: GPT-4 Turbo,retired,30.0,,
+2026-10-29,openai/o1,OpenAI: o1,retired,60.0,,
+2026-10-29,openai/o1-pro,OpenAI: o1-pro,retired,600.0,,
+2026-10-29,openai/o3-mini,OpenAI: o3 Mini,retired,4.4,,
+2026-10-29,openai/o3-mini-high,OpenAI: o3 Mini High,retired,4.4,,
+2026-10-29,openai/o4-mini,OpenAI: o4 Mini,retired,4.4,,
+2026-10-29,openai/o4-mini-high,OpenAI: o4 Mini High,retired,4.4,,
+2026-10-29,particle-ai/particle-1,Particle AI: Particle-1,added,,1.0,
+2026-10-29,qwen/qwen3-next-80b-a3b-thinking,Qwen: Qwen3 Next 80B A3B Thinking,retired,1.2,,
+2026-10-29,z-ai/glm-4.6,Z.ai: GLM 4.6,input,0.55,0.5,-9.1
+2026-10-29,z-ai/glm-4.6,Z.ai: GLM 4.6,output,2.2,2.0,-9.1
+2026-10-29,z-ai/glm-5.2,Z.ai: GLM 5.2,input,0.014,0.006,-57.1
+2026-10-29,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.15,0.0457,-69.5
+2026-10-29,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.5,0.0742,-85.2
+2026-10-29,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0237,0.0457,92.8
+2026-10-29,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.1142,0.0742,-35.0
+2026-10-30,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.0339,0.022,-35.1
+2026-10-30,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,1.8,0.192,-89.3
+2026-10-30,~deepseek/deepseek-pro-latest,DeepSeek: DeepSeek Pro Latest,output,8.0,4.0,-50.0
+2026-10-30,deepseek/deepseek-v3.2,DeepSeek: DeepSeek V3.2,input,0.28,0.26,-7.1
+2026-10-30,deepseek/deepseek-v3.2,DeepSeek: DeepSeek V3.2,output,0.42,0.38,-9.5
+2026-10-30,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0509,0.0522,2.6
+2026-10-30,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.1487,0.3,101.7
+2026-10-30,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.8923,0.9483,6.3
+2026-10-30,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.7845,1.8966,6.3
+2026-10-30,mistralai/mistral-large-4-0,Mistral: Mistral Large 4,input,1.36,0.7,-48.5
+2026-10-30,mistralai/mistral-large-4-0,Mistral: Mistral Large 4,output,4.18,2.1,-49.8
+2026-10-30,moonshotai/kimi-k2.7-code,MoonshotAI: Kimi K2.7 Code,input,0.56,0.6,7.1
+2026-10-30,moonshotai/kimi-k2.7-code,MoonshotAI: Kimi K2.7 Code,output,3.1,3.5,12.9
+2026-10-30,moonshotai/kimi-k3,MoonshotAI: Kimi K3,input,0.239,0.192,-19.7
+2026-10-30,moonshotai/kimi-k3,MoonshotAI: Kimi K3,output,10.8,15.0,38.9
+2026-10-30,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1824,0.1615,-11.5
+2026-10-30,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,9.3388,10.1551,8.7
+2026-10-30,particle-ai/particle-1,Particle AI: Particle-1,input,0.25,0.1,-60.0
+2026-10-30,qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,input,0.45,0.32,-28.9
+2026-10-30,qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,output,2.7,3.2,18.5
+2026-10-30,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,input,0.039,0.15,284.6
+2026-10-30,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,output,1.25,1.875,50.0
+2026-10-30,upstage/solar-pro-3,Upstage: Solar Pro 3,retired,0.6,,
+2026-10-30,z-ai/glm-5.3,Z.ai: GLM 5.3,input,0.0699,0.08,14.4
+2026-10-30,z-ai/glm-5.3,Z.ai: GLM 5.3,output,1.4,3.6,157.1
+2026-10-30,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.0457,0.018,-60.6
+2026-10-30,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.0742,0.1402,88.9
+2026-10-30,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0457,0.018,-60.6
+2026-10-30,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.0742,0.1402,88.9
+2026-10-31,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.022,0.0141,-35.9
+2026-10-31,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,0.192,0.144,-25.0
+2026-10-31,~deepseek/deepseek-pro-latest,DeepSeek: DeepSeek Pro Latest,output,4.0,8.0,100.0
+2026-10-31,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0522,0.0576,10.3
+2026-10-31,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.3,0.1729,-42.4
+2026-10-31,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.9483,1.6,68.7
+2026-10-31,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.8966,3.2,68.7
+2026-10-31,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.09,0.0675,-25.0
+2026-10-31,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.3,0.225,-25.0
+2026-10-31,minimax/minimax-m2.5,MiniMax: MiniMax M2.5,input,0.3,0.27,-10.0
+2026-10-31,minimax/minimax-m2.5,MiniMax: MiniMax M2.5,output,1.2,0.95,-20.8
+2026-10-31,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1615,0.1495,-7.4
+2026-10-31,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,10.1551,7.15,-29.6
+2026-10-31,particle-ai/particle-1,Particle AI: Particle-1,input,0.1,0.05,-50.0
+2026-10-31,particle-ai/particle-1,Particle AI: Particle-1,output,1.0,0.5,-50.0
+2026-10-31,poolside/laguna-s-2.1,Poolside: Laguna S 2.1,retired,0.18,,
+2026-10-31,poolside/laguna-s-2.1:free,Poolside: Laguna S 2.1 (free),retired,,,
+2026-10-31,poolside/laguna-xs-2.1,Poolside: Laguna XS 2.1,retired,0.12,,
+2026-10-31,poolside/laguna-xs-2.1:free,Poolside: Laguna XS 2.1 (free),retired,,,
+2026-10-31,qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,input,0.32,0.45,40.6
+2026-10-31,qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,output,3.2,2.7,-15.6
+2026-10-31,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,input,0.15,0.04,-73.3
+2026-10-31,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,output,1.875,2.3,22.7
+2026-10-31,z-ai/glm-5.2,Z.ai: GLM 5.2,output,7.0,6.8,-2.9
+2026-10-31,z-ai/glm-5.3,Z.ai: GLM 5.3,input,0.08,0.0699,-12.6
+2026-10-31,z-ai/glm-5.3,Z.ai: GLM 5.3,output,3.6,1.4,-61.1
+2026-10-31,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.018,0.0163,-9.4
+2026-10-31,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.1402,0.1479,5.5
+2026-10-31,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.018,0.0163,-9.4
+2026-10-31,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.1402,0.1479,5.5
+2026-11-01,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.0141,0.035,148.2
+2026-11-01,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,0.144,0.5,247.2
+2026-11-01,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0576,0.0434,-24.7
+2026-11-01,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.1729,0.3,73.5
+2026-11-01,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,input,0.66,0.115,-82.6
+2026-11-01,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,output,1.98,4.0,102.0
+2026-11-01,minimax/minimax-m3.1-flash,MiniMax: MiniMax M3.1 Flash,input,0.15,0.075,-50.0
+2026-11-01,minimax/minimax-m3.1-flash,MiniMax: MiniMax M3.1 Flash,output,0.6,0.3,-50.0
+2026-11-01,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,input,0.15,0.018,-88.0
+2026-11-01,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,output,0.6,0.067,-88.8
+2026-11-01,openai/gpt-oss-20b,OpenAI: gpt-oss-20b,input,0.018,0.03,66.7
+2026-11-01,openai/gpt-oss-20b,OpenAI: gpt-oss-20b,output,0.09,0.13,44.4
+2026-11-01,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,input,0.04,0.15,275.0
+2026-11-01,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,output,2.3,1.875,-18.5
+2026-11-01,z-ai/glm-4.7,Z.ai: GLM 4.7,input,0.54,0.6,11.1
+2026-11-01,z-ai/glm-4.7,Z.ai: GLM 4.7,output,1.98,2.2,11.1
+2026-11-01,z-ai/glm-5.3,Z.ai: GLM 5.3,input,0.0699,0.08,14.4
+2026-11-01,z-ai/glm-5.3,Z.ai: GLM 5.3,output,1.4,3.6,157.1
+2026-11-01,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.0163,0.0285,74.8
+2026-11-01,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.1479,0.0923,-37.6
+2026-11-01,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0163,0.0285,74.8
+2026-11-01,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.1479,0.0923,-37.6
+2026-11-02,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0434,0.059,35.9
+2026-11-02,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.0675,0.068,0.7
+2026-11-02,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.225,0.205,-8.9
+2026-11-02,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.068,0.094,38.2
+2026-11-02,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.205,0.283,38.0
+2026-11-02,meta-llama/llama-3.2-3b-instruct,Meta: Llama 3.2 3B Instruct,input,0.05,0.0509,1.8
+2026-11-02,meta-llama/llama-3.2-3b-instruct,Meta: Llama 3.2 3B Instruct,output,0.33,0.335,1.5
+2026-11-02,nousresearch/hermes-3-llama-3.1-405b,Nous: Hermes 3 405B Instruct,retired,1.0,,
+2026-11-02,nousresearch/hermes-3-llama-3.1-70b,Nous: Hermes 3 70B Instruct,retired,0.7,,
+2026-11-02,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,input,0.018,0.15,733.3
+2026-11-02,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,output,0.067,0.6,795.5
+2026-11-02,z-ai/glm-5.3-flashx-legal,Z.ai: GLM 5.3 FlashX Legal,added,,1.25,
+2026-11-03,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,0.5,0.315,-37.0
+2026-11-03,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,input,0.119,0.059,-50.4
+2026-11-03,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,output,0.238,0.3,26.1
+2026-11-03,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.094,0.079,-16.0
+2026-11-03,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.283,0.236,-16.6
+2026-11-03,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.079,0.098,24.1
+2026-11-03,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.236,0.295,25.0
+2026-11-03,meta-llama/llama-3.1-70b-instruct,Meta: Llama 3.1 70B Instruct,input,0.4,0.72,80.0
+2026-11-03,meta-llama/llama-3.1-70b-instruct,Meta: Llama 3.1 70B Instruct,output,0.4,0.72,80.0
+2026-11-03,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,input,0.1,0.2,100.0
+2026-11-03,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,output,0.32,0.52,62.5
+2026-11-03,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1495,0.1567,4.8
+2026-11-03,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,7.15,9.3388,30.6
+2026-11-03,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1567,0.1662,6.1
+2026-11-03,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,input,0.15,0.029,-80.7
+2026-11-03,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,output,0.6,0.108,-82.0
+2026-11-03,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,input,0.029,0.15,417.2
+2026-11-03,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,output,0.108,0.6,455.6
+2026-11-03,qwen/qwen3-coder-30b-a3b-instruct,Qwen: Qwen3 Coder 30B A3B Instruct,input,0.07,0.15,114.3
+2026-11-03,qwen/qwen3-coder-30b-a3b-instruct,Qwen: Qwen3 Coder 30B A3B Instruct,output,0.28,0.6,114.3
+2026-11-03,qwen/qwen3-next-80b-a3b-instruct,Qwen: Qwen3 Next 80B A3B Instruct,input,0.09,0.1,11.1
+2026-11-03,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.0285,0.0313,9.8
+2026-11-03,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.0923,0.0846,-8.3
+2026-11-03,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0285,0.0313,9.8
+2026-11-03,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.0923,0.0846,-8.3
+2026-11-04,stealth/crouton-alpha,Crouton Alpha,added,,,
+2026-11-04,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.035,0.022,-37.1
+2026-11-04,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,0.315,0.4,27.0
+2026-11-04,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,input,0.059,0.058,-1.7
+2026-11-04,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.059,0.058,-1.7
+2026-11-04,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,output,4.0,4.6,15.0
+2026-11-04,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.098,0.1,2.0
+2026-11-04,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.295,0.3,1.7
+2026-11-04,ibm-granite/granite-4.2-8b,IBM: Granite 4.2 8B,output,0.15,0.25,66.7
+2026-11-04,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,input,0.2,0.1,-50.0
+2026-11-04,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,output,0.52,0.32,-38.5
+2026-11-04,moonshotai/kimi-k3,MoonshotAI: Kimi K3,output,15.0,16.0,6.7
+2026-11-04,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1662,0.1824,9.7
+2026-11-04,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,9.3388,9.7471,4.4
+2026-11-04,qwen/qwen3-235b-a22b-2507,Qwen: Qwen3 235B A22B Instruct 2507,input,0.09,0.14,55.6
+2026-11-04,qwen/qwen3-235b-a22b-2507,Qwen: Qwen3 235B A22B Instruct 2507,output,0.55,0.8,45.5
+2026-11-04,x-ai/grok-4.6:batch,SpaceXAI: Grok 4.6 (batch),added,,4.8,
+2026-11-04,x-ai/grok-4.7:batch,SpaceXAI: Grok 4.7 (batch),added,,4.8,
+2026-11-04,tencent/hy4,Tencent: Hy4,added,,1.2505,
+2026-11-04,thinkingmachines/inkling:free,Thinking Machines: Inkling (free),retired,,,
+2026-11-04,thinkingmachines/inkling-small:free,Thinking Machines: Inkling Small (free),retired,,,
+2026-11-04,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.0313,0.0269,-14.1
+2026-11-04,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.0846,0.0996,17.7
+2026-11-04,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0313,0.0269,-14.1
+2026-11-04,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.0846,0.0996,17.7
+2026-11-05,openrouter/auto-code,Auto Code,added,,,
+2026-11-05,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.022,0.006,-72.7
+2026-11-05,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,0.4,0.5,25.0
+2026-11-05,~deepseek/deepseek-pro-latest,DeepSeek: DeepSeek Pro Latest,input,0.1035,0.0927,-10.4
+2026-11-05,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,input,0.058,0.05,-13.8
+2026-11-05,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.058,0.05,-13.8
+2026-11-05,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,input,0.115,0.103,-10.4
+2026-11-05,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,output,4.6,4.11,-10.7
+2026-11-05,deepseek/deepseek-v4.1-flash:batch,DeepSeek: DeepSeek V4.1 Flash (batch),input,0.05,0.112,124.0
+2026-11-05,deepseek/deepseek-v4.1-flash:batch,DeepSeek: DeepSeek V4.1 Flash (batch),output,0.15,0.336,124.0
+2026-11-05,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.1,0.031,-69.0
+2026-11-05,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.3,0.094,-68.7
+2026-11-05,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.031,0.051,64.5
+2026-11-05,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.094,0.153,62.8
+2026-11-05,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,input,0.1,0.2,100.0
+2026-11-05,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,output,0.32,0.52,62.5
+2026-11-05,meta-llama/llama-4-maverick,Meta: Llama 4 Maverick,input,0.1875,0.35,86.7
+2026-11-05,meta-llama/llama-4-maverick,Meta: Llama 4 Maverick,output,0.6525,1.0,53.3
+2026-11-05,minimax/minimax-m2,MiniMax: MiniMax M2,retired,1.02,,
+2026-11-05,minimax/minimax-m2-her,MiniMax: MiniMax M2-her,retired,1.2,,
+2026-11-05,minimax/minimax-m2.1,MiniMax: MiniMax M2.1,retired,1.2,,
+2026-11-05,minimax/minimax-m2.7,MiniMax: MiniMax M2.7,input,0.3,0.21,-30.0
+2026-11-05,minimax/minimax-m2.7,MiniMax: MiniMax M2.7,output,1.2,0.84,-30.0
+2026-11-05,minimax/minimax-01,MiniMax: MiniMax-01,retired,1.1,,
+2026-11-05,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1824,0.1501,-17.7
+2026-11-05,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,9.7471,10.5387,8.1
+2026-11-05,qwen/qwen3-next-80b-a3b-instruct,Qwen: Qwen3 Next 80B A3B Instruct,input,0.1,0.09,-10.0
+2026-11-05,z-ai/glm-5.3,Z.ai: GLM 5.3,input,0.08,0.0699,-12.6
+2026-11-05,z-ai/glm-5.3,Z.ai: GLM 5.3,output,3.6,1.4,-61.1
+2026-11-05,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.0269,0.15,457.6
+2026-11-05,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.0996,0.5,402.0
+2026-11-05,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0269,0.0285,5.9
+2026-11-05,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.0996,0.0923,-7.3
+2026-11-05,inclusionai/ling-3.0-tiny,inclusionAI: Ling 3.0 Tiny,added,,0.045,
+2026-11-05,ricursiveai/ripple-65b-preview,ricursiveAI/Ripple-65B-Preview,added,,0.6,
+2026-11-06,~deepseek/deepseek-pro-latest,DeepSeek: DeepSeek Pro Latest,input,0.0927,0.0999,7.8
+2026-11-06,deepseek/deepseek-chat,DeepSeek: DeepSeek V3,input,0.2574,0.32,24.3
+2026-11-06,deepseek/deepseek-chat,DeepSeek: DeepSeek V3,output,1.0287,0.89,-13.5
+2026-11-06,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,input,0.05,0.0514,2.8
+2026-11-06,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.05,0.051,2.0
+2026-11-06,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.3,0.1531,-49.0
+2026-11-06,deepseek/deepseek-v4-flash-vision-exp,DeepSeek: DeepSeek V4 Flash Vision Exp,input,0.2156,0.44,104.1
+2026-11-06,deepseek/deepseek-v4-flash-vision-exp,DeepSeek: DeepSeek V4 Flash Vision Exp,output,0.6468,1.32,104.1
+2026-11-06,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,1.6,0.8616,-46.2
+2026-11-06,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,3.2,1.7233,-46.1
+2026-11-06,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,input,0.103,0.1165,13.1
+2026-11-06,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,output,4.11,4.66,13.4
+2026-11-06,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,input,0.045,0.051,13.3
+2026-11-06,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,output,0.5,0.567,13.4
+2026-11-06,google/gemini-omni-1.1-flash,Google: Gemini Omni 1.1 Flash,added,,9.0,
+2026-11-06,google/gemini-omni-1.2-flash,Google: Gemini Omni 1.2 Flash,added,,9.0,
+2026-11-06,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.051,0.09,76.5
+2026-11-06,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.153,0.3,96.1
+2026-11-06,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,input,0.2,0.59,195.0
+2026-11-06,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,output,0.52,0.79,51.9
+2026-11-06,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1501,0.1529,1.9
+2026-11-06,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,10.5387,10.1522,-3.7
+2026-11-06,nvidia/nemotron-3-super-120b-a12b,NVIDIA: Nemotron 3 Super,input,0.3,0.075,-75.0
+2026-11-06,nvidia/nemotron-3-super-120b-a12b,NVIDIA: Nemotron 3 Super,output,2.4,0.4,-83.3
+2026-11-06,nvidia/nemotron-3.5-content-safety:free,NVIDIA: Nemotron 3.5 Content Safety (free),retired,,,
+2026-11-06,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,input,0.15,0.027,-82.0
+2026-11-06,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,output,0.6,0.101,-83.2
+2026-11-06,reflection/beam-1.0-501b-a23b,Reflection: Beam 1.0 501B A23B,input,0.25,0.3,20.0
+2026-11-06,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0285,0.0284,-0.4
+2026-11-07,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,input,0.0514,0.0448,-12.8
+2026-11-07,deepseek/deepseek-v4-flash-0731:batch,DeepSeek: DeepSeek V4 Flash 0731 (batch),added,,0.144,
+2026-11-07,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.051,0.0448,-12.2
+2026-11-07,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.1531,0.3,96.0
+2026-11-07,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.8616,0.6471,-24.9
+2026-11-07,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.7233,1.2942,-24.9
+2026-11-07,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.09,0.0675,-25.0
+2026-11-07,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.3,0.225,-25.0
+2026-11-07,liquid/lfm-3-1.7b,LiquidAI: LFM3-1.7B,added,,0.2,
+2026-11-07,liquid/lfm-3-1.7b:free,LiquidAI: LFM3-1.7B (free),added,,,
+2026-11-07,meta/muse-glimmer-30b:batch,Meta: Muse Glimmer 30B (batch),added,,0.96,
+2026-11-07,minimax/minimax-m2.5,MiniMax: MiniMax M2.5,input,0.27,0.3,11.1
+2026-11-07,minimax/minimax-m2.5,MiniMax: MiniMax M2.5,output,0.95,1.2,26.3
+2026-11-07,minimax/minimax-m3:batch,MiniMax: MiniMax M3 (batch),added,,0.88,
+2026-11-07,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,input,0.1529,0.1824,19.3
+2026-11-07,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,10.1522,10.5478,3.9
+2026-11-07,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,input,0.027,0.013,-51.9
+2026-11-07,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,output,0.101,0.048,-52.5
+2026-11-07,qwen/qwen3.8-27b:batch,Qwen: Qwen3.8 27B (batch),added,,2.0,
+2026-11-07,thinkingmachines/inkling-small:batch,Thinking Machines: Inkling Small (batch),added,,0.96,
+2026-11-07,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0284,0.0285,0.4
+2026-11-07,inclusionai/ling-3.1-flash,inclusionAI: Ling 3.1 Flash,input,0.075,0.045,-40.0
+2026-11-07,inclusionai/ling-3.1-flash,inclusionAI: Ling 3.1 Flash,output,0.225,0.135,-40.0
+2026-11-09,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,input,0.0448,0.0434,-3.1
+2026-11-09,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0448,0.0434,-3.1
+2026-11-09,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.6471,0.894,38.2
+2026-11-09,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.2942,1.788,38.2
+2026-11-09,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,input,0.1165,0.111,-4.7
+2026-11-09,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,output,4.66,4.44,-4.7
+2026-11-09,deepseek/deepseek-v4.1-flash:batch,DeepSeek: DeepSeek V4.1 Flash (batch),input,0.112,0.011,-90.2
+2026-11-09,deepseek/deepseek-v4.1-flash:batch,DeepSeek: DeepSeek V4.1 Flash (batch),output,0.336,0.2,-40.5
+2026-11-09,deepseek/deepseek-v4.1-flash-1017,DeepSeek: DeepSeek V4.1 Flash 1017,input,0.15,0.006,-96.0
+2026-11-09,deepseek/deepseek-v4.1-flash-1017,DeepSeek: DeepSeek V4.1 Flash 1017,output,0.6,0.5,-16.7
+2026-11-09,deepseek/deepseek-v4.1-flash-1017:batch,DeepSeek: DeepSeek V4.1 Flash 1017 (batch),added,,0.2,
+2026-11-09,google/gemma-3-27b-it,Google: Gemma 3 27B,output,0.35,0.45,28.6
+2026-11-09,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.0675,0.09,33.3
+2026-11-09,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.225,0.3,33.3
+2026-11-09,inception/mercury-2,Inception: Mercury 2,retired,0.75,,
+2026-11-09,inception/mercury-2.5,Inception: Mercury 2.5,retired,0.15,,
+2026-11-09,inception/mercury-3,Inception: Mercury 3,retired,0.35,,
+2026-11-09,meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,input,0.05,0.02,-60.0
+2026-11-09,meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,output,0.08,0.04,-50.0
+2026-11-09,meta-llama/llama-3.2-3b-instruct,Meta: Llama 3.2 3B Instruct,input,0.0509,0.05,-1.8
+2026-11-09,meta-llama/llama-3.2-3b-instruct,Meta: Llama 3.2 3B Instruct,output,0.335,0.33,-1.5
+2026-11-09,minimax/minimax-m1,MiniMax: MiniMax M1,retired,2.2,,
+2026-11-09,mistralai/mistral-small-3.2-24b-instruct,Mistral: Mistral Small 3.2 24B,input,0.075,0.1,33.3
+2026-11-09,mistralai/mistral-small-3.2-24b-instruct,Mistral: Mistral Small 3.2 24B,output,0.2,0.3,50.0
+2026-11-09,moonshotai/kimi-k2.5,MoonshotAI: Kimi K2.5,input,0.5,0.532,6.4
+2026-11-09,moonshotai/kimi-k2.5,MoonshotAI: Kimi K2.5,output,2.5,3.325,33.0
+2026-11-09,moonshotai/kimi-k3:batch,MoonshotAI: Kimi K3 (batch),input,2.28,0.883,-61.3
+2026-11-09,moonshotai/kimi-k3:batch,MoonshotAI: Kimi K3 (batch),output,11.4,6.0,-47.4
+2026-11-09,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,10.5478,10.1489,-3.8
+2026-11-09,morph/morph-v3-fast:batch,Morph: Morph V3 Fast (batch),added,,0.6,
+2026-11-09,morph/morph-v3-large:batch,Morph: Morph V3 Large (batch),added,,0.95,
+2026-11-09,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,input,0.013,0.15,1053.8
+2026-11-09,openai/gpt-oss-120b,OpenAI: gpt-oss-120b,output,0.048,0.6,1150.0
+2026-11-09,qwen/qwen3.5-397b-a17b,Qwen: Qwen3.5 397B A17B,input,0.5,0.6,20.0
+2026-11-09,qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,input,0.45,0.32,-28.9
+2026-11-09,qwen/qwen3.6-27b,Qwen: Qwen3.6 27B,output,2.7,3.2,18.5
+2026-11-09,qwen/qwen3.8-max-0902:batch,Qwen: Qwen3.8 Max (0902) (batch),added,,3.45,
+2026-11-09,z-ai/glm-4.5-air,Z.ai: GLM 4.5 Air,input,0.13,0.2,53.8
+2026-11-09,z-ai/glm-4.5-air,Z.ai: GLM 4.5 Air,output,0.85,1.1,29.4
+2026-11-09,z-ai/glm-5.2,Z.ai: GLM 5.2,input,0.006,0.0075,25.0
+2026-11-09,z-ai/glm-5.2:batch,Z.ai: GLM 5.2 (batch),added,,1.271,
+2026-11-09,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.15,0.0335,-77.7
+2026-11-09,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.5,0.083,-83.4
+2026-11-09,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0285,0.0335,17.5
+2026-11-09,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.0923,0.083,-10.1
+2026-11-10,anthropic/claude-fable-5.2,Anthropic: Claude Fable 5.2,added,,40.0,
+2026-11-10,anthropic/claude-fable-5.2:batch,Anthropic: Claude Fable 5.2 (batch),added,,20.0,
+2026-11-10,~anthropic/claude-fable-latest,Anthropic: Claude Fable Latest,input,10.0,8.0,-20.0
+2026-11-10,~anthropic/claude-fable-latest,Anthropic: Claude Fable Latest,output,50.0,40.0,-20.0
+2026-11-10,stealth/crouton-alpha,Crouton Alpha,retired,,,
+2026-11-10,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.894,0.9553,6.9
+2026-11-10,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.788,1.9105,6.9
+2026-11-10,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,input,0.051,0.3,488.2
+2026-11-10,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,output,0.567,1.2,111.6
+2026-11-10,deepseek/deepseek-v4.1-flash:batch,DeepSeek: DeepSeek V4.1 Flash (batch),input,0.011,0.112,918.2
+2026-11-10,deepseek/deepseek-v4.1-flash:batch,DeepSeek: DeepSeek V4.1 Flash (batch),output,0.2,0.336,68.0
+2026-11-10,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,input,0.09,0.08,-11.1
+2026-11-10,google/gemma-4-26b-a4b-it,Google: Gemma 4 26B A4B ,output,0.3,0.1,-66.7
+2026-11-10,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,input,0.59,0.71,20.3
+2026-11-10,meta-llama/llama-3.3-70b-instruct,Meta: Llama 3.3 70B Instruct,output,0.79,0.71,-10.1
+2026-11-10,meta/muse-ember,Meta: Muse Ember,added,,0.5,
+2026-11-10,moonshotai/kimi-k3:batch,MoonshotAI: Kimi K3 (batch),input,0.883,2.28,158.2
+2026-11-10,moonshotai/kimi-k3:batch,MoonshotAI: Kimi K3 (batch),output,6.0,11.4,90.0
+2026-11-10,~moonshotai/kimi-latest,MoonshotAI: Kimi Latest,output,10.1489,9.3388,-8.0
+2026-11-10,nvidia/nemotron-3.5-super-vl,NVIDIA: Nemotron 3.5 Super VL,output,0.5,0.47,-6.0
+2026-11-10,nex-agi/nex-n2.6,Nex AGI: Nex-N2.6,added,,0.4,
+2026-11-10,qwen/qwen3-14b,Qwen: Qwen3 14B,input,0.12,0.1,-16.7
+2026-11-10,qwen/qwen3-14b,Qwen: Qwen3 14B,output,0.24,0.22,-8.3
+2026-11-10,thinkingmachines/inkling-2-small:free,Thinking Machines: Inkling 2 Small (free),added,,,
+2026-11-10,z-ai/glm-5.2,Z.ai: GLM 5.2,input,0.0075,0.007,-6.7
+2026-11-10,z-ai/glm-5.2:batch,Z.ai: GLM 5.2 (batch),input,0.623,0.527,-15.4
+2026-11-10,z-ai/glm-5.2:batch,Z.ai: GLM 5.2 (batch),output,1.271,1.075,-15.4
+2026-11-10,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.0335,0.0399,19.1
+2026-11-10,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.083,0.0784,-5.5
+2026-11-10,z-ai/glm-5.3-flash:batch,Z.ai: GLM 5.3 Flash (batch),input,0.05,0.033,-34.0
+2026-11-10,z-ai/glm-5.3-flash:batch,Z.ai: GLM 5.3 Flash (batch),output,0.18,0.061,-66.1
+2026-11-10,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0335,0.0399,19.1
+2026-11-10,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.083,0.0784,-5.5

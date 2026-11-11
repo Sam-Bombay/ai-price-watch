@@ -27,8 +27,8 @@ Maintained by Sam Bombay / Noir & Co. Live view: https://ai-price-watch-beta.ver
   All prices are USD per 1,000,000 tokens.
 - `prices.csv` - the current snapshot: input and output price and context window per model.
 
-Coverage: **653 events** across **463 models**, 2026-10-08 to 2026-10-27.
-Of 583 comparable price events, **293 are cuts and 290 are rises**.
+Coverage: **1027 events** across **465 models**, 2026-10-08 to 2026-11-10.
+Of 901 comparable price events, **451 are cuts and 449 are rises**.
 
 ## Why it is useful
 
@@ -36,6 +36,25 @@ AI list prices are not stable, and they do not all move in one direction. In thi
 same model routinely falls more than 20 percent and climbs straight back, while other models
 are retired without notice. Anyone modelling AI unit economics, writing about AI costs, or
 auditing a vendor invoice needs the dated record rather than today's rate card.
+
+## Put it to work
+
+Three calculators built on this same log, no signup, no cost:
+
+- **What one engineer's coding bill should be** — https://ai-price-watch-beta.vercel.app/seatcost — enter your per-seat AI
+  spend and see the same token volume priced against today's Claude, GLM, DeepSeek and Qwen
+  rates, with the tier caveat stated rather than buried. This is the page to open if your
+  team's Claude Code bill was questioned this week.
+- **Self-host or keep paying per token** — https://ai-price-watch-beta.vercel.app/selfhost — the break-even against published
+  GPU rental, with the throughput assumption shown as a slider instead of asserted.
+- **Has your bill been re-bid since the cuts?** — https://ai-price-watch-beta.vercel.app/repricing — generates the re-bid
+  email from the change log, dated.
+
+Context, 03 Nov 2026: Revolut said at AI Engineer NYC that moving most coding inference to
+self-hosted GLM cut its AI coding costs roughly 90 percent, across about 2,000 engineers, and
+that its own figures were about a tenth of commercial alternatives. That claim is theirs, not
+measured here. What this dataset adds is the dated record needed to check whether a vendor's
+price actually moved when they said it did.
 
 ## Method and limits
 

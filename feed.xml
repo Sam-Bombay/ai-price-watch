@@ -5,8 +5,33 @@
     <link>https://ai-price-watch-beta.vercel.app</link>
     <description>What every AI model costs per million tokens, and what moved today. Feeds an AI cost audit: I track the prices, you keep 70% of what I cut.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Oct 2026 07:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 07:30:00 +0000</lastBuildDate>
     <atom:link href="https://ai-price-watch-beta.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The floor is a round trip — 168 cuts, 160 rises, two weeks</title>
+      <link>https://ai-price-watch-beta.vercel.app/#brief-2026-11-11</link>
+      <guid isPermaLink="false">ai-price-watch-2026-11-11</guid>
+      <pubDate>Wed, 11 Nov 2026 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>DeepSeek cut V4.1 Flash again this morning: input $0.30 → $0.051 (-83.0%), output
+      $1.20 → $0.567 (-52.8%).</strong> It is the same line that went up 600% on 27 October and
+      whose 1017 variant fell <b>96.0%</b> two days ago. <b>28 changes</b> logged today across
+      <b>466</b> models: <b>17 price moves (8 input, 9 output), 6 new models, 5 retirements</b> —
+      <b>15 cuts, 2 rises</b>. The two rises are the interesting ones: <b>Kimi Latest output
+      $9.34 → $11.01 (+17.8%)</b> and <b>GLM 5.3 Flash batch input +42.4%</b>.</p>
+    <p><strong>Over the fourteen days since the last brief: 396 logged changes, 329 of them price
+      moves — 168 cuts against 160 rises.</strong> That is not a market falling, it is a market
+      repricing in both directions faster than any invoice re-reads it. <b>gpt-oss-120b</b> went
+      input <b>$0.15 → $0.018</b> on 1 November (<b>-88.0%</b>) and back to <b>$0.15</b> on 9
+      November (<b>+1,053.8%</b>); its output did the same round trip at <b>+1,150%</b>. The
+      DeepSeek batch line pulled the identical trick the next day, <b>+918.2%</b>. Meanwhile
+      <b>35 models were added and 32 retired</b> — including <b>Gemini 4 Carbon</b> at
+      <b>$10 output</b> with a <b>$5</b> batch door, and a free <b>ERNIE-5.5-Flash-Preview</b>.</p>
+    <p><strong>What it means for a bill.</strong> A model chosen in a procurement doc is a bet that
+      its price stays put; this fortnight says it does not, and the moves are large enough in both
+      directions that neither "we already optimised" nor "we will optimise later" survives contact
+      with the log. That is the entire argument for a standing audit — not a one-off migration, a
+      watch. The cuts are real money on the table this week; the rises are real money leaking.</p>]]></description>
+    </item>
     <item>
       <title>The same day, one model halved and another went up 19 times</title>
       <link>https://ai-price-watch-beta.vercel.app/#brief-2026-10-27</link>

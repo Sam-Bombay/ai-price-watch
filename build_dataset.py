@@ -103,6 +103,25 @@ same model routinely falls more than 20 percent and climbs straight back, while 
 are retired without notice. Anyone modelling AI unit economics, writing about AI costs, or
 auditing a vendor invoice needs the dated record rather than today's rate card.
 
+## Put it to work
+
+Three calculators built on this same log, no signup, no cost:
+
+- **What one engineer's coding bill should be** — {SITE}/seatcost — enter your per-seat AI
+  spend and see the same token volume priced against today's Claude, GLM, DeepSeek and Qwen
+  rates, with the tier caveat stated rather than buried. This is the page to open if your
+  team's Claude Code bill was questioned this week.
+- **Self-host or keep paying per token** — {SITE}/selfhost — the break-even against published
+  GPU rental, with the throughput assumption shown as a slider instead of asserted.
+- **Has your bill been re-bid since the cuts?** — {SITE}/repricing — generates the re-bid
+  email from the change log, dated.
+
+Context, 03 Nov 2026: Revolut said at AI Engineer NYC that moving most coding inference to
+self-hosted GLM cut its AI coding costs roughly 90 percent, across about 2,000 engineers, and
+that its own figures were about a tenth of commercial alternatives. That claim is theirs, not
+measured here. What this dataset adds is the dated record needed to check whether a vendor's
+price actually moved when they said it did.
+
 ## Method and limits
 
 - Source: the public OpenRouter model catalogue, fetched once a day.
