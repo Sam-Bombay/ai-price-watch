@@ -9356,5 +9356,392 @@
 "field": "retired",
 "from": null,
 "to": null
+},
+{
+"date": "2026-11-12",
+"id": "google/gemini-4-hydrogen",
+"name": "Google: Gemini 4 Hydrogen",
+"field": "added",
+"from": null,
+"to": 7.5
+},
+{
+"date": "2026-11-12",
+"id": "google/gemini-4-hydrogen:batch",
+"name": "Google: Gemini 4 Hydrogen (batch)",
+"field": "added",
+"from": null,
+"to": 3.75
+},
+{
+"date": "2026-11-12",
+"id": "thinkingmachines/inkling-2-small",
+"name": "Thinking Machines: Inkling 2 Small",
+"field": "added",
+"from": null,
+"to": 1.0
+},
+{
+"date": "2026-11-12",
+"id": "particle-ai/particle-1:free",
+"name": "Particle AI: Particle-1 (free)",
+"field": "added",
+"from": null,
+"to": null
+},
+{
+"date": "2026-11-12",
+"id": "moonshotai/kimi-k3.1-pro",
+"name": "MoonshotAI: Kimi K3.1 Pro",
+"field": "input",
+"from": 2.0,
+"to": 0.2375,
+"pct": -88.1
+},
+{
+"date": "2026-11-12",
+"id": "moonshotai/kimi-k3.1-pro",
+"name": "MoonshotAI: Kimi K3.1 Pro",
+"field": "output",
+"from": 10.0,
+"to": 8.4114,
+"pct": -15.9
+},
+{
+"date": "2026-11-12",
+"id": "moonshotai/kimi-k3.1-pro:batch",
+"name": "MoonshotAI: Kimi K3.1 Pro (batch)",
+"field": "added",
+"from": null,
+"to": 6.0
+},
+{
+"date": "2026-11-12",
+"id": "deepseek/deepseek-v4.1-flash-1017",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+"field": "input",
+"from": 0.006,
+"to": 0.15,
+"pct": 2400.0
+},
+{
+"date": "2026-11-12",
+"id": "deepseek/deepseek-v4.1-flash-1017",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+"field": "output",
+"from": 0.5,
+"to": 0.6,
+"pct": 20.0
+},
+{
+"date": "2026-11-12",
+"id": "deepseek/deepseek-v4.1-flash-1017:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+"field": "input",
+"from": 0.011,
+"to": 0.05,
+"pct": 354.5
+},
+{
+"date": "2026-11-12",
+"id": "deepseek/deepseek-v4.1-flash-1017:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+"field": "output",
+"from": 0.2,
+"to": 0.15,
+"pct": -25.0
+},
+{
+"date": "2026-11-12",
+"id": "apodex/apodex-1.1-mini:free",
+"name": "Apodex: Apodex 1.1 Mini (free)",
+"field": "added",
+"from": null,
+"to": null
+},
+{
+"date": "2026-11-12",
+"id": "unbiased/pareto-26.10-preview",
+"name": "Pareto 26.10 Preview",
+"field": "added",
+"from": null,
+"to": 3.2
+},
+{
+"date": "2026-11-12",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.006,
+"to": 0.022,
+"pct": 266.7
+},
+{
+"date": "2026-11-12",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 0.5,
+"to": 0.4,
+"pct": -20.0
+},
+{
+"date": "2026-11-12",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "input",
+"from": 0.051,
+"to": 0.3,
+"pct": 488.2
+},
+{
+"date": "2026-11-12",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "output",
+"from": 0.567,
+"to": 1.2,
+"pct": 111.6
+},
+{
+"date": "2026-11-12",
+"id": "inclusionai/ling-3.0-flash-sante",
+"name": "inclusionAI: Ling 3.0 Flash Sante",
+"field": "added",
+"from": null,
+"to": 0.1232
+},
+{
+"date": "2026-11-12",
+"id": "ibm-granite/granite-4.2-8b",
+"name": "IBM: Granite 4.2 8B",
+"field": "output",
+"from": 0.25,
+"to": 0.15,
+"pct": -40.0
+},
+{
+"date": "2026-11-12",
+"id": "tencent/hy4-preview",
+"name": "Tencent: Hy4 preview",
+"field": "input",
+"from": 0.834,
+"to": 0.7506,
+"pct": -10.0
+},
+{
+"date": "2026-11-12",
+"id": "tencent/hy4-preview",
+"name": "Tencent: Hy4 preview",
+"field": "output",
+"from": 2.501,
+"to": 2.2509,
+"pct": -10.0
+},
+{
+"date": "2026-11-12",
+"id": "inclusionai/ling-3.0-flash-fin",
+"name": "inclusionAI: Ling 3.0 Flash Fin",
+"field": "added",
+"from": null,
+"to": 0.1232
+},
+{
+"date": "2026-11-12",
+"id": "z-ai/glm-5.3-flash:batch",
+"name": "Z.ai: GLM 5.3 Flash (batch)",
+"field": "input",
+"from": 0.047,
+"to": 0.05,
+"pct": 6.4
+},
+{
+"date": "2026-11-12",
+"id": "z-ai/glm-5.3-flash:batch",
+"name": "Z.ai: GLM 5.3 Flash (batch)",
+"field": "output",
+"from": 0.061,
+"to": 0.18,
+"pct": 195.1
+},
+{
+"date": "2026-11-12",
+"id": "openai/gpt-5.6-sol",
+"name": "OpenAI: GPT-5.6 Sol",
+"field": "input",
+"from": 4.0,
+"to": 4.4,
+"pct": 10.0
+},
+{
+"date": "2026-11-12",
+"id": "openai/gpt-5.6-sol",
+"name": "OpenAI: GPT-5.6 Sol",
+"field": "output",
+"from": 20.0,
+"to": 22.0,
+"pct": 10.0
+},
+{
+"date": "2026-11-12",
+"id": "tencent/hy3",
+"name": "Tencent: Hy3",
+"field": "input",
+"from": 0.132,
+"to": 0.0825,
+"pct": -37.5
+},
+{
+"date": "2026-11-12",
+"id": "tencent/hy3",
+"name": "Tencent: Hy3",
+"field": "output",
+"from": 0.528,
+"to": 0.33,
+"pct": -37.5
+},
+{
+"date": "2026-11-12",
+"id": "z-ai/glm-5.2:batch",
+"name": "Z.ai: GLM 5.2 (batch)",
+"field": "input",
+"from": 0.527,
+"to": 0.322,
+"pct": -38.9
+},
+{
+"date": "2026-11-12",
+"id": "z-ai/glm-5.2:batch",
+"name": "Z.ai: GLM 5.2 (batch)",
+"field": "output",
+"from": 1.075,
+"to": 0.989,
+"pct": -8.0
+},
+{
+"date": "2026-11-12",
+"id": "~google/gemini-flash-latest",
+"name": "Google: Gemini Flash Latest",
+"field": "input",
+"from": 0.75,
+"to": 1.5,
+"pct": 100.0
+},
+{
+"date": "2026-11-12",
+"id": "~google/gemini-flash-latest",
+"name": "Google: Gemini Flash Latest",
+"field": "output",
+"from": 3.75,
+"to": 7.5,
+"pct": 100.0
+},
+{
+"date": "2026-11-12",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.8872,
+"to": 0.889,
+"pct": 0.2
+},
+{
+"date": "2026-11-12",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 1.7745,
+"to": 1.7779,
+"pct": 0.2
+},
+{
+"date": "2026-11-12",
+"id": "z-ai/glm-5.1",
+"name": "Z.ai: GLM 5.1",
+"field": "input",
+"from": 1.33,
+"to": 1.4,
+"pct": 5.3
+},
+{
+"date": "2026-11-12",
+"id": "z-ai/glm-5.1",
+"name": "Z.ai: GLM 5.1",
+"field": "output",
+"from": 4.18,
+"to": 4.4,
+"pct": 5.3
+},
+{
+"date": "2026-11-12",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.08,
+"to": 0.0765,
+"pct": -4.4
+},
+{
+"date": "2026-11-12",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.1,
+"to": 0.255,
+"pct": 155.0
+},
+{
+"date": "2026-11-12",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "input",
+"from": 0.17,
+"to": 0.102,
+"pct": -40.0
+},
+{
+"date": "2026-11-12",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "output",
+"from": 0.25,
+"to": 0.15,
+"pct": -40.0
+},
+{
+"date": "2026-11-12",
+"id": "moonshotai/kimi-k2.5",
+"name": "MoonshotAI: Kimi K2.5",
+"field": "input",
+"from": 0.532,
+"to": 0.5,
+"pct": -6.0
+},
+{
+"date": "2026-11-12",
+"id": "moonshotai/kimi-k2.5",
+"name": "MoonshotAI: Kimi K2.5",
+"field": "output",
+"from": 3.325,
+"to": 2.5,
+"pct": -24.8
+},
+{
+"date": "2026-11-12",
+"id": "qwen/qwen3-14b",
+"name": "Qwen: Qwen3 14B",
+"field": "input",
+"from": 0.1,
+"to": 0.12,
+"pct": 20.0
+},
+{
+"date": "2026-11-12",
+"id": "qwen/qwen3-14b",
+"name": "Qwen: Qwen3 14B",
+"field": "output",
+"from": 0.22,
+"to": 0.24,
+"pct": 9.1
 }
 ]
