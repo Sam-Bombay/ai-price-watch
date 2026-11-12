@@ -5,8 +5,37 @@
     <link>https://ai-price-watch-beta.vercel.app</link>
     <description>What every AI model costs per million tokens, and what moved today. Feeds an AI cost audit: I track the prices, you keep 70% of what I cut.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 07:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 07:30:00 +0000</lastBuildDate>
     <atom:link href="https://ai-price-watch-beta.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>The launch got cheaper and the bargain bin got dearer</title>
+      <link>https://ai-price-watch-beta.vercel.app/#brief-2026-11-12</link>
+      <guid isPermaLink="false">ai-price-watch-2026-11-12</guid>
+      <pubDate>Thu, 12 Nov 2026 07:30:00 +0000</pubDate>
+      <description><![CDATA[<p><strong>Gemini 4 Hydrogen opened at $1.50 in / $7.50 out with a 1M context</strong> — a quarter
+      under Gemini 4 Carbon and Argon (<b>$2 / $10</b>) and <b>37% under Gemini 3.1 Pro Preview</b>
+      (<b>$2 / $12</b>), with a batch door at <b>$0.75 / $3.75</b>. The frontier launch of the week
+      did not raise the ceiling. <b>44 changes</b> logged today across <b>475</b> models: <b>35
+      price moves (17 input, 18 output), 9 new models, 0 retirements</b> — <b>16 cuts, 19 rises</b>.</p>
+    <p><strong>The rises all landed in the cheap tier, and they are not cheap-tier sizes.
+      DeepSeek V4.1 Flash input $0.051 → $0.30 (+488.2%)</strong>; its 1017 variant went
+      <b>$0.006 → $0.15 (+2,400%)</b>; <b>GLM 5.3 Flash batch output $0.061 → $0.18 (+195.1%)</b>.
+      A model picked two weeks ago because it was the floor is now five to twenty-five times the
+      line it was quoted at. The largest cut ran the other way: <b>Kimi K3.1 Pro input $2.00 →
+      $0.2375 (-88.1%)</b>, with a batch line added at <b>$6</b> output. Also down: <b>Qwen3.5-9B
+      -40%</b> both directions, <b>IBM Granite 4.2 8B output -40%</b>.</p>
+    <p><strong>Over the fourteen days to today: 380 logged changes, 314 of them price moves — 157
+      cuts against 157 rises.</strong> Exactly even, and that is the point. Any bill set once and
+      left alone is now wrong in both directions at once: overpaying where the floor fell, and
+      exposed where the floor rose underneath it. The 12 Nov launch says capability is getting
+      cheaper at the top of the market; today's rises say the bottom is where the leakage is.</p>
+    <p><strong>What it means for a bill.</strong> Two DeepSeek lines moving 488% and 2,400% in a
+      single day is not a market event a quarterly review catches. It is a standing-watch problem:
+      on a <b>$4,000/month</b> input-heavy bill, if a quarter of the input still runs through
+      Kimi K3.1 Pro at yesterday's price, that one cut is about <b>$880 a month</b> back. Nobody
+      finds that in a quarterly review. It is the case for a standing watch, not a one-off
+      migration.</p>]]></description>
+    </item>
     <item>
       <title>The floor is a round trip — 168 cuts, 160 rises, two weeks</title>
       <link>https://ai-price-watch-beta.vercel.app/#brief-2026-11-11</link>

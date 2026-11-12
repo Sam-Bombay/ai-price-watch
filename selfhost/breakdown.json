@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-10",
+ "as_of": "2026-11-12",
  "workload_default": {
   "input_tokens_month": 120000000,
   "output_tokens_month": 18000000
@@ -10,7 +10,7 @@
    "usd_month": 2.61
   },
   "median_usd_month": 109.8,
-  "p90_usd_month": 840.0,
+  "p90_usd_month": 696.0,
   "max": {
    "name": "OpenAI: GPT-5.4 Pro",
    "usd_month": 6840.0
@@ -102,5 +102,5 @@
   ]
  },
  "gpu_rate_source": "https://www.runpod.io/pricing (page states 'Updated October 28, 2026'; read 2026-11-03)",
- "built": "2026-11-10T07:45:26"
+ "built": "2026-11-12T15:41:45"
 }

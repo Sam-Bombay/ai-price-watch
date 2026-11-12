@@ -27,8 +27,8 @@ Maintained by Sam Bombay / Noir & Co. Live view: https://ai-price-watch-beta.ver
   All prices are USD per 1,000,000 tokens.
 - `prices.csv` - the current snapshot: input and output price and context window per model.
 
-Coverage: **1027 events** across **465 models**, 2026-10-08 to 2026-11-10.
-Of 901 comparable price events, **451 are cuts and 449 are rises**.
+Coverage: **1099 events** across **475 models**, 2026-10-08 to 2026-11-12.
+Of 953 comparable price events, **482 are cuts and 470 are rises**.
 
 ## Why it is useful
 
