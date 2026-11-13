@@ -9743,5 +9743,279 @@
 "from": 0.22,
 "to": 0.24,
 "pct": 9.1
+},
+{
+"date": "2026-11-13",
+"id": "ricursiveai/ripple-65b-preview",
+"name": "Ricursive: Ripple 65B Preview",
+"field": "input",
+"from": 0.2,
+"to": 0.1,
+"pct": -50.0
+},
+{
+"date": "2026-11-13",
+"id": "ricursiveai/ripple-65b-preview",
+"name": "Ricursive: Ripple 65B Preview",
+"field": "output",
+"from": 0.6,
+"to": 0.3,
+"pct": -50.0
+},
+{
+"date": "2026-11-13",
+"id": "moonshotai/kimi-k3.1-pro",
+"name": "MoonshotAI: Kimi K3.1 Pro",
+"field": "input",
+"from": 0.2375,
+"to": 2.0,
+"pct": 742.1
+},
+{
+"date": "2026-11-13",
+"id": "moonshotai/kimi-k3.1-pro",
+"name": "MoonshotAI: Kimi K3.1 Pro",
+"field": "output",
+"from": 8.4114,
+"to": 10.0,
+"pct": 18.9
+},
+{
+"date": "2026-11-13",
+"id": "deepseek/deepseek-v4.1-flash-1017",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+"field": "input",
+"from": 0.15,
+"to": 0.038,
+"pct": -74.7
+},
+{
+"date": "2026-11-13",
+"id": "deepseek/deepseek-v4.1-flash-1017",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+"field": "output",
+"from": 0.6,
+"to": 0.5,
+"pct": -16.7
+},
+{
+"date": "2026-11-13",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.022,
+"to": 0.038,
+"pct": 72.7
+},
+{
+"date": "2026-11-13",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 0.4,
+"to": 0.5,
+"pct": 25.0
+},
+{
+"date": "2026-11-13",
+"id": "ibm-granite/granite-4.2-8b",
+"name": "IBM: Granite 4.2 8B",
+"field": "output",
+"from": 0.15,
+"to": 0.25,
+"pct": 66.7
+},
+{
+"date": "2026-11-13",
+"id": "tencent/hy4-preview",
+"name": "Tencent: Hy4 preview",
+"field": "input",
+"from": 0.7506,
+"to": 0.834,
+"pct": 11.1
+},
+{
+"date": "2026-11-13",
+"id": "tencent/hy4-preview",
+"name": "Tencent: Hy4 preview",
+"field": "output",
+"from": 2.2509,
+"to": 2.501,
+"pct": 11.1
+},
+{
+"date": "2026-11-13",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "input",
+"from": 0.0699,
+"to": 0.084,
+"pct": 20.2
+},
+{
+"date": "2026-11-13",
+"id": "z-ai/glm-5.3",
+"name": "Z.ai: GLM 5.3",
+"field": "output",
+"from": 1.4,
+"to": 3.6,
+"pct": 157.1
+},
+{
+"date": "2026-11-13",
+"id": "tencent/hy3",
+"name": "Tencent: Hy3",
+"field": "input",
+"from": 0.0825,
+"to": 0.132,
+"pct": 60.0
+},
+{
+"date": "2026-11-13",
+"id": "tencent/hy3",
+"name": "Tencent: Hy3",
+"field": "output",
+"from": 0.33,
+"to": 0.528,
+"pct": 60.0
+},
+{
+"date": "2026-11-13",
+"id": "z-ai/glm-5.2:batch",
+"name": "Z.ai: GLM 5.2 (batch)",
+"field": "input",
+"from": 0.322,
+"to": 0.298,
+"pct": -7.5
+},
+{
+"date": "2026-11-13",
+"id": "z-ai/glm-5.2:batch",
+"name": "Z.ai: GLM 5.2 (batch)",
+"field": "output",
+"from": 0.989,
+"to": 0.916,
+"pct": -7.4
+},
+{
+"date": "2026-11-13",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.889,
+"to": 0.9,
+"pct": 1.2
+},
+{
+"date": "2026-11-13",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 1.7779,
+"to": 1.5,
+"pct": -15.6
+},
+{
+"date": "2026-11-13",
+"id": "xiaomi/mimo-v2.5-pro",
+"name": "Xiaomi: MiMo-V2.5-Pro",
+"field": "input",
+"from": 0.48,
+"to": 0.435,
+"pct": -9.4
+},
+{
+"date": "2026-11-13",
+"id": "xiaomi/mimo-v2.5-pro",
+"name": "Xiaomi: MiMo-V2.5-Pro",
+"field": "output",
+"from": 1.8,
+"to": 0.87,
+"pct": -51.7
+},
+{
+"date": "2026-11-13",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.0765,
+"to": 0.09,
+"pct": 17.6
+},
+{
+"date": "2026-11-13",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.255,
+"to": 0.3,
+"pct": 17.6
+},
+{
+"date": "2026-11-13",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "input",
+"from": 0.102,
+"to": 0.052,
+"pct": -49.0
+},
+{
+"date": "2026-11-13",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "output",
+"from": 0.15,
+"to": 0.076,
+"pct": -49.3
+},
+{
+"date": "2026-11-13",
+"id": "minimax/minimax-m2.5",
+"name": "MiniMax: MiniMax M2.5",
+"field": "output",
+"from": 1.08,
+"to": 0.95,
+"pct": -12.0
+},
+{
+"date": "2026-11-13",
+"id": "apodex/apodex-1.1-mini:free",
+"name": "Apodex: Apodex 1.1 Mini (free)",
+"field": "retired",
+"from": null,
+"to": null
+},
+{
+"date": "2026-11-13",
+"id": "inclusionai/ling-3.0-flash-fin",
+"name": "inclusionAI: Ling 3.0 Flash Fin",
+"field": "retired",
+"from": 0.1232,
+"to": null
+},
+{
+"date": "2026-11-13",
+"id": "inclusionai/ling-3.0-flash-sante",
+"name": "inclusionAI: Ling 3.0 Flash Sante",
+"field": "retired",
+"from": 0.1232,
+"to": null
+},
+{
+"date": "2026-11-13",
+"id": "liquid/lfm-2.5-2.6b",
+"name": "LiquidAI: LFM2.5-2.6B",
+"field": "retired",
+"from": 0.5,
+"to": null
+},
+{
+"date": "2026-11-13",
+"id": "liquid/lfm-2.5-2.6b:free",
+"name": "LiquidAI: LFM2.5-2.6B (free)",
+"field": "retired",
+"from": null,
+"to": null
 }
 ]
