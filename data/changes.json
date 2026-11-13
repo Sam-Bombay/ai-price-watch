@@ -10017,5 +10017,23 @@
 "field": "retired",
 "from": null,
 "to": null
+},
+{
+"date": "2026-11-13",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "input",
+"from": 0.052,
+"to": 0.066,
+"pct": 26.9
+},
+{
+"date": "2026-11-13",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "output",
+"from": 0.076,
+"to": 0.097,
+"pct": 27.6
 }
 ]

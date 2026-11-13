@@ -37,13 +37,6 @@
 "ctx": 262144
 },
 {
-"id": "qwen/qwen3.5-9b",
-"name": "Qwen: Qwen3.5-9B",
-"in": 0.052,
-"out": 0.076,
-"ctx": 262144
-},
-{
 "id": "~z-ai/glm-flash-latest",
 "name": "Z.ai: GLM Flash Latest",
 "in": 0.0399,
@@ -63,6 +56,13 @@
 "in": 0.05,
 "out": 0.08,
 "ctx": 32768
+},
+{
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"in": 0.066,
+"out": 0.097,
+"ctx": 262144
 },
 {
 "id": "nex-agi/nex-n2.5-mini",
