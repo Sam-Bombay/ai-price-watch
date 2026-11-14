@@ -12,7 +12,7 @@ trap 'rm -rf "$TMP"' EXIT
 
 # static assets only — no python, no caches, no git metadata
 for f in index.html feed.xml; do [ -f "$f" ] && cp "$f" "$TMP/"; done
-for d in data clinic receipts audit volatility local-stt embed workbench msp repricing benchmark cle finops claude-check cve-2026-98432 cost-index selfhost seatcost; do
+for d in data dataset clinic receipts audit volatility local-stt embed workbench msp repricing benchmark cle finops claude-check cve-2026-98432 cost-index selfhost seatcost agentcost; do
   [ -d "$d" ] && cp -R "$d" "$TMP/"
 done
 rm -rf "$TMP"/workbench/__pycache__ "$TMP"/workbench/*.py "$TMP"/workbench/*.csv
