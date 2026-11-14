@@ -2487,9 +2487,9 @@
 "qwen/qwen3.5-9b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-9b",
-"in": 0.165,
+"in": 0.164,
 "name": "Qwen: Qwen3.5-9B",
-"out": 0.242
+"out": 0.241
 },
 "qwen/qwen3.5-flash-02-23": {
 "ctx": 1000000,

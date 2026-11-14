@@ -10169,5 +10169,23 @@
 "from": 0.33,
 "to": 0.335,
 "pct": 1.5
+},
+{
+"date": "2026-11-14",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "input",
+"from": 0.165,
+"to": 0.164,
+"pct": -0.6
+},
+{
+"date": "2026-11-14",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "output",
+"from": 0.242,
+"to": 0.241,
+"pct": -0.4
 }
 ]
