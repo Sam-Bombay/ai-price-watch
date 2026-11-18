@@ -1,5 +1,5 @@
 {
-"updated": "2026-11-17",
+"updated": "2026-11-18",
 "models": [
 {
 "id": "mistralai/mistral-nemo",
@@ -303,6 +303,13 @@
 "ctx": 128000
 },
 {
+"id": "mistralai/mistral-small-3.2-24b-instruct",
+"name": "Mistral: Mistral Small 3.2 24B",
+"in": 0.075,
+"out": 0.2,
+"ctx": 256000
+},
+{
 "id": "openai/gpt-4.1-nano:batch",
 "name": "OpenAI: GPT-4.1 Nano (batch)",
 "in": 0.05,
@@ -322,6 +329,13 @@
 "in": 0.027,
 "out": 0.201,
 "ctx": 60000
+},
+{
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"in": 0.0507,
+"out": 0.2028,
+"ctx": 1048576
 },
 {
 "id": "inference-net/schematron-v2-small",
@@ -471,13 +485,6 @@
 "ctx": 262144
 },
 {
-"id": "mistralai/mistral-small-3.2-24b-instruct",
-"name": "Mistral: Mistral Small 3.2 24B",
-"in": 0.1,
-"out": 0.3,
-"ctx": 256000
-},
-{
 "id": "meta-llama/llama-4-scout",
 "name": "Meta: Llama 4 Scout",
 "in": 0.1,
@@ -504,13 +511,6 @@
 "in": 0.112,
 "out": 0.336,
 "ctx": 1048576
-},
-{
-"id": "google/gemma-3-27b-it",
-"name": "Google: Gemma 3 27B",
-"in": 0.08,
-"out": 0.35,
-"ctx": 131072
 },
 {
 "id": "deepseek/deepseek-v3.2",
@@ -595,6 +595,13 @@
 "in": 0.27,
 "out": 0.41,
 "ctx": 163840
+},
+{
+"id": "google/gemma-3-27b-it",
+"name": "Google: Gemma 3 27B",
+"in": 0.08,
+"out": 0.45,
+"ctx": 131072
 },
 {
 "id": "qwen/qwen3.8-omni-flash",
@@ -947,13 +954,6 @@
 "ctx": 1050000
 },
 {
-"id": "xiaomi/mimo-v2.5-pro",
-"name": "Xiaomi: MiMo-V2.5-Pro",
-"in": 0.435,
-"out": 0.87,
-"ctx": 1024000
-},
-{
 "id": "minimax/minimax-m3:batch",
 "name": "MiniMax: MiniMax M3 (batch)",
 "in": 0.224,
@@ -1117,7 +1117,7 @@
 {
 "id": "qwen/qwen3-next-80b-a3b-instruct",
 "name": "Qwen: Qwen3 Next 80B A3B Instruct",
-"in": 0.09,
+"in": 0.1,
 "out": 1.1,
 "ctx": 262144
 },
@@ -1148,13 +1148,6 @@
 "in": 0.3,
 "out": 1.2,
 "ctx": 262144
-},
-{
-"id": "deepseek/deepseek-v4.1-flash",
-"name": "DeepSeek: DeepSeek V4.1 Flash",
-"in": 0.3,
-"out": 1.2,
-"ctx": 1048576
 },
 {
 "id": "thinkingmachines/inkling-small",
@@ -1409,6 +1402,13 @@
 "ctx": 1000000
 },
 {
+"id": "xiaomi/mimo-v2.5-pro",
+"name": "Xiaomi: MiMo-V2.5-Pro",
+"in": 0.48,
+"out": 1.8,
+"ctx": 262144
+},
+{
 "id": "z-ai/glm-4.5v",
 "name": "Z.ai: GLM 4.5V",
 "in": 0.6,
@@ -1421,13 +1421,6 @@
 "in": 0.375,
 "out": 1.875,
 "ctx": 1048576
-},
-{
-"id": "qwen/qwen3.8-27b",
-"name": "Qwen: Qwen3.8 27B",
-"in": 0.15,
-"out": 1.875,
-"ctx": 1024000
 },
 {
 "id": "google/gemini-3.7-flash:batch",
@@ -1528,25 +1521,11 @@
 "ctx": 204800
 },
 {
-"id": "mistralai/mistral-medium-3.1",
-"name": "Mistral: Mistral Medium 3.1",
-"in": 0.4,
-"out": 2.0,
-"ctx": 131072
-},
-{
 "id": "openai/gpt-5-mini",
 "name": "OpenAI: GPT-5 Mini",
 "in": 0.25,
 "out": 2.0,
 "ctx": 400000
-},
-{
-"id": "mistralai/mistral-medium-3",
-"name": "Mistral: Mistral Medium 3",
-"in": 0.4,
-"out": 2.0,
-"ctx": 131072
 },
 {
 "id": "openai/gpt-3.5-turbo-0613",
@@ -1570,11 +1549,11 @@
 "ctx": 1048576
 },
 {
-"id": "deepseek/deepseek-r1-0528",
-"name": "DeepSeek: R1 0528",
-"in": 0.5,
-"out": 2.15,
-"ctx": 163840
+"id": "qwen/qwen3.8-27b",
+"name": "Qwen: Qwen3.8 27B",
+"in": 0.06,
+"out": 2.2,
+"ctx": 1024000
 },
 {
 "id": "nvidia/nemotron-3-ultra-550b-a55b",
@@ -1584,9 +1563,23 @@
 "ctx": 262144
 },
 {
+"id": "mistralai/mistral-medium-3.1",
+"name": "Mistral: Mistral Medium 3.1",
+"in": 0.44,
+"out": 2.2,
+"ctx": 131072
+},
+{
 "id": "z-ai/glm-4.5",
 "name": "Z.ai: GLM 4.5",
 "in": 0.6,
+"out": 2.2,
+"ctx": 131072
+},
+{
+"id": "mistralai/mistral-medium-3",
+"name": "Mistral: Mistral Medium 3",
+"in": 0.44,
 "out": 2.2,
 "ctx": 131072
 },
@@ -1612,11 +1605,25 @@
 "ctx": 400000
 },
 {
+"id": "deepseek/deepseek-r1-0528",
+"name": "DeepSeek: R1 0528",
+"in": 0.571,
+"out": 2.286,
+"ctx": 163840
+},
+{
 "id": "moonshotai/kimi-k2",
 "name": "MoonshotAI: Kimi K2 0711",
 "in": 0.57,
 "out": 2.3,
 "ctx": 131072
+},
+{
+"id": "qwen/qwen3.5-27b",
+"name": "Qwen: Qwen3.5-27B",
+"in": 0.3,
+"out": 2.4,
+"ctx": 262144
 },
 {
 "id": "openai/gpt-audio-mini",
@@ -1743,13 +1750,6 @@
 "in": 0.834,
 "out": 2.501,
 "ctx": 1048576
-},
-{
-"id": "qwen/qwen3.5-27b",
-"name": "Qwen: Qwen3.5-27B",
-"in": 0.26,
-"out": 2.6,
-"ctx": 262144
 },
 {
 "id": "stepfun/step-5-preview",
@@ -2058,6 +2058,20 @@
 "in": 1.6,
 "out": 4.8,
 "ctx": 500000
+},
+{
+"id": "openai/gpt-6.2-sol-pro:batch",
+"name": "OpenAI: GPT-6.2 Sol Pro (batch)",
+"in": 1.0,
+"out": 5.0,
+"ctx": 1050000
+},
+{
+"id": "openai/gpt-6.2-sol:batch",
+"name": "OpenAI: GPT-6.2 Sol (batch)",
+"in": 1.0,
+"out": 5.0,
+"ctx": 1050000
 },
 {
 "id": "google/gemini-4-carbon:batch",
@@ -2436,6 +2450,20 @@
 "in": 1.5,
 "out": 9.0,
 "ctx": 1048576
+},
+{
+"id": "openai/gpt-6.2-sol-pro",
+"name": "OpenAI: GPT-6.2 Sol Pro",
+"in": 2.0,
+"out": 10.0,
+"ctx": 1050000
+},
+{
+"id": "openai/gpt-6.2-sol",
+"name": "OpenAI: GPT-6.2 Sol",
+"in": 2.0,
+"out": 10.0,
+"ctx": 1050000
 },
 {
 "id": "google/gemini-4-carbon",
@@ -2837,6 +2865,20 @@
 "ctx": 1048576
 },
 {
+"id": "openai/gpt-6.2-astra-pro:batch",
+"name": "OpenAI: GPT-6.2 Astra Pro (batch)",
+"in": 4.0,
+"out": 20.0,
+"ctx": 1050000
+},
+{
+"id": "openai/gpt-6.2-astra:batch",
+"name": "OpenAI: GPT-6.2 Astra (batch)",
+"in": 4.0,
+"out": 20.0,
+"ctx": 1050000
+},
+{
 "id": "anthropic/claude-fable-5.2:batch",
 "name": "Anthropic: Claude Fable 5.2 (batch)",
 "in": 4.0,
@@ -2977,6 +3019,20 @@
 "ctx": 200000
 },
 {
+"id": "openai/gpt-6.2-astra-pro",
+"name": "OpenAI: GPT-6.2 Astra Pro",
+"in": 8.0,
+"out": 40.0,
+"ctx": 1050000
+},
+{
+"id": "openai/gpt-6.2-astra",
+"name": "OpenAI: GPT-6.2 Astra",
+"in": 8.0,
+"out": 40.0,
+"ctx": 1050000
+},
+{
 "id": "anthropic/claude-fable-5.2",
 "name": "Anthropic: Claude Fable 5.2",
 "in": 8.0,
@@ -2984,18 +3040,18 @@
 "ctx": 1000000
 },
 {
+"id": "~openai/gpt-astra-latest",
+"name": "OpenAI: GPT Astra Latest",
+"in": 8.0,
+"out": 40.0,
+"ctx": 1050000
+},
+{
 "id": "~anthropic/claude-fable-latest",
 "name": "Anthropic: Claude Fable Latest",
 "in": 8.0,
 "out": 40.0,
 "ctx": 1000000
-},
-{
-"id": "~openai/gpt-astra-latest",
-"name": "OpenAI: GPT Astra Latest",
-"in": 10.0,
-"out": 50.0,
-"ctx": 1050000
 },
 {
 "id": "openai/gpt-6-astra",
