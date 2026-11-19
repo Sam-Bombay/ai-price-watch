@@ -1,0 +1,399 @@
+{
+ "generated": "2026-11-18 07:48 PST",
+ "summary": {
+  "checked": 48,
+  "tag_host": 0,
+  "clean": 0,
+  "indicator": 0,
+  "csp_none": 0,
+  "csp_weak": 0,
+  "csp_strong": 0,
+  "unreachable": 48
+ },
+ "rows": [
+  {
+   "site": "www.nike.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.nike.com'"
+  },
+  {
+   "site": "www.rei.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.rei.com'"
+  },
+  {
+   "site": "www.target.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.target.com'"
+  },
+  {
+   "site": "www.walmart.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.walmart.com'"
+  },
+  {
+   "site": "www.bestbuy.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.bestbuy.com'"
+  },
+  {
+   "site": "www.homedepot.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.homedepot.com'"
+  },
+  {
+   "site": "www.lowes.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.lowes.com'"
+  },
+  {
+   "site": "www.sephora.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.sephora.com'"
+  },
+  {
+   "site": "www.nordstrom.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.nordstrom.com'"
+  },
+  {
+   "site": "www.macys.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.macys.com'"
+  },
+  {
+   "site": "www.kohls.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.kohls.com'"
+  },
+  {
+   "site": "www.wayfair.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.wayfair.com'"
+  },
+  {
+   "site": "www.chewy.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.chewy.com'"
+  },
+  {
+   "site": "www.etsy.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.etsy.com'"
+  },
+  {
+   "site": "www.godaddy.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.godaddy.com'"
+  },
+  {
+   "site": "www.stamps.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.stamps.com'"
+  },
+  {
+   "site": "www.mattressfirm.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.mattressfirm.com'"
+  },
+  {
+   "site": "www.build.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.build.com'"
+  },
+  {
+   "site": "www.wendys.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.wendys.com'"
+  },
+  {
+   "site": "www.dominos.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.dominos.com'"
+  },
+  {
+   "site": "www.t-mobile.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.t-mobile.com'"
+  },
+  {
+   "site": "www.verizon.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.verizon.com'"
+  },
+  {
+   "site": "www.att.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.att.com'"
+  },
+  {
+   "site": "www.allstate.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.allstate.com'"
+  },
+  {
+   "site": "www.progressive.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.progressive.com'"
+  },
+  {
+   "site": "www.geico.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.geico.com'"
+  },
+  {
+   "site": "www.usbank.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.usbank.com'"
+  },
+  {
+   "site": "www.marriott.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.marriott.com'"
+  },
+  {
+   "site": "www.hilton.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.hilton.com'"
+  },
+  {
+   "site": "www.hyatt.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.hyatt.com'"
+  },
+  {
+   "site": "www.southwest.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.southwest.com'"
+  },
+  {
+   "site": "www.delta.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.delta.com'"
+  },
+  {
+   "site": "www.united.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.united.com'"
+  },
+  {
+   "site": "www.alaskaair.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.alaskaair.com'"
+  },
+  {
+   "site": "www.subaru.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.subaru.com'"
+  },
+  {
+   "site": "www.ford.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.ford.com'"
+  },
+  {
+   "site": "www.toyota.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.toyota.com'"
+  },
+  {
+   "site": "www.honda.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.honda.com'"
+  },
+  {
+   "site": "www.ariat.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.ariat.com'"
+  },
+  {
+   "site": "www.scheels.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.scheels.com'"
+  },
+  {
+   "site": "www.cinnabon.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.cinnabon.com'"
+  },
+  {
+   "site": "www.mixpanel.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.mixpanel.com'"
+  },
+  {
+   "site": "www.typeform.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.typeform.com'"
+  },
+  {
+   "site": "www.hootsuite.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.hootsuite.com'"
+  },
+  {
+   "site": "www.gitlab.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.gitlab.com'"
+  },
+  {
+   "site": "www.smartsheet.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.smartsheet.com'"
+  },
+  {
+   "site": "www.smartsheet.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.smartsheet.com'"
+  },
+  {
+   "site": "www.crocs.com",
+   "checked_at": "2026-11-18T07:48:33-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: ValueError: unknown url type: 'www.crocs.com'"
+  }
+ ]
+}

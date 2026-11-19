@@ -457,9 +457,9 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.06,
+"in": 0.062,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
-"out": 0.18
+"out": 0.3
 },
 "deepseek/deepseek-v4-flash-0731:batch": {
 "ctx": 1048576,
@@ -499,9 +499,9 @@
 "deepseek/deepseek-v4.1-flash-1017": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash-1017",
-"in": 0.036,
+"in": 0.15,
 "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
-"out": 0.5
+"out": 0.6
 },
 "deepseek/deepseek-v4.1-flash-1017:batch": {
 "ctx": 1048576,
@@ -776,6 +776,20 @@
 "name": "Google: Gemini 4 Hydrogen (batch)",
 "out": 3.75
 },
+"google/gemini-4-neon": {
+"ctx": 1048576,
+"id": "google/gemini-4-neon",
+"in": 3.0,
+"name": "Google: Gemini 4 Neon",
+"out": 15.0
+},
+"google/gemini-4-neon:batch": {
+"ctx": 1048576,
+"id": "google/gemini-4-neon:batch",
+"in": 1.5,
+"name": "Google: Gemini 4 Neon (batch)",
+"out": 7.5
+},
 "google/gemini-nano-banana-2.1": {
 "ctx": 65536,
 "id": "google/gemini-nano-banana-2.1",
@@ -816,7 +830,7 @@
 "id": "google/gemma-3-27b-it",
 "in": 0.08,
 "name": "Google: Gemma 3 27B",
-"out": 0.45
+"out": 0.16
 },
 "google/gemma-3-4b-it": {
 "ctx": 131072,
@@ -1339,9 +1353,9 @@
 "moonshotai/kimi-k2.7-code": {
 "ctx": 262144,
 "id": "moonshotai/kimi-k2.7-code",
-"in": 0.7,
+"in": 0.65,
 "name": "MoonshotAI: Kimi K2.7 Code",
-"out": 3.75
+"out": 3.5
 },
 "moonshotai/kimi-k3": {
 "ctx": 1048576,
@@ -1353,9 +1367,9 @@
 "moonshotai/kimi-k3.1-pro": {
 "ctx": 1048576,
 "id": "moonshotai/kimi-k3.1-pro",
-"in": 0.2403,
+"in": 0.253,
 "name": "MoonshotAI: Kimi K3.1 Pro",
-"out": 8.4023
+"out": 8.8
 },
 "moonshotai/kimi-k3.1-pro:batch": {
 "ctx": 1048576,
@@ -2515,9 +2529,9 @@
 "qwen/qwen3.5-27b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-27b",
-"in": 0.3,
+"in": 0.195,
 "name": "Qwen: Qwen3.5-27B",
-"out": 2.4
+"out": 1.56
 },
 "qwen/qwen3.5-35b-a3b": {
 "ctx": 262144,
@@ -2890,13 +2904,6 @@
 "name": "Thinking Machines: Inkling 2 Small",
 "out": 1.0
 },
-"thinkingmachines/inkling-2-small:free": {
-"ctx": 1048576,
-"id": "thinkingmachines/inkling-2-small:free",
-"in": null,
-"name": "Thinking Machines: Inkling 2 Small (free)",
-"out": null
-},
 "thinkingmachines/inkling-small": {
 "ctx": 524288,
 "id": "thinkingmachines/inkling-small",
@@ -3138,16 +3145,16 @@
 "z-ai/glm-5.1": {
 "ctx": 204800,
 "id": "z-ai/glm-5.1",
-"in": 1.4,
+"in": 1.19,
 "name": "Z.ai: GLM 5.1",
-"out": 4.4
+"out": 3.74
 },
 "z-ai/glm-5.2": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.2",
-"in": 0.007,
+"in": 0.62,
 "name": "Z.ai: GLM 5.2",
-"out": 6.8
+"out": 2.42
 },
 "z-ai/glm-5.2:batch": {
 "ctx": 1048576,
@@ -3243,9 +3250,9 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.036,
+"in": 0.035,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.5
+"out": 0.15
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
@@ -3257,9 +3264,9 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.0434,
+"in": 0.0466,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 0.3
+"out": 0.1399
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,

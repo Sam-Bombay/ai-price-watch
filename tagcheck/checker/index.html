@@ -1,0 +1,78 @@
+<!doctype html><html lang=en><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Tag-layer check — is this site loading a compromised tag bundle?</title>
+<style>
+:root{--ink:#111;--mut:#666;--line:#e6e6e6;--bg:#fafafa;--bad:#b00020;--ok:#0a6b3d;--warn:#8a5a00}
+*{box-sizing:border-box}
+body{font:16px/1.55 -apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;margin:0;color:var(--ink);background:#fff}
+main{max-width:860px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:27px;line-height:1.2;margin:0 0 10px}
+p.lead{color:var(--mut);margin:0 0 26px;max-width:62ch}
+form{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 10px}
+input[type=url]{flex:1 1 340px;font:16px inherit;padding:12px 14px;border:1px solid #ccc;border-radius:6px}
+button{font:15px inherit;font-weight:600;padding:12px 20px;border:0;border-radius:6px;background:#111;color:#fff;cursor:pointer}
+button[disabled]{opacity:.5;cursor:default}
+.small{font-size:13px;color:var(--mut)}
+#out{margin-top:26px}
+.card{border:1px solid var(--line);border-radius:8px;padding:16px 18px;margin:0 0 14px;background:var(--bg)}
+.verdict{font-size:20px;font-weight:700;margin:0 0 6px}
+.REVIEW{color:var(--bad)}.OK{color:var(--ok)}.NONEV{color:var(--warn)}
+table{border-collapse:collapse;width:100%;font-size:13px;margin-top:8px}
+th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top;word-break:break-all}
+th{background:#fff;font-weight:600}
+code{font-size:12px;background:#f2f2f2;padding:1px 4px;border-radius:3px}
+footer{margin-top:40px;font-size:13px;color:var(--mut);border-top:1px solid var(--line);padding-top:16px}
+a{color:#0b57d0}
+</style>
+<main>
+<h1>Is this site loading a compromised tag bundle?</h1>
+<p class=lead>Paste a URL. This fetches the page as it is served right now, lists every third-party tag platform bundle it loads, hashes each one, and checks it against the indicators Optimizely published for the 16&ndash;17 November 2026 injection. Read-only, no login, nothing stored.</p>
+<form id=f>
+  <input id=u type=url placeholder="https://yourclient.com" required>
+  <button id=go type=submit>Check</button>
+</form>
+<p class=small>Free. One URL per run. Results are evidence of what this page serves now, not a clearance.</p>
+<div id=out></div>
+<footer>
+A clean result is not a clearance: this cannot see what a page served on 16 November, and it cannot see a loader pointed at a domain that was never published. A site that loads a tag platform is not by itself compromised.
+<br><br>
+Need the full picture &mdash; every page that matters, a written record, and someone to sign it? <a href="/tagcheck/">Tag-layer exposure pack: $500 per 20 URLs, $1,500 with remediation verification, $300/month continuous watch.</a>
+<br><br>Built and run by Aria, assistant to Sam Bombay at Noir &amp; Co.
+</footer>
+</main>
+<script>
+const f=document.getElementById('f'),u=document.getElementById('u'),go=document.getElementById('go'),out=document.getElementById('out');
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+f.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const url=u.value.trim(); if(!url) return;
+  go.disabled=true; out.innerHTML='<div class=card>Fetching the page and its tag bundles&hellip; this takes a few seconds.</div>';
+  try{
+    const r=await fetch('/api/tagcheck?url='+encodeURIComponent(url));
+    const ct=r.headers.get('content-type')||'';
+    if(!ct.includes('json')) throw new Error('no-api');
+    const d=await r.json();
+    if(d.error){ out.innerHTML='<div class=card><p class=verdict NONEV>Could not run</p><p>'+esc(d.error)+'</p></div>'; return; }
+    const cls=d.verdict==='REVIEW NOW'?'REVIEW':(d.verdict==='NO PUBLISHED INDICATOR FOUND'?'OK':'NONEV');
+    let h='<div class=card><p class="verdict '+cls+'">'+esc(d.verdict)+'</p>'
+      +'<p class=small>'+esc(d.fetched)+' &middot; HTTP '+esc(d.http_status)+' &middot; checked '+esc(d.checked_at)+'</p>'
+      +'<p>CSP: <b>'+esc(d.csp.grade)+'</b> &mdash; '+esc(d.csp.note)+'</p>'
+      +'<p>Published indicators on the page itself: '+(d.page_indicators.domains.length+d.page_indicators.markers.length===0?'none':'<b class=REVIEW>'+esc(d.page_indicators.domains.concat(d.page_indicators.markers).join(', '))+'</b>')+'</p></div>';
+    if(d.bundles.length){
+      h+='<div class=card><b>Tag bundles loaded ('+d.bundles.length+')</b><table><tr><th>Bundle</th><th>HTTP</th><th>Bytes</th><th>SHA-256</th><th>Indicator</th></tr>';
+      for(const b of d.bundles){
+        const bad=b.known_bad_hash||(b.indicator_markers||[]).length||(b.indicator_domains||[]).length;
+        h+='<tr><td>'+esc(b.url)+'</td><td>'+esc(b.status||b.error)+'</td><td>'+esc(b.bytes!=null?b.bytes:'—')+'</td><td><code>'+esc((b.sha256||'—').slice(0,24))+'</code></td><td>'+(bad?'<b class=REVIEW>MATCH</b>':'none')+'</td></tr>';
+      }
+      h+='</table></div>';
+    } else {
+      h+='<div class=card>No third-party tag-platform script was found on this page as it is served now.</div>';
+    }
+    h+='<div class=card small>'+esc(d.limits)+'</div>';
+    out.innerHTML=h;
+  }catch(err){
+    out.innerHTML='<div class=card><p class=verdict NONEV>Checker unavailable here</p><p>This page is a static mirror. The hosted checker runs at <a href="https://ai-price-watch-beta.vercel.app/tagcheck/checker/">ai-price-watch-beta.vercel.app/tagcheck/checker/</a>. For a whole estate, the command-line version is at <a href="https://github.com/Sam-Bombay/ai-price-watch">the repo</a>.</p></div>';
+  }finally{ go.disabled=false; }
+});
+</script>
+</html>

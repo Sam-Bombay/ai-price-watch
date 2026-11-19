@@ -1,0 +1,31 @@
+[
+  {
+    "site": "https://www.lolorugs.com",
+    "checked_at": "2026-11-17T07:36:24-08:00",
+    "verdict": "ERROR",
+    "tag_bundles": [],
+    "findings": [],
+    "note": "could not fetch: URLError: <urlopen error timed out>"
+  },
+  {
+    "site": "https://www.cinnabon.com",
+    "checked_at": "2026-11-17T07:36:44-08:00",
+    "verdict": "NO_INDICATOR",
+    "tag_bundles": [
+      "https://cdn.optimizely.com/js/5424747681415168.js (297350 bytes)",
+      "https://www.googletagmanager.com/ns.html?id=GTM-P9RNZ5DL (280 bytes)",
+      "https://www.googletagmanager.com/gtm.js?id="
+    ],
+    "findings": [
+      {
+        "where": "https://www.googletagmanager.com/gtm.js?id=",
+        "match": "fetch failed: HTTPError",
+        "kind": "unverified"
+      }
+    ],
+    "note": "",
+    "final_url": "https://www.cinnabon.com",
+    "html_sha256": "54ddc05870fe67f31fa4492756ca546d88b10ac859cce91ba26794177e0efb3b",
+    "scripts_total": 59
+  }
+]

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Did your site serve malware through Optimizely? The free tag-bundle check and the inventory report</title>
+<meta name="description" content="On 16 Nov 2026 malicious JavaScript was served through Optimizely Web to visitors of 178 organisations. Free read-only checker for the published indicators, and what a defensible 20-site inventory has to contain.">
+<style>
+:root{--ink:#12100e;--mut:#6b6560;--line:#e2ddd6;--bg:#fbf9f6;--acc:#1a5c3a;--warn:#8a3b12}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:40px 20px 80px}
+h1{font-size:30px;line-height:1.15;margin:0 0 10px;letter-spacing:-.02em}
+h2{font-size:19px;margin:34px 0 10px;letter-spacing:-.01em}
+p.lede{color:var(--mut);margin:0 0 22px;max-width:64ch}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--mut);font-weight:600}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+pre{background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px 14px;overflow-x:auto}
+code{background:#f1ede7;padding:1px 5px;border-radius:4px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0}
+.note{font-size:13px;color:var(--mut);border-left:2px solid var(--line);padding-left:12px;margin:16px 0}
+.alert{border-color:#e0c9b6;background:#fdf6ef}
+.foot{font-size:12px;color:var(--mut);margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+a{color:var(--acc)}
+.tag{display:inline-block;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--warn);border:1px solid #e0c9b6;border-radius:999px;padding:2px 9px;margin-left:8px;vertical-align:middle}
+@media print{body{background:#fff}}
+</style></head><body><div class="wrap">
+
+<h1>Did your site serve malware through Optimizely?</h1>
+<p style="font:15px/1.5 -apple-system,Helvetica,Arial;margin:0 0 18px"><b>New: paste a URL and get the answer in seconds, no install and no login — <a href="/tagcheck/checker/">the hosted checker</a>.</b></p>
+<p class="lede">On 16 November 2026 malicious JavaScript was injected into the
+<strong>Project JavaScript</strong> of Optimizely Web customer projects and served from
+<code>cdn.optimizely.com</code> — Optimizely's own host, certificate and all — to visitors of
+178 organisations. Nothing on the affected sites' own infrastructure was compromised. The
+compromise sat in the tag layer, where your code review does not look.</p>
+
+<div class="card alert">
+<strong>The fact most teams get wrong:</strong> removing the injected line does not undo what it
+did. On that day the payload swapped crypto wallet addresses in page text, form fields and the
+clipboard, skimmed card numbers typed into a site's own forms, and posted page URLs, cookies and
+screenshots to the attacker. If your snippet was infected, the exposure question is about your
+visitors, not your servers.
+</div>
+
+<h2>What happened, with sources</h2>
+<table>
+<thead><tr><th style="width:16%">Date</th><th>Fact</th><th style="width:22%">Source</th></tr></thead>
+<tbody>
+<tr><td>16 Nov 2026</td><td>Malicious code injected into Optimizely Web project snippets on 178
+organisations' sites, first seen 04:21 UTC. Loader pointed at <code>1688360.cc/track.js</code>;
+two further hosts served iOS exploit kits. Mass clean-up ran 20:40–21:10 UTC; at 21:52 UTC 1 of
+188 snippets sampled was still infected.</td><td><a href="https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/">Report URI, 16 Nov</a></td></tr>
+<tr><td>16 Nov 2026</td><td>Payload detail: crypto clipper with checksum validation across eight
+chains, card skimmer on <code>fetch</code>/XHR POSTs and form submits, cookie and screenshot
+exfiltration, and a hidden iOS exploit iframe on iOS 18.6 or earlier. About $7,040 reached attacker
+wallets in roughly nine hours.</td><td><a href="https://amirulcyber.com/2026/11/16/optimjack-optimizely-skimmer/">OPTIMJACK analysis, 16 Nov</a></td></tr>
+<tr><td>16 Nov 2026</td><td>Two affected sites survived because a Content-Security-Policy
+<code>script-src</code> rule blocked the loader: the snippet was still compromised, the payload
+never executed. Consent gating did not help — the injected loader carried the same
+<code>optanon-category</code> class as the legitimate tag.</td><td>same analysis</td></tr>
+</tbody></table>
+
+<h2>The free check, in one command</h2>
+<p>The published indicators are specific enough to test for: <code>1688360.cc</code>,
+<code>webshell.lol</code>, <code>linkforge.cc</code>, the <code>.icu</code> hosts, and the
+<code>window._k7</code> markers. This script fetches a page, finds every third-party tag bundle it
+loads, fetches those bundles, and searches them. Read-only, no dependencies, no upload.</p>
+<pre>curl -O https://sam-bombay.github.io/ai-price-watch/tagcheck/check.py
+python3 check.py https://yoursite.com https://yoursite.com/pricing https://shop.yoursite.com</pre>
+<p class="note">It writes a JSON report next to itself and exits 2 if anything needs review.
+Run it against every template that carries a snippet — the homepage, a product page, a checkout
+path — not just the root domain.</p>
+
+<div class="card">
+<strong>What it cannot do, said plainly:</strong> it reads the page as served <em>now</em>. It
+cannot reconstruct what was served at 11:20 UTC on 16 November, and it will not catch a loader
+pointing at a domain that is not on the published list. A clean result today is not a clearance
+for that day. The only way to answer "were our visitors exposed" is to recover the bundle as
+served inside the window — from a CDN log, a urlscan capture, an APM sample or a WAF record — and
+compare it against the archived hashes.
+</div>
+
+<h2>What the paid report contains</h2>
+<p>Two fixed scopes, no discovery phase, no hourly billing.</p>
+<table>
+<thead><tr><th style="width:22%">Scope</th><th>Deliverable</th><th style="width:18%">Price</th></tr></thead>
+<tbody>
+<tr><td>Exposure inventory<br>up to 20 site URLs</td><td>Per-URL verdict with the served bundle
+fetched and hashed, the tag hosts in the path, any published indicator matched verbatim, and the
+CSP <code>script-src</code>/<code>connect-src</code> gaps that would have blocked the loader. Dated,
+each finding tied to the URL and the fetch timestamp.</td><td>$500</td></tr>
+<tr><td>Inventory + recovery<br>up to 20 URLs</td><td>The above, plus recovery of the bundle
+served inside the 16 Nov window from whatever log source exists, a hash comparison against the
+published <code>track.js</code> builds, a visitor-exposure statement you can hand to counsel or a
+customer, and a written removal order for Optimizely project JS, API tokens and integrations.</td><td>$1,500</td></tr>
+</tbody></table>
+<p>Both are proposed prices, not booked work. The arithmetic a buyer cares about: one card number
+skimmed from a site's own form is a notification obligation, and the report is what makes that
+conversation short.</p>
+
+<h2>If you are affected, in this order</h2>
+<table>
+<thead><tr><th style="width:6%">#</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Open every Optimizely project's Project JavaScript and every experiment's custom
+code. Search for <code>1688360.cc</code>, <code>atob(</code>, <code>webshell.lol</code> and any
+script you did not write.</td></tr>
+<tr><td>2</td><td>List who and what has write access — users, API tokens, integrations — and rotate
+all of it. One snippet was cleaned and then re-infected the same day.</td></tr>
+<tr><td>3</td><td>Treat cards entered into your own form fields on 16 Nov as potentially exposed.
+Cards inside hosted payment iframes (Stripe, Adyen) were out of reach.</td></tr>
+<tr><td>4</td><td>Treat session tokens and secrets in non-<code>HttpOnly</code> cookies as exposed.</td></tr>
+<tr><td>5</td><td>Deploy a CSP, restrict <code>connect-src</code>, drop <code>'unsafe-eval'</code>,
+turn on reporting. This is the control that saved two of the affected sites.</td></tr>
+</tbody></table>
+
+<p class="note">Written by Aria, Sam Bombay's assistant, for Noir &amp; Co. Sources are linked
+above and dated; the incident detail is theirs, the checker and the scope are ours. If a claim here
+cannot be checked against those two reports, treat it as unverified.</p>
+
+<div class="foot">
+Noir &amp; Co. · The checker is free and stays free. ·
+<a href="/audit">the AI cost audit</a> · <a href="/claude-check">the Claude Code host check</a> ·
+<a href="/">AI Price Watch</a>
+</div>
+</div></body></html>
