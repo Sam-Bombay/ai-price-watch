@@ -11411,5 +11411,325 @@
 "field": "retired",
 "from": null,
 "to": null
+},
+{
+"date": "2026-11-20",
+"id": "mistralai/pixtral-large-2502",
+"name": "Mistral: Pixtral Large 2502",
+"field": "added",
+"from": null,
+"to": 6.0
+},
+{
+"date": "2026-11-20",
+"id": "particle-ai/particle-1",
+"name": "Particle AI: Particle-1",
+"field": "input",
+"from": 0.06,
+"to": 0.07,
+"pct": 16.7
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4.1-flash-1017:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+"field": "input",
+"from": 0.036,
+"to": 0.035,
+"pct": -2.8
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4.1-flash-1017:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017 (batch)",
+"field": "output",
+"from": 0.15,
+"to": 0.149,
+"pct": -0.7
+},
+{
+"date": "2026-11-20",
+"id": "reflection/beam-1.0-501b-a23b",
+"name": "Reflection: Beam 1.0 501B A23B",
+"field": "input",
+"from": 0.3,
+"to": 0.25,
+"pct": -16.7
+},
+{
+"date": "2026-11-20",
+"id": "inclusionai/ling-3.1-flash",
+"name": "inclusionAI: Ling 3.1 Flash",
+"field": "input",
+"from": 0.045,
+"to": 0.06,
+"pct": 33.3
+},
+{
+"date": "2026-11-20",
+"id": "inclusionai/ling-3.1-flash",
+"name": "inclusionAI: Ling 3.1 Flash",
+"field": "output",
+"from": 0.135,
+"to": 0.18,
+"pct": 33.3
+},
+{
+"date": "2026-11-20",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.0999,
+"to": 0.133,
+"pct": 33.1
+},
+{
+"date": "2026-11-20",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "input",
+"from": 0.035,
+"to": 0.036,
+"pct": 2.9
+},
+{
+"date": "2026-11-20",
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"field": "output",
+"from": 0.15,
+"to": 0.5,
+"pct": 233.3
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "input",
+"from": 0.0507,
+"to": 0.3,
+"pct": 491.7
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "output",
+"from": 0.2028,
+"to": 1.2,
+"pct": 491.7
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4.1-flash:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+"field": "input",
+"from": 0.112,
+"to": 0.05,
+"pct": -55.4
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4.1-flash:batch",
+"name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
+"field": "output",
+"from": 0.336,
+"to": 0.15,
+"pct": -55.4
+},
+{
+"date": "2026-11-20",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "input",
+"from": 0.15,
+"to": 0.0399,
+"pct": -73.4
+},
+{
+"date": "2026-11-20",
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"field": "output",
+"from": 0.5,
+"to": 0.0784,
+"pct": -84.3
+},
+{
+"date": "2026-11-20",
+"id": "z-ai/glm-5.3-flash:batch",
+"name": "Z.ai: GLM 5.3 Flash (batch)",
+"field": "input",
+"from": 0.024,
+"to": 0.023,
+"pct": -4.2
+},
+{
+"date": "2026-11-20",
+"id": "z-ai/glm-5.3-flash:batch",
+"name": "Z.ai: GLM 5.3 Flash (batch)",
+"field": "output",
+"from": 0.069,
+"to": 0.068,
+"pct": -1.4
+},
+{
+"date": "2026-11-20",
+"id": "z-ai/glm-5.3:batch",
+"name": "Z.ai: GLM 5.3 (batch)",
+"field": "input",
+"from": 0.281,
+"to": 0.28,
+"pct": -0.4
+},
+{
+"date": "2026-11-20",
+"id": "z-ai/glm-5.3:batch",
+"name": "Z.ai: GLM 5.3 (batch)",
+"field": "output",
+"from": 1.25,
+"to": 1.249,
+"pct": -0.1
+},
+{
+"date": "2026-11-20",
+"id": "qwen/qwen3.8-27b",
+"name": "Qwen: Qwen3.8 27B",
+"field": "output",
+"from": 2.2,
+"to": 1.96,
+"pct": -10.9
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4-pro-0813",
+"name": "DeepSeek: DeepSeek V4 Pro 0813",
+"field": "input",
+"from": 0.111,
+"to": 1.32,
+"pct": 1089.2
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4-pro-0813",
+"name": "DeepSeek: DeepSeek V4 Pro 0813",
+"field": "output",
+"from": 4.44,
+"to": 3.96,
+"pct": -10.8
+},
+{
+"date": "2026-11-20",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "input",
+"from": 0.0466,
+"to": 0.044,
+"pct": -5.6
+},
+{
+"date": "2026-11-20",
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"field": "output",
+"from": 0.1399,
+"to": 0.132,
+"pct": -5.6
+},
+{
+"date": "2026-11-20",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "input",
+"from": 0.062,
+"to": 0.0443,
+"pct": -28.5
+},
+{
+"date": "2026-11-20",
+"id": "moonshotai/kimi-k2.7-code",
+"name": "MoonshotAI: Kimi K2.7 Code",
+"field": "input",
+"from": 0.65,
+"to": 0.6,
+"pct": -7.7
+},
+{
+"date": "2026-11-20",
+"id": "moonshotai/kimi-k2.7-code",
+"name": "MoonshotAI: Kimi K2.7 Code",
+"field": "output",
+"from": 3.5,
+"to": 3.0,
+"pct": -14.3
+},
+{
+"date": "2026-11-20",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.1824,
+"to": 0.1805,
+"pct": -1.0
+},
+{
+"date": "2026-11-20",
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"field": "input",
+"from": 0.15,
+"to": 0.09,
+"pct": -40.0
+},
+{
+"date": "2026-11-20",
+"id": "openai/gpt-oss-120b",
+"name": "OpenAI: gpt-oss-120b",
+"field": "output",
+"from": 0.6,
+"to": 0.36,
+"pct": -40.0
+},
+{
+"date": "2026-11-20",
+"id": "meta-llama/llama-3.2-3b-instruct",
+"name": "Meta: Llama 3.2 3B Instruct",
+"field": "input",
+"from": 0.0509,
+"to": 0.05,
+"pct": -1.8
+},
+{
+"date": "2026-11-20",
+"id": "meta-llama/llama-3.2-3b-instruct",
+"name": "Meta: Llama 3.2 3B Instruct",
+"field": "output",
+"from": 0.335,
+"to": 0.33,
+"pct": -1.5
+},
+{
+"date": "2026-11-20",
+"id": "cohere/north-mini-code:free",
+"name": "Cohere: North Mini Code (free)",
+"field": "retired",
+"from": null,
+"to": null
+},
+{
+"date": "2026-11-20",
+"id": "meta-llama/llama-3.2-1b-instruct",
+"name": "Meta: Llama 3.2 1B Instruct",
+"field": "retired",
+"from": 0.201,
+"to": null
+},
+{
+"date": "2026-11-20",
+"id": "x-ai/grok-build-0.1",
+"name": "SpaceXAI: Grok Build 0.1",
+"field": "retired",
+"from": 2.0,
+"to": null
 }
 ]
