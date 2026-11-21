@@ -1,0 +1,927 @@
+{
+ "generated": "2026-11-18 07:52 PST",
+ "summary": {
+  "checked": 48,
+  "tag_host": 14,
+  "clean": 0,
+  "indicator": 0,
+  "csp_none": 15,
+  "csp_weak": 23,
+  "csp_strong": 1,
+  "unreachable": 9
+ },
+ "rows": [
+  {
+   "site": "https://www.walmart.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page; a tag platform is named in the page but its bundle is loaded by JavaScript after render, so check it in a browser's network tab. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.walmart.com",
+   "html_sha256": "a4b7584e925b09ba3e90d2729a05ad0a3c20c8b95a4f261ff3d668d876ecf4fb",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 116
+  },
+  {
+   "site": "https://www.homedepot.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.homedepot.com",
+   "html_sha256": "8d67a2e0e5ae46eefceadc925b16e453e6331eb6d8b23da98cb1539ce21a6b83",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 21
+  },
+  {
+   "site": "https://www.sephora.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.sephora.com",
+   "html_sha256": "495b45172ec0172bf41f44d013263767d1072cfc377954d63c160d5943101c11",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 10
+  },
+  {
+   "site": "https://www.bestbuy.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page; a tag platform is named in the page but its bundle is loaded by JavaScript after render, so check it in a browser's network tab. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.bestbuy.com",
+   "html_sha256": "f9437823e67ebffd3e7b875f967443c8874743f5221ede4d770193da6a53db5d",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 84
+  },
+  {
+   "site": "https://www.target.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.target.com",
+   "html_sha256": "bf6fdc30eceea26e9a3c89f91f2f68f80e308f344c2feabbd1fb18244b3c339a",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 58
+  },
+  {
+   "site": "https://www.nordstrom.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_SCRIPTS",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.nordstrom.com",
+   "html_sha256": "de2ce7c86eacf882781d23d17dbdd40e2f777214680ca7d7c1884c671429f187",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 0
+  },
+  {
+   "site": "https://www.lowes.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.lowes.com",
+   "html_sha256": "b52d6fb0ba160617c77614079f2e68c9f03e4785a1f0cfbce0bfbc0d2ca0f8ee",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 43
+  },
+  {
+   "site": "https://www.kohls.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "site": "https://www.rei.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.rei.com",
+   "html_sha256": "99c01494fa3e500cf6cfec520e7b807634ce9d813b2aa39aad9619a8fe9f3bdb",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "script-src allows any https origin, so an outside loader would still run"
+   },
+   "scripts_total": 13
+  },
+  {
+   "site": "https://www.etsy.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "site": "https://www.chewy.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: HTTPError: HTTP Error 429: Too Many Requests"
+  },
+  {
+   "site": "https://www.godaddy.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "site": "https://www.macys.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.macys.com",
+   "html_sha256": "8da1ed705d0effcb65e4e80abe9ae3868ee93bd2b9351ee4eb1a415116a874ce",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 12
+  },
+  {
+   "site": "https://www.mattressfirm.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "site": "https://www.nike.com",
+   "checked_at": "2026-11-18T07:51:51-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.nike.com",
+   "html_sha256": "fdff98839decf666c16cb29c8808cd5f6b3de016f4d724027eabbbf3d1e1ccb9",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 28
+  },
+  {
+   "site": "https://www.stamps.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.stamps.com",
+   "html_sha256": "0fbfc335b7a4184fc0ce336fb42650c83edba80a2926c0bdf860bcab1a73cee1",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 29
+  },
+  {
+   "site": "https://www.t-mobile.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.t-mobile.com",
+   "html_sha256": "9784033d316e4b2f0b862e39af046acac3a7bd2f144f497af961bbaebd725bb9",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 37
+  },
+  {
+   "site": "https://www.wayfair.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.wayfair.com",
+   "html_sha256": "1f30dbaf67695b10bda79a924f8a7268896835a45de20d4a834fd25b76d5daa9",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 105
+  },
+  {
+   "site": "https://www.wendys.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://www.googletagmanager.com",
+    "https://www.googletagmanager.com/ns.html?id=GTM-M76G825 (266 bytes)"
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.wendys.com",
+   "html_sha256": "97f3a070d513d2444b4254efe4a4a872f3bea1c671370837fc722f20f727364f",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 13,
+   "bundle_hashes": [
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-M76G825",
+     "sha256": "1508490e2a7f3949d866ce8f032895224c55a02eb24f9ada50c7cb79a4c887c8"
+    }
+   ]
+  },
+  {
+   "site": "https://www.dominos.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.dominos.com",
+   "html_sha256": "74a2d4d31398a639102987dabd2ff9b84795a75920881c90bf0f307939349e6e",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "script-src allows any https origin, so an outside loader would still run"
+   },
+   "scripts_total": 18
+  },
+  {
+   "site": "https://www.verizon.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://googletagmanager.com"
+   ],
+   "findings": [
+    {
+     "where": "https://googletagmanager.com",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.verizon.com",
+   "html_sha256": "9e54fb369c477e42332ae8e42720b1b63f62c7d0ae825be2a1fdab83875b3996",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 8
+  },
+  {
+   "site": "https://www.att.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.att.com",
+   "html_sha256": "dc40434abf4a2452d7e0bb49864e311144c132ecd4cb0a35bfcc31139d06a7b5",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 38
+  },
+  {
+   "site": "https://www.usbank.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.usbank.com/index.html",
+   "html_sha256": "02ec8bddb797852873e270ec675de78d537647f092c99a6424b202b3916077a4",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "default-src allows any https origin, so an outside loader would still run"
+   },
+   "scripts_total": 8
+  },
+  {
+   "site": "https://www.hilton.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "site": "https://www.hyatt.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: HTTPError: HTTP Error 429: Too Many Requests"
+  },
+  {
+   "site": "https://www.marriott.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "site": "https://www.southwest.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.southwest.com",
+   "html_sha256": "9bfaa370929b6729aed764e3f6ac05a4eaf59e69d83cc3737c053ce1075e68ee",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 27
+  },
+  {
+   "site": "https://www.progressive.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-LFD5&domain=.progressive.com (266 bytes)",
+    "https://www.googletagmanager.com/gtm.js?id="
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com/gtm.js?id=",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.progressive.com",
+   "html_sha256": "32110e46d863c684ec80ec1d16e4dad28ef3a0115342eae456df9ae49c5eadbf",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 12,
+   "bundle_hashes": [
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-LFD5&domain=.progressive.com",
+     "sha256": "1508490e2a7f3949d866ce8f032895224c55a02eb24f9ada50c7cb79a4c887c8"
+    }
+   ]
+  },
+  {
+   "site": "https://www.geico.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.geico.com",
+   "html_sha256": "47970070cb12ee2f27e6639fa07b4695533ade03966dad02cffff07a72d44812",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "script-src allows any https origin, so an outside loader would still run"
+   },
+   "scripts_total": 24
+  },
+  {
+   "site": "https://www.allstate.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.allstate.com",
+   "html_sha256": "a400165390f383268fcbbbfc4cc1dd72eb0b59f3cbf4fd0d845e77e8bdb28750",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 15
+  },
+  {
+   "site": "https://www.united.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page; a tag platform is named in the page but its bundle is loaded by JavaScript after render, so check it in a browser's network tab. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.united.com",
+   "html_sha256": "d64f97483b30491450bdc1e7f17029f6d6252bf98ff0272fd3da7772af87e9fd",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 8
+  },
+  {
+   "site": "https://www.delta.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.delta.com",
+   "html_sha256": "ce007874acb929a489c05366de3944a41f44c999702585382c9c2f7073990c48",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 10
+  },
+  {
+   "site": "https://www.subaru.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://www.googletagmanager.com/gtag/js?id=G-ETDQ32N89Y (568610 bytes)"
+   ],
+   "findings": [],
+   "note": "",
+   "final_url": "https://www.subaru.com",
+   "html_sha256": "e7353a12aa7a3f4887416df2113f26fcce989f60c788e173cfa0be0b0b27d8a2",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 8,
+   "bundle_hashes": [
+    {
+     "url": "https://www.googletagmanager.com/gtag/js?id=G-ETDQ32N89Y",
+     "sha256": "777c9175d7863d3f8040e80e15ef7b1a20f96a7da193c90fe88fb46957060a51"
+    }
+   ]
+  },
+  {
+   "site": "https://www.honda.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.honda.com",
+   "html_sha256": "fd764ee9fc5fd272133f3cffeec425e52e63a6dd6ee63d4841e45d8917c95b78",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "script-src allows any https origin, so an outside loader would still run"
+   },
+   "scripts_total": 11
+  },
+  {
+   "site": "https://www.ford.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.ford.com",
+   "html_sha256": "2c9a419369a72148b7084ab3e1ff7e55ed092de13ae0c5c79a1d1d2e009b76de",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 18
+  },
+  {
+   "site": "https://www.toyota.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://www.googletagmanager.com"
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.toyota.com",
+   "html_sha256": "d5952dd651b59acf0a4a19106fd8f5166782dc1de4ba0d592b15fbecec8118b8",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "script-src allows any https origin, so an outside loader would still run"
+   },
+   "scripts_total": 29
+  },
+  {
+   "site": "https://www.ariat.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://www.googletagmanager.com/gtm.js?id=",
+    "https://www.googletagmanager.com/ns.html?id=GTM-5V6V57 (266 bytes)"
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com/gtm.js?id=",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.ariat.com",
+   "html_sha256": "ac4aa0ee35b03c7aa82bd4ccdc69b598cd9e18d5797129cbe592cde5404a520f",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 28,
+   "bundle_hashes": [
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-5V6V57",
+     "sha256": "1508490e2a7f3949d866ce8f032895224c55a02eb24f9ada50c7cb79a4c887c8"
+    }
+   ]
+  },
+  {
+   "site": "https://www.cinnabon.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://cdn.optimizely.com/js/5424747681415168.js (297350 bytes)",
+    "https://www.googletagmanager.com/ns.html?id=GTM-P9RNZ5DL (280 bytes)",
+    "https://www.googletagmanager.com/gtm.js"
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com/gtm.js",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.cinnabon.com",
+   "html_sha256": "776489126e3cca37fafb71f6fabc5cad37169672a85fc686959ac0485965dc1d",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "script-src allows any https origin, so an outside loader would still run"
+   },
+   "scripts_total": 59,
+   "bundle_hashes": [
+    {
+     "url": "https://cdn.optimizely.com/js/5424747681415168.js",
+     "sha256": "114638745d08e1256155e0e48564397bb28b0b3443851e5db22cfd9b6efe7a3d"
+    },
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-P9RNZ5DL",
+     "sha256": "d3b146bc556c94aa88094e16c396534786693b143261853791cf917ef7800ce1"
+    }
+   ]
+  },
+  {
+   "site": "https://www.scheels.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://www.googletagmanager.com/ns.html?id=GTM-5PKGTV6 (723 bytes)",
+    "https://www.googletagmanager.com/gtm.js?id="
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com/gtm.js?id=",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.scheels.com",
+   "html_sha256": "ea357f1e48cdb81f16fb9a3b433266ecf2da53b2ff9325ea3773a4dcb72f5f92",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 36,
+   "bundle_hashes": [
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-5PKGTV6",
+     "sha256": "4a99606e0e92eba0273a310f265c9a886cc559489d1e76f05a25f28cb5ccf241"
+    }
+   ]
+  },
+  {
+   "site": "https://www.smartsheet.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://cdn.optimizely.com/js/752092193.js (1152408 bytes)",
+    "https://www.googletagmanager.com/gtm.js?id=",
+    "https://www.googletagmanager.com/ns.html?id=GTM-KW34LR (774 bytes)"
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com/gtm.js?id=",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.smartsheet.com",
+   "html_sha256": "3d8b8fd0849fea757bd3505718834f51ea1ddbf12529866fd48266367f70514d",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 9,
+   "bundle_hashes": [
+    {
+     "url": "https://cdn.optimizely.com/js/752092193.js",
+     "sha256": "86ae963d4999d54fcc0a578458c3f17c904bc9c4aa1964c70010c0d8c0517374"
+    },
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-KW34LR",
+     "sha256": "ea8438df1ca917f9f1c4a170695ab289d5c90522061806ccf4aa35f9f66f2ea4"
+    }
+   ]
+  },
+  {
+   "site": "https://www.typeform.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://www.googletagmanager.com/gtm.js?id=",
+    "https://www.googletagmanager.com/ns.html?id=GTM-WH2ZQ3X (499 bytes)"
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com/gtm.js?id=",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.typeform.com",
+   "html_sha256": "987ad1f5e6e8dbf537907a3979b59d083fe44803b2e09459d9fcfb0b5f072648",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 24,
+   "bundle_hashes": [
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-WH2ZQ3X",
+     "sha256": "13ea7a0ae42ac3ecc8c69d56d98e2daa7c68505eaf186de0ac25a9331c241ae8"
+    }
+   ]
+  },
+  {
+   "site": "https://www.smartsheet.com",
+   "checked_at": "2026-11-18T07:51:55-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://cdn.optimizely.com/js/752092193.js (1152408 bytes)",
+    "https://www.googletagmanager.com/gtm.js?id=",
+    "https://www.googletagmanager.com/ns.html?id=GTM-KW34LR (772 bytes)"
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com/gtm.js?id=",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.smartsheet.com",
+   "html_sha256": "3d8b8fd0849fea757bd3505718834f51ea1ddbf12529866fd48266367f70514d",
+   "csp": {
+    "grade": "NONE",
+    "detail": "no Content-Security-Policy header or meta tag found"
+   },
+   "scripts_total": 9,
+   "bundle_hashes": [
+    {
+     "url": "https://cdn.optimizely.com/js/752092193.js",
+     "sha256": "86ae963d4999d54fcc0a578458c3f17c904bc9c4aa1964c70010c0d8c0517374"
+    },
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-KW34LR",
+     "sha256": "0ae20224b245ff18563c934f11d0edfd73491b262c99ced559b95c9daa306a1b"
+    }
+   ]
+  },
+  {
+   "site": "https://www.gitlab.com",
+   "checked_at": "2026-11-18T07:51:55-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://about.gitlab.com/",
+   "html_sha256": "793a27b21f98c5de461ace3de0ccf274dcffc6fc8eb468835a05b7653642e141",
+   "csp": {
+    "grade": "STRONG",
+    "detail": "default-src restricted to named origins; an outside loader from a new domain would be blocked"
+   },
+   "scripts_total": 7
+  },
+  {
+   "site": "https://www.hootsuite.com",
+   "checked_at": "2026-11-18T07:51:55-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://cdn.optimizely.com/js/4894383279964160.js (347500 bytes)",
+    "https://a4894383279964160.cdn.optimizely.com",
+    "https://www.googletagmanager.com/gtm.js?id=",
+    "https://www.googletagmanager.com/ns.html?id=GTM-963X (270 bytes)"
+   ],
+   "findings": [
+    {
+     "where": "https://a4894383279964160.cdn.optimizely.com",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    },
+    {
+     "where": "https://www.googletagmanager.com/gtm.js?id=",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.hootsuite.com",
+   "html_sha256": "bf7f3d28c998eaad828c65d72fe1305724a78406067247e2dc6be405dd07546f",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 11,
+   "bundle_hashes": [
+    {
+     "url": "https://cdn.optimizely.com/js/4894383279964160.js",
+     "sha256": "c31dabdda86698d45558825eee8da2614adba5681576543e56bf90f5fdc51e1d"
+    },
+    {
+     "url": "https://www.googletagmanager.com/ns.html?id=GTM-963X",
+     "sha256": "746321081f72a20cbaf241e8956b2a6ff1d5e11e0ba11fb572dab1db6c7e5499"
+    }
+   ]
+  },
+  {
+   "site": "https://www.mixpanel.com",
+   "checked_at": "2026-11-18T07:51:54-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "https://cdn.optimizely.com/js/5838709522694144.js (337084 bytes)",
+    "https://www.googletagmanager.com/gtm.js?id=",
+    "https://logx.optimizely.com"
+   ],
+   "findings": [
+    {
+     "where": "https://www.googletagmanager.com/gtm.js?id=",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    },
+    {
+     "where": "https://logx.optimizely.com",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://mixpanel.com/home/",
+   "html_sha256": "b5dfa317e8c1452a6910a4031d62233aa9b1bbf4872034e2781116ba6057e8ab",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "script-src allows any https origin, so an outside loader would still run"
+   },
+   "scripts_total": 7,
+   "bundle_hashes": [
+    {
+     "url": "https://cdn.optimizely.com/js/5838709522694144.js",
+     "sha256": "7f3eb0c7ddd3add8638cd3c91a69d085019b7cbe0b4fe40c604d6bcea18e57a2"
+    }
+   ]
+  },
+  {
+   "site": "https://www.crocs.com",
+   "checked_at": "2026-11-18T07:51:55-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+   "final_url": "https://www.crocs.com",
+   "html_sha256": "52a3c55bf84939f7a82b5f6e3800e6ccad4dcd15d262ba7ad96d39ab34ef2509",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 51
+  },
+  {
+   "site": "https://www.alaskaair.com",
+   "checked_at": "2026-11-18T07:51:53-08:00",
+   "verdict": "NO_INDICATOR",
+   "tag_bundles": [
+    "//cdn.optimizely.com/js/10453949094.js (994964 bytes)",
+    "https://config.optimizely.com/datafiles/auth/%s.json",
+    "https://cdn.optimizely.com/datafiles/%s.json",
+    "https://logx.optimizely.com/v1/events",
+    "https://eu.logx.optimizely.com/v1/events",
+    "https://prediction.cmab.optimizely.com/predict/%s",
+    "https://app.optimizely.com/v2/projects/6129769019342848/results/9300002619742/experiments/9300003368006 (1602217 bytes)",
+    "https://app.optimizely.com/v2/projects/6129769019342848/results/9300002730447/experiments/9300003478711 (1602217 bytes)"
+   ],
+   "findings": [
+    {
+     "where": "https://config.optimizely.com/datafiles/auth/%s.json",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    },
+    {
+     "where": "https://cdn.optimizely.com/datafiles/%s.json",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    },
+    {
+     "where": "https://logx.optimizely.com/v1/events",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    },
+    {
+     "where": "https://eu.logx.optimizely.com/v1/events",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    },
+    {
+     "where": "https://prediction.cmab.optimizely.com/predict/%s",
+     "match": "fetch failed: HTTPError",
+     "kind": "unverified"
+    }
+   ],
+   "note": "",
+   "final_url": "https://www.alaskaair.com",
+   "html_sha256": "966a756b38455ae6e5d873c266228522aae5797e0e450eb1550323b70136fdc3",
+   "csp": {
+    "grade": "WEAK",
+    "detail": "CSP present but sets no script-src or default-src"
+   },
+   "scripts_total": 18,
+   "bundle_hashes": [
+    {
+     "url": "https://cdn.optimizely.com/js/10453949094.js",
+     "sha256": "a34c2daac07f3b969d5e8a81b45f5c882b9be18680cc4525565e8f5dfb9d4bed"
+    },
+    {
+     "url": "https://app.optimizely.com/v2/projects/6129769019342848/results/9300002619742/experiments/9300003368006",
+     "sha256": "75a9eed407dc43ad3a57147a71ebb77bc562a3f14e648472bc95c35e1eef71c0"
+    },
+    {
+     "url": "https://app.optimizely.com/v2/projects/6129769019342848/results/9300002730447/experiments/9300003478711",
+     "sha256": "30e2cb3ab0b5c78a09519d7ee1abfdb6840b8979a7d93e0b822e390994726b50"
+    }
+   ]
+  },
+  {
+   "site": "https://www.build.com",
+   "checked_at": "2026-11-18T07:51:52-08:00",
+   "verdict": "ERROR",
+   "tag_bundles": [],
+   "findings": [],
+   "note": "could not fetch: TimeoutError: The read operation timed out"
+  }
+ ]
+}

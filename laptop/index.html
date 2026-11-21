@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inkling 2 Mini: what your API bill looks like next to a laptop | AI Price Watch</title>
+<meta name="description" content="On 20 November 2026 Thinking Machines shipped Inkling 2 Mini, a 26.4B open-weights model with a ~20GB footprint that runs on a laptop. Here is the same monthly token volume priced three ways, from the live price log.">
+<style>
+  :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c; --up:#ff6b6b; --down:#4ade80; --accent:#7dd3fc; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:900px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font-size:29px; letter-spacing:-.02em; margin:0 0 8px; }
+  .sub { color:var(--dim); margin:0 0 28px; }
+  h2 { font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim);
+       margin:40px 0 12px; font-weight:600; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th,td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); font-size:14px; }
+  th { color:var(--dim); font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; }
+  td.num,th.num { text-align:right; }
+  .verdict { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent);
+             border-radius:12px; padding:18px 22px; margin:14px 0 4px; }
+  .verdict b { font-size:19px; }
+  .calc { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  .g { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  label { display:block; color:var(--dim); font-size:12px; text-transform:uppercase;
+          letter-spacing:.06em; margin-bottom:5px; }
+  input,select { width:100%; background:#0f1114; border:1px solid var(--line); color:var(--txt);
+                 border-radius:9px; padding:10px 12px; font-size:14px; }
+  .out { margin-top:16px; border-top:1px solid var(--line); }
+  .out .row { display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid var(--line); }
+  .out .row span { color:var(--dim); }
+  .out .row b { font-variant-numeric:tabular-nums; }
+  .good { color:var(--down); } .bad { color:var(--up); }
+  .muted { color:var(--dim); font-size:13px; }
+  .foot { margin-top:46px; padding:18px 20px; border:1px solid var(--line); border-radius:12px; background:var(--panel); }
+  .foot a, p a { color:var(--accent); }
+  code { background:#0f1114; padding:1px 5px; border-radius:4px; font-size:13px; }
+  ul { padding-left:20px; } li { margin-bottom:7px; }
+  @media (max-width:700px) { .g { grid-template-columns:1fr; } }
+</style></head><body><div class="wrap">
+
+<h1>Inkling 2 Mini: what your API bill looks like next to a laptop</h1>
+<p class="sub">A 26.4B open-weights model with a ~20GB footprint now runs on a laptop. Priced against the same
+monthly token volume on the live log — 21 November 2026.</p>
+
+<div class="verdict">
+  <div class="muted" style="margin-bottom:6px">100M input + 20M output tokens a month, November 2026 prices</div>
+  <div><b>Gemini 4 Neon &nbsp;$600.00/mo</b> <span class="muted">amortised to $7,200.00 a year</span></div>
+  <div><b>Inkling 2 Mini, bought per token &nbsp;$18.00/mo</b> <span class="muted">$216.00 a year</span></div>
+  <div><b>Inkling 2 Mini, on hardware you already own &nbsp;$0.00/mo</b> <span class="muted">power only, about $9 a month at 40W average</span></div>
+</div>
+
+<h2>Why this week</h2>
+<p>Thinking Machines released <a href="https://thinkingmachines.ai/news/inkling-2-mini/">Inkling 2 Mini</a> on
+20 November 2026: a mixture-of-experts model, 26.4B total and 3.4B active parameters, NVFP4 weights, a
+~20GB memory footprint; the team ran it offline on a MacBook Pro and built a playable
+flight simulator from it. GGUF weights were on Hugging Face by the next morning and Ollama shipped it
+within a day. The launch thread took
+1,167 points on Hacker News the same day. The log picked the model up at
+<b>$0.10 input / $0.40 output per million tokens</b> with a 1M context — 30x under Gemini 4 Neon's input
+price and 37x under its output price.</p>
+<p>The same morning the log recorded <b>26 changes: 16 cuts against 5 rises</b>, including
+<b>DeepSeek V4.1 Flash down 83.4%</b> to $0.0498 / $0.1992 and <b>Qwen3 Coder 30B down 53.3%</b>. Two
+separate doors closed on the same bill at once: cheaper tokens, and a competent weight set you can run
+without renting anything.</p>
+
+<h2>Price it on your own volume</h2>
+<div class="calc">
+  <div class="g">
+    <div><label>Input tokens / month (millions)</label><input id="mi" type="number" value="100" min="0" step="1"></div>
+    <div><label>Output tokens / month (millions)</label><input id="mo" type="number" value="20" min="0" step="1"></div>
+    <div><label>Model you pay for today</label>
+      <select id="model">
+        <option value="3,15">Gemini 4 Neon — $3.00 / $15.00</option>
+        <option value="2,10">Gemini 4 Argon / Carbon — $2.00 / $10.00</option>
+        <option value="1,4.05">Inkling (flagship) — $1.00 / $4.05</option>
+        <option value="0.3,1">Inkling 2 Small — $0.30 / $1.00</option>
+        <option value="0.1,0.4" selected>Inkling 2 Mini — $0.10 / $0.40</option>
+        <option value="0.0498,0.1992">DeepSeek V4.1 Flash — $0.0498 / $0.1992</option>
+      </select>
+    </div>
+    <div><label>Hardware you own</label>
+      <select id="hw">
+        <option value="0">Already own an Apple silicon Mac (32GB+) — $0</option>
+        <option value="2499">Would buy a Mac Studio — $2,499 over 36 mo</option>
+        <option value="3999">Would buy a DGX Spark — $3,999 over 36 mo</option>
+      </select>
+    </div>
+  </div>
+  <div class="out">
+    <div class="row"><span>Today's bill, on your model</span><b id="o-api">$0</b></div>
+    <div class="row"><span>Inkling 2 Mini bought per token</span><b id="o-mini">$0</b></div>
+    <div class="row"><span>Local, including hardware amortisation and power</span><b id="o-local">$0</b></div>
+    <div class="row"><span>Annual difference, local vs today's bill</span><b id="o-diff" class="good">$0</b></div>
+  </div>
+  <p class="muted" style="margin:12px 0 0">Power is modelled at 40W average draw over 730 hours and
+  $0.30/kWh, which is $8.76 a month — an assumption, not a measurement. Hardware is amortised over 36
+  months with no residual value.</p>
+</div>
+
+<h2>What this does not say</h2>
+<ul>
+  <li><b>Not that the models are equal.</b> Thinking Machines reports Inkling 2 Mini ahead of other
+  open-weights models under 100B on DeepSWE v1.1 (48.2%) and Vals Index v2.2 (46.5%) — its own numbers,
+  on its own evaluation setups, which vary by model. The Hugging Face write-up only goes as far as
+  "at least comparable with Qwen 3.8 27B" in vibe tests, and says more validation is needed. A frontier
+  model still wins on the hard 10%.</li>
+  <li><b>Not that local is free at scale.</b> One laptop serves one or a few users. Concurrency, uptime
+  and context length per request are your problem on your hardware, and nobody is on call at 3am.</li>
+  <li><b>Not that every workload can move.</b> Anything that needs the best available answer, long-horizon
+  reasoning at frontier level, or vendor guarantees should stay where it is.</li>
+</ul>
+
+<h2>What this does say</h2>
+<p>Most bills are one blended number across a dozen workloads, and the cheap 80% of those workloads —
+classification, extraction, summarisation, first-draft code, routing — is now served at a fraction of
+what it was priced at in the budget. That is a routing decision, not a vendor loyalty test, and it is
+worth $5,000-7,000 a year at the volumes above.</p>
+
+<div class="foot">
+  <p style="margin:0 0 8px"><b>Every price on this page comes from the log.</b> Machine-readable:
+  <code>/api/prices.json</code> · <code>/api/changes.json</code>, documented at <a href="/ai-price-watch/api-docs/">/api-docs/</a>.
+  Prices as published 21 November 2026; the log is refreshed daily and every change is dated.</p>
+  <p style="margin:0"><a href="/ai-price-watch/audit">What your own workloads should cost, audited — fixed scope, 30% of verified savings or $2,500 →</a></p>
+</div>
+
+<p class="muted" style="margin-top:26px">Sources: Thinking Machines, "Introducing Inkling 2 Mini", 20 Nov 2026 ·
+Hugging Face blog, "Welcome Inkling 2 Mini", 20 Nov 2026 · AI Price Watch change log, 21 Nov 2026.</p>
+
+</div>
+<script>
+const $ = id => document.getElementById(id);
+const money = n => '$' + n.toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2});
+function calc(){
+  const mi = Math.max(0, parseFloat($('mi').value) || 0);
+  const mo = Math.max(0, parseFloat($('mo').value) || 0);
+  const [pin, pout] = $('model').value.split(',').map(Number);
+  const hw = parseFloat($('hw').value) || 0;
+  const api = mi * pin + mo * pout;
+  const mini = mi * 0.10 + mo * 0.40;
+  const local = (hw / 36) + 8.76;   // 40W avg over 730h at $0.30/kWh = 29.2 kWh/mo
+  $('o-api').textContent = money(api);
+  $('o-mini').textContent = money(mini);
+  $('o-local').textContent = money(local);
+  const diff = (api - local) * 12;
+  const el = $('o-diff');
+  el.textContent = money(Math.abs(diff)) + (diff >= 0 ? ' saved' : ' more');
+  el.className = diff >= 0 ? 'good' : 'bad';
+}
+['mi','mo','model','hw'].forEach(id => $(id).addEventListener('input', calc));
+calc();
+</script>
+</body></html>

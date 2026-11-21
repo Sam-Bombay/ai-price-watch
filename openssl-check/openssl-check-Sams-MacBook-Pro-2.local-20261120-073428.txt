@@ -1,0 +1,46 @@
+openssl-check — CVE-2026-121481 exposure read
+host      : Sams-MacBook-Pro-2.local (Darwin 22.6.0)
+generated : 2026-11-20 07:34:28 PST
+read-only : no network calls, no files modified, output is this report
+
+Sources
+  - NVD record, published 2026-11-18, CVSS 3.1 9.8, status Awaiting Analysis
+    https://nvd.nist.gov/vuln/detail/CVE-2026-121481
+  - GitHub advisory GHSA-83xj-7xh4-4p7x
+    https://github.com/advisories/GHSA-83xj-7xh4-4p7x
+
+Vendor caveat (quote)
+  The OpenSSL advisory text states: 'No path by which an attacker can trigger this has been identified.' A 9.8 score and a demonstrated trigger are not the same fact.
+
+1. TLS library this host resolves
+  [openssl version]
+      LibreSSL 3.3.6
+      built on: date not available
+      platform: information not available
+      options:  bn(64,64) rc4(16x,int) des(idx,cisc,16,int) blowfish(idx) 
+      compiler: information not available
+      OPENSSLDIR: "/private/etc/ssl"
+  [libs:libssl]
+      none found
+  [libs:libcrypto]
+      none found
+
+   Reading: the overflow lives in OpenSSL's EVP_EncodeBlock(). LibreSSL, which macOS
+   ships at /usr/lib/libcrypto.dylib, is a different codebase and is not covered by
+   this advisory. Only a linked OpenSSL 1.1.1 / 3.x / 4.x build is in scope.
+
+2. Call sites for EVP_EncodeBlock / EVP_DecodeBlock in supplied source
+   scanned 3 lines in /Users/sambombay/.hermes/profiles/aria/cache/scratch/osslfix
+   hits: 2
+   call sites whose output-length argument is not an obvious literal: 1
+   /Users/sambombay/.hermes/profiles/aria/cache/scratch/osslfix/auth.c:2  int encode_fixed(const char *in) { char out[4096]; return EVP_EncodeBlock((unsigned char*)out, (unsigned char*)in, 1024); }
+   [length not literal] /Users/sambombay/.hermes/profiles/aria/cache/scratch/osslfix/auth.c:3  int encode_dyn(const char *in, size_t n) { char *out = malloc(n*4); return EVP_EncodeBlock((unsigned char*)out, (unsigned char*)in, n); }
+
+3. What the numbers mean
+   A build that links OpenSSL and passes an attacker-influenced length near INT_MAX to
+   EVP_EncodeBlock() is the only reachable shape. No such path is published today, and the
+   fix is an open pull request (openssl/openssl#33652, opened 2026-11-10) with no release
+   carrying it yet. That is the whole exposure story: a critical-scored bug with no patch
+   and no known trigger.
+
+Report written: /Users/sambombay/money-ideas/tracker/openssl-check/openssl-check-Sams-MacBook-Pro-2.local-20261120-073428.txt
