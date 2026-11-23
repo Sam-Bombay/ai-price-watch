@@ -81,6 +81,76 @@
   </div>
 
   <div class="brief">
+    <p class="brief-k">The same catalogue halved its cheap tier and raised its fast lane — 23 Nov 2026</p>
+    <p><strong>12 cuts against 3 rises today, and the rises sit on the line everybody moved to last
+      week.</strong> <b>OpenAI's gpt-oss-20b input $0.075 → $0.03 (-60.0%)</b> and output
+      <b>$0.30 → $0.13 (-56.7%)</b>; <b>gpt-oss-120b input $0.09 → $0.05 (-44.4%)</b>, output
+      <b>$0.36 → $0.25 (-30.6%)</b>; <b>Qwen3.6 35B A3B input halved $0.10 → $0.05</b> with output
+      <b>$0.90 → $0.70</b>; <b>Gemma 3 27B output $0.45 → $0.16 (-64.4%)</b>; <b>DeepSeek Pro Latest
+      output $8.00 → $5.00 (-37.5%)</b>. The open-weight floor is not drifting, it is being cut in
+      half.</p>
+    <p><strong>On the same morning, DeepSeek V4 Flash Latest output went $0.132 → $0.30
+      (+127.3%)</b>, <b>Gemma 4 26B A4B rose 33.3% on input and output</b>, and one model entered
+      the catalogue free (<b>Dots3-Note Preview</b>). Take a real workload — <b>200M input and 40M
+      output a month</b>: it cost <b>$13.96</b> on DeepSeek V4 Flash yesterday and <b>$20.68</b>
+      today, <b>+$8.06 a month for the same tokens</b>. The identical volume on <b>gpt-oss-20b is
+      $11.20</b>, and on <b>gpt-oss-120b $20.00</b>. That is the whole trade in one line: the model
+      you defaulted to got dearer, the floor went 60% lower, and nothing in the invoice says so.</p>
+    <p><strong>Over fourteen days: 390 moves — 189 cuts against 141 rises</strong>, out of
+      <b>1,384 dated events</b> since 8 October across <b>477 models</b>. A routing table set once is
+      wrong in both directions at the same time. Two thirds of today's moves were cuts, which is
+      money on the table for anyone willing to re-price one workload; the third that rose is what
+      the same re-price finds before the next renewal.</p>
+    <p class="brief-f"><a href="/audit">What this costs you on your own volumes, audited →</a></p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">The provider you assumed answered your request was off-boarded this week — 22 Nov 2026</p>
+    <p><strong>OpenRouter removed 125 endpoints from zero-data-retention eligibility and off-boarded three
+      inference providers</strong> after researchers at Dragos found prompt leakage at inference providers;
+      <b>Together said requests from June and July 2026 were affected</b>. The list of the 125 was never
+      published. So the log did the one check that is still possible: it read the live provider route for
+      <b>454 priced models</b> from OpenRouter's own per-model API this morning, <b>80 distinct providers,
+      zero failed lookups</b> — and <b>53 of those models can be answered by a provider named in the leak
+      reports today: Novita on 35 routes, Together on 24, Phala on none</b>. A model name is not a provider,
+      and a provider prefix on a request is a preference, not a guarantee. The table, model by model, is at
+      <a href="/datapath/">the data-path page</a>.</p>
+    <p><strong>Inkling 2 Mini fell 25% again the same morning</strong> — <b>$0.10 → $0.075 in, $0.40 → $0.30
+      out</b>, two days after launch and its first cut. <b>Qwen3.8 27B input $0.06 → $0.035
+      (-41.7%)</b>, output <b>$1.96 → $1.50</b>; <b>Kimi K3.1 Pro down 4.5% on output at $8.40</b>. On the
+      other side, <b>Qwen3.5-27B input $0.195 → $0.26 (+33.3%)</b>, <b>Hy3 up 6.1% in and 9.8% out</b>:
+      <b>19 moves today, 8 cuts against 11 rises</b>.</p>
+    <p><strong>Over fourteen days: 351 moves — 196 cuts against 155 rises</strong>, out of <b>1,368 dated
+      events</b> since 8 October. The two arguments that used to compete — cheaper, or private — now point
+      at the same route on the same day, which is the first time this log has been able to say that with
+      numbers behind it.</p>
+    <p class="brief-f"><a href="/datapath/">Which provider actually serves your model — 454 models, live route table →</a></p>
+  </div>
+
+  <div class="brief">
+    <p class="brief-k">Open weights took the price floor and the laptop in the same week — 21 Nov 2026</p>
+    <p><strong>Thinking Machines put Inkling 2 Mini into the catalogue at $0.10 in / $0.40 out with a 1M
+      context</strong> — <b>30x under Gemini 4 Neon's input price, 37x under its output price</b> — one day
+      after shipping it as open weights with a <b>~20GB footprint that runs on a laptop</b>. The launch
+      thread took <b>1,167 points</b> on Hacker News on 20 November. Priced at <b>100M input and 20M
+      output tokens a month</b>, that is <b>$600.00 on Neon against $18.00 on Inkling 2 Mini per token,
+      or power only on hardware a company already owns</b> — <b>$7,200.00 a year against $216.00</b>. The
+      same arithmetic, with your own volumes in it, is at <a href="/laptop">the laptop calculator</a>.</p>
+    <p><strong>The floor moved the same morning.</strong> <b>DeepSeek V4.1 Flash input $0.30 → $0.0498 and
+      output $1.20 → $0.1992 (-83.4%)</b>; <b>Qwen3 Coder 30B A3B cut 53.3%</b> to $0.07 / $0.28;
+      <b>DeepSeek V4 Flash Vision Exp down 51%</b>; <b>Gemma 4 26B A4B down 25%</b>. Against those,
+      <b>MiniMax M2.7 input $0.21 → $0.60 (+185.7%)</b> and output <b>$0.84 → $1.80 (+114.3%)</b>, and
+      <b>Gemma 3 27B output rebounded $0.16 → $0.45 (+181.3%)</b> — two models re-quoted upward in the
+      same catalogue that cut four. <b>26 changes today across 476 models: 21 price moves, 16 cuts against
+      5 rises, 2 new models, 3 retirements.</b></p>
+    <p><strong>Over the fourteen days to today: 348 price moves — 198 cuts against 150 rises.</strong>
+      <b>1,349 changes are logged</b> and every one is dated in <a href="/cost-index">the index</a>. A
+      routing table set before this fortnight is now wrong in both directions at once: it overpays on the
+      models that fell and it is inside a trap on the ones that rose.</p>
+    <p class="brief-f"><a href="/laptop">What your token volume costs on a laptop you already own →</a></p>
+  </div>
+
+  <div class="brief">
     <p class="brief-k">A frontier launch at a premium, and a floor that fell 70% the same morning — 19 Nov 2026</p>
     <p><strong>Gemini 4 Neon opened at $3 in / $15 out with a 1M context</strong> — <b>50% above
       Gemini 4 Argon and Carbon</b> (<b>$2 / $10</b>), with a batch door at <b>$1.50 / $7.50</b>.

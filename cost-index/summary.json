@@ -1,22 +1,22 @@
 {
- "as_of": "2026-11-05",
- "panel_models": 392,
- "panel_ctx100k": 357,
+ "as_of": "2026-11-22",
+ "panel_models": 378,
+ "panel_ctx100k": 345,
  "workload": {
   "input_tokens_month": 120000000,
   "output_tokens_month": 18000000
  },
  "baseline_date": "2026-10-08",
- "index": 105.6,
- "change_pct_since_baseline": 5.6,
- "median_cost_month": 104.7,
- "median_cost_month_baseline": 99.15,
- "cheapest_cost_month": 3.65,
- "cheapest_change_pct": 55.98,
- "p90_cost_month": 796.8,
- "events_logged": 895,
- "models_quoted_today": 452,
+ "index": 101.71,
+ "change_pct_since_baseline": 1.71,
+ "median_cost_month": 106.8,
+ "median_cost_month_baseline": 105.0,
+ "cheapest_cost_month": 3.12,
+ "cheapest_change_pct": 33.33,
+ "p90_cost_month": 840.0,
+ "events_logged": 1368,
+ "models_quoted_today": 476,
  "cheapest_capable_name": "inclusionAI: Ling 3.0 Tiny",
  "cheapest_capable_cost": 2.61,
- "days": 29
+ "days": 46
 }

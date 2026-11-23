@@ -10,6 +10,7 @@ Writes: dataset/changes.csv, dataset/prices.csv, dataset/README.md
 import csv
 import datetime
 import json
+import shutil
 import os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -63,6 +64,16 @@ def main():
     price_rows = [r for r in rows if r[3] in ("input", "output") and r[6] != ""]
     cuts = sum(1 for r in price_rows if r[6] < 0)
     rises = sum(1 for r in price_rows if r[6] > 0)
+
+    # provider routing map, refreshed alongside the prices
+    routes_path = os.path.join(HERE, "data", "routes.json")
+    routes_n = prov_n = 0
+    if os.path.exists(routes_path):
+        _r = json.load(open(routes_path))
+        _m = _r.get("models") or {}
+        routes_n = len(_m)
+        prov_n = len({p.get("provider") for v in _m.values() for p in v})
+        shutil.copyfile(routes_path, os.path.join(OUT, "provider-routes.json"))
 
     card = f"""---
 license: cc-by-4.0
@@ -121,6 +132,20 @@ self-hosted GLM cut its AI coding costs roughly 90 percent, across about 2,000 e
 that its own figures were about a tenth of commercial alternatives. That claim is theirs, not
 measured here. What this dataset adds is the dated record needed to check whether a vendor's
 price actually moved when they said it did.
+
+## Who actually serves the model
+
+`provider-routes.json` is a second, separate file: for every priced model, the providers
+currently listed as serving it, with each route's price and 30-minute uptime — read from
+OpenRouter's public per-model endpoints API on the same run. {routes_n} models, {prov_n}
+distinct providers. It exists because a model's list price is the average of several routes,
+and which provider answers a request is decided at request time, not by the model name.
+
+On 22 November 2026 OpenRouter off-boarded three inference providers and removed 125 endpoints
+from zero-data-retention eligibility after Dragos reported prompt leakage at inference
+providers; Together said requests from June and July 2026 were affected. The list of 125 was
+never published, and no public endpoint exposes a per-route retention flag, so this file maps
+exposure, not compliance. Live version and the caveats in full: {SITE}/datapath
 
 ## Method and limits
 

@@ -54,6 +54,11 @@ echo "logged changes: $(echo "$OUT" | head -1)"
 # the self-host vs pay-per-token break-even, recomputed from today's prices
 "$PY" ./build_selfhost.py >/dev/null 2>&1 || echo "selfhost build failed"
 
+# which provider actually serves each model, read from OpenRouter's per-model API, and the
+# data-path page that checks those routes against published leak reports
+"$PY" ./fetch_routes.py >/dev/null 2>&1 || echo "route fetch failed"
+"$PY" ./build_datapath.py >/dev/null 2>&1 || echo "datapath build failed"
+
 # refresh the RSS feed from the briefs, so the feed is never staler than the page
 "$PY" ./gen_feed.py >/dev/null 2>&1 || echo "feed generation failed"
 
