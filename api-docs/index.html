@@ -33,7 +33,8 @@ th{color:var(--dim);font-weight:500}
 <tr><th>Endpoint</th><th>Returns</th></tr>
 <tr><td><a href="/api/prices.json">/api/prices.json</a></td><td>current price per model, USD per 1M tokens, plus context window</td></tr>
 <tr><td><a href="/api/changes.json">/api/changes.json</a></td><td>every logged price change, oldest first</td></tr>
-<tr><td><a href="/api/index.json">/api/index.json</a></td><td>machine-readable index of the two above</td></tr>
+<tr><td><a href="/api/index.json">/api/index.json</a></td><td>machine-readable index of the endpoints below</td></tr>
+<tr><td><a href="/api/agentworkload.json">/api/agentworkload.json</a></td><td>monthly USD for one fixed agent workload at 50 / 200 / 1,000 / 5,000 runs a day — cheapest, median, top decile and dearest model, plus every model's monthly cost. Assumptions are stated in the payload. See <a href="/agentmeter/">/agentmeter</a> for why agent tokens price differently from chat tokens.</td></tr>
 </table>
 
 <h2>Shape</h2>

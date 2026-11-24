@@ -1,18 +1,11 @@
 {
-"updated": "2026-11-23",
+"updated": "2026-11-24",
 "models": [
 {
 "id": "mistralai/mistral-nemo",
 "name": "Mistral: Mistral Nemo",
 "in": 0.029,
 "out": 0.03,
-"ctx": 131072
-},
-{
-"id": "meta-llama/llama-3.1-8b-instruct",
-"name": "Meta: Llama 3.1 8B Instruct",
-"in": 0.02,
-"out": 0.04,
 "ctx": 131072
 },
 {
@@ -51,25 +44,25 @@
 "ctx": 1048576
 },
 {
-"id": "~z-ai/glm-flash-latest",
-"name": "Z.ai: GLM Flash Latest",
-"in": 0.0399,
-"out": 0.074,
-"ctx": 1048576
-},
-{
-"id": "z-ai/glm-5.3-flash",
-"name": "Z.ai: GLM 5.3 Flash",
-"in": 0.0399,
-"out": 0.074,
-"ctx": 1048576
-},
-{
 "id": "mistralai/mistral-small-24b-instruct-2501",
 "name": "Mistral: Mistral Small 3",
 "in": 0.05,
 "out": 0.08,
 "ctx": 32768
+},
+{
+"id": "meta-llama/llama-3.1-8b-instruct",
+"name": "Meta: Llama 3.1 8B Instruct",
+"in": 0.05,
+"out": 0.08,
+"ctx": 131072
+},
+{
+"id": "~z-ai/glm-flash-latest",
+"name": "Z.ai: GLM Flash Latest",
+"in": 0.0356,
+"out": 0.0815,
+"ctx": 1048576
 },
 {
 "id": "nex-agi/nex-n2.5-mini",
@@ -119,6 +112,13 @@
 "in": 0.03,
 "out": 0.13,
 "ctx": 131072
+},
+{
+"id": "~deepseek/deepseek-v4-flash-latest",
+"name": "DeepSeek: DeepSeek V4 Flash Latest",
+"in": 0.0453,
+"out": 0.136,
+"ctx": 1048576
 },
 {
 "id": "openai/gpt-oss-120b:batch",
@@ -219,13 +219,6 @@
 "ctx": 8192
 },
 {
-"id": "inclusionai/ling-3.1-flash",
-"name": "inclusionAI: Ling 3.1 Flash",
-"in": 0.06,
-"out": 0.18,
-"ctx": 1048576
-},
-{
 "id": "inclusionai/ling-3.0-flash-vl",
 "name": "inclusionAI: Ling 3.0 Flash VL",
 "in": 0.06,
@@ -247,13 +240,6 @@
 "ctx": 163840
 },
 {
-"id": "deepseek/deepseek-v4.1-flash",
-"name": "DeepSeek: DeepSeek V4.1 Flash",
-"in": 0.0498,
-"out": 0.1992,
-"ctx": 1048576
-},
-{
 "id": "liquid/lfm-3-1.7b",
 "name": "LiquidAI: LFM3-1.7B",
 "in": 0.08,
@@ -261,11 +247,25 @@
 "ctx": 262144
 },
 {
+"id": "deepseek/deepseek-v4.1-flash-1017",
+"name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+"in": 0.03,
+"out": 0.2,
+"ctx": 1048576
+},
+{
 "id": "upstage/solar-mini4",
 "name": "Upstage: Solar Mini 4",
 "in": 0.05,
 "out": 0.2,
 "ctx": 524288
+},
+{
+"id": "~deepseek/deepseek-flash-latest",
+"name": "DeepSeek: DeepSeek Flash Latest",
+"in": 0.03,
+"out": 0.2,
+"ctx": 1048576
 },
 {
 "id": "meta/muse-spark-1.3-contributor",
@@ -284,7 +284,7 @@
 {
 "id": "nvidia/nemotron-3.5-lightning",
 "name": "NVIDIA: Nemotron 3.5 Lightning",
-"in": 0.07,
+"in": 0.05,
 "out": 0.2,
 "ctx": 1048576
 },
@@ -336,6 +336,20 @@
 "in": 0.1,
 "out": 0.2,
 "ctx": 65536
+},
+{
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"in": 0.0507,
+"out": 0.2028,
+"ctx": 1048576
+},
+{
+"id": "inclusionai/ling-3.1-flash",
+"name": "inclusionAI: Ling 3.1 Flash",
+"in": 0.075,
+"out": 0.225,
+"ctx": 1048576
 },
 {
 "id": "inference-net/schematron-v2-small",
@@ -471,16 +485,9 @@
 "ctx": 1048576
 },
 {
-"id": "~deepseek/deepseek-v4-flash-latest",
-"name": "DeepSeek: DeepSeek V4 Flash Latest",
-"in": 0.0434,
-"out": 0.3,
-"ctx": 1048576
-},
-{
 "id": "deepseek/deepseek-v4-flash-0731",
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
-"in": 0.0434,
+"in": 0.0456,
 "out": 0.3,
 "ctx": 1048576
 },
@@ -681,18 +688,18 @@
 "ctx": 262144
 },
 {
-"id": "~deepseek/deepseek-flash-latest",
-"name": "DeepSeek: DeepSeek Flash Latest",
-"in": 0.036,
-"out": 0.5,
-"ctx": 1048576
-},
-{
 "id": "~openai/gpt-luna-latest",
 "name": "OpenAI: GPT Luna Latest",
 "in": 0.1,
 "out": 0.5,
 "ctx": 1050000
+},
+{
+"id": "z-ai/glm-5.3-flash",
+"name": "Z.ai: GLM 5.3 Flash",
+"in": 0.15,
+"out": 0.5,
+"ctx": 1048576
 },
 {
 "id": "~anthropic/claude-haiku-latest",
@@ -737,25 +744,18 @@
 "ctx": 8192
 },
 {
+"id": "tencent/hy3",
+"name": "Tencent: Hy3",
+"in": 0.132,
+"out": 0.528,
+"ctx": 262144
+},
+{
 "id": "mistralai/mistral-small-3.1-24b-instruct",
 "name": "Mistral: Mistral Small 3.1 24B",
 "in": 0.351,
 "out": 0.555,
 "ctx": 128000
-},
-{
-"id": "tencent/hy3",
-"name": "Tencent: Hy3",
-"in": 0.14,
-"out": 0.58,
-"ctx": 262144
-},
-{
-"id": "deepseek/deepseek-v4.1-flash-1017",
-"name": "DeepSeek: DeepSeek V4.1 Flash 1017",
-"in": 0.15,
-"out": 0.6,
-"ctx": 1048576
 },
 {
 "id": "upstage/solar-pro4",
@@ -1140,7 +1140,7 @@
 "name": "StepFun: Step 3.7 Flash",
 "in": 0.2,
 "out": 1.15,
-"ctx": 262144
+"ctx": 256000
 },
 {
 "id": "motif-technologies/motif-3",
@@ -1318,13 +1318,6 @@
 "ctx": 1048576
 },
 {
-"id": "deepseek/deepseek-v4-pro",
-"name": "DeepSeek: DeepSeek V4 Pro 0423",
-"in": 0.9,
-"out": 1.5,
-"ctx": 1048576
-},
-{
 "id": "google/gemini-3.1-flash-lite-preview",
 "name": "Google: Gemini 3.1 Flash Lite Preview",
 "in": 0.25,
@@ -1379,13 +1372,6 @@
 "in": 0.3,
 "out": 1.8,
 "ctx": 1000000
-},
-{
-"id": "xiaomi/mimo-v2.5-pro",
-"name": "Xiaomi: MiMo-V2.5-Pro",
-"in": 0.48,
-"out": 1.8,
-"ctx": 262144
 },
 {
 "id": "minimax/minimax-m2.7",
@@ -1598,13 +1584,6 @@
 "ctx": 163840
 },
 {
-"id": "moonshotai/kimi-k2",
-"name": "MoonshotAI: Kimi K2 0711",
-"in": 0.57,
-"out": 2.3,
-"ctx": 131072
-},
-{
 "id": "openai/gpt-audio-mini",
 "name": "OpenAI: GPT Audio Mini",
 "in": 0.6,
@@ -1696,13 +1675,6 @@
 "ctx": 1000000
 },
 {
-"id": "moonshotai/kimi-k2-thinking",
-"name": "MoonshotAI: Kimi K2 Thinking",
-"in": 0.6,
-"out": 2.5,
-"ctx": 262144
-},
-{
 "id": "anthropic/claude-haiku-4.5:batch",
 "name": "Anthropic: Claude Haiku 4.5 (batch)",
 "in": 0.5,
@@ -1717,13 +1689,6 @@
 "ctx": 32768
 },
 {
-"id": "moonshotai/kimi-k2-0905",
-"name": "MoonshotAI: Kimi K2 0905",
-"in": 0.6,
-"out": 2.5,
-"ctx": 262144
-},
-{
 "id": "google/gemini-2.5-flash",
 "name": "Google: Gemini 2.5 Flash",
 "in": 0.3,
@@ -1735,6 +1700,13 @@
 "name": "Tencent: Hy4 preview",
 "in": 0.834,
 "out": 2.501,
+"ctx": 1048576
+},
+{
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"in": 1.28,
+"out": 2.56,
 "ctx": 1048576
 },
 {
@@ -1906,13 +1878,6 @@
 "ctx": 1024000
 },
 {
-"id": "deepseek/deepseek-v4-pro-0813",
-"name": "DeepSeek: DeepSeek V4 Pro 0813",
-"in": 1.32,
-"out": 3.96,
-"ctx": 1048576
-},
-{
 "id": "sakana/sakana-namazu",
 "name": "Sakana: Sakana Namazu",
 "in": 0.95,
@@ -1959,7 +1924,7 @@
 "name": "Thinking Machines: Inkling",
 "in": 1.0,
 "out": 4.05,
-"ctx": 524288
+"ctx": 1048576
 },
 {
 "id": "google/gemini-3.8-flash",
@@ -2016,6 +1981,13 @@
 "in": 1.475,
 "out": 4.425,
 "ctx": 1000000
+},
+{
+"id": "deepseek/deepseek-v4-pro-0813",
+"name": "DeepSeek: DeepSeek V4 Pro 0813",
+"in": 0.111,
+"out": 4.44,
+"ctx": 1048576
 },
 {
 "id": "google/gemini-3.5-flash:batch",

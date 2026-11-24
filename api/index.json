@@ -1,17 +1,17 @@
 {
  "schema": "ai-price-watch/index",
  "version": "1",
- "generated": "2026-11-21T15:35:37Z",
+ "generated": "2026-11-24T15:37:17Z",
  "endpoints": [
   {
    "path": "/api/prices.json",
    "what": "current price per model, USD per 1M tokens",
-   "count": 476
+   "count": 473
   },
   {
    "path": "/api/changes.json",
    "what": "every logged price change, oldest first",
-   "count": 1349
+   "count": 1412
   }
  ],
  "paid": {

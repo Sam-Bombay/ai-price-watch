@@ -450,7 +450,7 @@
 "deepseek/deepseek-v4-flash-0731": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-0731",
-"in": 0.0434,
+"in": 0.0456,
 "name": "DeepSeek: DeepSeek V4 Flash 0731",
 "out": 0.3
 },
@@ -471,30 +471,30 @@
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 0.9,
+"in": 1.28,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 1.5
+"out": 2.56
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro-0813",
-"in": 1.32,
+"in": 0.111,
 "name": "DeepSeek: DeepSeek V4 Pro 0813",
-"out": 3.96
+"out": 4.44
 },
 "deepseek/deepseek-v4.1-flash": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash",
-"in": 0.0498,
+"in": 0.0507,
 "name": "DeepSeek: DeepSeek V4.1 Flash",
-"out": 0.1992
+"out": 0.2028
 },
 "deepseek/deepseek-v4.1-flash-1017": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash-1017",
-"in": 0.15,
+"in": 0.03,
 "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
-"out": 0.6
+"out": 0.2
 },
 "deepseek/deepseek-v4.1-flash-1017:batch": {
 "ctx": 1048576,
@@ -912,9 +912,9 @@
 "inclusionai/ling-3.1-flash": {
 "ctx": 1048576,
 "id": "inclusionai/ling-3.1-flash",
-"in": 0.06,
+"in": 0.075,
 "name": "inclusionAI: Ling 3.1 Flash",
-"out": 0.18
+"out": 0.225
 },
 "inclusionai/ling-3.2-flash:free": {
 "ctx": 1048576,
@@ -982,9 +982,9 @@
 "meta-llama/llama-3.1-8b-instruct": {
 "ctx": 131072,
 "id": "meta-llama/llama-3.1-8b-instruct",
-"in": 0.02,
+"in": 0.05,
 "name": "Meta: Llama 3.1 8B Instruct",
-"out": 0.04
+"out": 0.08
 },
 "meta-llama/llama-3.2-3b-instruct": {
 "ctx": 131072,
@@ -1301,27 +1301,6 @@
 "name": "Moondream: Moondream 3.1",
 "out": 2.5
 },
-"moonshotai/kimi-k2": {
-"ctx": 131072,
-"id": "moonshotai/kimi-k2",
-"in": 0.57,
-"name": "MoonshotAI: Kimi K2 0711",
-"out": 2.3
-},
-"moonshotai/kimi-k2-0905": {
-"ctx": 262144,
-"id": "moonshotai/kimi-k2-0905",
-"in": 0.6,
-"name": "MoonshotAI: Kimi K2 0905",
-"out": 2.5
-},
-"moonshotai/kimi-k2-thinking": {
-"ctx": 262144,
-"id": "moonshotai/kimi-k2-thinking",
-"in": 0.6,
-"name": "MoonshotAI: Kimi K2 Thinking",
-"out": 2.5
-},
 "moonshotai/kimi-k2.5": {
 "ctx": 262144,
 "id": "moonshotai/kimi-k2.5",
@@ -1479,7 +1458,7 @@
 "nvidia/nemotron-3.5-lightning": {
 "ctx": 1048576,
 "id": "nvidia/nemotron-3.5-lightning",
-"in": 0.07,
+"in": 0.05,
 "name": "NVIDIA: Nemotron 3.5 Lightning",
 "out": 0.2
 },
@@ -2793,7 +2772,7 @@
 "out": null
 },
 "stepfun/step-3.7-flash": {
-"ctx": 262144,
+"ctx": 256000,
 "id": "stepfun/step-3.7-flash",
 "in": 0.2,
 "name": "StepFun: Step 3.7 Flash",
@@ -2830,9 +2809,9 @@
 "tencent/hy3": {
 "ctx": 262144,
 "id": "tencent/hy3",
-"in": 0.14,
+"in": 0.132,
 "name": "Tencent: Hy3",
-"out": 0.58
+"out": 0.528
 },
 "tencent/hy4": {
 "ctx": 1048576,
@@ -2877,7 +2856,7 @@
 "out": 0.4
 },
 "thinkingmachines/inkling": {
-"ctx": 524288,
+"ctx": 1048576,
 "id": "thinkingmachines/inkling",
 "in": 1.0,
 "name": "Thinking Machines: Inkling",
@@ -3037,13 +3016,6 @@
 "name": "Xiaomi: MiMo-V2.5",
 "out": 2.0
 },
-"xiaomi/mimo-v2.5-pro": {
-"ctx": 262144,
-"id": "xiaomi/mimo-v2.5-pro",
-"in": 0.48,
-"name": "Xiaomi: MiMo-V2.5-Pro",
-"out": 1.8
-},
 "xiaomi/mimo-v2.6-flash": {
 "ctx": 1048576,
 "id": "xiaomi/mimo-v2.6-flash",
@@ -3159,9 +3131,9 @@
 "z-ai/glm-5.3-flash": {
 "ctx": 1048576,
 "id": "z-ai/glm-5.3-flash",
-"in": 0.0399,
+"in": 0.15,
 "name": "Z.ai: GLM 5.3 Flash",
-"out": 0.074
+"out": 0.5
 },
 "z-ai/glm-5.3-flash:batch": {
 "ctx": 1048576,
@@ -3236,9 +3208,9 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.036,
+"in": 0.03,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.5
+"out": 0.2
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
@@ -3250,9 +3222,9 @@
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-v4-flash-latest",
-"in": 0.0434,
+"in": 0.0453,
 "name": "DeepSeek: DeepSeek V4 Flash Latest",
-"out": 0.3
+"out": 0.136
 },
 "~google/gemini-flash-latest": {
 "ctx": 1048576,
@@ -3327,9 +3299,9 @@
 "~z-ai/glm-flash-latest": {
 "ctx": 1048576,
 "id": "~z-ai/glm-flash-latest",
-"in": 0.0399,
+"in": 0.0356,
 "name": "Z.ai: GLM Flash Latest",
-"out": 0.074
+"out": 0.0815
 },
 "~z-ai/glm-latest": {
 "ctx": 1048576,

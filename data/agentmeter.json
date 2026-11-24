@@ -1,0 +1,43 @@
+{
+ "as_of": "2026-11-24",
+ "workload": {
+  "runs_per_day": 200,
+  "turns": 20,
+  "base_context": 6000,
+  "added_per_turn": 1200,
+  "answer_per_turn": 800,
+  "days": 30,
+  "billed_input_m_tokens_month": 2088.0,
+  "billed_output_m_tokens_month": 96.0
+ },
+ "panel_models": 374,
+ "cheapest": {
+  "model": "inclusionAI: Ling 3.0 Flash",
+  "month_usd": 49.9,
+  "in": 0.021,
+  "out": 0.063
+ },
+ "median_month_usd": 1345.8,
+ "p90_month_usd": 10272.0,
+ "dearest": {
+  "model": "OpenAI: GPT-5.4 Pro",
+  "month_usd": 79920.0
+ },
+ "spread_x": 1601.7,
+ "thirty_day": {
+  "since": "2026-10-25",
+  "agent_floor": 46.22,
+  "agent_floor_pct": 7.9,
+  "agent_median": 1324.8,
+  "agent_median_pct": 1.6,
+  "chat_floor": 3.65,
+  "chat_floor_pct": 0.0,
+  "chat_median": 105.6,
+  "chat_median_pct": -0.6
+ },
+ "models_quoted": 473,
+ "moves_today": 28,
+ "cuts_today": 10,
+ "rises_today": 14,
+ "events_logged": 1412
+}

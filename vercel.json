@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/api/prices.json", "destination": "/data/api_public/prices.json" },
+    { "source": "/api/changes.json", "destination": "/data/api_public/changes.json" },
+    { "source": "/api/index.json", "destination": "/data/api_public/index.json" },
+    { "source": "/api/agentworkload.json", "destination": "/data/api_public/agentworkload.json" }
+  ]
+}
