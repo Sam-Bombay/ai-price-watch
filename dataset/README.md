@@ -27,8 +27,8 @@ Maintained by Sam Bombay / Noir & Co. Live view: https://ai-price-watch-beta.ver
   All prices are USD per 1,000,000 tokens.
 - `prices.csv` - the current snapshot: input and output price and context window per model.
 
-Coverage: **1384 events** across **477 models**, 2026-10-08 to 2026-11-23.
-Of 1204 comparable price events, **624 are cuts and 579 are rises**.
+Coverage: **1452 events** across **475 models**, 2026-10-08 to 2026-11-26.
+Of 1252 comparable price events, **638 are cuts and 613 are rises**.
 
 ## Why it is useful
 
@@ -60,7 +60,7 @@ price actually moved when they said it did.
 
 `provider-routes.json` is a second, separate file: for every priced model, the providers
 currently listed as serving it, with each route's price and 30-minute uptime — read from
-OpenRouter's public per-model endpoints API on the same run. 454 models, 80
+OpenRouter's public per-model endpoints API on the same run. 452 models, 79
 distinct providers. It exists because a model's list price is the average of several routes,
 and which provider answers a request is decided at request time, not by the model name.
 

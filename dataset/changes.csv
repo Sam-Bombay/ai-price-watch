@@ -1383,3 +1383,71 @@ date,model_id,model_name,field,price_from,price_to,pct_change
 2026-11-23,qwen/qwen3.6-35b-a3b,Qwen: Qwen3.6 35B A3B,output,0.9,0.7,-22.2
 2026-11-23,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.0784,0.074,-5.6
 2026-11-23,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.0784,0.074,-5.6
+2026-11-24,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.036,0.03,-16.7
+2026-11-24,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,0.5,0.2,-60.0
+2026-11-24,deepseek/deepseek-v4-flash-0731,DeepSeek: DeepSeek V4 Flash 0731,input,0.0434,0.0456,5.1
+2026-11-24,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,input,0.0434,0.0453,4.4
+2026-11-24,~deepseek/deepseek-v4-flash-latest,DeepSeek: DeepSeek V4 Flash Latest,output,0.3,0.136,-54.7
+2026-11-24,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,0.9,1.28,42.2
+2026-11-24,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,1.5,2.56,70.7
+2026-11-24,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,input,1.32,0.111,-91.6
+2026-11-24,deepseek/deepseek-v4-pro-0813,DeepSeek: DeepSeek V4 Pro 0813,output,3.96,4.44,12.1
+2026-11-24,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,input,0.0498,0.0507,1.8
+2026-11-24,deepseek/deepseek-v4.1-flash,DeepSeek: DeepSeek V4.1 Flash,output,0.1992,0.2028,1.8
+2026-11-24,deepseek/deepseek-v4.1-flash-1017,DeepSeek: DeepSeek V4.1 Flash 1017,input,0.15,0.03,-80.0
+2026-11-24,deepseek/deepseek-v4.1-flash-1017,DeepSeek: DeepSeek V4.1 Flash 1017,output,0.6,0.2,-66.7
+2026-11-24,meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,input,0.02,0.05,150.0
+2026-11-24,meta-llama/llama-3.1-8b-instruct,Meta: Llama 3.1 8B Instruct,output,0.04,0.08,100.0
+2026-11-24,moonshotai/kimi-k2,MoonshotAI: Kimi K2 0711,retired,2.3,,
+2026-11-24,moonshotai/kimi-k2-0905,MoonshotAI: Kimi K2 0905,retired,2.5,,
+2026-11-24,moonshotai/kimi-k2-thinking,MoonshotAI: Kimi K2 Thinking,retired,2.5,,
+2026-11-24,nvidia/nemotron-3.5-lightning,NVIDIA: Nemotron 3.5 Lightning,input,0.07,0.05,-28.6
+2026-11-24,tencent/hy3,Tencent: Hy3,input,0.14,0.132,-5.7
+2026-11-24,tencent/hy3,Tencent: Hy3,output,0.58,0.528,-9.0
+2026-11-24,xiaomi/mimo-v2.5-pro,Xiaomi: MiMo-V2.5-Pro,retired,1.8,,
+2026-11-24,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,input,0.0399,0.15,275.9
+2026-11-24,z-ai/glm-5.3-flash,Z.ai: GLM 5.3 Flash,output,0.074,0.5,575.7
+2026-11-24,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,input,0.0399,0.0356,-10.8
+2026-11-24,~z-ai/glm-flash-latest,Z.ai: GLM Flash Latest,output,0.074,0.0815,10.1
+2026-11-24,inclusionai/ling-3.1-flash,inclusionAI: Ling 3.1 Flash,input,0.06,0.075,25.0
+2026-11-24,inclusionai/ling-3.1-flash,inclusionAI: Ling 3.1 Flash,output,0.18,0.225,25.0
+2026-11-26,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,input,0.03,0.036,20.0
+2026-11-26,~deepseek/deepseek-flash-latest,DeepSeek: DeepSeek Flash Latest,output,0.2,0.5,150.0
+2026-11-26,~deepseek/deepseek-pro-latest,DeepSeek: DeepSeek Pro Latest,input,0.0999,0.111,11.1
+2026-11-26,~deepseek/deepseek-pro-latest,DeepSeek: DeepSeek Pro Latest,output,5.0,4.44,-11.2
+2026-11-26,deepseek/deepseek-v4-flash-vision-exp,DeepSeek: DeepSeek V4 Flash Vision Exp,input,0.2156,0.44,104.1
+2026-11-26,deepseek/deepseek-v4-flash-vision-exp,DeepSeek: DeepSeek V4 Flash Vision Exp,output,0.6468,1.32,104.1
+2026-11-26,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,input,1.28,0.8249,-35.6
+2026-11-26,deepseek/deepseek-v4-pro,DeepSeek: DeepSeek V4 Pro 0423,output,2.56,1.5381,-39.9
+2026-11-26,deepseek/deepseek-v4.1-flash-1017,DeepSeek: DeepSeek V4.1 Flash 1017,input,0.03,0.15,400.0
+2026-11-26,deepseek/deepseek-v4.1-flash-1017,DeepSeek: DeepSeek V4.1 Flash 1017,output,0.2,0.6,200.0
+2026-11-26,dots-studio/dots-3-note-preview:free,Dots Studio: Dots3-Note Preview (free),retired,,,
+2026-11-26,google/gemma-3-27b-it,Google: Gemma 3 27B,output,0.16,0.45,181.3
+2026-11-26,minimax/minimax-m2.5,MiniMax: MiniMax M2.5,input,0.27,0.3,11.1
+2026-11-26,minimax/minimax-m2.5,MiniMax: MiniMax M2.5,output,0.95,1.2,26.3
+2026-11-26,mistralai/codestral-2508:batch,Mistral: Codestral 2508 (batch),added,,0.45,
+2026-11-26,mistralai/ministral-8b-2512:batch,Mistral: Ministral 3 8B 2512 (batch),added,,0.075,
+2026-11-26,mistralai/mistral-large-2512:batch,Mistral: Mistral Large 3 2512 (batch),added,,0.75,
+2026-11-26,mistralai/mistral-medium-3,Mistral: Mistral Medium 3,retired,2.2,,
+2026-11-26,mistralai/mistral-medium-3.1,Mistral: Mistral Medium 3.1,retired,2.2,,
+2026-11-26,mistralai/mistral-small-2603:batch,Mistral: Mistral Small 4 (batch),added,,0.3,
+2026-11-26,nvidia/nemotron-3.5-lightning,NVIDIA: Nemotron 3.5 Lightning,input,0.05,0.07,40.0
+2026-11-26,unbiased/pareto-26.10,Pareto 26.10,retired,3.2,,
+2026-11-26,unbiased/pareto-26.10-preview,Pareto 26.10 Preview,retired,3.2,,
+2026-11-26,unbiased/pareto-26.9,Pareto 26.9,retired,7.5,,
+2026-11-26,qwen/qwen3.5-397b-a17b,Qwen: Qwen3.5 397B A17B,input,0.45,0.5,11.1
+2026-11-26,qwen/qwen3.5-397b-a17b,Qwen: Qwen3.5 397B A17B,output,3.0,3.6,20.0
+2026-11-26,qwen/qwen3.5-9b,Qwen: Qwen3.5-9B,input,0.17,0.1,-41.2
+2026-11-26,qwen/qwen3.6-35b-a3b,Qwen: Qwen3.6 35B A3B,input,0.05,0.1,100.0
+2026-11-26,qwen/qwen3.6-35b-a3b,Qwen: Qwen3.6 35B A3B,output,0.7,0.89,27.1
+2026-11-26,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,input,0.035,0.06,71.4
+2026-11-26,qwen/qwen3.8-27b,Qwen: Qwen3.8 27B,output,1.5,1.96,30.7
+2026-11-26,reflection/beam-1.0-501b-a23b,Reflection: Beam 1.0 501B A23B,input,0.25,0.3,20.0
+2026-11-26,tngtech/deepseek-r1t2-chimera,TNG: DeepSeek R1T2 Chimera,added,,2.625,
+2026-11-26,upstage/solar-mini-4-5,Upstage: Solar Mini 4.5 (Preview),added,,0.04,
+2026-11-26,upstage/solar-pro-4-contributor,Upstage: Solar Pro 4 Contributor,added,,0.36,
+2026-11-26,xiaomi/mimo-v2.5,Xiaomi: MiMo-V2.5,retired,2.0,,
+2026-11-26,xiaomi/mimo-v2.6-flash-mopd,Xiaomi: MiMo-V2.6-Flash-MOPD,added,,1.0,
+2026-11-26,z-ai/glm-4.5-air,Z.ai: GLM 4.5 Air,input,0.13,0.2,53.8
+2026-11-26,z-ai/glm-4.5-air,Z.ai: GLM 4.5 Air,output,0.85,1.1,29.4
+2026-11-26,inclusionai/lingsante-3.1-air-vl,inclusionAI: LingSante 3.1 Air VL,added,,0.18,
