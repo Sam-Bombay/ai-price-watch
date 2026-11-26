@@ -464,16 +464,16 @@
 "deepseek/deepseek-v4-flash-vision-exp": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-flash-vision-exp",
-"in": 0.2156,
+"in": 0.44,
 "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
-"out": 0.6468
+"out": 1.32
 },
 "deepseek/deepseek-v4-pro": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4-pro",
-"in": 1.28,
+"in": 0.8249,
 "name": "DeepSeek: DeepSeek V4 Pro 0423",
-"out": 2.56
+"out": 1.5381
 },
 "deepseek/deepseek-v4-pro-0813": {
 "ctx": 1048576,
@@ -492,9 +492,9 @@
 "deepseek/deepseek-v4.1-flash-1017": {
 "ctx": 1048576,
 "id": "deepseek/deepseek-v4.1-flash-1017",
-"in": 0.03,
+"in": 0.15,
 "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
-"out": 0.2
+"out": 0.6
 },
 "deepseek/deepseek-v4.1-flash-1017:batch": {
 "ctx": 1048576,
@@ -509,13 +509,6 @@
 "in": 0.05,
 "name": "DeepSeek: DeepSeek V4.1 Flash (batch)",
 "out": 0.15
-},
-"dots-studio/dots-3-note-preview:free": {
-"ctx": 512000,
-"id": "dots-studio/dots-3-note-preview:free",
-"in": null,
-"name": "Dots Studio: Dots3-Note Preview (free)",
-"out": null
 },
 "elorian/glimpse": {
 "ctx": 262144,
@@ -823,7 +816,7 @@
 "id": "google/gemma-3-27b-it",
 "in": 0.08,
 "name": "Google: Gemma 3 27B",
-"out": 0.16
+"out": 0.45
 },
 "google/gemma-3-4b-it": {
 "ctx": 131072,
@@ -922,6 +915,13 @@
 "in": null,
 "name": "inclusionAI: Ling 3.2 Flash (free)",
 "out": null
+},
+"inclusionai/lingsante-3.1-air-vl": {
+"ctx": 131072,
+"id": "inclusionai/lingsante-3.1-air-vl",
+"in": 0.06,
+"name": "inclusionAI: LingSante 3.1 Air VL",
+"out": 0.18
 },
 "inference-net/schematron-v2-small": {
 "ctx": 128000,
@@ -1099,11 +1099,11 @@
 "out": 0.14
 },
 "minimax/minimax-m2.5": {
-"ctx": 198000,
+"ctx": 65536,
 "id": "minimax/minimax-m2.5",
-"in": 0.27,
+"in": 0.3,
 "name": "MiniMax: MiniMax M2.5",
-"out": 0.95
+"out": 1.2
 },
 "minimax/minimax-m2.7": {
 "ctx": 196608,
@@ -1140,6 +1140,13 @@
 "name": "Mistral: Codestral 2508",
 "out": 0.9
 },
+"mistralai/codestral-2508:batch": {
+"ctx": 256000,
+"id": "mistralai/codestral-2508:batch",
+"in": 0.15,
+"name": "Mistral: Codestral 2508 (batch)",
+"out": 0.45
+},
 "mistralai/devstral-2512": {
 "ctx": 262144,
 "id": "mistralai/devstral-2512",
@@ -1168,6 +1175,13 @@
 "name": "Mistral: Ministral 3 8B 2512",
 "out": 0.15
 },
+"mistralai/ministral-8b-2512:batch": {
+"ctx": 262144,
+"id": "mistralai/ministral-8b-2512:batch",
+"in": 0.075,
+"name": "Mistral: Ministral 3 8B 2512 (batch)",
+"out": 0.075
+},
 "mistralai/mistral-large": {
 "ctx": 128000,
 "id": "mistralai/mistral-large",
@@ -1189,19 +1203,19 @@
 "name": "Mistral: Mistral Large 3 2512",
 "out": 1.5
 },
+"mistralai/mistral-large-2512:batch": {
+"ctx": 262144,
+"id": "mistralai/mistral-large-2512:batch",
+"in": 0.25,
+"name": "Mistral: Mistral Large 3 2512 (batch)",
+"out": 0.75
+},
 "mistralai/mistral-large-4-0": {
 "ctx": 1048576,
 "id": "mistralai/mistral-large-4-0",
 "in": 0.7,
 "name": "Mistral: Mistral Large 4",
 "out": 2.1
-},
-"mistralai/mistral-medium-3": {
-"ctx": 131072,
-"id": "mistralai/mistral-medium-3",
-"in": 0.44,
-"name": "Mistral: Mistral Medium 3",
-"out": 2.2
 },
 "mistralai/mistral-medium-3-5": {
 "ctx": 262144,
@@ -1216,13 +1230,6 @@
 "in": 0.75,
 "name": "Mistral: Mistral Medium 3.5 (batch)",
 "out": 3.75
-},
-"mistralai/mistral-medium-3.1": {
-"ctx": 131072,
-"id": "mistralai/mistral-medium-3.1",
-"in": 0.44,
-"name": "Mistral: Mistral Medium 3.1",
-"out": 2.2
 },
 "mistralai/mistral-nemo": {
 "ctx": 131072,
@@ -1251,6 +1258,13 @@
 "in": 0.15,
 "name": "Mistral: Mistral Small 4",
 "out": 0.6
+},
+"mistralai/mistral-small-2603:batch": {
+"ctx": 262144,
+"id": "mistralai/mistral-small-2603:batch",
+"in": 0.075,
+"name": "Mistral: Mistral Small 4 (batch)",
+"out": 0.3
 },
 "mistralai/mistral-small-3.1-24b-instruct": {
 "ctx": 128000,
@@ -1458,7 +1472,7 @@
 "nvidia/nemotron-3.5-lightning": {
 "ctx": 1048576,
 "id": "nvidia/nemotron-3.5-lightning",
-"in": 0.05,
+"in": 0.07,
 "name": "NVIDIA: Nemotron 3.5 Lightning",
 "out": 0.2
 },
@@ -2508,14 +2522,14 @@
 "qwen/qwen3.5-397b-a17b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-397b-a17b",
-"in": 0.45,
+"in": 0.5,
 "name": "Qwen: Qwen3.5 397B A17B",
-"out": 3.0
+"out": 3.6
 },
 "qwen/qwen3.5-9b": {
 "ctx": 262144,
 "id": "qwen/qwen3.5-9b",
-"in": 0.17,
+"in": 0.1,
 "name": "Qwen: Qwen3.5-9B",
 "out": 0.25
 },
@@ -2550,9 +2564,9 @@
 "qwen/qwen3.6-35b-a3b": {
 "ctx": 262144,
 "id": "qwen/qwen3.6-35b-a3b",
-"in": 0.05,
+"in": 0.1,
 "name": "Qwen: Qwen3.6 35B A3B",
-"out": 0.7
+"out": 0.89
 },
 "qwen/qwen3.6-flash": {
 "ctx": 1000000,
@@ -2606,9 +2620,9 @@
 "qwen/qwen3.8-27b": {
 "ctx": 1024000,
 "id": "qwen/qwen3.8-27b",
-"in": 0.035,
+"in": 0.06,
 "name": "Qwen: Qwen3.8 27B",
-"out": 1.5
+"out": 1.96
 },
 "qwen/qwen3.8-27b:batch": {
 "ctx": 262144,
@@ -2676,7 +2690,7 @@
 "reflection/beam-1.0-501b-a23b": {
 "ctx": 1048576,
 "id": "reflection/beam-1.0-501b-a23b",
-"in": 0.25,
+"in": 0.3,
 "name": "Reflection: Beam 1.0 501B A23B",
 "out": 1.0
 },
@@ -2890,33 +2904,19 @@
 "name": "Thinking Machines: Inkling Small (batch)",
 "out": 0.96
 },
+"tngtech/deepseek-r1t2-chimera": {
+"ctx": 131072,
+"id": "tngtech/deepseek-r1t2-chimera",
+"in": 1.0,
+"name": "TNG: DeepSeek R1T2 Chimera",
+"out": 2.625
+},
 "typesafe/jev-router": {
 "ctx": 1000000,
 "id": "typesafe/jev-router",
 "in": null,
 "name": "TypeSafe: Jev Router",
 "out": null
-},
-"unbiased/pareto-26.10": {
-"ctx": 1048576,
-"id": "unbiased/pareto-26.10",
-"in": 0.8,
-"name": "Pareto 26.10",
-"out": 3.2
-},
-"unbiased/pareto-26.10-preview": {
-"ctx": 1048576,
-"id": "unbiased/pareto-26.10-preview",
-"in": 0.8,
-"name": "Pareto 26.10 Preview",
-"out": 3.2
-},
-"unbiased/pareto-26.9": {
-"ctx": 262144,
-"id": "unbiased/pareto-26.9",
-"in": 2.5,
-"name": "Pareto 26.9",
-"out": 7.5
 },
 "undi95/remm-slerp-l2-13b": {
 "ctx": 6144,
@@ -2925,12 +2925,26 @@
 "name": "ReMM SLERP 13B",
 "out": 0.5
 },
+"upstage/solar-mini-4-5": {
+"ctx": 524288,
+"id": "upstage/solar-mini-4-5",
+"in": 0.01,
+"name": "Upstage: Solar Mini 4.5 (Preview)",
+"out": 0.04
+},
 "upstage/solar-mini4": {
 "ctx": 524288,
 "id": "upstage/solar-mini4",
 "in": 0.05,
 "name": "Upstage: Solar Mini 4",
 "out": 0.2
+},
+"upstage/solar-pro-4-contributor": {
+"ctx": 524288,
+"id": "upstage/solar-pro-4-contributor",
+"in": 0.09,
+"name": "Upstage: Solar Pro 4 Contributor",
+"out": 0.36
 },
 "upstage/solar-pro4": {
 "ctx": 524288,
@@ -3009,19 +3023,19 @@
 "name": "SpaceXSI: Grok 4.7 (batch)",
 "out": 4.8
 },
-"xiaomi/mimo-v2.5": {
-"ctx": 1000000,
-"id": "xiaomi/mimo-v2.5",
-"in": 0.4,
-"name": "Xiaomi: MiMo-V2.5",
-"out": 2.0
-},
 "xiaomi/mimo-v2.6-flash": {
 "ctx": 1048576,
 "id": "xiaomi/mimo-v2.6-flash",
 "in": 0.14,
 "name": "Xiaomi: MiMo-V2.6-Flash",
 "out": 0.28
+},
+"xiaomi/mimo-v2.6-flash-mopd": {
+"ctx": 1048576,
+"id": "xiaomi/mimo-v2.6-flash-mopd",
+"in": 0.5,
+"name": "Xiaomi: MiMo-V2.6-Flash-MOPD",
+"out": 1.0
 },
 "xiaomi/mimo-v2.6-pro": {
 "ctx": 1048576,
@@ -3047,9 +3061,9 @@
 "z-ai/glm-4.5-air": {
 "ctx": 131072,
 "id": "z-ai/glm-4.5-air",
-"in": 0.13,
+"in": 0.2,
 "name": "Z.ai: GLM 4.5 Air",
-"out": 0.85
+"out": 1.1
 },
 "z-ai/glm-4.5v": {
 "ctx": 65536,
@@ -3080,7 +3094,7 @@
 "out": 2.2
 },
 "z-ai/glm-4.7-flash": {
-"ctx": 200000,
+"ctx": 131072,
 "id": "z-ai/glm-4.7-flash",
 "in": 0.0605,
 "name": "Z.ai: GLM 4.7 Flash",
@@ -3208,16 +3222,16 @@
 "~deepseek/deepseek-flash-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-flash-latest",
-"in": 0.03,
+"in": 0.036,
 "name": "DeepSeek: DeepSeek Flash Latest",
-"out": 0.2
+"out": 0.5
 },
 "~deepseek/deepseek-pro-latest": {
 "ctx": 1048576,
 "id": "~deepseek/deepseek-pro-latest",
-"in": 0.0999,
+"in": 0.111,
 "name": "DeepSeek: DeepSeek Pro Latest",
-"out": 5.0
+"out": 4.44
 },
 "~deepseek/deepseek-v4-flash-latest": {
 "ctx": 1048576,
@@ -3283,11 +3297,11 @@
 "out": 5.0
 },
 "~unbiased/pareto-latest": {
-"ctx": 1048576,
+"ctx": 262144,
 "id": "~unbiased/pareto-latest",
-"in": 0.8,
+"in": null,
 "name": "Pareto Latest",
-"out": 3.2
+"out": null
 },
 "~x-ai/grok-latest": {
 "ctx": 500000,
