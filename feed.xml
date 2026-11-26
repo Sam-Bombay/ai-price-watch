@@ -29,9 +29,10 @@
       in the expensive direction.</p>
     <p><strong>Over fourteen days: 397 logged rows, 334 of them price moves — 172 cuts against
       162 rises</strong>, out of <b>1,452 dated rows</b> since 8 October across <b>475 models</b>. Note the measurement caveat:
-      the 25 November snapshot did not run, so today's moves are read against the 24 November
-      prices and there is no 25 November row in the log. That is a gap in this instrument, stated
-      rather than smoothed over.</p>
+      there is no 25 November row in the log. The scheduler reports a clean run on both days, so either
+      the market stood still for a day or that fetch returned nothing — from the log alone this page
+      cannot tell which, and today's diffs are therefore measured against the 24 November prices rather
+      than 24 hours.</p>
     <p class="brief-f"><a href="/audit">What this costs you on your own volumes, audited →</a></p>]]></description>
     </item>
     <item>

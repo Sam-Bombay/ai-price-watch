@@ -9,6 +9,8 @@ PY=/usr/bin/python3
 BEFORE=$(cat data/changes.json 2>/dev/null | wc -c | tr -d ' ')
 OUT=$("$PY" ./fetch_prices.py) || { echo "price fetch failed: $OUT"; exit 1; }
 AFTER=$(cat data/changes.json | wc -c | tr -d ' ')
+# run log: without this, a missing day looks exactly like a quiet day (the 25 Nov gap, 26 Nov 2026)
+echo "$(date +%F) fetched=$(echo "$OUT" | head -1) changes_bytes=$BEFORE->$AFTER" >> data/runs.log
 
 if [ "$BEFORE" = "$AFTER" ]; then
   ./publish_gh_pages.sh >/dev/null 2>&1 || echo "pages mirror failed"
