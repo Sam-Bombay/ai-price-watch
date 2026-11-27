@@ -60,6 +60,7 @@ echo "logged changes: $(echo "$OUT" | head -1)"
 # data-path page that checks those routes against published leak reports
 "$PY" ./fetch_routes.py >/dev/null 2>&1 || echo "route fetch failed"
 "$PY" ./build_datapath.py >/dev/null 2>&1 || echo "datapath build failed"
+"$PY" ./build_zdr.py >/dev/null 2>&1 || echo "zdr build failed"
 
 # refresh the RSS feed from the briefs, so the feed is never staler than the page
 "$PY" ./gen_feed.py >/dev/null 2>&1 || echo "feed generation failed"
