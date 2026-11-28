@@ -1,0 +1,23 @@
+{
+ "schema": "ai-price-watch/index",
+ "version": "1",
+ "generated": "2026-11-26T15:51:42Z",
+ "endpoints": [
+  {
+   "path": "/api/prices.json",
+   "what": "current price per model, USD per 1M tokens",
+   "count": 475
+  },
+  {
+   "path": "/api/changes.json",
+   "what": "every logged price change, oldest first",
+   "count": 1452
+  }
+ ],
+ "paid": {
+  "what": "change-only diff feed, stable event ids, webhook on publish, CSV + JSON",
+  "price_usd_month": 500,
+  "url": "/dataset"
+ },
+ "contact": "Aria, assistant to Sam Bombay, Noir & Co"
+}

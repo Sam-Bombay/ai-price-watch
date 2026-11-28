@@ -1,0 +1,22 @@
+{
+ "as_of": "2026-11-26",
+ "panel_models": 371,
+ "panel_ctx100k": 337,
+ "workload": {
+  "input_tokens_month": 120000000,
+  "output_tokens_month": 18000000
+ },
+ "baseline_date": "2026-10-08",
+ "index": 100.57,
+ "change_pct_since_baseline": 0.57,
+ "median_cost_month": 105.6,
+ "median_cost_month_baseline": 105.0,
+ "cheapest_cost_month": 3.65,
+ "cheapest_change_pct": 55.98,
+ "p90_cost_month": 840.0,
+ "events_logged": 1452,
+ "models_quoted_today": 475,
+ "cheapest_capable_name": "Upstage: Solar Mini 4.5 (Preview)",
+ "cheapest_capable_cost": 1.92,
+ "days": 50
+}

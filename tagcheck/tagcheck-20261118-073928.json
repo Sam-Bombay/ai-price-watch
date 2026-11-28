@@ -1,0 +1,173 @@
+[
+  {
+    "site": "https://www.blendinteractive.com",
+    "checked_at": "2026-11-18T07:39:22-08:00",
+    "verdict": "NO_INDICATOR",
+    "tag_bundles": [
+      "https://www.blendinteractive.com/_vercel/image?url=https%3A%2F%2Fapp-blin01saasc9c7ap001.cms.optimizely.com%2Fglobalassets%2Fgraphics---blend-branding%2Fblend-logo.jpg&amp;w=1200&amp;q=95",
+      "https://www.blendinteractive.com/_vercel/image?url=https%3A%2F%2Fapp-blin01saasc9c7ap001.cms.optimizely.com%2Fglobalassets%2Fheaders---case-study%2Fheader-study-cherrybekaert.png&w=1200&q=95 (336896 bytes)",
+      "https://www.blendinteractive.com/_vercel/image?url=https%3A%2F%2Fapp-blin01saasc9c7ap001.cms.optimizely.com%2Fglobalassets%2Fheaders---case-study%2Fheader-study-ujs.png&w=1200&q=95 (214104 bytes)",
+      "https://www.blendinteractive.com/_vercel/image?url=https%3A%2F%2Fapp-blin01saasc9c7ap001.cms.optimizely.com%2Fglobalassets%2Fheaders---case-study%2Fcase-study-msu-mankato.png&w=1200&q=95 (274291 bytes)",
+      "https://www.googletagmanager.com/ns.html?id=GTM-KZSWWCP (268 bytes)",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/uxtest-icon-white.png (1746 bytes)",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/consulting-icon-white.png (2042 bytes)",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/advocacy-icon-white.png (1983 bytes)",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/progress-icon.png (2227 bytes)",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/logos---other-brands/optimizely-logo.png (14792 bytes)",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/logos---other-brands/umbraco-logo-140x140.png (8637 bytes)",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/logos---other-brands/contentstack.png (3991 bytes)",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/full-width-service-design.png",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/graphics---blend-branding/blend-logo.jpg",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/images---office-shots/office-nick-ryan-conference.jpg",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/full-width-process.png",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/headers---graphics/header-graphic-geo-checklist.png",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/headers---case-study/header-study-cherrybekaert.png",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/headers---case-study/header-study-ujs.png",
+      "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/headers---case-study/case-study-msu-mankato.png"
+    ],
+    "findings": [
+      {
+        "where": "https://www.blendinteractive.com/_vercel/image?url=https%3A%2F%2Fapp-blin01saasc9c7ap001.cms.optimizely.com%2Fglobalassets%2Fgraphics---blend-branding%2Fblend-logo.jpg&amp;w=1200&amp;q=95",
+        "match": "fetch failed: HTTPError",
+        "kind": "unverified"
+      }
+    ],
+    "note": "",
+    "final_url": "https://www.blendinteractive.com",
+    "html_sha256": "61fb9bd1c65750bdf3e6d1e64ad6fde3727c6e26c6d81452f7cedc6206048a55",
+    "csp": {
+      "grade": "WEAK",
+      "detail": "script-src allows any https origin, so an outside loader would still run"
+    },
+    "scripts_total": 0,
+    "bundle_hashes": [
+      {
+        "url": "https://www.blendinteractive.com/_vercel/image?url=https%3A%2F%2Fapp-blin01saasc9c7ap001.cms.optimizely.com%2Fglobalassets%2Fheaders---case-study%2Fheader-study-cherrybekaert.png&w=1200&q=95",
+        "sha256": "c8a0c548f9fde7067222ea61bd082466f6826137dc89998c80f26282b671d6bf"
+      },
+      {
+        "url": "https://www.blendinteractive.com/_vercel/image?url=https%3A%2F%2Fapp-blin01saasc9c7ap001.cms.optimizely.com%2Fglobalassets%2Fheaders---case-study%2Fheader-study-ujs.png&w=1200&q=95",
+        "sha256": "2ebbb9c79b2de7418337b804a7a848c8eda93aa77671ec181689e1f572499b01"
+      },
+      {
+        "url": "https://www.blendinteractive.com/_vercel/image?url=https%3A%2F%2Fapp-blin01saasc9c7ap001.cms.optimizely.com%2Fglobalassets%2Fheaders---case-study%2Fcase-study-msu-mankato.png&w=1200&q=95",
+        "sha256": "de6a00501a50fbdb361a194f066f4715ff05fa9856bd06c0d3a2643a2b3bcc5f"
+      },
+      {
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-KZSWWCP",
+        "sha256": "d818a014761cd9516d1b3e296946e960d91f4c917bf42a808e67323a8b062da8"
+      },
+      {
+        "url": "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/uxtest-icon-white.png",
+        "sha256": "8801120205bc3a1d7ecc0332e3c07e9af316b64e56ab742a66527bf0d764f856"
+      },
+      {
+        "url": "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/consulting-icon-white.png",
+        "sha256": "66b488a50bec5c4282dfba9f372baf47f4ef4bdd16e3f77d303a59e2515d272e"
+      },
+      {
+        "url": "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/advocacy-icon-white.png",
+        "sha256": "61c3a6d45f95a279b1bde947fa8e2afcf09d5cd2018c4d2d60a44c73d83a9ffa"
+      },
+      {
+        "url": "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/icons---blend-branding/progress-icon.png",
+        "sha256": "147bff99c3e78904727c0933cf2b237157b0f637c47d26a6a2469d0ece53434b"
+      },
+      {
+        "url": "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/logos---other-brands/optimizely-logo.png",
+        "sha256": "06e9dfc18f0c5d193788992ceaac845407d691ccab192b6b5add40d180b0aa1c"
+      },
+      {
+        "url": "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/logos---other-brands/umbraco-logo-140x140.png",
+        "sha256": "8bab569365ce9dc45147237ed56732792945230b56b11a39660685f786faf811"
+      },
+      {
+        "url": "https://app-blin01saasc9c7ap001.cms.optimizely.com/globalassets/logos---other-brands/contentstack.png",
+        "sha256": "1673638d24705fa8cdcc31ec6adbfc2fc58e8167929db8f6756b2d6d14adea28"
+      }
+    ]
+  },
+  {
+    "site": "https://www.thec2group.com",
+    "checked_at": "2026-11-18T07:39:26-08:00",
+    "verdict": "ERROR",
+    "tag_bundles": [],
+    "findings": [],
+    "note": "could not fetch: URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "site": "https://www.whereoware.com",
+    "checked_at": "2026-11-18T07:39:26-08:00",
+    "verdict": "NO_INDICATOR",
+    "tag_bundles": [
+      "https://www.googletagmanager.com/gtm.js?id=",
+      "https://www.googletagmanager.com/ns.html?id=GTM-FTRD (266 bytes)"
+    ],
+    "findings": [
+      {
+        "where": "https://www.googletagmanager.com/gtm.js?id=",
+        "match": "fetch failed: HTTPError",
+        "kind": "unverified"
+      }
+    ],
+    "note": "",
+    "final_url": "https://www.whereoware.com",
+    "html_sha256": "d4ce9236e7fd2f1694bfe22ce163e3f70091c0f1ed919109befc1e0e63d6fc63",
+    "csp": {
+      "grade": "WEAK",
+      "detail": "CSP present but sets no script-src or default-src"
+    },
+    "scripts_total": 15,
+    "bundle_hashes": [
+      {
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-FTRD",
+        "sha256": "1508490e2a7f3949d866ce8f032895224c55a02eb24f9ada50c7cb79a4c887c8"
+      }
+    ]
+  },
+  {
+    "site": "https://www.verndale.com",
+    "checked_at": "2026-11-18T07:39:27-08:00",
+    "verdict": "NO_INDICATOR",
+    "tag_bundles": [
+      "https://www.googletagmanager.com/gtm.js?id=",
+      "https://www.googletagmanager.com/ns.html?id=GTM-WVFQ7K7 (268 bytes)"
+    ],
+    "findings": [
+      {
+        "where": "https://www.googletagmanager.com/gtm.js?id=",
+        "match": "fetch failed: HTTPError",
+        "kind": "unverified"
+      }
+    ],
+    "note": "",
+    "final_url": "https://www.verndale.com",
+    "html_sha256": "e1a3a2fc802b02ca79ab0da18e88acab9af69310b426552319f54319160afb75",
+    "csp": {
+      "grade": "WEAK",
+      "detail": "script-src allows any https origin, so an outside loader would still run"
+    },
+    "scripts_total": 13,
+    "bundle_hashes": [
+      {
+        "url": "https://www.googletagmanager.com/ns.html?id=GTM-WVFQ7K7",
+        "sha256": "d818a014761cd9516d1b3e296946e960d91f4c917bf42a808e67323a8b062da8"
+      }
+    ]
+  },
+  {
+    "site": "https://www.mobile1st.com",
+    "checked_at": "2026-11-18T07:39:28-08:00",
+    "verdict": "NO_SCRIPTS",
+    "tag_bundles": [],
+    "findings": [],
+    "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+    "final_url": "https://mobile1st.com/",
+    "html_sha256": "da3c7d3c20b09df53bb3af8841a33a442e7d75687798920648af46498433ee1c",
+    "csp": {
+      "grade": "NONE",
+      "detail": "no Content-Security-Policy header or meta tag found"
+    },
+    "scripts_total": 0
+  }
+]

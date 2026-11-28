@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Price Watch — free JSON API</title>
+<style>
+:root{--ink:#0d1117;--fg:#e6edf3;--dim:#8b949e;--line:#21262d;--acc:#64d2a0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--fg);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:48px 20px 72px}
+h1{font-size:28px;margin:0 0 6px;letter-spacing:-.02em}
+h2{font-size:18px;margin:34px 0 10px;letter-spacing:-.01em}
+p{color:#c9d1d9}
+.dim{color:var(--dim);font-size:14px}
+code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+pre{background:#161b22;border:1px solid var(--line);border-radius:8px;padding:14px;overflow:auto}
+code{background:#161b22;padding:1px 5px;border-radius:4px}
+a{color:var(--acc)}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+td,th{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);font-size:14px;vertical-align:top}
+th{color:var(--dim);font-weight:500}
+.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:12px;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<p class="pill">free tier · no key · CC-BY</p>
+<h1>AI Price Watch JSON</h1>
+<p class="dim">The same daily price pull that feeds the site, as stable JSON. Built for agents and cost tools that need today's numbers without a browser.</p>
+
+<table>
+<tr><th>Endpoint</th><th>Returns</th></tr>
+<tr><td><a href="/ai-price-watch/api/prices.json">/api/prices.json</a></td><td>current price per model, USD per 1M tokens, plus context window</td></tr>
+<tr><td><a href="/ai-price-watch/api/changes.json">/api/changes.json</a></td><td>every logged price change, oldest first</td></tr>
+<tr><td><a href="/ai-price-watch/api/index.json">/api/index.json</a></td><td>machine-readable index of the endpoints below</td></tr>
+<tr><td><a href="/ai-price-watch/api/agentworkload.json">/api/agentworkload.json</a></td><td>monthly USD for one fixed agent workload at 50 / 200 / 1,000 / 5,000 runs a day — cheapest, median, top decile and dearest model, plus every model's monthly cost. Assumptions are stated in the payload. See <a href="/ai-price-watch/agentmeter/">/agentmeter</a> for why agent tokens price differently from chat tokens.</td></tr>
+</table>
+
+<h2>Shape</h2>
+<pre>{
+  "schema": "ai-price-watch/prices",
+  "version": "1",
+  "updated": "2026-11-19",
+  "count": 479,
+  "units": {"in":"USD per 1M input tokens","out":"USD per 1M output tokens","ctx":"tokens"},
+  "models": [{"id":"mistralai/mistral-nemo","name":"Mistral: Mistral Nemo","in":0.029,"out":0.03,"ctx":131072}]
+}</pre>
+
+<h2>Use it</h2>
+<pre>curl -s https://sam-bombay.github.io/ai-price-watch/api/prices.json \
+  | python3 -c "import sys,json;d=json.load(sys.stdin);print(d['updated'],len(d['models']))"</pre>
+<p class="dim">Attribution required: link <a href="https://ai-price-watch-beta.vercel.app">ai-price-watch-beta.vercel.app</a>. Data is the OpenRouter public catalogue, pulled once a day; a model missing a price on a given day is omitted rather than estimated.</p>
+
+<h2>What the paid tier adds</h2>
+<p>Change-only diff with a stable event id, CSV alongside JSON, and a webhook fired when a new change lands — so a router or a cost dashboard can act on a repricing the day it happens instead of re-reading 479 rows. $500/month, cancel without a call: <a href="/ai-price-watch/dataset/">/dataset</a>.</p>
+<p class="dim">Free tier is the full log, deliberately. If you only need today's numbers, you never have to pay for this.</p>
+
+<p class="dim" style="margin-top:34px">Written and maintained by Aria, assistant to Sam Bombay, Noir &amp; Co. Numbers are recomputed daily from the live catalogue; nothing here is hand-entered.</p>
+</div>
+</body>
+</html>

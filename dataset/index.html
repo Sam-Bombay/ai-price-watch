@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI model price log — daily feed — AI Price Watch</title>
+<style>
+:root{--bg:#0d0f12;--card:#14161a;--line:#232831;--ink:#e7e9ee;--dim:#8a919e;--accent:#7ee0a8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:56px 22px 90px}
+a{color:var(--accent)}
+h1{font-size:30px;line-height:1.2;margin:0 0 14px;letter-spacing:-.01em}
+h2{font-size:15px;text-transform:uppercase;letter-spacing:.12em;color:var(--dim);font-weight:600;margin:40px 0 14px}
+p{margin:0 0 14px}
+.lede{color:#c3c8d2;font-size:18px}
+.stats{display:flex;gap:30px;flex-wrap:wrap;margin:30px 0 6px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat b{display:block;font-size:26px;letter-spacing:-.02em}
+.stat span{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
+table{width:100%;border-collapse:collapse;font-size:14px;margin-top:8px}
+th{text-align:left;color:var(--dim);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;border-bottom:1px solid var(--line);padding:0 8px 8px 0}
+td{padding:9px 8px 9px 0;border-bottom:1px solid #1b1f26}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+.up{color:#ff9b8a}.dn{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 24px;margin:26px 0}
+.price{font-size:34px;font-weight:700;letter-spacing:-.02em;margin:0}
+.price small{font-size:14px;font-weight:400;color:var(--dim);letter-spacing:0}
+ul{margin:0 0 14px;padding-left:20px;color:#c3c8d2}
+li{margin-bottom:7px}
+code{background:#1c2028;padding:2px 6px;border-radius:4px;font-size:13px}
+.foot{margin-top:50px;color:var(--dim);font-size:13px;border-top:1px solid var(--line);padding-top:18px}
+</style></head><body><div class="wrap">
+<p><a href="../">← AI Price Watch</a></p>
+<h1>The daily price log, as data</h1>
+<p class="lede">Every price change across the open model market, logged with the date it happened. 475 models, updated daily from the OpenRouter catalogue. This is the raw material behind <a href="../cost-index/">the AI Cost Index</a> and every brief on the front page.</p>
+
+<div class="stats">
+  <div class="stat"><b>1,099</b><span>logged changes</span></div>
+  <div class="stat"><b>475</b><span>models tracked</span></div>
+  <div class="stat"><b>44</b><span>changes today</span></div>
+  <div class="stat"><b>2</b><span>fields: input / output</span></div>
+</div>
+
+<h2>Today's log, first rows</h2>
+<table>
+<tr><th>Model</th><th>Field</th><th class="n">From</th><th class="n">To</th><th class="n">Change</th></tr>
+<tr><td>DeepSeek: DeepSeek V4.1 Flash 1017</td><td>input</td><td class="n">$0.006</td><td class="n">$0.15</td><td class="n up">+2400.0%</td></tr>
+<tr><td>DeepSeek: DeepSeek V4.1 Flash</td><td>input</td><td class="n">$0.051</td><td class="n">$0.30</td><td class="n up">+488.2%</td></tr>
+<tr><td>Z.ai: GLM 5.3 Flash (batch)</td><td>output</td><td class="n">$0.061</td><td class="n">$0.18</td><td class="n up">+195.1%</td></tr>
+<tr><td>MoonshotAI: Kimi K3.1 Pro</td><td>input</td><td class="n">$2.00</td><td class="n">$0.2375</td><td class="n dn">-88.1%</td></tr>
+<tr><td>Qwen: Qwen3.5-9B</td><td>output</td><td class="n">$0.25</td><td class="n">$0.15</td><td class="n dn">-40.0%</td></tr>
+<tr><td>Google: Gemini 4 Hydrogen <em>(new)</em></td><td>input</td><td class="n">—</td><td class="n">$1.50</td><td class="n">added</td></tr>
+</table>
+
+<h2>Get the files</h2>
+<ul>
+  <li><a href="changes.csv">changes.csv</a> — one row per change: date, model_id, model_name, field, price_from, price_to, pct_change</li>
+  <li><a href="prices.csv">prices.csv</a> — current price per model, input and output, per million tokens</li>
+  <li><a href="../data/changes.json">changes.json</a> — the same log as JSON, for anything that reads an API</li>
+</ul>
+<p>Public snapshot: <b>CC BY 4.0</b>, attribution to AI Price Watch. Updated once a day.</p>
+
+<div class="card">
+  <h2 style="margin-top:0">Licensed feed</h2>
+  <p class="price">$500 <small>/ month</small></p>
+  <p>For a router, gateway, observability product or publication that quotes model prices to customers: the full log delivered daily as JSON + CSV, with a licence to republish, a change-only diff so an integration never re-reads the world, and a first month free.</p>
+  <p>Why it is worth paying for: on 12 November alone, 44 changes. Two DeepSeek lines moved +488% and +2,400% in the same day, while Gemini 4 Hydrogen launched <em>below</em> the previous Pro tier. A price table assembled by hand is wrong within days; a table scraped weekly is wrong in both directions at once.</p>
+  <p>Today, 13 November, the log caught 31 changes across 19 models: Moonshot Kimi K3.1 Pro input $0.2375 to $2.00 (+742.1%), Z.ai GLM 5.3 output $1.40 to $3.60 (+157.1%), DeepSeek V4.1 Flash 1017 input $0.15 to $0.038 (-74.7%) — one day after the same field rose 2,400%. Five models retired. Fortnight: 411 changes, 169 cuts against 171 rises.</p>
+  <p style="margin-bottom:0"><a href="https://buy.stripe.com/3cIfZg7Xi8tld8S9SY0kE00" style="display:inline-block;background:#0a7d3c;color:#fff;font-weight:600;padding:10px 16px;border-radius:6px;text-decoration:none">Subscribe — $500/month, card, cancel any time</a></p>
+  <p style="margin-bottom:0"><a href="mailto:sambombayoffice@gmail.com?subject=Price%20log%20feed">Or ask for the sample slice first</a> — today's moves, one file, no commitment. Or read <a href="../audit/">what I do with it for a single bill</a>.</p>
+</div>
+
+<div class="foot">AI Price Watch · built and maintained by Noir &amp; Co · <a href="../">front page</a> · <a href="../cost-index/">cost index</a> · <a href="../audit/">audit</a></div>
+</div></body></html>

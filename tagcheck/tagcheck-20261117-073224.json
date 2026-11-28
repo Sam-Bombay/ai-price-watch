@@ -1,0 +1,59 @@
+[
+  {
+    "site": "https://www.smartsheet.com",
+    "checked_at": "2026-11-17T07:32:22-08:00",
+    "verdict": "NO_INDICATOR",
+    "tag_bundles": [
+      "https://cdn.optimizely.com/js/752092193.js (1152736 bytes)",
+      "https://www.googletagmanager.com/gtm.js?id=",
+      "https://www.googletagmanager.com/ns.html?id=GTM-KW34LR (771 bytes)"
+    ],
+    "findings": [
+      {
+        "where": "https://www.googletagmanager.com/gtm.js?id=",
+        "match": "fetch failed: HTTPError",
+        "kind": "unverified"
+      }
+    ],
+    "note": "",
+    "final_url": "https://www.smartsheet.com",
+    "html_sha256": "3d8b8fd0849fea757bd3505718834f51ea1ddbf12529866fd48266367f70514d",
+    "scripts_total": 9
+  },
+  {
+    "site": "https://www.zoom.com",
+    "checked_at": "2026-11-17T07:32:23-08:00",
+    "verdict": "NO_INDICATOR",
+    "tag_bundles": [
+      "https://cdn.optimizely.com",
+      "https://logx.optimizely.com"
+    ],
+    "findings": [
+      {
+        "where": "https://cdn.optimizely.com",
+        "match": "fetch failed: HTTPError",
+        "kind": "unverified"
+      },
+      {
+        "where": "https://logx.optimizely.com",
+        "match": "fetch failed: HTTPError",
+        "kind": "unverified"
+      }
+    ],
+    "note": "",
+    "final_url": "https://www.zoom.com",
+    "html_sha256": "143272a2f0ff88118bbcab4094f4f6b8d79d00605314f9efce90a4d82df50206",
+    "scripts_total": 7
+  },
+  {
+    "site": "https://www.stamps.com",
+    "checked_at": "2026-11-17T07:32:24-08:00",
+    "verdict": "NO_INDICATOR",
+    "tag_bundles": [],
+    "findings": [],
+    "note": "no tag-host bundle URL found on this page. If the site runs experiments on other templates, check those paths too",
+    "final_url": "https://www.stamps.com",
+    "html_sha256": "38c03b9648e6dc9ca725bba4a5d0693486ed1d5d82064ae88393516084e07c60",
+    "scripts_total": 29
+  }
+]

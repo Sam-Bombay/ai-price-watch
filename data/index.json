@@ -1,0 +1,476 @@
+{
+ "summary": {
+  "as_of": "2026-11-26",
+  "panel_models": 371,
+  "panel_ctx100k": 337,
+  "workload": {
+   "input_tokens_month": 120000000,
+   "output_tokens_month": 18000000
+  },
+  "baseline_date": "2026-10-08",
+  "index": 100.57,
+  "change_pct_since_baseline": 0.57,
+  "median_cost_month": 105.6,
+  "median_cost_month_baseline": 105.0,
+  "cheapest_cost_month": 3.65,
+  "cheapest_change_pct": 55.98,
+  "p90_cost_month": 840.0,
+  "events_logged": 1452,
+  "models_quoted_today": 475,
+  "cheapest_capable_name": "Upstage: Solar Mini 4.5 (Preview)",
+  "cheapest_capable_cost": 1.92,
+  "days": 50
+ },
+ "series": [
+  {
+   "date": "2026-10-08",
+   "n": 371,
+   "median": 105.0,
+   "p90": 811.2,
+   "cheapest": 2.34,
+   "index": 100.0,
+   "index_cheapest": 100.0
+  },
+  {
+   "date": "2026-10-09",
+   "n": 371,
+   "median": 105.0,
+   "p90": 811.2,
+   "cheapest": 1.87,
+   "index": 100.0,
+   "index_cheapest": 80.03
+  },
+  {
+   "date": "2026-10-10",
+   "n": 371,
+   "median": 105.0,
+   "p90": 811.2,
+   "cheapest": 3.63,
+   "index": 100.0,
+   "index_cheapest": 155.08
+  },
+  {
+   "date": "2026-10-11",
+   "n": 371,
+   "median": 105.6,
+   "p90": 811.2,
+   "cheapest": 3.63,
+   "index": 100.57,
+   "index_cheapest": 155.08
+  },
+  {
+   "date": "2026-10-12",
+   "n": 371,
+   "median": 105.6,
+   "p90": 811.2,
+   "cheapest": 3.63,
+   "index": 100.57,
+   "index_cheapest": 155.08
+  },
+  {
+   "date": "2026-10-13",
+   "n": 371,
+   "median": 105.6,
+   "p90": 811.2,
+   "cheapest": 3.63,
+   "index": 100.57,
+   "index_cheapest": 155.08
+  },
+  {
+   "date": "2026-10-14",
+   "n": 371,
+   "median": 105.6,
+   "p90": 811.2,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-15",
+   "n": 371,
+   "median": 109.2,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 104.0,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-16",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-17",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-18",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-19",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.25,
+   "index": 100.57,
+   "index_cheapest": 138.97
+  },
+  {
+   "date": "2026-10-20",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-21",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-22",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-23",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-24",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-25",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-26",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-27",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-28",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-10-29",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-30",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-10-31",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-11-01",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.37,
+   "index": 100.57,
+   "index_cheapest": 143.85
+  },
+  {
+   "date": "2026-11-02",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-11-03",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-11-04",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-11-05",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-11-06",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-11-07",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 2.42,
+   "index": 100.57,
+   "index_cheapest": 103.59
+  },
+  {
+   "date": "2026-11-08",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 2.42,
+   "index": 100.57,
+   "index_cheapest": 103.59
+  },
+  {
+   "date": "2026-11-09",
+   "n": 371,
+   "median": 109.2,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 104.0,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-10",
+   "n": 371,
+   "median": 109.2,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 104.0,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-11",
+   "n": 371,
+   "median": 109.2,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 104.0,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-12",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-13",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-14",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-15",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-16",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-17",
+   "n": 371,
+   "median": 105.0,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.0,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-18",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-19",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-20",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-21",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-22",
+   "n": 371,
+   "median": 108.0,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 102.86,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-23",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.12,
+   "index": 100.57,
+   "index_cheapest": 133.33
+  },
+  {
+   "date": "2026-11-24",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-11-25",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  },
+  {
+   "date": "2026-11-26",
+   "n": 371,
+   "median": 105.6,
+   "p90": 840.0,
+   "cheapest": 3.65,
+   "index": 100.57,
+   "index_cheapest": 156.15
+  }
+ ]
+}

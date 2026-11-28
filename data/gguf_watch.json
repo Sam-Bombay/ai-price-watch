@@ -1,0 +1,3518 @@
+{
+ "summary": {
+  "generated_utc": "2026-11-28T15:35:05Z",
+  "window_days": 7,
+  "repos_scanned": 350,
+  "repos_with_template_hits": 0,
+  "critical": 0,
+  "by_worst": {
+   "clean": 350
+  },
+  "total_downloads": 51985,
+  "total_downloads_flagged": 0,
+  "coverage": "chat_template metadata only; file-byte overlays after the last tensor not inspected"
+ },
+ "flagged": [],
+ "scanned": [
+  {
+   "id": "oxpuppy635/gemma4-26b-Timberline-lora",
+   "created": "2026-11-28T15:33:13.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "avgrocketman/Inkling-2-Mini",
+   "created": "2026-11-28T15:28:22.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "fauslimbus/unsloth_Qwen3.5-2B_Berbew_malware2.0.0_GGUF",
+   "created": "2026-11-28T15:19:33.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7991,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "M-Azfar/qwen3-1.7b-function-calling-lora",
+   "created": "2026-11-28T15:14:45.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "alihassanwarsi/trustgate-qwen2.5-0.5b-gguf",
+   "created": "2026-11-28T15:04:06.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "kalle07/Hy-MT3-7B-heresy-ara-GGUF",
+   "created": "2026-11-28T15:01:01.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "DXTO/HY-MT2-1.8B-Manga-JaZh",
+   "created": "2026-11-28T14:49:28.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 596,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/Phi-3-mini-4k-instruct-bnb-4bit-BYM",
+   "created": "2026-11-28T14:49:20.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "houlahoula/houla-kotlin-GGUF",
+   "created": "2026-11-28T14:48:42.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7755,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "lahyk/InternSVG-8B-GUFF",
+   "created": "2026-11-28T14:44:50.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 481,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "P4pps3n/Inkling-2-Mini-abliterated-GGUF",
+   "created": "2026-11-28T14:43:57.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-starcoder2-7b-GGUF",
+   "created": "2026-11-28T14:36:27.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Minkle/pak-farming-qwen3-1.7b",
+   "created": "2026-11-28T14:30:35.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4202,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-stable-code-3b-GGUF",
+   "created": "2026-11-28T14:30:29.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "AyshSaleem/qwen3-1.7b-toolcall-lora-gguf",
+   "created": "2026-11-28T14:20:52.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4673,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "KvcHub/KaiLu-Vera",
+   "created": "2026-11-28T14:14:17.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": true,
+   "template_len": 476,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/zephyr-sft-bnb-4bit-BYM",
+   "created": "2026-11-28T14:12:58.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Muhammadali-254/memo-lite-qwen2.5-0.5b-fullft",
+   "created": "2026-11-28T14:07:38.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2506,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "gghfez/Voxtral-Mini-3B-2507-BF16-GGUF",
+   "created": "2026-11-28T14:06:53.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 17,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Mistral-NeMo-Minitron-8B-Instruct-GGUF",
+   "created": "2026-11-28T14:01:48.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 397,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "cortex-ai-nova/Bready-6.3",
+   "created": "2026-11-28T14:01:05.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 24190,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "gj-tobisako/Inkling-2-Mini-Unbound-Fast-mixB-2-3bit-GGUF",
+   "created": "2026-11-28T13:50:38.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "justahmed06/qwen3-1.7b-purchase-extractor-gguf",
+   "created": "2026-11-28T13:49:53.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4707,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Mistral-Nemo-Instruct-2407-GGUF",
+   "created": "2026-11-28T13:49:48.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 3945,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Muhammadali-254/memo-lite-qwen2.5-1.5b-distractors",
+   "created": "2026-11-28T13:42:24.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2506,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "someone786/daakiya-qwen3-1.7b-v2-GGUF",
+   "created": "2026-11-28T13:39:38.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4707,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Hh890103/gemma-4-E4B-it-ultra",
+   "created": "2026-11-28T13:39:01.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 16317,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "MRA-Labs/neverending-gemma4-12b",
+   "created": "2026-11-28T13:38:24.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18922,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zbdhsqvdhqs/Qwen-Image-2.1-Turbo-Quantized",
+   "created": "2026-11-28T13:31:09.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "jubair239/Index-Nailong-2B-Variant9-mt-gguf",
+   "created": "2026-11-28T13:29:58.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 596,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Jinnjjk/reax-13-gguf-loras",
+   "created": "2026-11-28T13:28:44.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "z218886012/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF",
+   "created": "2026-11-28T13:25:35.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7387,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "julienkay/tiny-flux3-klein-pipe-gguf",
+   "created": "2026-11-28T13:25:24.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "LeanProgressIQ/Gemma3-1B-aura-dpo",
+   "created": "2026-11-28T13:23:31.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1375,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "RemydreScarlet/theia-lora-adapters",
+   "created": "2026-11-28T13:21:40.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "LeanProgressIQ/LFM2.5-1.2B-aura-dpo",
+   "created": "2026-11-28T13:21:31.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5487,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Muhammadali-254/memo-lite-qwen2.5-1.5b-no-xdoc",
+   "created": "2026-11-28T13:18:10.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2506,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/codellama-7b-bnb-4bit-BYM",
+   "created": "2026-11-28T13:17:24.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "two-eyed-ravens/aemon-8b",
+   "created": "2026-11-28T13:17:03.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "yaartal/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+   "created": "2026-11-28T13:16:31.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8953,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Xylolabs/Tess-4.5-26B-A3B-GGUF",
+   "created": "2026-11-28T13:10:53.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "enescobann/granite-4.0-1b-tool-calling-tr-GGUF",
+   "created": "2026-11-28T13:06:49.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6418,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "enescobann/qwen3.5-0.8b-tool-calling-tr-GGUF",
+   "created": "2026-11-28T13:05:49.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7755,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Benedict-seke/Testing",
+   "created": "2026-11-28T13:04:57.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4168,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "AbdulRahmanAzam/pakaddress-qwen3-1.7b-gguf",
+   "created": "2026-11-28T13:01:04.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4795,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Muhammadali-254/memo-lite-qwen2.5-1.5b-full",
+   "created": "2026-11-28T13:01:03.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2506,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "fges-nlp-a3b1/qwen3-4b-stages-lora",
+   "created": "2026-11-28T12:55:35.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-CodeLlama-13b-hf-GGUF",
+   "created": "2026-11-28T12:52:47.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Xylolabs/Maxwell-V1-Flash-GGUF",
+   "created": "2026-11-28T12:51:12.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7755,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zoria-lm/Zoria-GGUF",
+   "created": "2026-11-28T12:49:45.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18681,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qwen3.5-4B-Persona-Infatuation-i1-GGUF",
+   "created": "2026-11-28T12:48:51.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "DevsDoCode/OpenWisprFlow-Qwen3-1.7B-v8d-Q8_0-GGUF",
+   "created": "2026-11-28T12:48:18.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4761,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Austriani/Gemma-4-Irrlicht-Untied-26B-A4B-ik_llama.cpp",
+   "created": "2026-11-28T12:42:54.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 16448,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "KvcHub/KaiLu-Vega",
+   "created": "2026-11-28T12:39:42.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": true,
+   "template_len": 476,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "maaz-319/motifforge-qwen3-1.7b",
+   "created": "2026-11-28T12:35:10.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4707,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Javeria00987/pakistan-air-quality-advisor-qwen3-1.7b-gguf",
+   "created": "2026-11-28T12:30:44.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4761,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/gemma-7b-bnb-4bit-BYM",
+   "created": "2026-11-28T12:17:05.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "lezcore1-max/ticket-qwen2.5-1.5b-gguf",
+   "created": "2026-11-28T12:16:58.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Zual/Triolet-1.7B",
+   "created": "2026-11-28T12:14:24.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 12129,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "techietech22/ducktalk-qwen3-4b-GGUF",
+   "created": "2026-11-28T12:12:16.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4761,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mojealterego/LFM2.5-24B-A2B-Uncensored-GGUF",
+   "created": "2026-11-28T12:11:22.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5443,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mojealterego/Inkling-2-Mini-Uncensored-GGUF",
+   "created": "2026-11-28T12:11:06.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mojealterego/LFM3-Omni-2B-GGUF",
+   "created": "2026-11-28T12:10:19.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 13513,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "estebanstifli/audio.cpp-gguf",
+   "created": "2026-11-28T12:09:47.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "johnlockejrr/Blackfrost-AI-Inkling-2-Mini-Derisked-loom",
+   "created": "2026-11-28T12:08:50.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qwen3-1.7B-Abliterated-Zero-i1-GGUF",
+   "created": "2026-11-28T12:01:19.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4168,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "udgamlabs/alder-1.6b-GGUF",
+   "created": "2026-11-28T11:59:47.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 949,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "smolnikov/Ameli-27B-GGUF",
+   "created": "2026-11-28T11:57:59.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "smolnikov/Ameli-9B-GGUF",
+   "created": "2026-11-28T11:57:31.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "smolnikov/Ameli-4B-GGUF",
+   "created": "2026-11-28T11:56:59.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "smolnikov/Ameli-2B-GGUF",
+   "created": "2026-11-28T11:56:22.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "taurusduan/Qwen3.8-Flash-Next-Gyro-GGUF",
+   "created": "2026-11-28T11:56:12.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 9993,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "opencompose/compose1",
+   "created": "2026-11-28T11:45:21.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7991,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "udgamlabs/alder-1.6b",
+   "created": "2026-11-28T11:44:57.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 949,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "hajuhar/llm",
+   "created": "2026-11-28T11:38:22.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4100,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ilintar/Inkling_2_Mini_deloop-GGUF",
+   "created": "2026-11-28T11:28:21.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "isichan-ai/Ternary-Bonsai-2.5-27B-Unlock-GGUF",
+   "created": "2026-11-28T11:27:34.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8952,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "johnlockejrr/Blackfrost-AI-Inkling-2-Mini-Derisked-GGUF",
+   "created": "2026-11-28T11:19:43.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/gemma-1_1-7b-it-bnb-4bit-BYM",
+   "created": "2026-11-28T11:14:31.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "tim518/Qwen3.8-27B-Wenyan-GGUF",
+   "created": "2026-11-28T11:09:26.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 9008,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "jucee/DeepSeek-V4.1-Flash-DFly2",
+   "created": "2026-11-28T11:02:36.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "artificialpossum/Qwen-3.8-Flash-Next-UD-IQ4_XS-Abliterated",
+   "created": "2026-11-28T11:02:08.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 9993,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Privoid-ai/Privoid-TinyStories-30M-GGUF",
+   "created": "2026-11-28T10:58:19.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qwen3.5-4B-agent-grpo-i1-GGUF",
+   "created": "2026-11-28T10:56:40.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Markie77/markie-ai-v3",
+   "created": "2026-11-28T10:47:02.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "WaiKong/goop-fine-tuned_lora_only",
+   "created": "2026-11-28T10:46:01.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "KhawajaAfnan/voicecode-asr",
+   "created": "2026-11-28T10:41:21.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 199,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Aeonthic/Lumen-3.8-Pulsar-26B-A3B-it-qat-q4_0-gguf",
+   "created": "2026-11-28T10:31:27.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 23476,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "yadavkapil7155/Qwen3.5-4B-GGUF",
+   "created": "2026-11-28T10:21:52.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "youshinh/syki-ghost",
+   "created": "2026-11-28T10:13:00.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "kvark128/PocketTTS-RU-slow-phonon",
+   "created": "2026-11-28T10:04:18.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "photron29/roast_engine",
+   "created": "2026-11-28T09:58:18.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2506,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/zia-ai-assistant-i1-GGUF",
+   "created": "2026-11-28T09:57:46.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18567,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "hasnain90/pocket-voice",
+   "created": "2026-11-28T09:53:13.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2509,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Magicoder-S-DS-6.7B-GGUF",
+   "created": "2026-11-28T09:53:11.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 571,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "haruuuuu-1256/sweet-zenz-v1.1-small-gguf",
+   "created": "2026-11-28T09:52:15.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "hezone/Qwen3.8-27B-Uncensored-CyberSec-RE-v2-GGUF",
+   "created": "2026-11-28T09:51:45.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8952,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "DarkKitsune/Qwen3.8-Flash-Next-ThinkingCap-RCO-Strata-PLEQ8_0",
+   "created": "2026-11-28T09:44:18.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8952,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/Meta-Llama-3_1-8B-Instruct-bnb-4bit-BYM",
+   "created": "2026-11-28T09:40:52.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qwen3.5-4B-Persona-Mystic-GGUF",
+   "created": "2026-11-28T09:29:46.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-granite-8b-code-base-4k-GGUF",
+   "created": "2026-11-28T09:25:30.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "srujansrutha/portfolio-comms",
+   "created": "2026-11-28T09:24:37.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "dendriteholdings/Ingot-XI-9B-Q2",
+   "created": "2026-11-28T09:21:09.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zhy936/Qwen3.8-27B-abliterated-GGUF",
+   "created": "2026-11-28T09:19:48.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8952,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mr-andrey-isachenko/Tenet-125B-A6B-Qwen3.8-Unslop-v3",
+   "created": "2026-11-28T09:08:43.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "StarsMakeGalaxy/marseer-v5-9b-gguf-q8-imp",
+   "created": "2026-11-28T09:06:32.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7992,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "OmgItsAmmer/urdu-nastaliq-ocr-qwen3vl-2b-v4nc-GGUF",
+   "created": "2026-11-28T08:59:02.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5292,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-OpenCoder-8B-Instruct-GGUF",
+   "created": "2026-11-28T08:58:46.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 345,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "krasveta/daran-model",
+   "created": "2026-11-28T08:54:21.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5292,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "kvark128/PocketTTS-RU-fast-phonon",
+   "created": "2026-11-28T08:33:37.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "KvcHub/KaiLu-Downloads",
+   "created": "2026-11-28T08:33:10.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "HoeioUser/vollie3",
+   "created": "2026-11-28T08:28:27.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 459,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/llama-3-8b-Instruct-bnb-4bit-BYM",
+   "created": "2026-11-28T08:22:06.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Yi-Coder-9B-GGUF",
+   "created": "2026-11-28T08:21:00.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NSClipperAI/decensored-lfm3-1.7b",
+   "created": "2026-11-28T08:07:12.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 12129,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "jamesedit/qwen35-4b-remotion-GGUF",
+   "created": "2026-11-28T08:04:20.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "KvcHub/KaiLu-Orion",
+   "created": "2026-11-28T07:52:53.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": true,
+   "template_len": 476,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "softsay/Qwen3-ASR-0.6B-gguf",
+   "created": "2026-11-28T07:52:24.000Z",
+   "downloads": 4,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1099,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "softsay/Qwen3-ASR-1.7B-gguf",
+   "created": "2026-11-28T07:52:16.000Z",
+   "downloads": 4,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1099,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mrfakename/Hy4-flash-abliterated-GGUF",
+   "created": "2026-11-28T07:50:35.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mrfakename/Hy4-flash-abliterated",
+   "created": "2026-11-28T07:50:34.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Sussysam/Qwen3-4B-Instruct-2507-heretic-GGUF",
+   "created": "2026-11-28T07:48:32.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2630,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "trucddx/envit5-translation-gguf",
+   "created": "2026-11-28T07:47:20.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ermiaazarkhalili/Qwen3.5-0.8B-SFT-NuminaMath-GGUF",
+   "created": "2026-11-28T07:29:46.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Tenet-30B-A3B-GLM4.7-Unslop-v3-i1-GGUF",
+   "created": "2026-11-28T07:28:17.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 3120,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Neurosamaclipper/decensored-lfm3-1.7b",
+   "created": "2026-11-28T07:20:35.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 12129,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Orvena-1.1-4B-GGUF",
+   "created": "2026-11-28T07:15:44.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7761,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Tenet-35B-A3B-Qwen3.6-Unslop-v3-i1-GGUF",
+   "created": "2026-11-28T07:08:09.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7816,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Hansda/F5-TTS-Vietnamese-ViVoice-GGUF",
+   "created": "2026-11-28T07:07:06.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "saint32/alfath-ekstraksi-q8-v2",
+   "created": "2026-11-28T07:05:48.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "kamiuuu/test12",
+   "created": "2026-11-28T07:05:47.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Hansda/OpenThai2.2-OCR-Markdown-20261127-GGUF",
+   "created": "2026-11-28T07:00:06.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 634,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Hansda/DA3-SMALL-GGUF",
+   "created": "2026-11-28T07:00:06.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Omega-Factory/Qwen3.8-27B-Turbo-GGUF",
+   "created": "2026-11-28T06:51:41.000Z",
+   "downloads": 2,
+   "disabled": false,
+   "gated": false,
+   "template_len": 9004,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "henery072/CineVerifAI",
+   "created": "2026-11-28T06:47:58.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 398,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-granite-3.2-8b-instruct-GGUF",
+   "created": "2026-11-28T06:45:28.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4341,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/mistral-7b-bnb-4bit-BYM",
+   "created": "2026-11-28T06:44:20.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "StarsMakeGalaxy/marseer-v5-9b-gguf-q4",
+   "created": "2026-11-28T06:43:40.000Z",
+   "downloads": 5,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7992,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NGARiAI/ngari-ft-sft",
+   "created": "2026-11-28T06:40:20.000Z",
+   "downloads": 5,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "StarsMakeGalaxy/marseer-v5-9b-lora-gguf-q8",
+   "created": "2026-11-28T06:38:46.000Z",
+   "downloads": 4,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NGARiAI/ngari-ft",
+   "created": "2026-11-28T06:38:00.000Z",
+   "downloads": 3,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NGARiAI/ngari-ft-distilled-v5",
+   "created": "2026-11-28T06:37:08.000Z",
+   "downloads": 2,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NGARiAI/ngari-ft-distilled-v4",
+   "created": "2026-11-28T06:36:19.000Z",
+   "downloads": 3,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Vantuk/model_set_v68",
+   "created": "2026-11-28T06:35:36.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 596,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NGARiAI/ngari-ft-distilled-v3-dpo",
+   "created": "2026-11-28T06:35:28.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NGARiAI/ngari-ft-distilled-v2",
+   "created": "2026-11-28T06:33:08.000Z",
+   "downloads": 1,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NGARiAI/ngari-ft-distilled-v3",
+   "created": "2026-11-28T06:30:41.000Z",
+   "downloads": 1,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "fastwithkamran/Qwen3-1.7B-SouthAsia-QA-GGUF",
+   "created": "2026-11-28T06:30:15.000Z",
+   "downloads": 4,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4707,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Kei64/Kovex-Reason-1.5B-GGUF",
+   "created": "2026-11-28T06:28:25.000Z",
+   "downloads": 2,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Xylolabs/gemma-4-31B-GGUF",
+   "created": "2026-11-28T06:27:11.000Z",
+   "downloads": 10,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Tenet-26B-A3B-Inkling2-Unslop-v3-i1-GGUF",
+   "created": "2026-11-28T06:14:29.000Z",
+   "downloads": 23,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "LaffeyNyaa/manotete",
+   "created": "2026-11-28T06:10:11.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 596,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Muthu88/Eternity-AI-4B-GGUF",
+   "created": "2026-11-28T06:09:47.000Z",
+   "downloads": 1,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Yukey96/game-ai-models",
+   "created": "2026-11-28T06:08:54.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 348,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Ministral-8B-Instruct-2410-GGUF",
+   "created": "2026-11-28T06:07:22.000Z",
+   "downloads": 4,
+   "disabled": false,
+   "gated": false,
+   "template_len": 3945,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Vier7/Huihui-Qwen3.8-27B-abliterated-GGUF",
+   "created": "2026-11-28T06:03:26.000Z",
+   "downloads": 75,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8952,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "oxpuppy635/gemma4-26b-Penny-lora",
+   "created": "2026-11-28T06:02:35.000Z",
+   "downloads": 14,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "hletrd/Hy4-flash-Uncensored-GGUF",
+   "created": "2026-11-28T06:00:21.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 17174,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/xmodel-vl-GGUF",
+   "created": "2026-11-28T06:00:14.000Z",
+   "downloads": 57,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8952,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "aman2321/Inkling-2-Mini-Opus-Short-Thinking-GGUF",
+   "created": "2026-11-28T06:00:10.000Z",
+   "downloads": 18,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ARRANCORE/DFlash2-Ternary-Bonsai-2.5-27B-llama.cpp",
+   "created": "2026-11-28T05:59:01.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8952,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "cslemes/qweniskit-coder-1.5b",
+   "created": "2026-11-28T05:54:26.000Z",
+   "downloads": 11,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Inkling-2-Mini-LV-i1-GGUF",
+   "created": "2026-11-28T05:54:24.000Z",
+   "downloads": 28,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6947,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-CodeLlama-7b-hf-GGUF",
+   "created": "2026-11-28T05:46:01.000Z",
+   "downloads": 7,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Markie77/markie-ai-v2",
+   "created": "2026-11-28T05:45:53.000Z",
+   "downloads": 7,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7755,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/mistral-7b-instruct-v0_3-bnb-4bit-BYM",
+   "created": "2026-11-28T05:42:14.000Z",
+   "downloads": 1,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "jubair239/Index-Nailong-2B-Variant8-fullfinetune-gguf",
+   "created": "2026-11-28T05:36:50.000Z",
+   "downloads": 35,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "x0me/qwen3.5-4b-sysadmin-v5",
+   "created": "2026-11-28T05:33:31.000Z",
+   "downloads": 4,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Mathstral-7B-v0.1-GGUF",
+   "created": "2026-11-28T05:32:03.000Z",
+   "downloads": 31,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1053,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Figgledbottom/DeepSeek-V4.1-Flash-1017-abliterated-GGUF",
+   "created": "2026-11-28T05:31:40.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": true,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "slickwarren/translategemma-27b-it-Q8_0-GGUF",
+   "created": "2026-11-28T05:26:29.000Z",
+   "downloads": 4,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zafar-original/qwen3-1.7b-physics-parser",
+   "created": "2026-11-28T05:15:45.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4707,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Xylolabs/GigaChat4-37B-A4B-base-GGUF",
+   "created": "2026-11-28T05:08:28.000Z",
+   "downloads": 7,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Ahmad-Rzx/motifforge-c-strict-run1",
+   "created": "2026-11-28T05:07:39.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4707,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Cocktail-AI/Cocktail-C1-XS-Solid",
+   "created": "2026-11-28T05:04:34.000Z",
+   "downloads": 11,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "programasweights/paw-programs-0002",
+   "created": "2026-11-28T05:03:37.000Z",
+   "downloads": 6,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Sayansantra/LFM3-2.0B-WSP-V5",
+   "created": "2026-11-28T05:01:51.000Z",
+   "downloads": 102,
+   "disabled": false,
+   "gated": false,
+   "template_len": 12129,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Xylolabs/Sophon-Realtime-4B-Flash-GGUF",
+   "created": "2026-11-28T04:58:49.000Z",
+   "downloads": 37,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4168,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "III111II1I1/Qwen3.5-4B-N3-Meme",
+   "created": "2026-11-28T04:52:52.000Z",
+   "downloads": 24,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/gemma-4-12B-it-abliterated-negative-emotions-i1-GGUF",
+   "created": "2026-11-28T04:47:27.000Z",
+   "downloads": 94,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18681,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "fritskarl/Inkling-2-Mini-Unbound-v3-Fast-pi-IQ3_M-GGUF",
+   "created": "2026-11-28T04:45:08.000Z",
+   "downloads": 2,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-granite-3b-code-base-2k-GGUF",
+   "created": "2026-11-28T04:42:15.000Z",
+   "downloads": 11,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/mistral-7b-instruct-v0_2-bnb-4bit-BYM",
+   "created": "2026-11-28T04:42:12.000Z",
+   "downloads": 1,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zkwr1081/Moss-image-psychedelic-lora-GGUF",
+   "created": "2026-11-28T04:40:12.000Z",
+   "downloads": 10,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zkwr1081/Moss-image-beauty-lora-GGUF",
+   "created": "2026-11-28T04:40:10.000Z",
+   "downloads": 11,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zkwr1081/Angry-Claudius-9B",
+   "created": "2026-11-28T04:40:06.000Z",
+   "downloads": 73,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zkwr1081/Moss-image-anime-lora-GGUF",
+   "created": "2026-11-28T04:40:04.000Z",
+   "downloads": 9,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zkwr1081/GLM-5.3-Flash-W4A16-NVFP4-GGUF",
+   "created": "2026-11-28T04:39:59.000Z",
+   "downloads": 1,
+   "disabled": false,
+   "gated": false,
+   "template_len": 10644,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zkwr1081/Moss-Image-SFT-GGUF",
+   "created": "2026-11-28T04:39:56.000Z",
+   "downloads": 5,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zkwr1081/Moss-image-nsfw-uncensored-lora-GGUF",
+   "created": "2026-11-28T04:39:54.000Z",
+   "downloads": 6,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Xylolabs/OmniEVIE-4B-GGUF",
+   "created": "2026-11-28T04:33:01.000Z",
+   "downloads": 38,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1956,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-granite-3.2-2b-instruct-GGUF",
+   "created": "2026-11-28T04:28:35.000Z",
+   "downloads": 6,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4341,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-phi-2-GGUF",
+   "created": "2026-11-28T04:24:45.000Z",
+   "downloads": 6,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-starcoder2-3b-GGUF",
+   "created": "2026-11-28T04:15:42.000Z",
+   "downloads": 6,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Muthu88/Eternity-AI-9B-GGUF",
+   "created": "2026-11-28T04:15:40.000Z",
+   "downloads": 16,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "rkcth/Radiance-Control-Vectors",
+   "created": "2026-11-28T04:13:45.000Z",
+   "downloads": 12,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "lohithp04/faultiq-qwen2.5-3b-gguf",
+   "created": "2026-11-28T04:07:02.000Z",
+   "downloads": 29,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2509,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ermiaazarkhalili/Gemma4-E4B-Function-Calling-xLAM-GGUF",
+   "created": "2026-11-28T04:00:29.000Z",
+   "downloads": 115,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ermiaazarkhalili/Gemma4-E2B-SFT-Claude-Opus-Reasoning-GGUF",
+   "created": "2026-11-28T03:59:05.000Z",
+   "downloads": 89,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ermiaazarkhalili/Gemma4-E2B-Function-Calling-xLAM-GGUF",
+   "created": "2026-11-28T03:55:53.000Z",
+   "downloads": 96,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "4NN0/rp-01-gguf",
+   "created": "2026-11-28T03:55:38.000Z",
+   "downloads": 56,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ermiaazarkhalili/LFM2.5-1.2B-SFT-Claude-Opus-Reasoning-GGUF",
+   "created": "2026-11-28T03:54:15.000Z",
+   "downloads": 73,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ermiaazarkhalili/LFM2.5-1.2B-Function-Calling-xLAM-GGUF",
+   "created": "2026-11-28T03:52:08.000Z",
+   "downloads": 53,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qwen3.5-4B-Persona-Narcissist-GGUF",
+   "created": "2026-11-28T03:49:46.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Inkling-2-Mini-LV-GGUF",
+   "created": "2026-11-28T03:44:59.000Z",
+   "downloads": 95,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6947,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-phi-1-GGUF",
+   "created": "2026-11-28T03:40:24.000Z",
+   "downloads": 17,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "delbina/delbina-sum-GGUF",
+   "created": "2026-11-28T03:32:11.000Z",
+   "downloads": 11,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-phi-1_5-GGUF",
+   "created": "2026-11-28T03:27:27.000Z",
+   "downloads": 13,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "giove7/sauda-qwen3.5-0.8b-rice-trade",
+   "created": "2026-11-28T03:24:46.000Z",
+   "downloads": 17,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8025,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/gemma-7b-it-bnb-4bit-BYM",
+   "created": "2026-11-28T03:24:31.000Z",
+   "downloads": 7,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/gemma-4-12B-it-abliterated-negative-emotions-GGUF",
+   "created": "2026-11-28T03:23:32.000Z",
+   "downloads": 214,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18681,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "SibivasanM/aegis-decision-v1-Qwen3.5-4B-clf",
+   "created": "2026-11-28T03:22:20.000Z",
+   "downloads": 45,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7992,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Qwen2.5-Coder-3B-Instruct-GGUF",
+   "created": "2026-11-28T03:21:44.000Z",
+   "downloads": 14,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "eakonn705/short-ja-7b-gguf",
+   "created": "2026-11-28T03:18:35.000Z",
+   "downloads": 6,
+   "disabled": false,
+   "gated": false,
+   "template_len": 393,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "lensetek/asadeltek-indo-tax-3b",
+   "created": "2026-11-28T03:17:57.000Z",
+   "downloads": 5,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-OpenCoder-1.5B-Instruct-GGUF",
+   "created": "2026-11-28T03:12:43.000Z",
+   "downloads": 30,
+   "disabled": false,
+   "gated": false,
+   "template_len": 345,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Yi-Coder-1.5B-Chat-GGUF",
+   "created": "2026-11-28T03:07:56.000Z",
+   "downloads": 58,
+   "disabled": false,
+   "gated": false,
+   "template_len": 477,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Ling-3.2-air-abliterated-GGUF",
+   "created": "2026-11-28T03:05:11.000Z",
+   "downloads": 20,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8582,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "fishygato/LFM2.5-350M-shcue-sft",
+   "created": "2026-11-28T03:03:39.000Z",
+   "downloads": 24,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5487,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Eureka-COM/MistralMosaic-24B-v2-GGUF",
+   "created": "2026-11-28T03:02:49.000Z",
+   "downloads": 74,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "alexpro100/Qwen3.8-Flash-Next-Avalon-UD-IQ3XXS",
+   "created": "2026-11-28T03:00:57.000Z",
+   "downloads": 63,
+   "disabled": false,
+   "gated": false,
+   "template_len": 9993,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "JCitta/Qwen-3.5-4B-Topicos",
+   "created": "2026-11-28T02:57:34.000Z",
+   "downloads": 42,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7992,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Teriks/Kandinsky-5.0-T2V-Lite-nocfg-10s-quants",
+   "created": "2026-11-28T02:53:51.000Z",
+   "downloads": 78,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-deepseek-coder-1.3b-instruct-GGUF",
+   "created": "2026-11-28T02:50:47.000Z",
+   "downloads": 25,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1041,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "ahmedparul626/QwQ-Med-3-bf16-Q8_0-GGUF",
+   "created": "2026-11-28T02:44:52.000Z",
+   "downloads": 35,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2763,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "tulioranjos/mdbr-leaf-mt-GGUF",
+   "created": "2026-11-28T02:43:02.000Z",
+   "downloads": 87,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qwen3.5-4B-Persona-Infatuation-GGUF",
+   "created": "2026-11-28T02:41:52.000Z",
+   "downloads": 60,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "steampunque/Inkling-2-Mini-MP-GGUF",
+   "created": "2026-11-28T02:41:44.000Z",
+   "downloads": 22,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Teriks/Kandinsky-5.0-T2V-Lite-nocfg-5s-quants",
+   "created": "2026-11-28T02:40:04.000Z",
+   "downloads": 100,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Teriks/Kandinsky-5.0-T2V-Lite-distilled16steps-10s-quants",
+   "created": "2026-11-28T02:26:13.000Z",
+   "downloads": 94,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "dendriteholdings/Ingot-X-9B-Q2",
+   "created": "2026-11-28T02:21:13.000Z",
+   "downloads": 153,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "flaukowski/kannaka-brain-experimental-runs",
+   "created": "2026-11-28T02:21:00.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "AyushSingh360/Atheris-1.5B-GRPO-GGUF",
+   "created": "2026-11-28T02:18:13.000Z",
+   "downloads": 58,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Teriks/Kandinsky-5.0-T2V-Lite-distilled16steps-5s-quants",
+   "created": "2026-11-28T02:12:11.000Z",
+   "downloads": 110,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Meta-Llama-3.1-70B-Instruct-GGUF",
+   "created": "2026-11-28T02:07:45.000Z",
+   "downloads": 32,
+   "disabled": false,
+   "gated": false,
+   "template_len": 348,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/kritha-functiongemma-270m-finetuned-GGUF",
+   "created": "2026-11-28T02:07:27.000Z",
+   "downloads": 213,
+   "disabled": false,
+   "gated": false,
+   "template_len": 13792,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Teriks/Kandinsky-5.0-T2V-Lite-sft-10s-quants",
+   "created": "2026-11-28T01:59:04.000Z",
+   "downloads": 107,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Losew/Inkling-2-Mini-Heretic-GGUF",
+   "created": "2026-11-28T01:54:58.000Z",
+   "downloads": 3397,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "nkthebass/tinybrainbot-360m-a75m-v6-base",
+   "created": "2026-11-28T01:53:41.000Z",
+   "downloads": 376,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "bartowski/openharness_Qwen3.5-4B-CalibForge500-E5-20261125-GGUF",
+   "created": "2026-11-28T01:34:56.000Z",
+   "downloads": 1731,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7827,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "jikadafu/Inkling-2-Mini-NSFW-uncensored",
+   "created": "2026-11-28T01:33:57.000Z",
+   "downloads": 49,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "70sh1/gigaam-v4-e2e-rnnt-gguf",
+   "created": "2026-11-28T01:30:42.000Z",
+   "downloads": 82,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "taurusduan/Signal-2-Flash-Next-Gyro-GGUF",
+   "created": "2026-11-28T01:27:30.000Z",
+   "downloads": 131,
+   "disabled": false,
+   "gated": false,
+   "template_len": 9993,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "sappho192/ironworks-translator-1b-v0.2",
+   "created": "2026-11-28T01:25:36.000Z",
+   "downloads": 78,
+   "disabled": false,
+   "gated": false,
+   "template_len": 62,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "udomain/kestrel-explainer-4b-v3-gguf",
+   "created": "2026-11-28T01:15:12.000Z",
+   "downloads": 54,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4168,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Teriks/Kandinsky-5.0-I2V-Pro-sft-5s-quants",
+   "created": "2026-11-28T01:11:27.000Z",
+   "downloads": 111,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qwen3.5-4B-agent-grpo-GGUF",
+   "created": "2026-11-28T01:08:20.000Z",
+   "downloads": 284,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "julienkay/tiny-flux2-klein-pipe-gguf",
+   "created": "2026-11-28T01:00:06.000Z",
+   "downloads": 76,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "bismigel/o11y-alert-tuner-4b",
+   "created": "2026-11-28T00:55:57.000Z",
+   "downloads": 79,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2630,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qwen3-1.7B-Abliterated-Zero-GGUF",
+   "created": "2026-11-28T00:47:25.000Z",
+   "downloads": 202,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4168,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/scamdetect-distilbert-GGUF",
+   "created": "2026-11-28T00:46:14.000Z",
+   "downloads": 160,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/logical-fallacy-classifier-GGUF",
+   "created": "2026-11-28T00:44:55.000Z",
+   "downloads": 141,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/smollm-children-stories-GGUF",
+   "created": "2026-11-28T00:44:01.000Z",
+   "downloads": 140,
+   "disabled": false,
+   "gated": false,
+   "template_len": 368,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Jah-8.0-i1-GGUF",
+   "created": "2026-11-28T00:42:35.000Z",
+   "downloads": 2605,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "syedkhizarrayaz/RegMap-Qwen3-1.7B-GGUF",
+   "created": "2026-11-28T00:42:24.000Z",
+   "downloads": 43,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4168,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mr-andrey-isachenko/Tenet-106B-A12B-GLM4.5-Unslop-v3",
+   "created": "2026-11-28T00:41:47.000Z",
+   "downloads": 423,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "zhrecap/voxcpm2-b",
+   "created": "2026-11-28T00:41:18.000Z",
+   "downloads": 28,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/marketing-voice-9b-GGUF",
+   "created": "2026-11-28T00:27:19.000Z",
+   "downloads": 316,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Polydim-Einsof/einsof2-gemma4-31b-stiefel-gguf",
+   "created": "2026-11-28T00:25:42.000Z",
+   "downloads": 82,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18681,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "sarimahsan101/Spire-9B-RL-GGUF",
+   "created": "2026-11-28T00:23:16.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "sarimahsan101/Spire-9B-RL",
+   "created": "2026-11-28T00:21:00.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mouddane/Falcon3-7B-Instruct-1.58bit-TQ2_0-GGUF",
+   "created": "2026-11-28T00:18:36.000Z",
+   "downloads": 54,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2092,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "haruuuuu-1256/sweet-zenz-v1-xsmall-gguf",
+   "created": "2026-11-28T00:13:19.000Z",
+   "downloads": 55,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Xylolabs/LingSante-3.1-flash-GGUF",
+   "created": "2026-11-28T00:10:11.000Z",
+   "downloads": 15,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5984,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-phi-4-GGUF",
+   "created": "2026-11-28T00:09:38.000Z",
+   "downloads": 37,
+   "disabled": false,
+   "gated": false,
+   "template_len": 462,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "magnitudedev/Inkling-2-Mini-DFlash2-GGUF",
+   "created": "2026-11-28T00:08:06.000Z",
+   "downloads": 70,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qlaude-full-i1-GGUF",
+   "created": "2026-11-28T00:07:45.000Z",
+   "downloads": 583,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18681,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/IberianLLM-ASSET-GRPO-GGUF",
+   "created": "2026-11-28T00:06:16.000Z",
+   "downloads": 301,
+   "disabled": false,
+   "gated": false,
+   "template_len": 196,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mesigmafr/idk",
+   "created": "2026-11-28T00:04:58.000Z",
+   "downloads": 229,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1597,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "matsved/RedPajama-Q8_0-GGUF",
+   "created": "2026-11-28T00:01:09.000Z",
+   "downloads": 259,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "sappho192/ironworks-translator-4b-v0.2",
+   "created": "2026-11-27T23:51:54.000Z",
+   "downloads": 78,
+   "disabled": false,
+   "gated": false,
+   "template_len": 62,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "elytrenches/mnemos-4b-lite",
+   "created": "2026-11-27T23:51:44.000Z",
+   "downloads": 35,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2630,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "VerbalJungle/FUTO-Transformer-DE",
+   "created": "2026-11-27T23:47:37.000Z",
+   "downloads": 209,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Nsmith15/consapia-answer-mini-GGUF",
+   "created": "2026-11-27T23:45:08.000Z",
+   "downloads": 74,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4905,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "nong0521/wordbeasts-dev-summon-models",
+   "created": "2026-11-27T23:43:05.000Z",
+   "downloads": 35,
+   "disabled": false,
+   "gated": true,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Super3dMax/htdemucs-whine-hiss_clicks_speech_v1",
+   "created": "2026-11-27T23:41:52.000Z",
+   "downloads": 55,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/WellLogLLM-7B-GGUF",
+   "created": "2026-11-27T23:39:38.000Z",
+   "downloads": 475,
+   "disabled": false,
+   "gated": false,
+   "template_len": 51034,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "epshteinmatthew/hebrew-simplify",
+   "created": "2026-11-27T23:32:18.000Z",
+   "downloads": 12,
+   "disabled": false,
+   "gated": false,
+   "template_len": 3375,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Tom09S/wikimind-moe-3B-A0.9B",
+   "created": "2026-11-27T23:27:25.000Z",
+   "downloads": 379,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4116,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Christopher2137/dettato-mirror",
+   "created": "2026-11-27T23:21:30.000Z",
+   "downloads": 61,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "c4tdr0ut/Tiamat-8B",
+   "created": "2026-11-27T23:12:15.000Z",
+   "downloads": 154,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4542,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Curioxity-9B-GGUF",
+   "created": "2026-11-27T23:11:43.000Z",
+   "downloads": 559,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Qlaude-full-GGUF",
+   "created": "2026-11-27T23:07:32.000Z",
+   "downloads": 423,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18681,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/jellybrain-1.1b-GGUF",
+   "created": "2026-11-27T23:06:48.000Z",
+   "downloads": 206,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Jah-8.0-GGUF",
+   "created": "2026-11-27T23:05:15.000Z",
+   "downloads": 353,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/EGS-llm-1b-GGUF",
+   "created": "2026-11-27T23:02:25.000Z",
+   "downloads": 264,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/zia-ai-assistant-GGUF",
+   "created": "2026-11-27T23:01:45.000Z",
+   "downloads": 23,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18567,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/PickleAura-GGUF",
+   "created": "2026-11-27T23:00:25.000Z",
+   "downloads": 381,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8112,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "LeVraiCNL/Luth-2-0.8B-abliterated-Q8_0-GGUF",
+   "created": "2026-11-27T23:00:24.000Z",
+   "downloads": 97,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Spark-X2.6-1.7B-Uncensored-Peymandc-i1-GGUF",
+   "created": "2026-11-27T22:57:34.000Z",
+   "downloads": 1301,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5629,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mohibovais79/tarsniff",
+   "created": "2026-11-27T22:56:19.000Z",
+   "downloads": 47,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4116,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "deadkey-labs/Qwen3-8B-Epistemic-DPO-125B-GGUF",
+   "created": "2026-11-27T22:54:34.000Z",
+   "downloads": 45,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mb860102/tpn009-archive",
+   "created": "2026-11-27T22:54:24.000Z",
+   "downloads": 529,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18681,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "integral2u/tinystories-large",
+   "created": "2026-11-27T22:50:05.000Z",
+   "downloads": 31,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "abdul1977ghaffar/karachi-bus-query-parser",
+   "created": "2026-11-27T22:49:56.000Z",
+   "downloads": 71,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/WellLogLLM-3.7B-GGUF",
+   "created": "2026-11-27T22:46:24.000Z",
+   "downloads": 3300,
+   "disabled": false,
+   "gated": false,
+   "template_len": 52157,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Teriks/Kandinsky-6.0-Lite-5s-quants",
+   "created": "2026-11-27T22:45:11.000Z",
+   "downloads": 147,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "pranil00/ONIX-Phi-4-mini-instruct-GGUF",
+   "created": "2026-11-27T22:44:41.000Z",
+   "downloads": 80,
+   "disabled": false,
+   "gated": false,
+   "template_len": 423,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Spark-X2.6-1.7B-Uncensored-Peymandc-GGUF",
+   "created": "2026-11-27T22:41:55.000Z",
+   "downloads": 201,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5629,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/LFM3-1.7B-Looped-GGUF",
+   "created": "2026-11-27T22:40:15.000Z",
+   "downloads": 389,
+   "disabled": false,
+   "gated": false,
+   "template_len": 12129,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "OsamaAli313/genelens-qwen3-4b-promoter",
+   "created": "2026-11-27T22:36:44.000Z",
+   "downloads": 50,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Sw1zyyyAdm/Gemma-4-12B-it-Abliterated",
+   "created": "2026-11-27T22:34:40.000Z",
+   "downloads": 214,
+   "disabled": false,
+   "gated": false,
+   "template_len": 18681,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "dvsoft/verbale-lima",
+   "created": "2026-11-27T22:25:57.000Z",
+   "downloads": 129,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7755,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Vgghfth/Ling-3.2-air-abliterated-GGUF",
+   "created": "2026-11-27T22:18:38.000Z",
+   "downloads": 234,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Morus-Alba/qwen2.5-0.5b-instruct-gguf",
+   "created": "2026-11-27T22:14:18.000Z",
+   "downloads": 121,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "freakyskittle/Inkling-2-Small-Derisked-GGUF",
+   "created": "2026-11-27T22:07:53.000Z",
+   "downloads": 174,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "two-eyed-ravens/aemon-8b-GGUF",
+   "created": "2026-11-27T22:05:39.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1318,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "l3lab/llmlean-optimize-9B-v0.1-GGUF",
+   "created": "2026-11-27T22:02:04.000Z",
+   "downloads": 137,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "someone786/daakiya-qwen3-1.7b-GGUF",
+   "created": "2026-11-27T22:01:53.000Z",
+   "downloads": 133,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4707,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Logic-z/dsh-cortex",
+   "created": "2026-11-27T21:44:42.000Z",
+   "downloads": 190,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1016,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "WaveCut/gemma-4-31B-it-heretic-i1-IQ4_XS-DFlash-DSpark-NInfer-v3",
+   "created": "2026-11-27T21:34:38.000Z",
+   "downloads": 40,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "alpha-ai/LetsVoice-Privacy-1.7B-GGUF",
+   "created": "2026-11-27T21:27:49.000Z",
+   "downloads": 162,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1215,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "North-ML1/north-ml-checkpoint-archive",
+   "created": "2026-11-27T21:20:47.000Z",
+   "downloads": 65,
+   "disabled": false,
+   "gated": false,
+   "template_len": 158,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "JohnAKuntz/Qwen3.6-35B-A3B-PI64K-V-GGUF",
+   "created": "2026-11-27T21:13:00.000Z",
+   "downloads": 457,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8057,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "YourHighnessLA/L0xRE-v1-Inkling-Mini-2-Low",
+   "created": "2026-11-27T21:10:54.000Z",
+   "downloads": 359,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/KuroReflex-3B-i1-GGUF",
+   "created": "2026-11-27T21:00:03.000Z",
+   "downloads": 1521,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Hiddenlight87/VallerIA-2B-v0.2-GGUF",
+   "created": "2026-11-27T20:57:39.000Z",
+   "downloads": 355,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7755,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Hiddenlight87/VallerIA-2B-v0.2",
+   "created": "2026-11-27T20:57:28.000Z",
+   "downloads": 285,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "QuantaPlanta/Gemma-4-Irrlicht-Untied-26B-A4B-GGUF",
+   "created": "2026-11-27T20:53:19.000Z",
+   "downloads": 982,
+   "disabled": false,
+   "gated": false,
+   "template_len": 16448,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Nitesh99390/post-studio-ai-1.5b-gguf",
+   "created": "2026-11-27T20:47:46.000Z",
+   "downloads": 148,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Pratham804/Pratham-LFM2.5-350M-V30-RL-Polisher",
+   "created": "2026-11-27T20:46:50.000Z",
+   "downloads": 81,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5487,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "prithivMLmods/Qwen3.8-27B-NVFP4-QAD-GGUF",
+   "created": "2026-11-27T20:36:19.000Z",
+   "downloads": 324,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8952,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Josipo/Uncensored-Frank-Llama-3-8B-GGUF",
+   "created": "2026-11-27T20:35:38.000Z",
+   "downloads": 1892,
+   "disabled": false,
+   "gated": false,
+   "template_len": 291,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "outerreaches/inkling-2-mini-looped-fok-sidecars",
+   "created": "2026-11-27T20:34:31.000Z",
+   "downloads": 120,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Polydim-Einsof/einsof2-deepseek-v4-lite-stiefel-gguf",
+   "created": "2026-11-27T20:27:12.000Z",
+   "downloads": 135,
+   "disabled": false,
+   "gated": false,
+   "template_len": 459,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "drjoshcsimmons/Qwen3.8-27B-Evil-GGUF",
+   "created": "2026-11-27T20:19:15.000Z",
+   "downloads": 240,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Mal7/airlock-qwen2.5-1.5b",
+   "created": "2026-11-27T20:18:57.000Z",
+   "downloads": 669,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/LFM3-1.7B-BR-i1-GGUF",
+   "created": "2026-11-27T20:10:55.000Z",
+   "downloads": 2026,
+   "disabled": false,
+   "gated": false,
+   "template_len": 12129,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "rzrmayur/Qwen3.5-2B-Q4_K_M-GGUF",
+   "created": "2026-11-27T20:09:41.000Z",
+   "downloads": 180,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7755,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "maternion/Hy-MT3-7B-FP8-GGUF",
+   "created": "2026-11-27T20:08:24.000Z",
+   "downloads": 195,
+   "disabled": false,
+   "gated": false,
+   "template_len": 662,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "maternion/Hy-MT3-1.8B-FP8-GGUF",
+   "created": "2026-11-27T20:08:23.000Z",
+   "downloads": 150,
+   "disabled": false,
+   "gated": false,
+   "template_len": 596,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "drjoshcsimmons/Inkling-2-Mini-Sexual-GGUF",
+   "created": "2026-11-27T20:08:01.000Z",
+   "downloads": 459,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "drjoshcsimmons/Inkling-2-Mini-Evil-GGUF",
+   "created": "2026-11-27T20:08:00.000Z",
+   "downloads": 370,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "PeetPedro/foundation64k-v5-muad-dib",
+   "created": "2026-11-27T20:07:04.000Z",
+   "downloads": 85,
+   "disabled": false,
+   "gated": false,
+   "template_len": 3827,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Fari4/Audio8-TTS-Realistic-Air",
+   "created": "2026-11-27T20:05:01.000Z",
+   "downloads": 70,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "vaultpls/LFM3-1.7B-Looped",
+   "created": "2026-11-27T20:02:35.000Z",
+   "downloads": 466,
+   "disabled": false,
+   "gated": false,
+   "template_len": 12129,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "KomorAI/CodeThinker-Python-270M",
+   "created": "2026-11-27T19:59:14.000Z",
+   "downloads": 132,
+   "disabled": false,
+   "gated": false,
+   "template_len": 1639,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "WaveCut/Tess-4.5-26B-A3B-NVFP4-NInfer-v3",
+   "created": "2026-11-27T19:58:31.000Z",
+   "downloads": 109,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/KuroVision-8B-Brasil-i1-GGUF",
+   "created": "2026-11-27T19:58:10.000Z",
+   "downloads": 1499,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5292,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "thangalin/KeenLore-Grammar-GGUF",
+   "created": "2026-11-27T19:55:02.000Z",
+   "downloads": 48,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "Canonry/marketing-voice-9b-GGUF",
+   "created": "2026-11-27T19:49:52.000Z",
+   "downloads": 82,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7756,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "JoJoTiago/Qwen3-ASR-1.7B-PT-Q8_0",
+   "created": "2026-11-27T19:45:23.000Z",
+   "downloads": 67,
+   "disabled": false,
+   "gated": false,
+   "template_len": 385,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mabdullahramday56/qwen3-1.7b-roman-urdu-whatsapp-order-gguf",
+   "created": "2026-11-27T19:43:20.000Z",
+   "downloads": 47,
+   "disabled": false,
+   "gated": false,
+   "template_len": 4707,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "OmgItsAmmer/urdu-nastaliq-ocr-qwen3vl-2b-GGUF",
+   "created": "2026-11-27T19:39:08.000Z",
+   "downloads": 135,
+   "disabled": false,
+   "gated": false,
+   "template_len": 5292,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/Lily-1.5B-Code-i1-GGUF",
+   "created": "2026-11-27T19:28:12.000Z",
+   "downloads": 1481,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "bartowski/AminiTech_Soma-1X-lite-GGUF",
+   "created": "2026-11-27T19:24:39.000Z",
+   "downloads": 3780,
+   "disabled": false,
+   "gated": false,
+   "template_len": 8369,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/willay-r1-i1-GGUF",
+   "created": "2026-11-27T19:17:48.000Z",
+   "downloads": 1572,
+   "disabled": false,
+   "gated": false,
+   "template_len": 2507,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "elorri/inkling-2-mini-zbook-48k",
+   "created": "2026-11-27T19:15:35.000Z",
+   "downloads": 0,
+   "disabled": false,
+   "gated": false,
+   "template_len": 0,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "NeoCortex0815/Qwen3.5-0.8B-R-MLP",
+   "created": "2026-11-27T19:14:18.000Z",
+   "downloads": 175,
+   "disabled": false,
+   "gated": false,
+   "template_len": 7755,
+   "hits": [],
+   "worst": "clean"
+  },
+  {
+   "id": "mradermacher/wekwos-2-mini-bf16-i1-GGUF",
+   "created": "2026-11-27T19:14:03.000Z",
+   "downloads": 4131,
+   "disabled": false,
+   "gated": false,
+   "template_len": 6868,
+   "hits": [],
+   "worst": "clean"
+  }
+ ]
+}

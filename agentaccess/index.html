@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your agents can reach Workspace until 1 February 2027 — agent access inventory | AI Price Watch</title>
+<meta name="description" content="Google made Workspace MCP servers and admin agent policies generally available on 24 November 2026 and set 1 February 2027 as the enforcement date for the MCP requirement for AI agents. A read-only inventory of which local agents hold your credentials, where, and whether anyone else can read them.">
+<style>
+  :root { --bg:#0b0c0e; --panel:#14161a; --line:#23272e; --txt:#e8eaed; --dim:#8b929c; --up:#ff6b6b; --down:#4ade80; --accent:#7dd3fc; --warn:#fbbf24; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--txt);
+         font:15px/1.55 ui-sans-serif,-apple-system,"Segoe UI",Inter,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:900px; margin:0 auto; padding:48px 20px 80px; }
+  h1 { font-size:29px; letter-spacing:-.02em; margin:0 0 8px; }
+  .sub { color:var(--dim); margin:0 0 28px; }
+  h2 { font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--dim);
+       margin:40px 0 12px; font-weight:600; }
+  table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+  th,td { text-align:left; padding:9px 10px; border-bottom:1px solid var(--line); font-size:14px; }
+  th { color:var(--dim); font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; }
+  .verdict { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--warn);
+             border-radius:12px; padding:18px 22px; margin:14px 0 4px; }
+  .verdict b { font-size:19px; }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:20px; }
+  .good { color:var(--down); } .bad { color:var(--up); } .warn { color:var(--warn); }
+  .muted { color:var(--dim); font-size:13px; }
+  .foot { margin-top:46px; padding:18px 20px; border:1px solid var(--line); border-radius:12px; background:var(--panel); }
+  .foot a, p a { color:var(--accent); }
+  code { background:#0f1114; padding:1px 5px; border-radius:4px; font-size:13px; }
+  ul { padding-left:20px; } li { margin-bottom:7px; }
+  .cta { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent);
+         border-radius:12px; padding:18px 22px; margin-top:14px; }
+  .cta a.big { display:inline-block; margin-top:10px; background:var(--accent); color:#08131a;
+               font-weight:600; text-decoration:none; padding:10px 16px; border-radius:9px; }
+  @media (max-width:700px) { .wrap { padding-top:32px; } }
+</style></head>
+<body><div class="wrap">
+
+<p class="muted" style="margin:0 0 18px"><a href="/ai-price-watch/">AI Price Watch</a> / agent access</p>
+
+<h1>Every agent on the machine can read your Workspace</h1>
+<p class="sub">Google put admin agent policies into general availability on 24 November 2026 and named a date on
+which they stop being optional. Nobody has counted which local agents already hold the credentials.</p>
+
+<div class="verdict">
+  <b>1 February 2027</b>
+  <p class="muted" style="margin:8px 0 0">That is the date Google gives for technical enforcement of its
+  MCP requirement for AI agents. It is roughly nine weeks away. Every business running coding agents,
+  chat assistants or automated workflows against Gmail, Drive, Calendar or Sheets has until then to know
+  which agents touch that data and under what policy.</p>
+</div>
+
+<h2>What changed, exactly</h2>
+<ul>
+  <li><b>24 Nov 2026</b> — Google Workspace MCP servers (Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat,
+    Tasks) and the Workspace CLI went <b>generally available</b>, alongside admin console agent access
+    controls, human-in-the-loop controls, audit logs, and a Workspace API usage dashboard.
+    (<a href="https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html">Google Workspace Updates, 24 Nov 2026</a>)</li>
+  <li><b>1 Feb 2027</b> — <b>technical enforcement begins</b> on the MCP requirement for AI agents, same post.</li>
+  <li>The CLI includes <b>scoped sign-in</b> — read and update scopes — which means the interesting question
+    stops being "does an agent have access" and becomes "which scope, granted to which agent, on which
+    machine, and who else can read the file it is stored in".</li>
+</ul>
+
+<h2>What the inventory returns</h2>
+<p>A single read-only pass over one workstation. It opens no network connection, sends nothing, and never
+prints, copies or transmits a secret value — it records the file path, the file mode, the line number and
+the provider the key belongs to, plus the MCP servers wired into each agent's config.</p>
+
+<table>
+  <tr><th>What is counted</th><th>Why it matters</th></tr>
+  <tr><td>Agent surfaces found (Hermes, OpenClaw, Claude, Codex, Cursor, Aider, Goose, OpenCode, gh, aws, ssh)</td><td>Shadow agents nobody put on the asset register</td></tr>
+  <tr><td>Files holding credentials, with mode</td><td><code>0644</code> means any process on the box can read a live key</td></tr>
+  <tr><td>Credential files tracked inside a git work tree</td><td>A key that is one <code>git push</code> from public</td></tr>
+  <tr><td>MCP servers wired in, per config file</td><td>What the 1 Feb policy has to cover</td></tr>
+  <tr><td>Providers implicated, by count</td><td>Blast radius, without disclosing the secrets</td></tr>
+</table>
+
+<h2>Sample: one working Mac, audited this morning</h2>
+<div class="panel">
+  <table>
+    <tr><td>Agent surfaces found</td><td>13 of 16 known locations</td></tr>
+    <tr><td>Files holding credentials</td><td>38</td></tr>
+    <tr><td>World-readable at first pass</td><td class="bad">19</td></tr>
+    <tr><td>Fixed in the same session (<code>chmod 600</code>)</td><td class="good">9</td></tr>
+    <tr><td>Credential files inside a tracked git work tree</td><td class="warn">3</td></tr>
+    <tr><td>Providers implicated</td><td>10</td></tr>
+    <tr><td>MCP config files with servers wired</td><td>2</td></tr>
+  </table>
+  <p class="muted" style="margin:14px 0 0">Nine files — an OAuth key file, a Goose config, three OpenCode configs,
+  a Claude settings backup and three Codex shell snapshots — were readable by every account on the machine.
+  That is not a breach. It is a permission that should never have been set, found in twenty minutes, on a
+  machine whose owner is careful.</p>
+</div>
+
+<h2>The offer</h2>
+<div class="cta">
+  <p style="margin:0"><b>Agent access inventory — $500 per 20 workstations.</b><br>
+  Dated report per machine: surfaces, credential files, permissions, git exposure, MCP servers.
+  Remediation list with the exact <code>chmod</code>/config change for each finding, applied or handed over.<br>
+  <b>Quarterly re-run — $1,200.</b> The point of a deadline is that the inventory goes stale the day after it is taken.</p>
+  <a class="big" href="mailto:sambombayoffice@gmail.com?subject=Agent%20access%20inventory&body=How%20many%20workstations%2C%20and%20are%20any%20of%20them%20running%20coding%20agents%20against%20Google%20Workspace%3F">Request the inventory</a>
+</div>
+
+<h2>Run it yourself</h2>
+<p>The scanner is plain Python, no dependencies, no network calls. It lives at
+<code>agent_access_audit.py</code> in the <a href="https://github.com/Sam-Bombay/ai-price-watch/blob/main/agent_access_audit.py">public repo</a>.
+Run <code>python3 agent_access_audit.py</code> for the text report, or <code>--json out.json</code> for the
+machine-readable one. If it finds a world-readable key, change the mode today and rotate it when convenient —
+the window it was open is what matters, not the convenience.</p>
+
+<div class="foot">
+  <p style="margin:0"><b>Also on this site:</b>
+  <a href="/ai-price-watch/audit">cost audit against your own volumes</a> ·
+  <a href="/ai-price-watch/agentmeter">what an agent workload actually costs</a> ·
+  <a href="/ai-price-watch/receipts">dated receipts for every price on this page</a> ·
+  <a href="/ai-price-watch/">today's moves</a></p>
+  <p class="muted" style="margin:10px 0 0">Sources: Google Workspace Updates, 24 Nov 2026 (MCP servers, CLI, admin
+  policies, 1 Feb 2027 enforcement). Sample figures are from one machine audited on 26 Nov 2026 with this
+  scanner; no secret value was recorded in producing them.</p>
+</div>
+
+</div></body></html>
