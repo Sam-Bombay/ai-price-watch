@@ -12866,5 +12866,405 @@
 "field": "retired",
 "from": 2.0,
 "to": null
+},
+{
+"date": "2026-11-27",
+"id": "thinkingmachines/inkling-2-mini",
+"name": "Thinking Machines: Inkling 2 Mini",
+"field": "input",
+"from": 0.075,
+"to": 0.06,
+"pct": -20.0
+},
+{
+"date": "2026-11-27",
+"id": "thinkingmachines/inkling-2-mini",
+"name": "Thinking Machines: Inkling 2 Mini",
+"field": "output",
+"from": 0.3,
+"to": 0.24,
+"pct": -20.0
+},
+{
+"date": "2026-11-27",
+"id": "inclusionai/ling-3.2-flash",
+"name": "inclusionAI: Ling 3.2 Flash",
+"field": "added",
+"from": null,
+"to": 0.9
+},
+{
+"date": "2026-11-27",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "input",
+"from": 0.111,
+"to": 0.0999,
+"pct": -10.0
+},
+{
+"date": "2026-11-27",
+"id": "~deepseek/deepseek-pro-latest",
+"name": "DeepSeek: DeepSeek Pro Latest",
+"field": "output",
+"from": 4.44,
+"to": 5.0,
+"pct": 12.6
+},
+{
+"date": "2026-11-27",
+"id": "deepseek/deepseek-v4-flash-vision-exp",
+"name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+"field": "input",
+"from": 0.44,
+"to": 0.2156,
+"pct": -51.0
+},
+{
+"date": "2026-11-27",
+"id": "deepseek/deepseek-v4-flash-vision-exp",
+"name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+"field": "output",
+"from": 1.32,
+"to": 0.6468,
+"pct": -51.0
+},
+{
+"date": "2026-11-27",
+"id": "deepseek/deepseek-v4-pro-0813",
+"name": "DeepSeek: DeepSeek V4 Pro 0813",
+"field": "input",
+"from": 0.111,
+"to": 0.0999,
+"pct": -10.0
+},
+{
+"date": "2026-11-27",
+"id": "deepseek/deepseek-v4-pro-0813",
+"name": "DeepSeek: DeepSeek V4 Pro 0813",
+"field": "output",
+"from": 4.44,
+"to": 5.0,
+"pct": 12.6
+},
+{
+"date": "2026-11-27",
+"id": "meta/muse-glimmer-30b",
+"name": "Meta: Muse Glimmer 30B",
+"field": "input",
+"from": 0.35,
+"to": 0.3,
+"pct": -14.3
+},
+{
+"date": "2026-11-27",
+"id": "meta/muse-glimmer-30b",
+"name": "Meta: Muse Glimmer 30B",
+"field": "output",
+"from": 1.5,
+"to": 1.2,
+"pct": -20.0
+},
+{
+"date": "2026-11-27",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.8249,
+"to": 0.786,
+"pct": -4.7
+},
+{
+"date": "2026-11-27",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 1.5381,
+"to": 1.5712,
+"pct": 2.2
+},
+{
+"date": "2026-11-27",
+"id": "moonshotai/kimi-k2.5",
+"name": "MoonshotAI: Kimi K2.5",
+"field": "input",
+"from": 0.5,
+"to": 0.6,
+"pct": 20.0
+},
+{
+"date": "2026-11-27",
+"id": "moonshotai/kimi-k2.5",
+"name": "MoonshotAI: Kimi K2.5",
+"field": "output",
+"from": 2.5,
+"to": 3.0,
+"pct": 20.0
+},
+{
+"date": "2026-11-27",
+"id": "moonshotai/kimi-k2-0905",
+"name": "MoonshotAI: Kimi K2 0905",
+"field": "added",
+"from": null,
+"to": 2.5
+},
+{
+"date": "2026-11-27",
+"id": "moonshotai/kimi-k2",
+"name": "MoonshotAI: Kimi K2 0711",
+"field": "added",
+"from": null,
+"to": 2.3
+},
+{
+"date": "2026-11-27",
+"id": "google/gemma-3-4b-it",
+"name": "Google: Gemma 3 4B",
+"field": "input",
+"from": 0.04,
+"to": 0.05,
+"pct": 25.0
+},
+{
+"date": "2026-11-27",
+"id": "google/gemma-3-4b-it",
+"name": "Google: Gemma 3 4B",
+"field": "output",
+"from": 0.05,
+"to": 0.1,
+"pct": 100.0
+},
+{
+"date": "2026-11-27",
+"id": "google/gemma-3-27b-it",
+"name": "Google: Gemma 3 27B",
+"field": "output",
+"from": 0.45,
+"to": 0.16,
+"pct": -64.4
+},
+{
+"date": "2026-11-27",
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"field": "input",
+"from": 0.71,
+"to": 0.59,
+"pct": -16.9
+},
+{
+"date": "2026-11-27",
+"id": "meta-llama/llama-3.3-70b-instruct",
+"name": "Meta: Llama 3.3 70B Instruct",
+"field": "output",
+"from": 0.71,
+"to": 0.79,
+"pct": 11.3
+},
+{
+"date": "2026-11-27",
+"id": "inclusionai/ling-3.2-flash:free",
+"name": "inclusionAI: Ling 3.2 Flash (free)",
+"field": "retired",
+"from": null,
+"to": null
+},
+{
+"date": "2026-11-28",
+"id": "thinkingmachines/inkling-2-small",
+"name": "Thinking Machines: Inkling 2 Small",
+"field": "input",
+"from": 0.3,
+"to": 0.15,
+"pct": -50.0
+},
+{
+"date": "2026-11-28",
+"id": "thinkingmachines/inkling-2-small",
+"name": "Thinking Machines: Inkling 2 Small",
+"field": "output",
+"from": 1.0,
+"to": 0.5,
+"pct": -50.0
+},
+{
+"date": "2026-11-28",
+"id": "nvidia/nemotron-3.5-super-vl",
+"name": "NVIDIA: Nemotron 3.5 Super VL",
+"field": "output",
+"from": 0.47,
+"to": 0.45,
+"pct": -4.3
+},
+{
+"date": "2026-11-28",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "input",
+"from": 0.0507,
+"to": 0.051,
+"pct": 0.6
+},
+{
+"date": "2026-11-28",
+"id": "deepseek/deepseek-v4.1-flash",
+"name": "DeepSeek: DeepSeek V4.1 Flash",
+"field": "output",
+"from": 0.2028,
+"to": 0.567,
+"pct": 179.6
+},
+{
+"date": "2026-11-28",
+"id": "nvidia/nemotron-3.5-lightning",
+"name": "NVIDIA: Nemotron 3.5 Lightning",
+"field": "input",
+"from": 0.07,
+"to": 0.05,
+"pct": -28.6
+},
+{
+"date": "2026-11-28",
+"id": "deepseek/deepseek-v4-flash-0731",
+"name": "DeepSeek: DeepSeek V4 Flash 0731",
+"field": "output",
+"from": 0.3,
+"to": 0.27,
+"pct": -10.0
+},
+{
+"date": "2026-11-28",
+"id": "z-ai/glm-5.2",
+"name": "Z.ai: GLM 5.2",
+"field": "input",
+"from": 0.62,
+"to": 0.007,
+"pct": -98.9
+},
+{
+"date": "2026-11-28",
+"id": "z-ai/glm-5.2",
+"name": "Z.ai: GLM 5.2",
+"field": "output",
+"from": 2.42,
+"to": 6.8,
+"pct": 181.0
+},
+{
+"date": "2026-11-28",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "input",
+"from": 0.1824,
+"to": 0.1453,
+"pct": -20.3
+},
+{
+"date": "2026-11-28",
+"id": "~moonshotai/kimi-latest",
+"name": "MoonshotAI: Kimi Latest",
+"field": "output",
+"from": 11.0055,
+"to": 12.2894,
+"pct": 11.7
+},
+{
+"date": "2026-11-28",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "input",
+"from": 0.786,
+"to": 0.89,
+"pct": 13.2
+},
+{
+"date": "2026-11-28",
+"id": "deepseek/deepseek-v4-pro",
+"name": "DeepSeek: DeepSeek V4 Pro 0423",
+"field": "output",
+"from": 1.5712,
+"to": 1.5069,
+"pct": -4.1
+},
+{
+"date": "2026-11-28",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "input",
+"from": 0.09,
+"to": 0.0675,
+"pct": -25.0
+},
+{
+"date": "2026-11-28",
+"id": "google/gemma-4-26b-a4b-it",
+"name": "Google: Gemma 4 26B A4B ",
+"field": "output",
+"from": 0.3,
+"to": 0.225,
+"pct": -25.0
+},
+{
+"date": "2026-11-28",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "input",
+"from": 0.1,
+"to": 0.085,
+"pct": -15.0
+},
+{
+"date": "2026-11-28",
+"id": "qwen/qwen3.5-9b",
+"name": "Qwen: Qwen3.5-9B",
+"field": "output",
+"from": 0.25,
+"to": 0.125,
+"pct": -50.0
+},
+{
+"date": "2026-11-28",
+"id": "deepseek/deepseek-r1-0528",
+"name": "DeepSeek: R1 0528",
+"field": "input",
+"from": 0.571,
+"to": 0.5,
+"pct": -12.4
+},
+{
+"date": "2026-11-28",
+"id": "deepseek/deepseek-r1-0528",
+"name": "DeepSeek: R1 0528",
+"field": "output",
+"from": 2.286,
+"to": 2.18,
+"pct": -4.6
+},
+{
+"date": "2026-11-28",
+"id": "google/gemma-3-4b-it",
+"name": "Google: Gemma 3 4B",
+"field": "input",
+"from": 0.05,
+"to": 0.04,
+"pct": -20.0
+},
+{
+"date": "2026-11-28",
+"id": "google/gemma-3-4b-it",
+"name": "Google: Gemma 3 4B",
+"field": "output",
+"from": 0.1,
+"to": 0.05,
+"pct": -50.0
+},
+{
+"date": "2026-11-28",
+"id": "qwen/qwen3-235b-a22b-thinking-2507",
+"name": "Qwen: Qwen3 235B A22B Thinking 2507",
+"field": "retired",
+"from": 3.5,
+"to": null
 }
 ]
